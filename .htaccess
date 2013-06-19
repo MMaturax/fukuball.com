@@ -265,13 +265,6 @@ RewriteCond %{HTTP_USER_AGENT} ^Zeus [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Zyborg
 RewriteRule ^.* - [F,L]
 
-ErrorDocument 403 /error/403.html
-ErrorDocument 404 /error/404.html
-ErrorDocument 301 /error/301.html
-
-RedirectMatch permanent ^/fu-class/.*$ /page-not-found.html
-RedirectMatch permanent ^/fu-view/.*$ /page-not-found.html
-
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ app.php/$1 [QSA,L]
