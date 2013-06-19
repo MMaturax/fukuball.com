@@ -272,12 +272,6 @@ ErrorDocument 301 /error/301.html
 RedirectMatch permanent ^/fu-class/.*$ /page-not-found.html
 RedirectMatch permanent ^/fu-view/.*$ /page-not-found.html
 
-# ajax-action control url
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ /app.php/$1 [QSA,L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-# html 就是 php
-RewriteRule ^(.*)\.html $1\.php [QSA,L]
