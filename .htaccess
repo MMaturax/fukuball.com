@@ -2,6 +2,10 @@
 
 allow from all
 
+<FilesMatch "\.(engine|inc|info|install|make|module|profile|test|po|sh|.*sql|theme|bak|.*sql~|bak~|php~|tpl(\.php)?|xtmpl)$|^(\..*|Entries.*|Repository|Root|Tag|Template)$">
+Order allow,deny
+</FilesMatch>
+
 <Files ~ "^\.(htaccess|htpasswd)$">
 deny from all
 </Files>
