@@ -1,5 +1,11 @@
 # Fu RewriteRule
 
+allow from all
+
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
