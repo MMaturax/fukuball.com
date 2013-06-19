@@ -265,6 +265,5 @@ RewriteCond %{HTTP_USER_AGENT} ^Zeus [OR]
 RewriteCond %{HTTP_USER_AGENT} ^Zyborg
 RewriteRule ^.* - [F,L]
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^index.php$ - [L]
 RewriteRule ^(.*)$ index.php?p=$1 [L,QSA]
