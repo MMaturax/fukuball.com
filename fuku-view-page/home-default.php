@@ -20,12 +20,18 @@
       </li>
       <li>
          <h4 class="m-t-0">Links</h4>
+         <a type="button" class="btn" href="https://twitter.com/fukuball">
+            <i class="icon-twitter"></i>
+         </a>
+         <button type="button" class="btn" href="https://github.com/fukuball">
+            <i class="icon-github-alt"></i>
+         </button>
       </li>
       <li>
          <h4 class="m-t-0">Team</h4>
          <a class="team-link track" href="http://www.indievox.com">
             <span class="team-avatar">
-               <img src="/public/image/fukuball-touch-icon-72x72.png" height="22" width="22">
+               <img src="/public/image/fukuball-touch-icon-72x72.png" target="_blank" height="22" width="22">
             </span>
             <div>iNDIEVOX</div>
          </a>
