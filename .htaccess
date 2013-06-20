@@ -1,4 +1,4 @@
-# Fu RewriteRule
+# Fuku RewriteRule
 
 allow from all
 
@@ -278,7 +278,7 @@ deny from all
     ErrorDocument 404 /error/404
     ErrorDocument 301 /error/301
 
-    RedirectMatch permanent ^/fu-class/.*$ /error/page-not-found
+    RedirectMatch permanent ^/fuku-class/.*$ /error/page-not-found
 
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d

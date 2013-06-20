@@ -6,7 +6,7 @@
  * PHP version 5
  *
  * @category PHP
- * @package  /fu-class/fu-core/
+ * @package  /fuku-class/fu-core/
  * @author   Fukuball Lin <fukuball@gmail.com>
  * @license  Licence
  * @version  Release: <1.0>
@@ -24,7 +24,7 @@
  * </code>
  *
  * @category PHP
- * @package  /iv-class/rest/
+ * @package  /fuku-class/fu-core/
  * @author   Fukuball Lin <fukuball@gmail.com>
  * @license  Licence
  * @version  Release: <1.0>
