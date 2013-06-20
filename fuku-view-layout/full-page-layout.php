@@ -33,6 +33,7 @@
       </div>
       <?php
       include_once SITE_ROOT."/fuku-view-component/footer/footer.php";
+      include_once SITE_ROOT."/fuku-view-component/javascript-include-bottom.php";
       ?>
    </body>
 </html>
