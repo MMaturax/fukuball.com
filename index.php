@@ -79,6 +79,7 @@ class AppContainer extends RESTControl
             $error_messanger = new ErrorMessenger($type, $parameter);
             $error_messanger->printErrorJSON();
             unset($error_messanger);
+            exit;
 
          }
       }
