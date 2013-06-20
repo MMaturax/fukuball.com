@@ -74,8 +74,11 @@ class AppContainer extends RESTControl
 
          } else { // can't find controller
 
-            include_once DEFAULT_VIEW_CONTROLLER_PATH;
-            $controller_name = DEFAULT_VIEW_CONTROLLER;
+            $type = 'page_not_found';
+            $parameter = array("none"=>"none");
+            $error_messanger = new ErrorMessenger($type, $parameter);
+            $error_messanger->printErrorJSON();
+            unset($error_messanger);
 
          }
       }

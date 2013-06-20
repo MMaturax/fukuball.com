@@ -12,7 +12,7 @@
  * @link     http://www.fukuball.com
  */
 
-// REST
 require 'fuku-class/fuku-core/RESTControl.php';
 require 'fuku-class/fuku-core/RESTfulInterface.php';
+require 'fuku-class/fuku-core/ErrorMessenger.php';
 ?>
