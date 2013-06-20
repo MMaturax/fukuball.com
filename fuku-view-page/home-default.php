@@ -20,10 +20,10 @@
       </li>
       <li>
          <h4 class="m-t-0">Links</h4>
-         <a type="button" class="btn" href="https://twitter.com/fukuball">
+         <a type="button" class="btn btn-small" href="https://twitter.com/fukuball">
             <i class="icon-twitter"></i>
          </a>
-         <button type="button" class="btn" href="https://github.com/fukuball">
+         <button type="button" class="btn btn-small" href="https://github.com/fukuball">
             <i class="icon-github-alt"></i>
          </button>
       </li>
