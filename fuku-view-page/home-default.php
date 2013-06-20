@@ -24,7 +24,7 @@
             <i class="icon-twitter icon-large"></i>
          </a>
          <a title="fukuball@facebook" type="button" class="btn btn-small" href="https://facebook.com/fukuball">
-            <i class="icon-facebook icon-large"></i>
+            <i class="icon-facebook-sign icon-large"></i>
          </a>
          <a title="fukuball@linkedin" type="button" class="btn btn-small" href="https://linkedin.com/in/fukuball">
             <i class="icon-linkedin icon-large"></i>
