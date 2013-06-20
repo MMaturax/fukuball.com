@@ -20,7 +20,7 @@
             <span>
                <i class="icon-location-arrow"></i> Taipei, Taiwan
             </span>
-            <span>
+            <span class="m-l-20">
                <i class="icon-user"></i> CTO, iNDIEVOX
             </span>
          </div>
