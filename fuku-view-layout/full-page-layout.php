@@ -22,7 +22,7 @@
       include_once SITE_ROOT."/fuku-view-component/javascript-include.php";
       ?>
    </head>
-   <body>
+   <body class="row-fluid">
       <?php
       include_once SITE_ROOT."/fuku-view-component/header/header.php";
       ?>

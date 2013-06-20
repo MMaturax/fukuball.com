@@ -12,8 +12,6 @@
  * @link     http://www.fukuball.com
  */
 ?>
-<div class="text-center">
-   <section class="profile-section">
-      dd
-   </section>
-</div>
+<section class="profile-section container">
+   dd
+</section>
