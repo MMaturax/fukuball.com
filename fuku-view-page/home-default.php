@@ -15,7 +15,14 @@
 <section class="profile-section container">
    <ul class="profile-details unstyled">
       <li>
-         <h1>fukuball</h1>
+         <div class="row">
+            <div class="pull-left">
+               <img class="img-rounded" style="width: 50px; height: 50px;" src="/public/image/avatar3.jpg" />
+            </div>
+            <div class="pull-left">
+               <h1>fukuball</h1>
+            </div>
+         </div>
          <div>
             <span>
                <i class="icon-location-arrow"></i> Taipei, Taiwan
