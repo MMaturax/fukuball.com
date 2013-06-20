@@ -9,7 +9,33 @@ body {
    background-repeat: repeat;
 }
 .profile-section {
+   margin-top: 50px;
    width: 330px;
    background: #373737;
    color: #fff;
+}
+.profile-section .profile-details {
+   margin: 15px;
+}
+.profile-sidebar .profile-details>li {
+   -webkit-transform: translate3d(0, 0, 0);
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: subpixel-antialiased;
+   -moz-font-smoothing: subpixel-antialiased;
+   font-smoothing: subpixel-antialiased;
+   -webkit-transition: all 0.2s ease-out;
+   -moz-transition: all 0.2s ease-out;
+   -ms-transition: all 0.2s ease-out;
+   -o-transition: all 0.2s ease-out;
+   transition: all 0.2s ease-out;
+   padding: 15px;
+   border-bottom: 1px solid #474747;
+}
+.profile-sidebar .profile-details>li h4 {
+   margin-bottom: 10px;
+   text-transform: capitalize;
+   font-family: "MuseoSans-300";
+}
+.profile-sidebar .profile-details>li p {
+   line-height: 1.6em;
 }

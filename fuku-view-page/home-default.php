@@ -13,5 +13,10 @@
  */
 ?>
 <section class="profile-section container">
-   dd
+   <ul class="profile-details">
+      <li>
+         <h4>About</h4>
+         <p>CTO of iNDIEVOX 獨立音樂網, the largest indie music web site in Taiwan. / I'm also a happy guitar player.</p>
+      </li>
+   </ul>
 </section>
