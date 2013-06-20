@@ -1,0 +1,10 @@
+body {
+   color: #555;
+   font-family: 'Helvetica Neue', Arial, Helvetica, 'lucida grande', tahoma, verdana, arial, sans-serif;
+   font-size: 13px;
+   line-height: 1.5em;
+   text-transform: inherit;
+   background-color: #eee;
+   background-image: url('/public/image/background/linen.jpg');
+   background-repeat: repeat;
+}
