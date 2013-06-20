@@ -38,6 +38,7 @@ deny from all
 </Files>
 
 <IfModule mod_rewrite.c>
+    Options +FollowSymlinks
     RewriteEngine On
     RewriteBase /
 
@@ -273,9 +274,9 @@ deny from all
     RewriteCond %{HTTP_USER_AGENT} ^Zyborg
     RewriteRule ^.* - [F,L]
 
-    ErrorDocument 403 /error/403.php
-    ErrorDocument 404 /error/404.php
-    ErrorDocument 301 /error/301.php
+    ErrorDocument 403 /error/403
+    ErrorDocument 404 /error/404
+    ErrorDocument 301 /error/301
 
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
