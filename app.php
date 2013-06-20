@@ -39,6 +39,7 @@ class AppContainer extends RESTControl
    function __construct()
    {
 
+      print_r($_SERVER['PATH_INFO']);
       if ( !isset($_SERVER['PATH_INFO']) or $_SERVER['PATH_INFO'] == '/') {
 
          include_once DEFAULT_VIEW_CONTROLLER_PATH;
