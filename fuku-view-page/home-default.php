@@ -20,19 +20,19 @@
       </li>
       <li>
          <h4 class="m-t-0">Links</h4>
-         <a title="fukuball" type="button" class="btn btn-small" href="https://twitter.com/fukuball">
+         <a title="fukuball@twitter" type="button" class="btn btn-small" href="https://twitter.com/fukuball">
             <i class="icon-twitter icon-large"></i>
          </a>
-         <a type="button" class="btn btn-small" href="https://github.com/fukuball">
-            <i class="icon-github-alt icon-large"></i>
-         </a>
-         <a type="button" class="btn btn-small" href="https://facebook.com/fukuball">
+         <a title="fukuball@facebook" type="button" class="btn btn-small" href="https://facebook.com/fukuball">
             <i class="icon-facebook icon-large"></i>
          </a>
-         <a type="button" class="btn btn-small" href="https://linkedin.com/in/fukuball">
+         <a title="fukuball@linkedin" type="button" class="btn btn-small" href="https://linkedin.com/in/fukuball">
             <i class="icon-linkedin icon-large"></i>
          </a>
-         <a type="button" class="btn btn-small" href="https://coderwall.com/fukuball">
+         <a title="fukuball@github" type="button" class="btn btn-small" href="https://github.com/fukuball">
+            <i class="icon-github-alt icon-large"></i>
+         </a>
+         <a title="fukuball@coderwall" type="button" class="btn btn-small" href="https://coderwall.com/fukuball">
             <i class="icon-rss icon-large"></i>
          </a>
       </li>
