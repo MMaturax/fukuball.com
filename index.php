@@ -1,7 +1,6 @@
 <?php
-echo 'test';
 /**
- * app.php is the controller of whole app
+ * index.php is the controller of whole app
  *
  * PHP version 5
  *
@@ -40,47 +39,48 @@ class AppContainer extends RESTControl
    function __construct()
    {
 
-      print_r($_SERVER['PATH_INFO']);
-      //if ( !isset($_SERVER['PATH_INFO']) or $_SERVER['PATH_INFO'] == '/') {
-      //
-      //   include_once DEFAULT_VIEW_CONTROLLER_PATH;
-      //
-      //   $default_view_controller = DEFAULT_VIEW_CONTROLLER;
-      //   $this->_controller = new $default_view_controller;
-      //   $this->_segments = false;
-      //
-      //   return;
-      //
-      //}
+      if ( !isset($_SERVER['PATH_INFO']) or $_SERVER['PATH_INFO'] == '/') {
 
-      //$this->_segments = explode('/', $_SERVER['PATH_INFO']);
-      //array_shift($this->_segments); // first element always is an empty string.
-      //$the_class_string = array_shift($this->_segments);
-      //
-      //$raw_controller_name_array = explode('-', $the_class_string);
-      //$controller_name = '';
-      //
-      //foreach ($raw_controller_name_array as $controller_name_partial) {
-      //
-      //   $controller_name = $controller_name.ucfirst($controller_name_partial);
-      //
-      //}
-      //
-      //if ( !class_exists($controller_name) ) {
-      //   $controller_file_path = SITE_ROOT . '/fuku-view-controller/' . $controller_name . 'ViewController.php';
-      //
-      //   if ( file_exists($controller_file_path) ) { // load controler
-      //
-      //      include_once $controller_file_path;
-      //
-      //   } else { // can't find controler
-      //
-      //      include_once DEFAULT_VIEW_CONTROLLER_PATH;
-      //
-      //   }
-      //}
-      //
-      //$this->_controller = new $controller_name;
+         include_once DEFAULT_VIEW_CONTROLLER_PATH;
+
+         $default_view_controller = DEFAULT_VIEW_CONTROLLER;
+         $this->_controller = new $default_view_controller;
+         $this->_segments = false;
+
+         return;
+
+      }
+
+      $this->_segments = explode('/', $_SERVER['PATH_INFO']);
+      array_shift($this->_segments); // first element always is an empty string.
+      $the_class_string = array_shift($this->_segments);
+
+      $raw_controller_name_array = explode('-', $the_class_string);
+      $controller_name = '';
+
+      foreach ($raw_controller_name_array as $controller_name_partial) {
+
+         $controller_name = $controller_name.ucfirst($controller_name_partial);
+
+      }
+
+      if ( !class_exists($controller_name) ) {
+
+         $controller_file_path = SITE_ROOT . '/fuku-view-controller/' . $controller_name . 'ViewController.php';
+
+         if ( file_exists($controller_file_path) ) { // load controler
+
+            include_once $controller_file_path;
+
+         } else { // can't find controller
+
+            include_once DEFAULT_VIEW_CONTROLLER_PATH;
+            $controller_name = DEFAULT_VIEW_CONTROLLER;
+
+         }
+      }
+
+      $this->_controller = new $controller_name;
 
    }// end function __construct()
 
@@ -110,5 +110,5 @@ class AppContainer extends RESTControl
 }// end class AppContainer
 
 $app_container = new AppContainer();
-//$app_container->run();
+$app_container->run();
 ?>
