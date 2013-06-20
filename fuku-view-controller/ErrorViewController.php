@@ -45,14 +45,14 @@ class ErrorViewController
 
       switch ($action_level_one_id) {
 
+      case '404':
+      case 'page_not_found':
       default:
-
          $type = 'page_not_found';
          $parameter = array("none"=>"none");
          $error_messanger = new IndievoxErrorMessenger($type, $parameter);
          $error_messanger->printErrorJSON();
          unset($error_messanger);
-
          break;
 
       }// end switch ($action_id)
