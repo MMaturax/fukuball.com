@@ -89,8 +89,9 @@ class HomeViewController
    public function restPut($segments)
    {
 
-      echo file_get_contents('php://input'); // read the raw put data.
-
+      print_r($segments);
+      $param = file_get_contents('php://input'); // read the raw put data.
+      print_r($_POST);
    }// end function restPut
 
 
@@ -104,7 +105,9 @@ class HomeViewController
    public function restDelete($segments)
    {
 
-      echo file_get_contents('php://input');
+      print_r($segments);
+      $param = file_get_contents('php://input'); // read the raw put data.
+      print_r($_POST);
 
    }// end function restDelete
 
