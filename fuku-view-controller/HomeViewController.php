@@ -46,12 +46,14 @@ class HomeViewController
       switch ($action_level_one_id) {
 
       default:
-
-         echo "page_not_found";
-
+         $type = 'page_not_found';
+         $parameter = array("none"=>"none");
+         $error_messanger = new IndievoxErrorMessenger($type, $parameter);
+         $error_messanger->printErrorJSON();
+         unset($error_messanger);
          break;
 
-      }// end switch ($action_id)
+      }// end switch ($action_level_one_id)
 
    }// end function restPost
 
@@ -75,7 +77,7 @@ class HomeViewController
 
          break;
 
-      }// end switch ($action_id)
+      }// end switch ($action_level_one_id)
 
    }// end function restGet
 
@@ -88,12 +90,23 @@ class HomeViewController
     */
    public function restPut($segments)
    {
+
       $_PUT = array();
       parse_str(file_get_contents('php://input'), $_PUT);
 
-      print_r($segments);
-      $param = file_get_contents('php://input'); // read the raw put data.
-      print_r($_PUT);
+      $action_level_one_id = $segments[0];
+
+      switch ($action_level_one_id) {
+
+      default:
+         $type = 'page_not_found';
+         $parameter = array("none"=>"none");
+         $error_messanger = new IndievoxErrorMessenger($type, $parameter);
+         $error_messanger->printErrorJSON();
+         unset($error_messanger);
+         break;
+
+      }// end switch ($action_level_one_id)
 
    }// end function restPut
 
@@ -111,9 +124,19 @@ class HomeViewController
       $_DELETE = array();
       parse_str(file_get_contents('php://input'), $_DELETE);
 
-      print_r($segments);
-      $param = file_get_contents('php://input'); // read the raw put data.
-      print_r($_DELETE);
+      $action_level_one_id = $segments[0];
+
+      switch ($action_level_one_id) {
+
+      default:
+         $type = 'page_not_found';
+         $parameter = array("none"=>"none");
+         $error_messanger = new IndievoxErrorMessenger($type, $parameter);
+         $error_messanger->printErrorJSON();
+         unset($error_messanger);
+         break;
+
+      }// end switch ($action_level_one_id)
 
    }// end function restDelete
 

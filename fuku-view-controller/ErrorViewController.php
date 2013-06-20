@@ -55,7 +55,7 @@ class ErrorViewController
          unset($error_messanger);
          break;
 
-      }// end switch ($action_id)
+      }// end switch ($action_level_one_id)
 
    }// end function restPost
 
@@ -83,7 +83,7 @@ class ErrorViewController
          unset($error_messanger);
          break;
 
-      }// end switch ($action_id)
+      }// end switch ($action_level_one_id)
 
    }// end function restGet
 
@@ -97,7 +97,22 @@ class ErrorViewController
    public function restPut($segments)
    {
 
-      echo file_get_contents('php://input'); // read the raw put data.
+      $_PUT = array();
+      parse_str(file_get_contents('php://input'), $_PUT);
+
+      $action_level_one_id = $segments[0];
+
+      switch ($action_level_one_id) {
+
+      default:
+         $type = 'page_not_found';
+         $parameter = array("none"=>"none");
+         $error_messanger = new IndievoxErrorMessenger($type, $parameter);
+         $error_messanger->printErrorJSON();
+         unset($error_messanger);
+         break;
+
+      }// end switch ($action_level_one_id)
 
    }// end function restPut
 
@@ -112,7 +127,22 @@ class ErrorViewController
    public function restDelete($segments)
    {
 
-      echo file_get_contents('php://input');
+      $_DELETE = array();
+      parse_str(file_get_contents('php://input'), $_DELETE);
+
+      $action_level_one_id = $segments[0];
+
+      switch ($action_level_one_id) {
+
+      default:
+         $type = 'page_not_found';
+         $parameter = array("none"=>"none");
+         $error_messanger = new IndievoxErrorMessenger($type, $parameter);
+         $error_messanger->printErrorJSON();
+         unset($error_messanger);
+         break;
+
+      }// end switch ($action_level_one_id)
 
    }// end function restDelete
 
