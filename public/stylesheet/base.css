@@ -39,3 +39,33 @@ body {
 .profile-section .profile-details>li p {
    line-height: 1.6em;
 }
+.profile-section .profile-details .team-link {
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   -ms-border-radius: 4px;
+   -o-border-radius: 4px;
+   border-radius: 4px;
+   height: 36px;
+   line-height: 36px;
+   text-align: left;
+   font-size: 1.3em;
+   color: #fafafa;
+   display: block;
+   background: #585858;
+}
+.profile-section .profile-details .team-link .team-avatar {
+   background: #000;
+}
+.profile-section .profile-details .team-link img {
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+   border-radius: 3px;
+   margin: 8px 10px 0 5px;
+   float: left;
+}
+
+.m-t-0 {
+   margin-top: 0;
+}
