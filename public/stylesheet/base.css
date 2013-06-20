@@ -31,6 +31,13 @@ body {
    padding: 15px;
    border-bottom: 1px solid #474747;
 }
+.profile-section .profile-details>li h1{
+   color: #fff;
+   font-size: 3.2em;
+   font-family: "MuseoSans-100";
+   margin-bottom: 0.3em;
+   padding-top: 0.8em;
+}
 .profile-section .profile-details>li h4 {
    margin-bottom: 10px;
    text-transform: capitalize;
