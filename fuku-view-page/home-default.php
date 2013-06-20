@@ -38,27 +38,27 @@
       </li>
       <li>
          <h4 class="m-t-0">Links</h4>
-         <a title="fukuball@twitter" type="button" class="btn btn-small" href="https://twitter.com/fukuball">
+         <a title="fukuball@twitter" type="button" class="btn btn-small" href="https://twitter.com/fukuball" target="_blank">
             <i class="icon-twitter icon-large"></i>
          </a>
-         <a title="fukuball@facebook" type="button" class="btn btn-small" href="https://facebook.com/fukuball">
+         <a title="fukuball@facebook" type="button" class="btn btn-small" href="https://facebook.com/fukuball" target="_blank">
             <i class="icon-facebook-sign icon-large"></i>
          </a>
-         <a title="fukuball@linkedin" type="button" class="btn btn-small" href="https://linkedin.com/in/fukuball">
+         <a title="fukuball@linkedin" type="button" class="btn btn-small" href="https://linkedin.com/in/fukuball" target="_blank">
             <i class="icon-linkedin icon-large"></i>
          </a>
-         <a title="fukuball@github" type="button" class="btn btn-small" href="https://github.com/fukuball">
+         <a title="fukuball@github" type="button" class="btn btn-small" href="https://github.com/fukuball" target="_blank">
             <i class="icon-github-alt icon-large"></i>
          </a>
-         <a title="fukuball@coderwall" type="button" class="btn btn-small" href="https://coderwall.com/fukuball">
+         <a title="fukuball@coderwall" type="button" class="btn btn-small" href="https://coderwall.com/fukuball" target="_blank">
             <i class="icon-rss icon-large"></i>
          </a>
       </li>
       <li>
          <h4 class="m-t-0">Team</h4>
-         <a title="iNDIEVOX" class="team-link track" href="http://www.indievox.com">
+         <a title="iNDIEVOX" class="team-link track" href="http://www.indievox.com" target="_blank">
             <span class="team-avatar">
-               <img src="/public/image/fukuball-touch-icon-72x72.png" target="_blank" height="22" width="22">
+               <img src="/public/image/fukuball-touch-icon-72x72.png" height="22" width="22">
             </span>
             <div>iNDIEVOX</div>
          </a>
