@@ -1,6 +1,5 @@
 # Some settings #
 ###################
-system_environment.php
 db_production.inc
 autoload.inc
 cookies.txt
