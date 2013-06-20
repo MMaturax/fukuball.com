@@ -73,7 +73,8 @@ class HomeViewController
 
       default:
 
-         require_once SITE_ROOT.'/fuku-view-template/home-template.php';
+         $yield_path = '/fuku-view-page/home-default.php';
+         require_once SITE_ROOT.'/fuku-view-layout/full-page-layout.php';
 
          break;
 
