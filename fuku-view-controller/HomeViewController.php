@@ -73,6 +73,7 @@ class HomeViewController
 
       default:
 
+         $page_title = 'Fukuball Lin';
          $yield_path = '/fuku-view-page/home-default.php';
          require_once SITE_ROOT.'/fuku-view-layout/full-page-layout.php';
 
