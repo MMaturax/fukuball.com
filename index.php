@@ -71,7 +71,7 @@ class AppContainer extends RESTControl
          if ( file_exists($controller_file_path) ) { // load controler
 
             include_once $controller_file_path;
-            $controller_name = $controller_name.'ViewController.php'
+            $controller_name = $controller_name.'ViewController'
 
          } else { // can't find controller
 
