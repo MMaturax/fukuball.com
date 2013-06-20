@@ -17,7 +17,7 @@ body {
 .profile-section .profile-details {
    margin: 15px;
 }
-.profile-sidebar .profile-details>li {
+.profile-section .profile-details>li {
    -webkit-transform: translate3d(0, 0, 0);
    text-rendering: optimizeLegibility;
    -webkit-font-smoothing: subpixel-antialiased;
@@ -31,11 +31,11 @@ body {
    padding: 15px;
    border-bottom: 1px solid #474747;
 }
-.profile-sidebar .profile-details>li h4 {
+.profile-section .profile-details>li h4 {
    margin-bottom: 10px;
    text-transform: capitalize;
    font-family: "MuseoSans-300";
 }
-.profile-sidebar .profile-details>li p {
+.profile-section .profile-details>li p {
    line-height: 1.6em;
 }
