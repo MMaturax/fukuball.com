@@ -1,31 +1,31 @@
 <?php
 echo 'test';
-///**
-// * app.php is the controller of whole app
-// *
-// * PHP version 5
-// *
-// * @category PHP
-// * @package  /
-// * @author   Fukuball Lin <fukuball@gmail.com>
-// * @license  Licence
-// * @version  Release: <1.0>
-// * @link     http://www.fukuball.com
-// */
-//
-//require_once dirname(__FILE__)."/fuku-config/app-setter.php";
-//
-///**
-// * AppContainer is the controller
-// * to dispatch all the rest app action to it's controller
-// *
-// * @category PHP
-// * @package  /
-// * @author   Fukuball Lin <fukuball@gmail.com>
-// * @license  Licence
-// * @version  Release: <1.0>
-// * @link     http://www.fukuball.com
-// */
+/**
+ * app.php is the controller of whole app
+ *
+ * PHP version 5
+ *
+ * @category PHP
+ * @package  /
+ * @author   Fukuball Lin <fukuball@gmail.com>
+ * @license  Licence
+ * @version  Release: <1.0>
+ * @link     http://www.fukuball.com
+ */
+
+require_once dirname(__FILE__)."/fuku-config/app-setter.php";
+
+/**
+ * AppContainer is the controller
+ * to dispatch all the rest app action to it's controller
+ *
+ * @category PHP
+ * @package  /
+ * @author   Fukuball Lin <fukuball@gmail.com>
+ * @license  Licence
+ * @version  Release: <1.0>
+ * @link     http://www.fukuball.com
+ */
 //class AppContainer extends RESTControl
 //{
 //
