@@ -53,7 +53,7 @@ body {
    display: block;
    background: #585858;
 }
-.profile-section .profile-details .team-link a:hover {
+.profile-section .profile-details a.team-link:hover {
    color: #eaeaea;
    background: #404040;
    text-decoration: none;
