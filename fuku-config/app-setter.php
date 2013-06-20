@@ -21,11 +21,15 @@ session_start();
 
 // http or https
 $host_protocol = 'http';
-if ($_SERVER["HTTPS"] == "on") {
+if ($_SERVER['HTTPS'] == 'on') {
    $host_protocol = 'https';
 }
-require_once dirname(__FILE__)."/system_environment.php";
+require_once dirname(__FILE__).'/system_environment.php';
+
+// some settings
+define('DEFAULT_VIEW_CONTROLLER_PATH', SITE_ROOT.'/fuku-view-controller/HomeViewController.php');
+define('DEFAULT_VIEW_CONTROLLER', 'HomeViewController');
 
 // library
-require_once SITE_ROOT."/fuku-class/fuku.inc";
+require_once SITE_ROOT.'/fuku-class/fuku.inc';
 ?>

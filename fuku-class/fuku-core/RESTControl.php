@@ -50,17 +50,5 @@ class RESTControl
 
    }// end function exceptionResponse
 
-   /**
-    * Method index can list all action
-    *
-    * @return void
-    */
-   function index()
-   {
-
-      echo 'Index will not open.';
-
-   }// end function index
-
 }// end class RESTControl
 ?>
