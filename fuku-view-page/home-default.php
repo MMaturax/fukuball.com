@@ -16,9 +16,13 @@
    <ul class="profile-details unstyled">
       <li>
          <h1>fukuball</h1>
-         <div class="row">
-            <i class="icon-location-arrow"></i> Taipei, Taiwan
-            <i class="icon-user"></i> CTO, iNDIEVOX
+         <div>
+            <span>
+               <i class="icon-location-arrow"></i> Taipei, Taiwan
+            </span>
+            <span>
+               <i class="icon-user"></i> CTO, iNDIEVOX
+            </span>
          </div>
       </li>
       <li>
