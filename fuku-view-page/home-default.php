@@ -15,11 +15,11 @@
 <section class="profile-section container">
    <ul class="profile-details unstyled">
       <li>
-         <div class="row">
+         <div class="row m-l-0">
             <div class="pull-left">
                <img class="img-rounded" style="width: 50px; height: 50px;" src="/public/image/avatar3.jpg" />
             </div>
-            <div class="pull-left">
+            <div class="pull-left m-l-10">
                <h1>fukuball</h1>
             </div>
          </div>
