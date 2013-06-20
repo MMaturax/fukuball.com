@@ -14,8 +14,8 @@
 
 // stage mode
 define("SITE_ROOT", "/var/www/www.fukuball.com");
-define("SITE_HOST", $host_protocol."://www.indievox.com");
-define("SITE_DOMAIN", "www.indievox.com");
-define("SYSTEM_MODE", 'test');
+define("SITE_HOST", $host_protocol."://www.fukuball.com");
+define("SITE_DOMAIN", "www.fukuball.com");
+define("SYSTEM_MODE", 'test'); // production, test
 define("KEY_PREFIX", "www_");
 ?>

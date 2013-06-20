@@ -279,6 +279,10 @@ deny from all
     ErrorDocument 301 /error/301
 
     RedirectMatch permanent ^/fuku-class/.*$ /error/page-not-found
+    RedirectMatch permanent ^/fuku-config/.*$ /error/page-not-found
+    RedirectMatch permanent ^/fuku-view-component/.*$ /error/page-not-found
+    RedirectMatch permanent ^/fuku-view-controller/.*$ /error/page-not-found
+    RedirectMatch permanent ^/fuku-view-template/.*$ /error/page-not-found
 
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
