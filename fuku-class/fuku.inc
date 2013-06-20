@@ -7,7 +7,7 @@
  * @category PHP
  * @package  /fuku-class/
  * @author   Fukuball Lin <fukuball@gmail.com>
- * @license  iNDIEVOX Licence
+ * @license  Licence
  * @version  Release: <1.0>
  * @link     http://www.fukuball.com
  */
