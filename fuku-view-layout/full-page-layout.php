@@ -19,6 +19,9 @@
       include_once SITE_ROOT."/fuku-view-component/meta-include.php";
       include_once SITE_ROOT."/fuku-view-component/icon-include.php";
       include_once SITE_ROOT."/fuku-view-component/style-include.php";
+      ?>
+      <link href="/public/stylesheet/home.css" rel="stylesheet">
+      <?php
       include_once SITE_ROOT."/fuku-view-component/javascript-include.php";
       ?>
    </head>

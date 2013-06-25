@@ -1,0 +1,68 @@
+.profile-section {
+   margin-top: 50px;
+   width: 330px;
+   background: #373737;
+   color: #fff;
+}
+.profile-section .profile-details {
+   margin: 15px;
+}
+.profile-section .profile-details>li {
+   -webkit-transform: translate3d(0, 0, 0);
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: subpixel-antialiased;
+   -moz-font-smoothing: subpixel-antialiased;
+   font-smoothing: subpixel-antialiased;
+   -webkit-transition: all 0.2s ease-out;
+   -moz-transition: all 0.2s ease-out;
+   -ms-transition: all 0.2s ease-out;
+   -o-transition: all 0.2s ease-out;
+   transition: all 0.2s ease-out;
+   padding: 15px;
+   border-bottom: 1px solid #474747;
+}
+.profile-section .profile-details>li h1{
+   color: #fff;
+   font-size: 3.2em;
+   font-family: "MuseoSans-100";
+   margin-bottom: 0.3em;
+}
+.profile-section .profile-details>li h4 {
+   margin-bottom: 10px;
+   text-transform: capitalize;
+   font-family: "MuseoSans-300";
+}
+.profile-section .profile-details>li p {
+   line-height: 1.6em;
+}
+.profile-section .profile-details .team-link {
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   -ms-border-radius: 4px;
+   -o-border-radius: 4px;
+   border-radius: 4px;
+   height: 36px;
+   line-height: 36px;
+   text-align: left;
+   font-size: 1.3em;
+   color: #fafafa;
+   display: block;
+   background: #585858;
+}
+.profile-section .profile-details a.team-link:hover {
+   color: #eaeaea;
+   background: #404040;
+   text-decoration: none;
+}
+.profile-section .profile-details .team-link .team-avatar {
+   background: #000;
+}
+.profile-section .profile-details .team-link img {
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+   border-radius: 3px;
+   margin: 8px 10px 0 5px;
+   float: left;
+}
