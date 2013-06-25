@@ -84,7 +84,7 @@ class CkipClientViewController
 
          $page_title = 'CKIP Client 線上中文斷詞 | 線上中文斷詞首頁';
          $ckip_client_active = 'active';
-         $yield_path = '/fuku-view-page/empty-page.php';
+         $yield_path = '/fuku-view-page/ckip-client-home.php';
          require_once SITE_ROOT.'/fuku-view-layout/ckip-client-page-layout.php';
 
          break;
