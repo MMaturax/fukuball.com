@@ -47,6 +47,7 @@ class ErrorViewController
 
       case '404':
       case 'page_not_found':
+      case 'page-not-found':
       default:
          $type = 'page_not_found';
          $parameter = array("none"=>"none");
@@ -75,11 +76,12 @@ class ErrorViewController
 
       case '404':
       case 'page_not_found':
+      case 'page-not-found':
       default:
          $type = 'page_not_found';
          $parameter = array("none"=>"none");
          $error_messanger = new ErrorMessenger($type, $parameter);
-         $error_messanger->printErrorRedirect();
+         $error_messanger->printErrorJSON();
          unset($error_messanger);
          break;
 
