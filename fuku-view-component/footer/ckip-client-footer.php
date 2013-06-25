@@ -22,18 +22,17 @@
                <li><a href="/ckip-client/about">關於我們</li>
             </ul>
          </div>
-         <div class="span4 pull-right">
+         <div class="span3 pull-right">
             <div id="footer-commercial">
                <script type="text/javascript"><!--
                google_ad_client = "ca-pub-9402461567510680";
-               /* 300x250 */
-               google_ad_slot = "6173451467";
-               google_ad_width = 300;
+               /* 250方形廣告 */
+               google_ad_slot = "9651955064";
+               google_ad_width = 250;
                google_ad_height = 250;
                //-->
                </script>
-               <script type="text/javascript"
-               src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+               <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
                </script>
             </div>
          </div>
