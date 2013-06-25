@@ -71,3 +71,9 @@ ul.footer-links li a {
    margin: 25px auto;
    padding: 9px;
 }
+.hero-unit {
+   padding: 40px;
+}
+.hero-unit h1 {
+   font-size: 40px;
+}
