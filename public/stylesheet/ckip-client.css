@@ -48,3 +48,8 @@ ul.footer-links li a {
    color: #fff;
    font-size: 13px;
 }
+#footer-commercial {
+   width: 250px;
+   height: 250px;
+   margin: 15px;
+}
