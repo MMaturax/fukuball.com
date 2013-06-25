@@ -73,7 +73,7 @@ class CkipClientViewController
 
       case 'about':
 
-         $page_title = 'CKIP Client 線上中文斷詞 | 關於';
+         $page_title = 'CKIP Client 線上中文斷詞 | 關於我們';
          $ckip_client_about_active = 'active';
          $yield_path = '/fuku-view-page/empty-page.php';
          require_once SITE_ROOT.'/fuku-view-layout/ckip-client-page-layout.php';
@@ -82,7 +82,7 @@ class CkipClientViewController
 
       default:
 
-         $page_title = 'CKIP Client 線上中文斷詞 | 首頁';
+         $page_title = 'CKIP Client 線上中文斷詞 | 線上中文斷詞首頁';
          $ckip_client_active = 'active';
          $yield_path = '/fuku-view-page/empty-page.php';
          require_once SITE_ROOT.'/fuku-view-layout/ckip-client-page-layout.php';

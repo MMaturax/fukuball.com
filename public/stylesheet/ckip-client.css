@@ -30,6 +30,7 @@ body > .navbar .brand {
 footer {
    background: #343131;
    min-height: 100px;
+   color: #fff;
 }
 #main-content {
    min-height: 1000px;
