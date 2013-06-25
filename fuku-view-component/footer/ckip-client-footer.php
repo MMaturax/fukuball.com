@@ -21,6 +21,10 @@
                <li><a href="/ckip-client/">線上中文斷詞首頁</a></li>
                <li><a href="/ckip-client/about">關於我們</li>
             </ul>
+            <div>
+               <a href="https://twitter.com/fukuball" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @fukuball</a>
+               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
          </div>
          <div class="span4 pull-right">
             <div id="footer-commercial" class="commercial-box">
