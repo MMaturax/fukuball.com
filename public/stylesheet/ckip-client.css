@@ -27,6 +27,9 @@ body > .navbar .brand {
    -moz-transition: all .2s linear;
    transition: all .2s linear;
 }
+body {
+   font-size: 15px;
+}
 footer {
    background: #343131;
    min-height: 100px;
@@ -42,11 +45,11 @@ ul.footer-links {
 }
 ul.footer-links li {
    color: #fff;
-   line-height: 1.4em;
+   line-height: 1.6em;
 }
 ul.footer-links li a {
    color: #fff;
-   font-size: 13px;
+   font-size: 1em;
 }
 #footer-commercial {
    width: 250px;
