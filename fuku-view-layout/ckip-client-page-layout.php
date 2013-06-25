@@ -20,22 +20,22 @@
       include_once SITE_ROOT."/fuku-view-component/icon-include.php";
       include_once SITE_ROOT."/fuku-view-component/style-include.php";
       ?>
-      <link href="/public/stylesheet/ckip-client.css?v=0.0.1" rel="stylesheet">
+      <link href="/public/stylesheet/ckip-client.css?v=0.0.2" rel="stylesheet">
       <?php
       include_once SITE_ROOT."/fuku-view-component/javascript-include.php";
       ?>
    </head>
-   <body class="row-fluid p-a-0">
+   <body>
       <?php
       include_once SITE_ROOT."/fuku-view-component/header/ckip-client-header.php";
       ?>
-      <div id="main-content">
+      <div id="main-content" class="container">
          <?php
          include_once SITE_ROOT.$yield_path;
          ?>
       </div>
       <?php
-      include_once SITE_ROOT."/fuku-view-component/footer/footer.php";
+      include_once SITE_ROOT."/fuku-view-component/footer/ckip-client-footer.php";
       include_once SITE_ROOT."/fuku-view-component/javascript-include-bottom.php";
       ?>
    </body>

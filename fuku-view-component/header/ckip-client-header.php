@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category PHP
- * @package  /fuku-view-layout/
+ * @package  /fuku-view-component/
  * @author   Fukuball Lin <fukuball@gmail.com>
  * @license  Licence
  * @version  Release: <1.0>
@@ -20,7 +20,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
          </button>
-         <a class="brand" href="#">Fukuball</a>
+         <a class="brand" href="/">Fukuball</a>
          <div class="nav-collapse collapse">
             <ul class="nav">
                <li class="active"><a href="#">CKIP-Client</a></li>

@@ -27,3 +27,14 @@ body > .navbar .brand {
    -moz-transition: all .2s linear;
    transition: all .2s linear;
 }
+footer {
+   background: #343131;
+   min-height: 50px;
+}
+.container {
+   width: 940px;
+}
+#main-content {
+   min-height: 500px;
+   background-color: #fff;
+}
