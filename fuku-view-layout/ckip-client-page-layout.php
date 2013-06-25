@@ -20,14 +20,14 @@
       include_once SITE_ROOT."/fuku-view-component/icon-include.php";
       include_once SITE_ROOT."/fuku-view-component/style-include.php";
       ?>
-      <link href="/public/stylesheet/home.css" rel="stylesheet">
+      <link href="/public/stylesheet/ckip-client.css" rel="stylesheet">
       <?php
       include_once SITE_ROOT."/fuku-view-component/javascript-include.php";
       ?>
    </head>
    <body class="row-fluid p-a-0">
       <?php
-      include_once SITE_ROOT."/fuku-view-component/header/header.php";
+      include_once SITE_ROOT."/fuku-view-component/header/ckip-client-header.php";
       ?>
       <div id="main-content">
          <?php
