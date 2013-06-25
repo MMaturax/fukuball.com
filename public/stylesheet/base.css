@@ -11,11 +11,17 @@ body {
 .p-a-0 {
    padding: 0;
 }
+.m-a-15 {
+   margin: 15px;
+}
 .m-l-10 {
    margin-left: 10px;
 }
 .m-l-20 {
    margin-left: 20px;
+}
+.m-t-10 {
+   margin-top: 10px;
 }
 .m-t-0 {
    margin-top: 0;
