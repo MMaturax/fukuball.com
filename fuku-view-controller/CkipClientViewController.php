@@ -74,7 +74,7 @@ class CkipClientViewController
       default:
 
          $page_title = 'Fukuball Lin';
-         $yield_path = '/fuku-view-page/home-default.php';
+         $yield_path = '/fuku-view-page/empty-page.php';
          require_once SITE_ROOT.'/fuku-view-layout/full-page-layout.php';
 
          break;
