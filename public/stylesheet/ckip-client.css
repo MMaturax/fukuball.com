@@ -38,6 +38,7 @@ footer {
 #main-content {
    min-height: 1000px;
    background-color: #fff;
+   margin-top: 40px;
 }
 ul.footer-links {
    list-style: none;
@@ -51,9 +52,7 @@ ul.footer-links li a {
    color: #fff;
    font-size: 1em;
 }
-#footer-commercial {
-   width: 250px;
-   height: 250px;
+#footer-commercial, #full-width-commercial {
    margin: 15px;
 }
 .commercial-box {

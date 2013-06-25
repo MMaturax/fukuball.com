@@ -13,7 +13,7 @@
  */
 ?>
 <section>
-   <div id="full-width-commercial" class="commercial-box">
+   <div id="full-width-commercial" class="commercial-box text-center">
       <script type="text/javascript"><!--
       google_ad_client = "ca-pub-9402461567510680";
       /* 728x90廣告 */
