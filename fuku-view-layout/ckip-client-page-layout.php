@@ -20,7 +20,7 @@
       include_once SITE_ROOT."/fuku-view-component/icon-include.php";
       include_once SITE_ROOT."/fuku-view-component/style-include.php";
       ?>
-      <link href="/public/stylesheet/ckip-client.css?v=0.0.9" rel="stylesheet">
+      <link href="/public/stylesheet/ckip-client.css?v=0.0.10" rel="stylesheet">
       <?php
       include_once SITE_ROOT."/fuku-view-component/javascript-include.php";
       ?>

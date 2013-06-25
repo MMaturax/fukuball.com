@@ -52,7 +52,12 @@ ul.footer-links li a {
    color: #fff;
    font-size: 1em;
 }
-#footer-commercial, #full-width-commercial {
+#footer-commercial {
+   width: 250px;
+   height: 250px;
+   margin: 15px;
+}
+#full-width-commercial {
    margin: 15px;
 }
 .commercial-box {
