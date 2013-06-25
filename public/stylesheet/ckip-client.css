@@ -53,3 +53,14 @@ ul.footer-links li a {
    height: 250px;
    margin: 15px;
 }
+.commercial-box {
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   -ms-border-radius: 6px;
+   -o-border-radius: 6px;
+   border-radius: 6px;
+   background: rgba(255,255,255,0.45);
+   border: 1px solid #c7c7c7;
+   margin: 25px auto;
+   padding: 9px;
+}

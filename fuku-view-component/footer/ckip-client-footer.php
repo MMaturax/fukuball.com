@@ -22,8 +22,8 @@
                <li><a href="/ckip-client/about">關於我們</li>
             </ul>
          </div>
-         <div class="span3 pull-right">
-            <div id="footer-commercial">
+         <div class="span4 pull-right">
+            <div id="footer-commercial" class="commercial-box">
                <script type="text/javascript"><!--
                google_ad_client = "ca-pub-9402461567510680";
                /* 250方形廣告 */
