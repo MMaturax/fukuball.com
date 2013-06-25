@@ -36,3 +36,15 @@ footer {
    min-height: 1000px;
    background-color: #fff;
 }
+ul.footer-links {
+   list-style: none;
+   margin: 0 0 10px 5px;
+}
+ul.footer-links li {
+   color: #fff;
+   line-height: 1.4em;
+}
+ul.footer-links li a {
+   color: #fff;
+   font-size: 13px;
+}
