@@ -23,8 +23,8 @@
          <a class="brand" href="/">Fukuball</a>
          <div class="nav-collapse collapse">
             <ul class="nav">
-               <li class="active"><a href="#">CKIP-Client</a></li>
-               <li><a href="#">About</a></li>
+               <li class="<?php echo $ckip_client_active; ?>"><a href="/ckip-client/">CKIP-Client</a></li>
+               <li class="<?php echo $ckip_client_about_active; ?>"><a href="/ckip-client/about">About</a></li>
             </ul>
          </div><!--/.nav-collapse -->
       </div>

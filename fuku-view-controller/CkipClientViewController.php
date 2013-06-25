@@ -71,9 +71,19 @@ class CkipClientViewController
 
       switch ($action_level_one_id) {
 
+      case 'about':
+
+         $page_title = 'CKIP Client 線上中文斷詞 | 關於';
+         $ckip_client_about_active = 'active';
+         $yield_path = '/fuku-view-page/empty-page.php';
+         require_once SITE_ROOT.'/fuku-view-layout/ckip-client-page-layout.php';
+
+         break;
+
       default:
 
-         $page_title = 'Fukuball Lin';
+         $page_title = 'CKIP Client 線上中文斷詞 | 首頁';
+         $ckip_client_active = 'active';
          $yield_path = '/fuku-view-page/empty-page.php';
          require_once SITE_ROOT.'/fuku-view-layout/ckip-client-page-layout.php';
 
