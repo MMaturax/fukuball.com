@@ -29,12 +29,9 @@ body > .navbar .brand {
 }
 footer {
    background: #343131;
-   min-height: 50px;
-}
-.container {
-   width: 940px;
+   min-height: 100px;
 }
 #main-content {
-   min-height: 500px;
+   min-height: 100%;
    background-color: #fff;
 }
