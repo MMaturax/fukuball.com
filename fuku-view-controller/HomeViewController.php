@@ -48,7 +48,7 @@ class HomeViewController
       default:
          $type = 'page_not_found';
          $parameter = array("none"=>"none");
-         $error_messanger = new IndievoxErrorMessenger($type, $parameter);
+         $error_messanger = new ErrorMessenger($type, $parameter);
          $error_messanger->printErrorJSON();
          unset($error_messanger);
          break;
@@ -103,7 +103,7 @@ class HomeViewController
       default:
          $type = 'page_not_found';
          $parameter = array("none"=>"none");
-         $error_messanger = new IndievoxErrorMessenger($type, $parameter);
+         $error_messanger = new ErrorMessenger($type, $parameter);
          $error_messanger->printErrorJSON();
          unset($error_messanger);
          break;
@@ -133,7 +133,7 @@ class HomeViewController
       default:
          $type = 'page_not_found';
          $parameter = array("none"=>"none");
-         $error_messanger = new IndievoxErrorMessenger($type, $parameter);
+         $error_messanger = new ErrorMessenger($type, $parameter);
          $error_messanger->printErrorJSON();
          unset($error_messanger);
          break;

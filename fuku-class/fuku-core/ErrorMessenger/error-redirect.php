@@ -5,11 +5,11 @@
  * PHP version 5
  *
  * @category PHP
- * @package  /iv-class/message/IndievoxErrorMessengerView
- * @author   Fukuball Lin <fukuball@indievox.com>
+ * @package  /fuku-class/fuku-core/ErrorMessenger/
+ * @author   Fukuball Lin <fukuball@gmail.com>
  * @license  iNDIEVOX Licence
  * @version  Release: <1.0>
- * @link     http://www.indievox.com
+ * @link     http://www.fukuball.com
  */
 ?>
 <script>
