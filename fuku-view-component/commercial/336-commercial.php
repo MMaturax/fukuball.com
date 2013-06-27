@@ -13,15 +13,12 @@
  */
 ?>
 <div style="width:336px;height:280px;margin:15px;" class="commercial-box">
-   <script type="text/javascript"><!--
-   google_ad_client = "ca-pub-9402461567510680";
-   /* 336x280廣告 */
-   google_ad_slot = "8623730263";
-   google_ad_width = 336;
-   google_ad_height = 280;
-   //-->
-   </script>
-   <script type="text/javascript"
-   src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+   <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+   <ins class="adsbygoogle"
+        style="display:inline-block;width:336px;height:280px"
+        data-ad-client="ca-pub-9402461567510680"
+        data-ad-slot="8623730263"></ins>
+   <script>
+   (adsbygoogle = window.adsbygoogle || []).push({});
    </script>
 </div>
