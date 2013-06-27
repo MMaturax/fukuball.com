@@ -20,7 +20,9 @@
          </h2>
       </div>
       <div class="span4 pull-right p-a-15">
-         ddd
+         <?php
+         include_once SITE_ROOT.'/fuku-view-component/sidebar/profile-card.php';
+         ?>
       </div>
    </div>
 </section>
