@@ -9,10 +9,10 @@ body {
    background-repeat: repeat;
 }
 .p-a-0 {
-   padding: 0;
+   padding: 0px;
 }
 .p-a-15 {
-   padding: 15;
+   padding: 15px;
 }
 .m-a-15 {
    margin: 15px;
@@ -27,8 +27,8 @@ body {
    margin-top: 10px;
 }
 .m-t-0 {
-   margin-top: 0;
+   margin-top: 0px;
 }
 .m-l-0 {
-   margin-left: 0;
+   margin-left: 0px;
 }
