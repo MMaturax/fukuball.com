@@ -24,16 +24,18 @@
    include_once SITE_ROOT.'/fuku-view-component/commercial/full-width-commercial.php';
    ?>
 </section>
-<h2>
-   請輸入要斷詞的短文：
-</h2>
-<div class="well span10">
-   <form accept-charset="UTF-8" action="" method="POST">
-      <textarea class="span10" id="paragraph" name="paragraph" placeholder="請輸入要斷詞的短文，限140字短文" rows="10">
-      </textarea>
-      <h6 class="pull-right">140 characters remaining</h6>
-      <button class="btn btn-info" type="submit">
-         取得斷詞結果
-      </button>
-   </form>
-</div>
+<section class="span11 m-t-10">
+   <h2>
+      請輸入要斷詞的短文：
+   </h2>
+   <div class="well span11">
+      <form accept-charset="UTF-8" action="" method="POST">
+         <textarea class="span11" id="paragraph" name="paragraph" placeholder="請輸入要斷詞的短文，限140字短文" rows="10">
+         </textarea>
+         <h4 class="pull-right">140 characters remaining</h4>
+         <button class="btn btn-primary btn-large" type="submit">
+            取得斷詞結果
+         </button>
+      </form>
+   </div>
+</section>
