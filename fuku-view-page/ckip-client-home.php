@@ -30,7 +30,7 @@
    </h2>
    <div class="well span11 m-l-0">
       <form accept-charset="UTF-8" action="" method="POST">
-         <textarea class="span11 f-s-40" id="paragraph" name="paragraph" placeholder="請輸入要斷詞的短文，限140字短文" rows="10"></textarea>
+         <textarea style="font-size: 30px;line-height: 50px;" class="span11" id="paragraph" name="paragraph" placeholder="請輸入要斷詞的短文，限140字短文" rows="5"></textarea>
          <h4 class="pull-right">140 characters remaining</h4>
          <button class="btn btn-primary btn-large" type="submit">
             取得斷詞結果
