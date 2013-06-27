@@ -75,6 +75,9 @@ body {
    margin: 8px 10px 0 5px;
    float: left;
 }
+.f-s-40 {
+   font-size: 40px;
+}
 .p-a-0 {
    padding: 0px;
 }
