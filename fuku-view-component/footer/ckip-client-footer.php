@@ -28,7 +28,7 @@
          </div>
          <div class="span4 pull-right">
             <?php
-            include_once SITE_ROOT.'/fuku-view-component/commercial/250-commercial.php';
+            include_once SITE_ROOT.'/fuku-view-component/commercial/336-commercial.php';
             ?>
          </div>
       </div>
