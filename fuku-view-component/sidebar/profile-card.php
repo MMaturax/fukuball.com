@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category PHP
- * @package  /fuku-view-component/
+ * @package  /fuku-view-component/sidebar/
  * @author   Fukuball Lin <fukuball@gmail.com>
  * @license  Licence
  * @version  Release: <1.0>

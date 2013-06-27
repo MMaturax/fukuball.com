@@ -20,17 +20,7 @@
    </div>
 </section>
 <section>
-   <div id="full-width-commercial" class="commercial-box text-center">
-      <script type="text/javascript"><!--
-      google_ad_client = "ca-pub-9402461567510680";
-      /* 728x90廣告 */
-      google_ad_slot = "7650184668";
-      google_ad_width = 728;
-      google_ad_height = 90;
-      //-->
-      </script>
-      <script type="text/javascript"
-      src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-      </script>
-   </div>
+   <?php
+   include_once SITE_ROOT.'/fuku-view-component/commercial/full-width-commercial.php';
+   ?>
 </section>

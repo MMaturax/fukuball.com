@@ -27,19 +27,9 @@
             </div>
          </div>
          <div class="span4 pull-right">
-            <div id="footer-commercial" class="commercial-box">
-               <script type="text/javascript"><!--
-               google_ad_client = "ca-pub-9402461567510680";
-               /* 250方形廣告 */
-               google_ad_slot = "9651955064";
-               google_ad_width = 250;
-               google_ad_height = 250;
-               //-->
-               </script>
-               <script type="text/javascript"
-               src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-               </script>
-            </div>
+            <?php
+            include_once SITE_ROOT.'/fuku-view-component/commercial/250-commercial.php';
+            ?>
          </div>
       </div>
    </div>
