@@ -14,12 +14,12 @@
 ?>
 <section>
    <div class="row">
-      <div class="span8 pull-left">
+      <div class="span7 pull-left p-a-15">
          <h2>
             關於 CKIP Client 線上中文斷詞
          </h2>
       </div>
-      <div class="span4 pull-left">
+      <div class="span4 pull-right p-a-15">
          ddd
       </div>
    </div>
