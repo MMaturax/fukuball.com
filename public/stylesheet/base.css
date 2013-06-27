@@ -9,7 +9,6 @@ body {
    background-repeat: repeat;
 }
 .profile-section {
-   margin-top: 50px;
    width: 330px;
    background: #373737;
    color: #fff;
@@ -81,6 +80,10 @@ body {
 }
 .p-a-15 {
    padding: 15px;
+}
+.m-h-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 .m-a-15 {
    margin: 15px;
