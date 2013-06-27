@@ -53,7 +53,7 @@
          <?php
          include_once SITE_ROOT.'/fuku-view-component/sidebar/profile-card.php';
          ?>
-         <div class="commercial-box text-center" style="width:330px;">
+         <div class="commercial-box text-center" style="width:350px;">
             <script type="text/javascript"><!--
             google_ad_client = "ca-pub-9402461567510680";
             /* 300x250廣告 */
