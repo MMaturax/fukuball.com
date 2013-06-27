@@ -13,6 +13,18 @@
  */
 ?>
 <section>
+   <div class="row">
+      <div class="span8 pull-left">
+         <h2>
+            關於 CKIP Client 線上中文斷詞
+         </h2>
+      </div>
+      <div class="span4 pull-left">
+         ddd
+      </div>
+   </div>
+</section>
+<section>
    <div id="full-width-commercial" class="commercial-box text-center">
       <script type="text/javascript"><!--
       google_ad_client = "ca-pub-9402461567510680";
