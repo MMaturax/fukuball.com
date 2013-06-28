@@ -86,7 +86,6 @@
 
       $('#ckip-process-form').ajaxForm({
          beforeSubmit:  ckipProcessValidate,
-         success:       ckipProcessResponse,
          url: '/ckip-client/ckip-process',
          type: 'post',
          target: '#ckip-result-block'
