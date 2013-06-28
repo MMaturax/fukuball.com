@@ -78,23 +78,14 @@
 
          return is_validated;
 
-      }// end function addAppRegisterValidate
-
-      function ckipProcessResponse(responseText, statusText, xhr, $form)  {
-         alert(responseText);
-      }// end function addAppRegisterResponse
-
-      //$('#ckip-process-form').ajaxForm({
-      //   beforeSubmit:  ckipProcessValidate,
-      //   url: '/ckip-client/ckip-process',
-      //   type: 'post',
-      //   target: '#ckip-result-block'
-      //});
+      }// end function ckipProcessValidate
 
       // prepare Options Object
       var options = {
-          target:     '#ckip-result-block',
-          url:        '/ckip-client/ckip-process'
+          target:       '#ckip-result-block',
+          url:          '/ckip-client/ckip-process',
+          type:         'post',
+          beforeSubmit: ckipProcessValidate
       };
 
       // pass options to ajaxForm

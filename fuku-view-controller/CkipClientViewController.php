@@ -46,7 +46,7 @@ class CkipClientViewController
       switch ($action_level_one_id) {
 
       case 'ckip-process':
-         echo "<h1>test</h1>";
+         echo $_POST['paragraph'];
          break;
 
       default:
