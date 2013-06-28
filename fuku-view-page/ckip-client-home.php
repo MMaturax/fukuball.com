@@ -33,13 +33,13 @@
          <div class="control-group error">
             <div class="controls">
                <textarea style="font-size: 30px;line-height: 50px;" class="span11" id="paragraph" name="paragraph" placeholder="請輸入要斷詞的短文，限140字短文" rows="5"></textarea>
-               <div class="help-inline">
+               <div class="help-inline hide">
                   請輸入 1~140 字的短文
                </div>
             </div>
          </div>
          <h4 class="pull-right"><span id="paragraph-char-counter">140</span> characters remaining</h4>
-         <button class="btn btn-primary btn-large" type="submit">
+         <button id="ckip-process-submit-btn" class="btn btn-primary btn-large" type="submit">
             取得斷詞結果
          </button>
       </form>
@@ -69,18 +69,16 @@
          var is_validated = true;
 
          if (!$('#paragraph').val() || $('#paragraph').val().length>140) {
-            //$('#app-name').parent().attr('class', 'control-group error');
-            //$('#app-name').parent().find( $('.help-block') ).css('display','inline');
+            $('#paragraph').parent().parent().addClass('error');
+            $('#paragraph').parent().find( $('.help-block') ).removeClass('hide');
             is_validated = false;
          } else {
-            //$('#app-name').parent().attr('class', 'control-group');
-            //$('#app-name').parent().find( $('.help-block') ).css('display','none');
+            $('#paragraph').parent().parent().removeClass('error');
+            $('#paragraph').parent().find( $('.help-block') ).addClass('hide');
          }
 
          if (is_validated) {
-            //$('#app-register-error-msg').empty();
-            //$('#app-register-submit').attr("disabled", "disabled");
-            //$('#app-register-cancel').attr("disabled", "disabled");
+            $('#ckip-process-submit-btn').attr("disabled", "disabled");
          }
 
          return is_validated;
@@ -93,6 +91,9 @@
           url:          '/ckip-client/ckip-process',
           type:         'post',
           beforeSubmit: ckipProcessValidate
+          success: function() {
+             $('#ckip-process-submit-btn').removeAttr("disabled");
+          }
       };
 
       // pass options to ajaxForm
