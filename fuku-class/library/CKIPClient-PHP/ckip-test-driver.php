@@ -13,6 +13,7 @@
  */
 
 require_once "CKIPClient.php";
+require_once dirname(dirname(dirname(dirname(__FILE__)))).'/fuku-config/private-param/ckip-param.php';
 
 $ckip_client_obj = new CKIPClient(
    CKIP_SERVER,
