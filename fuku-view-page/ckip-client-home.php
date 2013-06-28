@@ -84,12 +84,21 @@
          alert(responseText);
       }// end function addAppRegisterResponse
 
-      $('#ckip-process-form').ajaxForm({
-         beforeSubmit:  ckipProcessValidate,
-         url: '/ckip-client/ckip-process',
-         type: 'post',
-         target: '#ckip-result-block'
-      });
+      //$('#ckip-process-form').ajaxForm({
+      //   beforeSubmit:  ckipProcessValidate,
+      //   url: '/ckip-client/ckip-process',
+      //   type: 'post',
+      //   target: '#ckip-result-block'
+      //});
+
+      // prepare Options Object
+      var options = {
+          target:     '#ckip-result-block',
+          url:        '/ckip-client/ckip-process'
+      };
+
+      // pass options to ajaxForm
+      $('#ckip-process-form').ajaxForm(options);
   });
 </script>
 <script type="text/javascript" charset="utf-8" src="/public/javascript/library/jquery-simply-countable/jquery.simplyCountable.js"></script>
