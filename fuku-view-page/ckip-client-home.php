@@ -61,7 +61,7 @@
 
          var is_validated = true;
 
-         if(!$('#app-name').val()){
+         if (!$('#paragraph').val()) {
             //$('#app-name').parent().attr('class', 'control-group error');
             //$('#app-name').parent().find( $('.help-block') ).css('display','inline');
             is_validated = false;
