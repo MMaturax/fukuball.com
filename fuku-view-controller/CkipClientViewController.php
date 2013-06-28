@@ -46,7 +46,8 @@ class CkipClientViewController
       switch ($action_level_one_id) {
 
       case 'ckip-process':
-         echo $_POST['paragraph'];
+         $paragraph = $_POST['paragraph'];
+         include_once SITE_ROOT.'/fuku-view-page/ckip-client-partial-view/ckip-process-result.php';
          break;
 
       default:
