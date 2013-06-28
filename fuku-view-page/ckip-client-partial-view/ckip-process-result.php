@@ -12,8 +12,6 @@
  * @link     http://www.fukuball.com
  */
 ?>
-<section class="span11 m-t-10">
-   <h2>
-      中研院斷詞結果：
-   </h2>
-</section>
+<h2>
+   中研院斷詞結果：
+</h2>

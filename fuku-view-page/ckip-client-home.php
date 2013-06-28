@@ -30,7 +30,11 @@
    </h2>
    <div class="well span11 m-l-0">
       <form id="ckip-process-form" name="ckip_process_form" accept-charset="UTF-8" action="/ckip-client/ckip-process" method="POST">
-         <textarea style="font-size: 30px;line-height: 50px;" class="span11" id="paragraph" name="paragraph" placeholder="請輸入要斷詞的短文，限140字短文" rows="5"></textarea>
+         <div class="control-group error">
+            <div class="controls">
+               <textarea style="font-size: 30px;line-height: 50px;" class="span11" id="paragraph" name="paragraph" placeholder="請輸入要斷詞的短文，限140字短文" rows="5"></textarea>
+            </div>
+         </div>
          <h4 class="pull-right"><span id="paragraph-char-counter">140</span> characters remaining</h4>
          <button class="btn btn-primary btn-large" type="submit">
             取得斷詞結果
@@ -61,7 +65,7 @@
 
          var is_validated = true;
 
-         if (!$('#paragraph').val()) {
+         if (!$('#paragraph').val() || $('#paragraph').val().length>140) {
             //$('#app-name').parent().attr('class', 'control-group error');
             //$('#app-name').parent().find( $('.help-block') ).css('display','inline');
             is_validated = false;
