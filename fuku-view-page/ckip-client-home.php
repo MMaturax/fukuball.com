@@ -70,11 +70,11 @@
 
          if (!$('#paragraph').val() || $('#paragraph').val().length>140) {
             $('#paragraph').parent().parent().addClass('error');
-            $('#paragraph').parent().find( $('.help-block') ).removeClass('hide');
+            $('#paragraph').next().removeClass('hide');
             is_validated = false;
          } else {
             $('#paragraph').parent().parent().removeClass('error');
-            $('#paragraph').parent().find( $('.help-block') ).addClass('hide');
+            $('#paragraph').next().addClass('hide');
          }
 
          if (is_validated) {
