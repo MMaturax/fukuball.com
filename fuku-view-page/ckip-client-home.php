@@ -89,7 +89,7 @@
          success:       ckipProcessResponse,
          url: '/ckip-client/ckip-process',
          type: 'post',
-         dataType: null
+         target: '#ckip-result-block'
       });
   });
 </script>
