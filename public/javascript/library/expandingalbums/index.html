@@ -41,7 +41,7 @@
     $(document).ready(function(){
 
       $.ajax({
-        url: "/public/javascript/library/expandingalbums/data.json",
+        url: "data.json",
         dataType: 'json',
         success: function(data) {
           var albums = Mustache.to_html($('#albums').html(), data);
