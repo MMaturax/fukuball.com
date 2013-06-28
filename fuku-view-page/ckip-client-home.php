@@ -29,8 +29,8 @@
       請輸入要斷詞的短文：
    </h2>
    <div class="well span11 m-l-0">
-      <form id="ckip-process-form" name="ckip_process_form" accept-charset="UTF-8" action="/ckip-client/ckip-process" method="POST">
-         <div class="control-group error">
+      <form id="ckip-process-form" name="ckip_process_form" accept-charset="utf-8" action="/ckip-client/ckip-process" method="post">
+         <div class="control-group">
             <div class="controls">
                <textarea style="font-size: 30px;line-height: 50px;" class="span11" id="paragraph" name="paragraph" placeholder="請輸入要斷詞的短文，限140字短文" rows="5"></textarea>
                <div class="help-inline hide">
@@ -90,7 +90,7 @@
           target:       '#ckip-result-block',
           url:          '/ckip-client/ckip-process',
           type:         'post',
-          beforeSubmit: ckipProcessValidate
+          beforeSubmit: ckipProcessValidate,
           success: function() {
              $('#ckip-process-submit-btn').removeAttr("disabled");
           }
