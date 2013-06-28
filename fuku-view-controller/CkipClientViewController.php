@@ -46,8 +46,23 @@ class CkipClientViewController
       switch ($action_level_one_id) {
 
       case 'ckip-process':
+
          $paragraph = $_POST['paragraph'];
+
+         require_once SITE_ROOT.'/fuku-class/library/CKIPClient-PHP/CKIPClient.php';
+         require_once SITE_ROOT.'/fuku-class/private-param/ckip-param.php';
+
+         $ckip_client_obj = new CKIPClient(
+            CKIP_SERVER,
+            CKIP_PORT,
+            CKIP_USERNAME,
+            CKIP_PASSWORD
+         );
+
+         $ckip_process_result = $ckip_client_obj->send($paragraph);
+
          include_once SITE_ROOT.'/fuku-view-page/ckip-client-partial-view/ckip-process-result.php';
+
          break;
 
       default:

@@ -1,20 +1,14 @@
 <?php
 /**
- * ckip-process-result.php
+ * ckip-param.php
  *
  * PHP version 5
  *
  * @category PHP
- * @package  /fuku-view-page/
+ * @package  /fuku-class/private-param/
  * @author   Fukuball Lin <fukuball@gmail.com>
  * @license  Licence
  * @version  Release: <1.0>
  * @link     http://www.fukuball.com
  */
 ?>
-<h2>
-   中研院斷詞結果：
-</h2>
-<div>
-   <?php echo $ckip_process_result; ?>
-</div>

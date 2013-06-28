@@ -1,9 +1,5 @@
 # Some settings #
 ###################
-db_production.inc
-autoload.inc
-cookies.txt
-robots.txt
 
 # Compiled source #
 ###################
@@ -13,7 +9,6 @@ robots.txt
 *.exe
 *.o
 *.so
-*.pyc
 
 # Packages #
 ############
@@ -35,8 +30,6 @@ robots.txt
 *.sqlite
 *.model
 *.txt
-*.json
-*.csv
 
 # OS generated files #
 ######################
@@ -47,10 +40,6 @@ Thumbs.db
 
 # media #
 #########
-#*.mp3
-#*.mp4
-#*.mid
-
-# directory #
-#############
-fu-class/private-param/
+*.mp3
+*.mp4
+*.mid
