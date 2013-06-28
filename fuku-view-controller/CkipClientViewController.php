@@ -50,7 +50,7 @@ class CkipClientViewController
          $paragraph = $_POST['paragraph'];
 
          require_once SITE_ROOT.'/fuku-class/library/CKIPClient-PHP/CKIPClient.php';
-         require_once SITE_ROOT.'/fuku-class/private-param/ckip-param.php';
+         require_once SITE_ROOT.'/fuku-config/private-param/ckip-param.php';
 
          $ckip_client_obj = new CKIPClient(
             CKIP_SERVER,
