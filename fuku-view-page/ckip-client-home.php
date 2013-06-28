@@ -33,6 +33,9 @@
          <div class="control-group error">
             <div class="controls">
                <textarea style="font-size: 30px;line-height: 50px;" class="span11" id="paragraph" name="paragraph" placeholder="請輸入要斷詞的短文，限140字短文" rows="5"></textarea>
+               <div class="help-inline">
+                  請輸入 1~140 字的短文
+               </div>
             </div>
          </div>
          <h4 class="pull-right"><span id="paragraph-char-counter">140</span> characters remaining</h4>
