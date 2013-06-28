@@ -67,6 +67,7 @@
               var imageSection = $image.closest('.imageSection');
 
               var colors = getColors(image);
+              console.log(colors);
               styleBackground(colors[1], $image.parent().parent().attr('id'));
               styleText(colors[1], colors[0],$image.parent().parent().attr('id'));
 
