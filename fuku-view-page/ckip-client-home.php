@@ -31,10 +31,29 @@
    <div class="well span11 m-l-0">
       <form accept-charset="UTF-8" action="" method="POST">
          <textarea style="font-size: 30px;line-height: 50px;" class="span11" id="paragraph" name="paragraph" placeholder="請輸入要斷詞的短文，限140字短文" rows="5"></textarea>
-         <h4 class="pull-right">140 characters remaining</h4>
+         <h4 class="pull-right"><span id="paragraph-char-counter">140</span> characters remaining</h4>
          <button class="btn btn-primary btn-large" type="submit">
             取得斷詞結果
          </button>
       </form>
    </div>
 </section>
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function()
+  {
+    $('#paragraph').simplyCountable({
+       counter: '#paragraph-char-counter',
+       countType:          'characters',
+       maxCount:           140,
+       strictMax:          true,
+       countDirection:     'down',
+       safeClass:          'safe',
+       overClass:          'over',
+       thousandSeparator:  ',',
+       onOverCount:        function(count, countable, counter){},
+       onSafeCount:        function(count, countable, counter){},
+       onMaxCount:         function(count, countable, counter){}
+    });
+  });
+</script>
+<script type="text/javascript" charset="utf-8" src="/public/javascript/library/jquery-simply-countable/jquery.simplyCountable.js"></script>
