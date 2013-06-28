@@ -29,7 +29,7 @@
       請輸入要斷詞的短文：
    </h2>
    <div class="well span11 m-l-0">
-      <form id="ckip-process-form" name="ckip_process_form" accept-charset="UTF-8" action="" method="POST">
+      <form id="ckip-process-form" name="ckip_process_form" accept-charset="UTF-8" action="/ckip-client/ckip-process" method="POST">
          <textarea style="font-size: 30px;line-height: 50px;" class="span11" id="paragraph" name="paragraph" placeholder="請輸入要斷詞的短文，限140字短文" rows="5"></textarea>
          <h4 class="pull-right"><span id="paragraph-char-counter">140</span> characters remaining</h4>
          <button class="btn btn-primary btn-large" type="submit">
@@ -57,11 +57,39 @@
          onMaxCount:         function(count, countable, counter){}
       });
 
-      $('#ckip_process_form').on('submit', function(e) {
-         e.preventDefault(); // prevent native submit
-         $(this).ajaxSubmit({
-            target: 'ckip-result-block'
-         })
+      function ckipProcessValidate(formData, jqForm, options){
+
+         var is_validated = true;
+
+         if(!$('#app-name').val()){
+            //$('#app-name').parent().attr('class', 'control-group error');
+            //$('#app-name').parent().find( $('.help-block') ).css('display','inline');
+            is_validated = false;
+         } else {
+            //$('#app-name').parent().attr('class', 'control-group');
+            //$('#app-name').parent().find( $('.help-block') ).css('display','none');
+         }
+
+         if (is_validated) {
+            //$('#app-register-error-msg').empty();
+            //$('#app-register-submit').attr("disabled", "disabled");
+            //$('#app-register-cancel').attr("disabled", "disabled");
+         }
+
+         return is_validated;
+
+      }// end function addAppRegisterValidate
+
+      function ckipProcessResponse(responseText, statusText, xhr, $form)  {
+         alert(responseText);
+      }// end function addAppRegisterResponse
+
+      $('#ckip-process-form').ajaxForm({
+         beforeSubmit:  ckipProcessValidate,
+         success:       ckipProcessResponse,
+         url: '/ckip-client/ckip-process',
+         type: 'post',
+         dataType: null
       });
   });
 </script>

@@ -45,6 +45,14 @@ class CkipClientViewController
 
       switch ($action_level_one_id) {
 
+      case 'ckip-process':
+         $type = 'page_not_found';
+         $parameter = array("none"=>"none");
+         $error_messanger = new ErrorMessenger($type, $parameter);
+         $error_messanger->printErrorJSON();
+         unset($error_messanger);
+         break;
+
       default:
          $type = 'page_not_found';
          $parameter = array("none"=>"none");
