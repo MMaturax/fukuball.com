@@ -172,23 +172,6 @@
   text-decoration: underline;
 }
 
-.folderContent .close {
-  position: absolute;
-  top: 15px;
-  left: 10px;
-  padding: 1px 5px 3px;
-  border-radius: 10px;
-  background-color: rgba(0,0,0,0.3);
-  color: rgba(255,255,255,0.5);
-  font-weight: bold;
-}
-
-.folderContent .close:hover {
-  text-decoration: none;
-  background-color: rgba(0,0,0,0.6);
-  color: rgba(255,255,255,0.5);
-}
-
 .multi {
   -webkit-column-count: 2;
   -moz-column-count: 2;

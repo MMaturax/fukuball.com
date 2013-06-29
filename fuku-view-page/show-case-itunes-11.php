@@ -93,7 +93,6 @@
             </div>
             <br class='clear'>
          </div>
-         <a href="#" class="close">&times;</a>
       </div>
       {{/data}}
    </script>
