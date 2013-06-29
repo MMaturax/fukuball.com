@@ -20,7 +20,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 25%;
-  height: 290px;
+  height: 310px;
   padding: 3% 3% 10px 3%;
   cursor: pointer;
 }
@@ -70,11 +70,15 @@
   transition: all 0.2s ease-in;
 }
 
+.folder a:hover {
+  text-decoration: none;
+}
+
 .album-name {
-  font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+   font-weight: bold;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
 /*  -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;*/
@@ -82,9 +86,10 @@
 
 .artist-name {
   opacity: 1;
-  margin-bottom: 2px;
+  margin: 0px 0px 2px 0px;
   color: #888;
-  font-size: 12px;
+  font-size: 15px;
+  line-height: 1em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
