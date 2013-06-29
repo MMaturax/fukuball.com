@@ -29,7 +29,7 @@
       <?php
       include_once SITE_ROOT."/fuku-view-component/header/header.php";
       ?>
-      <div id="main-content">
+      <div>
          <?php
          include_once SITE_ROOT.$yield_path;
          ?>
