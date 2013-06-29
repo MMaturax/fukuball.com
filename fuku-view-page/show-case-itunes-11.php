@@ -16,7 +16,7 @@
    $(document).ready(function(){
 
       $.ajax({
-        url: "/public/javascript/library/expandingalbums/data.json",
+        url: "/show-case/itunes11/album-data.json",
         dataType: 'json',
         success: function(data) {
 
