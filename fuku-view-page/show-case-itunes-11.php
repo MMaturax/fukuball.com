@@ -79,7 +79,7 @@
          <div class='jaf-container'>
             <div>
                <div class='art-wrap'>
-                  <img src='images/{{image}}'>
+                  <img src='/public/javascript/library/expandingalbums/images/{{image}}'>
                </div>
                <h2><a href="{{url}}" target="_blank" class="primaryColor">{{album}}</a></h2>
                <h3 class="secondaryColor">{{artist}} ({{year}})</h3>
