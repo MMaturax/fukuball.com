@@ -113,7 +113,41 @@ class ShowCaseViewController
                            "今夜的祕密集會",
                            "今夜的祕密集會(DJ Afro&Will Remix)"
                         ),
-                     "url"=>"http://www.indievox.com/disc/4975",
+                     "url"=>"http://www.indievox.com/disc/4975"
+                  ),
+                  array(
+                     "id"=>"2959",
+                     "album"=>"處女空氣",
+                     "artist"=>"回聲樂團",
+                     "year"=>"2010",
+                     "image"=>"phpkOs1BD480X480.jpg",
+                     "tracklist"=>
+                        array(
+                          "Dear John",
+                          "戀人絮語",
+                          "自導自演",
+                          "處女空氣",
+                          "親愛的我",
+                          "狩獵霓虹",
+                          "Here We Are",
+                          "一萬種迷惑",
+                          "默契帶我們向前走",
+                          "自由之處"
+                        ),
+                     "url"=>"http://www.indievox.com/disc/2959"
+                  ),
+                  array(
+                     "id"=>"1080",
+                     "album"=>"解放",
+                     "artist"=>"回聲樂團",
+                     "year"=>"2008",
+                     "image"=>"phpxmPhRD480X480.jpg",
+                     "tracklist"=>
+                        array(
+                           "解放"
+                        ),
+                     "url"=>"http://www.indievox.com/disc/1080",
+                     "last": true
                   )
                )
             );
