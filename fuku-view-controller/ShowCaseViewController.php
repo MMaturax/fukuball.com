@@ -149,6 +149,83 @@ class ShowCaseViewController
                      "url"=>"http://www.indievox.com/disc/1080",
                      "last"=>true
                   )
+               ),
+               array(
+                  array(
+                     "id"=>"282",
+                     "album"=>"Born To Live, Live To Give",
+                     "artist"=>"回聲樂團",
+                     "year"=>"2008",
+                     "image"=>"phpGDapUA480X480.jpg",
+                     "tracklist"=>
+                        array(
+                           "傾慕",
+                           "新世紀的你和我",
+                           "無聲的輪廓",
+                           "Please Stay (春佑版)",
+                           "我將死去",
+                           "耍堅強",
+                           "紅與藍",
+                           "可能性 (Happy Birthday To 春佑)",
+                           "感官駕馭",
+                           "煙硝"
+                        ),
+                     "url"=>"http://www.indievox.com/disc/282",
+                     "first"=>true
+                  ),
+                  array(
+                     "id"=>"4",
+                     "album"=>"煙硝",
+                     "artist"=>"回聲樂團",
+                     "year"=>"2007",
+                     "image"=>"KuwosEX1gI480X480.jpg",
+                     "tracklist"=>
+                        array(
+                           "煙硝",
+                           "警察先生",
+                           "Go Go Go"
+                        ),
+                     "url"=>"http://www.indievox.com/disc/4"
+                  ),
+                  array(
+                     "id"=>"9",
+                     "album"=>"少年的最後旅行",
+                     "artist"=>"回聲樂團",
+                     "year"=>"2004",
+                     "image"=>"RIbd7L0tbb480X480.jpg",
+                     "tracklist"=>
+                        array(
+                          "夏日晚歌",
+                          "紅與藍",
+                          "風車",
+                          "OK? (Piano&Violin Version)",
+                          "你的蔚藍之海",
+                          "瞬間"
+                        ),
+                     "url"=>"http://www.indievox.com/disc/9"
+                  ),
+                  array(
+                     "id"=>"1",
+                     "album"=>"感官駕馭",
+                     "artist"=>"回聲樂團",
+                     "year"=>"2002",
+                     "image"=>"phpjTj9Ue480X480.jpg",
+                     "tracklist"=>
+                        array(
+                           "It's Time To Sing, It's Time To Get Out",
+                           "限度",
+                           "感官駕馭",
+                           "木雕輪盤",
+                           "我將死去",
+                           "錯置的共鳴",
+                           "剖（續繞）",
+                           "傾慕",
+                           "晚宴",
+                           "競逐孤寂"
+                        ),
+                     "url"=>"http://www.indievox.com/disc/1",
+                     "last"=>true
+                  )
                )
             );
 
