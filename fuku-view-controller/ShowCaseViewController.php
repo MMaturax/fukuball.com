@@ -91,7 +91,21 @@ class ShowCaseViewController
                      "artist"=>"Radiohead",
                      "year"=>"1997",
                      "image"=>"okcomputer.png",
-                     "tracklist"=>["Airbag", "Paranoid Android", "Subterranean Homesick Alien", "Exit Music (For a Film)", "Let Down", "Karma Police", "Fitter Happier", "Electioneering", "Climbing Up the Walls", "No Surprises", "Lucky", "The Tourist"],
+                     "tracklist"=>
+                        array(
+                           "Airbag",
+                           "Paranoid Android",
+                           "Subterranean Homesick Alien",
+                           "Exit Music (For a Film)",
+                           "Let Down",
+                           "Karma Police",
+                           "Fitter Happier",
+                           "Electioneering",
+                           "Climbing Up the Walls",
+                           "No Surprises",
+                           "Lucky",
+                           "The Tourist"
+                        ),
                      "url"=>"http://click.linksynergy.com/link?id=wyucSOE7tvo&offerid=146261.18421725&type=2&murl=https%3A%2F%2Fitunes.apple.com%2Falbum%2Fok-computer%2Fid18421725%3Fuo%3D5",
                      "first"=>true
                   ),
@@ -101,7 +115,21 @@ class ShowCaseViewController
                      "artist"=>"Radiohead",
                      "year"=>"1997",
                      "image"=>"okcomputer.png",
-                     "tracklist"=>["Airbag", "Paranoid Android", "Subterranean Homesick Alien", "Exit Music (For a Film)", "Let Down", "Karma Police", "Fitter Happier", "Electioneering", "Climbing Up the Walls", "No Surprises", "Lucky", "The Tourist"],
+                     "tracklist"=>
+                        array(
+                           "Airbag",
+                           "Paranoid Android",
+                           "Subterranean Homesick Alien",
+                           "Exit Music (For a Film)",
+                           "Let Down",
+                           "Karma Police",
+                           "Fitter Happier",
+                           "Electioneering",
+                           "Climbing Up the Walls",
+                           "No Surprises",
+                           "Lucky",
+                           "The Tourist"
+                        ),
                      "url"=>"http://click.linksynergy.com/link?id=wyucSOE7tvo&offerid=146261.18421725&type=2&murl=https%3A%2F%2Fitunes.apple.com%2Falbum%2Fok-computer%2Fid18421725%3Fuo%3D5",
                      "first"=>true
                   )
