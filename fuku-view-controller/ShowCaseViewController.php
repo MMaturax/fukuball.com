@@ -148,9 +148,7 @@ class ShowCaseViewController
                         ),
                      "url"=>"http://www.indievox.com/disc/1080",
                      "last"=>true
-                  )
-               ),
-               array(
+                  ),
                   array(
                      "id"=>"282",
                      "album"=>"Born To Live, Live To Give",
