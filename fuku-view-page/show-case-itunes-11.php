@@ -30,7 +30,7 @@
              marginTopBase: 0,               // If margin-top-adjust is "true", the natural margin-top for the area
              marginTopIncrement: 0,            // If margin-top-adjust is "true", the absolute value of the increment of margin-top per row
              animationSpeed: 200,            // Time (in ms) for transitions
-             URLrewrite: true,               // Use URL rewriting?
+             URLrewrite: false,               // Use URL rewriting?
              URLbase: "./",            // If URL rewrite is enabled, the URL base of the page where used. Example (include double-quotes): "/services/"
              internalLinkSelector: ".jaf-internal a"    // a jQuery selector containing links to content within a jQuery App Folder
           });
