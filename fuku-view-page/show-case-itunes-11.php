@@ -99,6 +99,6 @@
    </script>
 </div>
 <script src="/public/javascript/library/expandingalbums/js/mustache.js"></script>
-<script src="/public/javascript/library/expandingalbums/js/jquery.app-folders.js"></script>
+<script src="/public/javascript/library/expandingalbums/js/jquery.app-folders.js?v=0.0.13"></script>
 <script src="/public/javascript/library/expandingalbums/js/quantize.js"></script>
 <script src="/public/javascript/library/expandingalbums/js/color-thief.js"></script>
