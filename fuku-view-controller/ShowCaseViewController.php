@@ -147,7 +147,7 @@ class ShowCaseViewController
                            "解放"
                         ),
                      "url"=>"http://www.indievox.com/disc/1080",
-                     "last": true
+                     "last"=>true
                   )
                )
             );
