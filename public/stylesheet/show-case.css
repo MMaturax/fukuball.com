@@ -79,6 +79,8 @@
    white-space: nowrap;
    overflow: hidden;
    text-overflow: ellipsis;
+   margin: 0px 0px 2px 0px;
+   color: #333;
 /*  -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;*/
