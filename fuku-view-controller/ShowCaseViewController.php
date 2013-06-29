@@ -90,7 +90,7 @@ class ShowCaseViewController
                      "album"=>"今夜的秘密集會 Acoustic Live EP",
                      "artist"=>"回聲樂團",
                      "year"=>"2012",
-                     "image"=>"http://music.indievox.com/indievox_music/mp3/30000/1/php3fXH12480X480.jpg?1353495034",
+                     "image"=>"php3fXH12480X480.jpg",
                      "tracklist"=>
                         array(
                            "處女空氣",
@@ -107,7 +107,7 @@ class ShowCaseViewController
                      "album"=>"今夜的祕密集會",
                      "artist"=>"回聲樂團",
                      "year"=>"2012",
-                     "image"=>"http://music.indievox.com/indievox_music/mp3/30000/1/phptkWMy4480X480.jpg?1347597422",
+                     "image"=>"phptkWMy4480X480.jpg",
                      "tracklist"=>
                         array(
                            "今夜的祕密集會",
