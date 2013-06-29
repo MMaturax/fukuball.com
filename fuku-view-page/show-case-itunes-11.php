@@ -81,8 +81,8 @@
                <div class='art-wrap'>
                   <img src='/public/javascript/library/expandingalbums/images/{{image}}'>
                </div>
-               <h2><a href="{{url}}" target="_blank" class="primaryColor">{{album}}</a></h2>
-               <h3 class="secondaryColor">{{artist}} ({{year}})</h3>
+               <h2 class="m-b-0"><a href="{{url}}" target="_blank" class="primaryColor">{{album}}</a></h2>
+               <h3 class="secondaryColor m-t-0">{{artist}} ({{year}})</h3>
                <div class='multi'>
                   <ol class="secondaryColor">
                      {{#tracklist}}

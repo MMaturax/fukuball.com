@@ -181,6 +181,7 @@
 .art-wrap {
   float: right;
   text-align: right;
+  line-height: 0em;
   /*width: 30%;*/
 }
 
