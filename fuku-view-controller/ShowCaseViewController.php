@@ -86,52 +86,34 @@ class ShowCaseViewController
                "data"=>
                array(
                   array(
-                     "id"=>"okcomputer",
-                     "album"=>"OK Computer",
-                     "artist"=>"Radiohead",
-                     "year"=>"1997",
-                     "image"=>"okcomputer.png",
+                     "id"=>"5311",
+                     "album"=>"今夜的秘密集會 Acoustic Live EP",
+                     "artist"=>"回聲樂團",
+                     "year"=>"2012",
+                     "image"=>"http://music.indievox.com/indievox_music/mp3/30000/1/php3fXH12480X480.jpg?1353495034",
                      "tracklist"=>
                         array(
-                           "Airbag",
-                           "Paranoid Android",
-                           "Subterranean Homesick Alien",
-                           "Exit Music (For a Film)",
-                           "Let Down",
-                           "Karma Police",
-                           "Fitter Happier",
-                           "Electioneering",
-                           "Climbing Up the Walls",
-                           "No Surprises",
-                           "Lucky",
-                           "The Tourist"
+                           "處女空氣",
+                           "Here We Are",
+                           "等待著愛的人",
+                           "耍堅強",
+                           "Dear John"
                         ),
-                     "url"=>"http://click.linksynergy.com/link?id=wyucSOE7tvo&offerid=146261.18421725&type=2&murl=https%3A%2F%2Fitunes.apple.com%2Falbum%2Fok-computer%2Fid18421725%3Fuo%3D5",
+                     "url"=>"http://www.indievox.com/disc/5311",
                      "first"=>true
                   ),
                   array(
-                     "id"=>"okcomputer",
-                     "album"=>"OK Computer",
-                     "artist"=>"Radiohead",
-                     "year"=>"1997",
-                     "image"=>"okcomputer.png",
+                     "id"=>"4975",
+                     "album"=>"今夜的祕密集會",
+                     "artist"=>"回聲樂團",
+                     "year"=>"2012",
+                     "image"=>"http://music.indievox.com/indievox_music/mp3/30000/1/phptkWMy4480X480.jpg?1347597422",
                      "tracklist"=>
                         array(
-                           "Airbag",
-                           "Paranoid Android",
-                           "Subterranean Homesick Alien",
-                           "Exit Music (For a Film)",
-                           "Let Down",
-                           "Karma Police",
-                           "Fitter Happier",
-                           "Electioneering",
-                           "Climbing Up the Walls",
-                           "No Surprises",
-                           "Lucky",
-                           "The Tourist"
+                           "今夜的祕密集會",
+                           "今夜的祕密集會(DJ Afro&Will Remix)"
                         ),
-                     "url"=>"http://click.linksynergy.com/link?id=wyucSOE7tvo&offerid=146261.18421725&type=2&murl=https%3A%2F%2Fitunes.apple.com%2Falbum%2Fok-computer%2Fid18421725%3Fuo%3D5",
-                     "first"=>true
+                     "url"=>"http://www.indievox.com/disc/4975",
                   )
                )
             );

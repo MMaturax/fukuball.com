@@ -60,7 +60,7 @@
          {{/first}}
          <div class='folder' id='{{id}}'>
             <a href='#'>
-               <img class='app-icon' src='/public/javascript/library/expandingalbums/images/{{image}}'>
+               <img class='app-icon' src='{{image}}'>
                <p class='album-name'>{{album}}</p>
                <p class='artist-name'>{{artist}}</p>
             </a>
@@ -79,7 +79,7 @@
          <div class='jaf-container'>
             <div>
                <div class='art-wrap'>
-                  <img src='/public/javascript/library/expandingalbums/images/{{image}}'>
+                  <img src='{{image}}'>
                </div>
                <h2 class="m-b-0"><a href="{{url}}" target="_blank" class="primaryColor">{{album}}</a></h2>
                <h3 class="secondaryColor m-t-0">{{artist}} ({{year}})</h3>
