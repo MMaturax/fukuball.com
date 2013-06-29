@@ -19,19 +19,20 @@
         url: "/public/javascript/library/expandingalbums/data.json",
         dataType: 'json',
         success: function(data) {
+
           var albums = Mustache.to_html($('#albums').html(), data);
           var details = Mustache.to_html($('#details').html(), data);
           $('.app-folders-container').html(albums+details);
 
           $('.app-folders-container').appFolders({
-            opacity: 1,                 // Opacity of non-selected items
-            marginTopAdjust: true,             // Adjust the margin-top for the folder area based on row selected?
-            marginTopBase: 0,               // If margin-top-adjust is "true", the natural margin-top for the area
-            marginTopIncrement: 0,            // If margin-top-adjust is "true", the absolute value of the increment of margin-top per row
-            animationSpeed: 200,            // Time (in ms) for transitions
-            URLrewrite: true,               // Use URL rewriting?
-            URLbase: "/public/javascript/library/expandingalbums/",            // If URL rewrite is enabled, the URL base of the page where used. Example (include double-quotes): "/services/"
-                  internalLinkSelector: ".jaf-internal a"    // a jQuery selector containing links to content within a jQuery App Folder
+             opacity: 1,                 // Opacity of non-selected items
+             marginTopAdjust: true,             // Adjust the margin-top for the folder area based on row selected?
+             marginTopBase: 0,               // If margin-top-adjust is "true", the natural margin-top for the area
+             marginTopIncrement: 0,            // If margin-top-adjust is "true", the absolute value of the increment of margin-top per row
+             animationSpeed: 200,            // Time (in ms) for transitions
+             URLrewrite: true,               // Use URL rewriting?
+             URLbase: "./",            // If URL rewrite is enabled, the URL base of the page where used. Example (include double-quotes): "/services/"
+             internalLinkSelector: ".jaf-internal a"    // a jQuery selector containing links to content within a jQuery App Folder
           });
 
           // For each image:
@@ -59,7 +60,7 @@
          {{/first}}
          <div class='folder' id='{{id}}'>
             <a href='#'>
-               <img class='app-icon' src='images/{{image}}'>
+               <img class='app-icon' src='/public/javascript/library/expandingalbums/images/{{image}}'>
                <p class='album-name'>{{album}}</p>
                <p class='artist-name'>{{artist}}</p>
             </a>
