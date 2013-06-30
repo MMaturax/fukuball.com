@@ -18,7 +18,12 @@
 <div>
    <pre class="prettyprint">
       <?php
-      print_r($ckip_process_result_term);
+print_r($ckip_process_result_term);
       ?>
    </pre>
 </div>
+<section>
+   <?php
+   include_once SITE_ROOT.'/fuku-view-component/commercial/full-width-commercial.php';
+   ?>
+</section>
