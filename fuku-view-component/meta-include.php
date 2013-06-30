@@ -12,6 +12,8 @@
  * @link     http://www.fukuball.com
  */
 
+global $current_page_full_url;
+
 switch ($meta_type) {
 
 default:

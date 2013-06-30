@@ -95,6 +95,7 @@ class CkipClientViewController
 
       case 'about':
 
+         $meta_type = "ckip";
          $page_title = 'CKIP Client 線上中文斷詞 | 關於我們';
          $ckip_client_about_active = 'active';
          $yield_path = '/fuku-view-page/ckip-client-about.php';
@@ -104,6 +105,7 @@ class CkipClientViewController
 
       default:
 
+         $meta_type = "ckip";
          $page_title = 'CKIP Client 線上中文斷詞 | 線上中文斷詞首頁';
          $ckip_client_active = 'active';
          $yield_path = '/fuku-view-page/ckip-client-home.php';
