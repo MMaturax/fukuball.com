@@ -32,4 +32,6 @@ define('DEFAULT_VIEW_CONTROLLER', 'HomeViewController');
 
 // library
 require_once SITE_ROOT.'/fuku-class/fuku.inc';
+
+$current_page_full_url = GlobalHelper::currentFullPageURL();
 ?>

@@ -17,9 +17,10 @@ switch ($meta_type) {
 default:
    $og_title = $page_title;
    $og_type = "website";
-   $og_url = SITE_HOST;
-   $og_image = SITE_HOST."/public/image/fukuball-touch-icon.png";
+   $og_url = $current_page_full_url;
+   $og_image = SITE_HOST."/public/image/avatar3.jpg";
    $og_description = SITE_HOST." CTO of iNDIEVOX 獨立音樂網, the largest indie music web site in Taiwan. / I'm also a happy guitar player.";
+   $keywords = "fukuball, Fukuball Lin, 林志傑";
    break;
 
 }
@@ -30,7 +31,7 @@ default:
 <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 <meta name="description" content="<?php echo htmlspecialchars($og_description); ?>" />
 <meta name="author" content="Fukuball" />
-<meta name="keywords" content="fukuball, Fukuball Lin, 林志傑" />
+<meta name="keywords" content="<?php echo $keywords; ?>" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@fukuball" />
 <meta property="og:title" content="<?php echo htmlspecialchars($og_title); ?>" />
