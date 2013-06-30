@@ -51,12 +51,12 @@ class GlobalHelper
 
       if ($_SERVER["SERVER_PORT"] != "80" && $_SERVER["SERVER_PORT"] != "443") {
 
-         $pageURL .= $_SERVER["SERVER_NAME"].":".
+         $pageURL .= SITE_DOMAIN.":".
          $_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
 
       } else {
 
-         $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+         $pageURL .= SITE_DOMAIN.$_SERVER["REQUEST_URI"];
 
       }// end if
 
