@@ -16,5 +16,5 @@
    中研院斷詞結果：
 </h2>
 <div>
-   <?php echo $ckip_process_result; ?>
+   <?php echo $ckip_process_result_json; ?>
 </div>
