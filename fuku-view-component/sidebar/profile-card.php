@@ -63,5 +63,14 @@
             <div>iNDIEVOX</div>
          </a>
       </li>
+      <li>
+         <h4 class="m-t-0">Work</h4>
+         <a title="CKIP-Client" class="team-link track" href="http://www.fukuball.com/ckip-client/" target="_blank">
+            <span class="team-avatar">
+               <img src="/public/image/avatar3.jpg" height="22" width="22">
+            </span>
+            <div>CKIP-Client 中文斷詞</div>
+         </a>
+      </li>
    </ul>
 </section>
