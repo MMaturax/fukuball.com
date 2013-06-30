@@ -12,18 +12,23 @@
  * @link     http://www.fukuball.com
  */
 ?>
-<h2>
-   中研院斷詞結果：
-</h2>
-<div>
-   <pre class="prettyprint">
-      <?php
+<section id="ckip-process-result-block">
+   <h2>
+      中研院斷詞結果：
+   </h2>
+   <div>
+      <pre class="prettyprint">
+         <?php
 print_r($ckip_process_result_term);
-      ?>
-   </pre>
-</div>
+         ?>
+      </pre>
+   </div>
+</section>
 <section>
    <?php
    include_once SITE_ROOT.'/fuku-view-component/commercial/full-width-commercial.php';
    ?>
 </section>
+<script>
+   $.scrollTo( '#ckip-process-result-block', 800, {easing:'elasout'} );
+</script>
