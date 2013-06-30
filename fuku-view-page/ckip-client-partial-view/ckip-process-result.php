@@ -31,6 +31,6 @@ print_r($ckip_process_result_term);
 </section>
 <script>
 $('#ckip-process-result-block').ready(function() {
-   $.scrollTo( $('#ckip-process-result-block'), 800 );
+   $.scrollTo( $('#ckip-process-result-block'), 300, {offset:100} );
 });
 </script>
