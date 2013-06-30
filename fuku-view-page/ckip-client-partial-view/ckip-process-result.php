@@ -31,6 +31,6 @@ print_r($ckip_process_result_term);
 </section>
 <script>
 $('#ckip-process-result-block').ready(function() {
-   $.scrollTo( $('#ckip-process-result-block'), 800, {easing:'elasout'} );
+   $.scrollTo( $('#ckip-process-result-block'), 800 );
 });
 </script>
