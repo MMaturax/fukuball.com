@@ -61,7 +61,7 @@ class CkipClientViewController
 
          $ckip_process_result = $ckip_client_obj->send($paragraph);
          $ckip_process_result_term = $ckip_client_obj->getTerm();
-         $ckip_process_result_json = json_encode($ckip_process_result_term);
+         //$ckip_process_result_json = json_encode($ckip_process_result_term);
 
          include_once SITE_ROOT.'/fuku-view-page/ckip-client-partial-view/ckip-process-result.php';
 

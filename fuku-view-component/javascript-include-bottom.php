@@ -12,6 +12,7 @@
  * @link     http://www.fukuball.com
  */
 ?>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 <script type="text/javascript" charset="utf-8" src="/public/javascript/library/form/jquery.form.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
