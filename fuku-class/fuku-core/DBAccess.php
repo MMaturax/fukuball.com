@@ -71,7 +71,7 @@ class DBAccess
              = new PDO(
                  'mysql:host=' . $this->s_db_host . ';dbname=' . $this->s_db_name,
                  $this->s_db_user,
-                 $this->s_db_connection
+                 $this->s_db_password
              );
 
          $this->s_db_connection->query("SET time_zone='+8:00'");
@@ -96,7 +96,7 @@ class DBAccess
              = new PDO(
                  'mysql:host=' . $this->m_db_host . ';dbname=' . $this->m_db_name,
                  $this->m_db_user,
-                 $this->m_db_connection
+                 $this->m_db_password
              );
 
          $this->m_db_connection->query("SET time_zone='+8:00'");
