@@ -1,7 +1,5 @@
 # Some settings #
 ###################
-db_production.inc
-autoload.inc
 cookies.txt
 robots.txt
 
