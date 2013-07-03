@@ -285,7 +285,8 @@ class DBAccess
    public function insertCommand($insert_sql)
    {
 
-      $this::changeMode('master');
+      $options = array('mode'=>'master');
+      $this::changeMode($options);
 
       $query_result = $this->db_connection->query($insert_sql);
 
@@ -298,7 +299,8 @@ class DBAccess
 
       $insert_id = $this->db_connection->lastInsertId();
 
-      $this::changeMode('salve');
+      $options = array('mode'=>'slave');
+      $this::changeMode($options);
 
       return $insert_id;
 
@@ -315,7 +317,8 @@ class DBAccess
    public function insertCommandPrepare($insert_sql, $param)
    {
 
-      $this::changeMode('master');
+      $options = array('mode'=>'master');
+      $this::changeMode($options);
 
       if (SYSTEM_MODE=='test') {
          $this->db_connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
@@ -334,7 +337,8 @@ class DBAccess
 
       $insert_id = $this->db_connection->lastInsertId();
 
-      $this::changeMode('slave');
+      $options = array('mode'=>'slave');
+      $this::changeMode($options);
 
       return $insert_id;
 
@@ -352,9 +356,11 @@ class DBAccess
    {
 
       if ($mode=='master') {
-         $this::changeMode('master');
+         $options = array('mode'=>'master');
+         $this::changeMode($options);
       } else {
-         $this::changeMode('slave');
+         $options = array('mode'=>'slave');
+         $this::changeMode($options);
       }
 
       $query_result = $this->db_connection->query($select_sql);
@@ -366,7 +372,8 @@ class DBAccess
          exit;
       }
 
-      $this::changeMode('slave');
+      $options = array('mode'=>'slave');
+      $this::changeMode($options);
 
       return $query_result;
 
@@ -385,9 +392,11 @@ class DBAccess
    {
 
       if ($mode=='master') {
-         $this::changeMode('master');
+         $options = array('mode'=>'master');
+         $this::changeMode($options);
       } else {
-         $this::changeMode('slave');
+         $options = array('mode'=>'slave');
+         $this::changeMode($options);
       }
 
       if (SYSTEM_MODE=='test') {
@@ -406,7 +415,8 @@ class DBAccess
 
       $fetch_query_result = $statement->fetchAll();
 
-      $this::changeMode('slave');
+      $options = array('mode'=>'slave');
+      $this::changeMode($options);
 
       return $fetch_query_result;
 
@@ -422,7 +432,8 @@ class DBAccess
    public function updateCommand($update_sql)
    {
 
-      $this::changeMode('master');
+      $options = array('mode'=>'master');
+      $this::changeMode($options);
 
       $query_result = $this->db_connection->query($update_sql);
 
@@ -433,7 +444,8 @@ class DBAccess
          exit;
       }
 
-      $this::changeMode('slave');
+      $options = array('mode'=>'slave');
+      $this::changeMode($options);
 
       return $query_result->rowCount();
 
@@ -450,7 +462,8 @@ class DBAccess
    public function updateCommandPrepare($update_sql, $param)
    {
 
-      $this::changeMode('master');
+      $options = array('mode'=>'master');
+      $this::changeMode($options);
 
       if (SYSTEM_MODE=='test') {
          $this->db_connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
@@ -466,7 +479,8 @@ class DBAccess
          exit;
       }
 
-      $this::changeMode('slave');
+      $options = array('mode'=>'slave');
+      $this::changeMode($options);
 
       return $statement->rowCount();
 
@@ -482,7 +496,8 @@ class DBAccess
    public function deleteCommand($delete_sql)
    {
 
-      $this::changeMode('master');
+      $options = array('mode'=>'master');
+      $this::changeMode($options);
 
       $query_result = $this->db_connection->query($delete_sql);
 
@@ -493,7 +508,8 @@ class DBAccess
          exit;
       }
 
-      $this::changeMode('slave');
+      $options = array('mode'=>'slave');
+      $this::changeMode($options);
 
       return $query_result->rowCount();
 
@@ -510,7 +526,8 @@ class DBAccess
    public function deleteCommandPrepare($delete_sql, $param)
    {
 
-      $this::changeMode('master');
+      $options = array('mode'=>'master');
+      $this::changeMode($options);
 
       if (SYSTEM_MODE=='test') {
          $this->db_connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
@@ -526,7 +543,8 @@ class DBAccess
          exit;
       }
 
-      $this::changeMode('slave');
+      $options = array('mode'=>'slave');
+      $this::changeMode($options);
 
       return $statement->rowCount();
 
