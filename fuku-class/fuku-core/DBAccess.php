@@ -6,10 +6,10 @@
  *
  * @category PHP
  * @package  /fuku-class/fuku-core/
- * @author   Fukuball Lin <fukuball@indievox.com>
- * @license  iNDIEVOX Licence
+ * @author   Fukuball Lin <fukuball@gmail.com>
+ * @license  Licence
  * @version  Release: <1.0>
- * @link     http://www.indievox.com
+ * @link     http://www.fukuball.com
  */
 
 /**
@@ -23,10 +23,10 @@
  *
  * @category PHP
  * @package  /fuku-class/fuku-core/
- * @author   Fukuball Lin <fukuball@indievox.com>
- * @license  iNDIEVOX Licence
+ * @author   Fukuball Lin <fukuball@gmail.com>
+ * @license  Licence
  * @version  Release: <1.0>
- * @link     http://www.indievox.com
+ * @link     http://www.fukuball.com
  */
 class DBAccess
 {
@@ -128,7 +128,7 @@ class DBAccess
 
       if (!self::$db_obj || !isset(self::$db_obj) || empty(self::$db_obj)) {
 
-         self::$db_obj = new IndievoxDBAccess();
+         self::$db_obj = new DBAccess();
 
       }
 
