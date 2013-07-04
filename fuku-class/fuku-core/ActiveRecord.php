@@ -23,10 +23,10 @@
  *
  * @category PHP
  * @package  /fuku-class/fuku-core/
- * @author   Fukuball Lin <fukuball@indievox.com>
+ * @author   Fukuball Lin <fukuball@gmail.com>
  * @license  iNDIEVOX Licence
  * @version  Release: <1.0>
- * @link     http://www.indievox.com
+ * @link     http://www.fukuball.com
  */
 abstract class ActiveRecord
 {

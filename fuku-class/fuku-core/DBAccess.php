@@ -61,10 +61,10 @@ class DBAccess
       include SITE_ROOT."/fuku-config/private-param/db-param.php";
 
       // connect master
-      $this->m_db_host       = $database['master']['db_host'];
-      $this->m_db_name       = $database['master']['db_name'];
-      $this->m_db_user       = $database['master']['db_user'];
-      $this->m_db_password   = $database['master']['db_password'];
+      $this->m_db_host       = $database_server['master']['db_host'];
+      $this->m_db_name       = $database_server['master']['db_name'];
+      $this->m_db_user       = $database_server['master']['db_user'];
+      $this->m_db_password   = $database_server['master']['db_password'];
 
       try {
 
@@ -92,10 +92,10 @@ class DBAccess
 
          $slave_db_choose = $slave_database[array_rand($slave_database)];
 
-         $this->s_db_host       = $database[$slave_db_choose]['db_host'];
-         $this->s_db_name       = $database[$slave_db_choose]['db_name'];
-         $this->s_db_user       = $database[$slave_db_choose]['db_user'];
-         $this->s_db_password   = $database[$slave_db_choose]['db_password'];
+         $this->s_db_host       = $database_server[$slave_db_choose]['db_host'];
+         $this->s_db_name       = $database_server[$slave_db_choose]['db_name'];
+         $this->s_db_user       = $database_server[$slave_db_choose]['db_user'];
+         $this->s_db_password   = $database_server[$slave_db_choose]['db_password'];
 
       } else {
 
