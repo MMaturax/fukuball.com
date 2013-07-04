@@ -60,10 +60,10 @@ class DBAccess
 
       include SITE_ROOT."/fuku-config/private-param/db-param.php";
 
-      $this->s_db_host       = $slave1_db_host;
-      $this->s_db_name       = $slave1_db_name;
-      $this->s_db_user       = $slave1_db_user;
-      $this->s_db_password   = $slave1_db_password;
+      $this->s_db_host       = $database['slave1']['db_host'];
+      $this->s_db_name       = $database['slave1']['db_name'];
+      $this->s_db_user       = $database['slave1']['db_user'];
+      $this->s_db_password   = $database['slave1']['db_password'];
 
       try {
 
@@ -85,10 +85,10 @@ class DBAccess
 
       } // end try
 
-      $this->m_db_host       = $master_db_host;
-      $this->m_db_name       = $master_db_name;
-      $this->m_db_user       = $master_db_user;
-      $this->m_db_password   = $master_db_password;
+      $this->m_db_host       = $database['master']['db_host'];
+      $this->m_db_name       = $database['master']['db_name'];
+      $this->m_db_user       = $database['master']['db_user'];
+      $this->m_db_password   = $database['master']['db_password'];
 
       try {
 
