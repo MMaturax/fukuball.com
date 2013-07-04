@@ -60,31 +60,7 @@ class DBAccess
 
       include SITE_ROOT."/fuku-config/private-param/db-param.php";
 
-      $this->s_db_host       = $database['slave1']['db_host'];
-      $this->s_db_name       = $database['slave1']['db_name'];
-      $this->s_db_user       = $database['slave1']['db_user'];
-      $this->s_db_password   = $database['slave1']['db_password'];
-
-      try {
-
-         $this->s_db_connection
-             = new PDO(
-                 'mysql:host=' . $this->s_db_host . ';dbname=' . $this->s_db_name,
-                 $this->s_db_user,
-                 $this->s_db_password
-             );
-
-         $this->s_db_connection->query("SET time_zone='+8:00'");
-         $this->s_db_connection->query("SET NAMES UTF8");
-
-      } catch (PDOException $e) {
-
-         echo "<h2>".get_class($this)."</h2>";
-         var_dump($e->getMessage());
-         exit;
-
-      } // end try
-
+      // connect master
       $this->m_db_host       = $database['master']['db_host'];
       $this->m_db_name       = $database['master']['db_name'];
       $this->m_db_user       = $database['master']['db_user'];
@@ -110,6 +86,47 @@ class DBAccess
 
       } // end try
 
+
+      // connect slave
+      if (!empty($slave_database)) {
+
+         $slave_db_choose = $slave_database[array_rand($slave_database)];
+
+         $this->s_db_host       = $database[$slave_db_choose]['db_host'];
+         $this->s_db_name       = $database[$slave_db_choose]['db_name'];
+         $this->s_db_user       = $database[$slave_db_choose]['db_user'];
+         $this->s_db_password   = $database[$slave_db_choose]['db_password'];
+
+      } else {
+
+         $this->s_db_host       = $this->m_db_host;
+         $this->s_db_name       = $this->m_db_name;
+         $this->s_db_user       = $this->m_db_user;
+         $this->s_db_password   = $this->m_db_password;
+
+      }
+
+      try {
+
+         $this->s_db_connection
+             = new PDO(
+                 'mysql:host=' . $this->s_db_host . ';dbname=' . $this->s_db_name,
+                 $this->s_db_user,
+                 $this->s_db_password
+             );
+
+         $this->s_db_connection->query("SET time_zone='+8:00'");
+         $this->s_db_connection->query("SET NAMES UTF8");
+
+      } catch (PDOException $e) {
+
+         echo "<h2>".get_class($this)."</h2>";
+         var_dump($e->getMessage());
+         exit;
+
+      } // end try
+
+      // default use slave
       $this->current_mode  = 'slave';
       $this->db_name       = $this->s_db_name;
       $this->db_connection = $this->s_db_connection;
