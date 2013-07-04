@@ -18,4 +18,5 @@ define("SITE_HOST", $host_protocol."://www.fukuball.com");
 define("SITE_DOMAIN", "www.fukuball.com");
 define("SYSTEM_MODE", 'test'); // production, test
 define("KEY_PREFIX", "www_");
+define("ENABLE_CACHE", false);
 ?>

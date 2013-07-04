@@ -408,13 +408,13 @@ class DBAccess
    public function selectCommandPrepare($select_sql, $param, $mode='slave')
    {
 
-      if ($mode=='master') {
-         $options = array('mode'=>'master');
-         $this::changeMode($options);
-      } else {
-         $options = array('mode'=>'slave');
-         $this::changeMode($options);
-      }
+      //if ($mode=='master') {
+      //   $options = array('mode'=>'master');
+      //   $this::changeMode($options);
+      //} else {
+      //   $options = array('mode'=>'slave');
+      //   $this::changeMode($options);
+      //}
 
       if (SYSTEM_MODE=='test') {
          $this->db_connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
