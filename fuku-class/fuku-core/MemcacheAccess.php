@@ -32,7 +32,6 @@ class MemcacheAccess
 {
 
    protected static $memcache_server;
-   protected static $memcache_connection;
    protected static $instance_count = 0;
 
    /**
@@ -43,32 +42,29 @@ class MemcacheAccess
    public static function init()
    {
 
-      include SITE_ROOT."/fuku-config/private-param/memcache-param.php";
+      if (ENABLE_CACHE) {
+         include SITE_ROOT."/fuku-config/private-param/memcache-param.php";
 
-      foreach ($memcache_server_name as $key => $this_memcache_server_name) {
-         $this->memcache_server[$this_memcache_server_name] = '';
-      }
+         $count = 1;
+         foreach ($memcache_server_name as $key => $this_memcache_server_name) {
+            self::$memcache_server[$this_memcache_server_name] = '';
+            if ($count==1) {
 
-      if (    !self::$host1_memcache_obj
-           || !isset(self::$host1_memcache_obj)
-           || empty(self::$host1_memcache_obj)
-      ) {
+               if (    !self::$memcache_server[$this_memcache_server_name]
+                    || !isset(self::$memcache_server[$this_memcache_server_name])
+                    || empty(self::$memcache_server[$this_memcache_server_name])
+               ) {
+                  self::$memcache_server[$this_memcache_server_name] = new Memcache();
+                  self::$memcache_server[$this_memcache_server_name]->pconnect(
+                     $memcache_server[$this_memcache_server_name]['cache_host'],
+                     $memcache_server[$this_memcache_server_name]['cache_port']
+                  );
+                  self::$instance_count++;
+               }
 
-         self::$host1_memcache_obj = new Memcache();
-         self::$host1_memcache_obj->pconnect(MEMCACHE_HOST1, MEMCACHE_PORT);
-         self::$instance_count++;
-
-      }
-
-      if (    !self::$host2_memcache_obj
-           || !isset(self::$host2_memcache_obj)
-           || empty(self::$host2_memcache_obj)
-      ) {
-
-         self::$host2_memcache_obj = new Memcache();
-         self::$host2_memcache_obj->pconnect(MEMCACHE_HOST1, MEMCACHE_PORT);
-         self::$instance_count++;
-
+            }
+            $count++;
+         }
       }
 
    }// end function init
@@ -83,26 +79,43 @@ class MemcacheAccess
    public static function getInstance($memcache_key)
    {
 
-      $memcache_key_array = explode('_', $memcache_key);
+      include SITE_ROOT."/fuku-config/private-param/memcache-param.php";
 
-      switch ($memcache_key_array[1]) {
+      if (!empty($memcache_server_name)) {
+         $memcache_key_array = explode('_', $memcache_key);
 
-    case 'usergod':
-    case 'user':
-    case 'commercialgod':
-    case 'commercial':
+         $use_host = $memcache_server_name[0];
 
-      return self::$host1_memcache_obj;
+         switch ($memcache_key_array[1]) {
 
-      break;
+         case 'user':
 
-    default :
+            $use_host = $memcache_server_name[1];
 
-      return self::$host2_memcache_obj;
+            break;
 
-      break;
+         default :
 
-    }// end switch
+            $use_host = $memcache_server_name[0];
+
+            break;
+
+         }// end switch
+
+         if (    !self::$memcache_server[$use_host]
+              || !isset(self::$memcache_server[$use_host])
+              || empty(self::$memcache_server[$use_host])
+         ) {
+            self::$memcache_server[$use_host] = new Memcache();
+            self::$memcache_server[$use_host]->pconnect(
+               $memcache_server[$use_host]['cache_host'],
+               $memcache_server[$use_host]['cache_port']
+            );
+            self::$instance_count++;
+         }
+
+         return self::$memcache_server[$use_host];
+      }
 
    }// end function getInstance
 
@@ -113,24 +126,22 @@ class MemcacheAccess
     *
     * @return boolean $is_success
     */
-  public static function connectMemcache($host)
-  {
+   public static function connectMemcache($host)
+   {
 
-      switch($host){
+      if (    !self::$memcache_server[$host]
+           || !isset(self::$memcache_server[$host])
+           || empty(self::$memcache_server[$host])
+      ) {
+         self::$memcache_server[$host] = new Memcache();
+         self::$memcache_server[$host]->pconnect(
+            $memcache_server[$host]['cache_host'],
+            $memcache_server[$host]['cache_port']
+         );
+         self::$instance_count++;
+      }
 
-    case 'host1':
-
-      return self::$host1_memcache_obj;
-
-      break;
-
-    default :
-
-      return self::$host2_memcache_obj;
-
-      break;
-
-    }// end switch
+      return self::$memcache_server[$host];
 
    }// end function connectMemcache
 
