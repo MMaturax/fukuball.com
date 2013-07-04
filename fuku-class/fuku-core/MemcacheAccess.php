@@ -31,17 +31,23 @@
 class MemcacheAccess
 {
 
-   protected static $host1_memcache_obj;
-   protected static $host2_memcache_obj;
+   protected static $memcache_server;
+   protected static $memcache_connection;
    protected static $instance_count = 0;
 
-  /**
+   /**
     * Method init to initial memcache connection
     *
     * @return void
     */
    public static function init()
    {
+
+      include SITE_ROOT."/fuku-config/private-param/memcache-param.php";
+
+      foreach ($memcache_server_name as $key => $this_memcache_server_name) {
+         $this->memcache_server[$this_memcache_server_name] = '';
+      }
 
       if (    !self::$host1_memcache_obj
            || !isset(self::$host1_memcache_obj)
@@ -128,15 +134,15 @@ class MemcacheAccess
 
    }// end function connectMemcache
 
-  /**
+   /**
     * Method getMemcacheKeys get all memcache key
     *
     * @param string $host # the host key
     *
     * @return array $memcache_key_value
     */
-  public static function getMemcacheKeys($host)
-  {
+   public static function getMemcacheKeys($host)
+   {
 
       $memcache_obj = MemcacheAccess::connectMemcache($host);
 

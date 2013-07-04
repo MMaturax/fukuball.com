@@ -88,9 +88,9 @@ class DBAccess
 
 
       // connect slave
-      if (!empty($slave_database)) {
+      if (!empty($slave_database_name)) {
 
-         $slave_db_choose = $slave_database[array_rand($slave_database)];
+         $slave_db_choose = $slave_database_name[array_rand($slave_database_name)];
 
          $this->s_db_host       = $database_server[$slave_db_choose]['db_host'];
          $this->s_db_name       = $database_server[$slave_db_choose]['db_name'];
