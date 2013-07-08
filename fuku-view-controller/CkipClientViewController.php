@@ -100,6 +100,38 @@ class CkipClientViewController
 
       switch ($action_level_one_id) {
 
+      case 'record':
+
+         $action_level_two_id = $segments[1];
+         $action_level_two_id_array = explode('.', $action_level_two_id);
+
+         $ckip_process_record_id = $action_level_two_id_array[0];
+         $ckip_process_record_doc_type = $action_level_two_id_array[1];
+
+         $ckip_process_record_obj = new CkipProcessRecord($ckip_process_record_id);
+
+         switch ($ckip_process_record_doc_type) {
+
+         case 'json':
+
+            header('Content-type: application/json');
+            echo $ckip_process_record_obj->paragraph_result;
+
+            break;
+
+         default:
+
+            header('Content-type: application/json');
+            echo $ckip_process_record_obj->paragraph_result;
+
+            break;
+
+         }
+
+         unset($ckip_process_result_obj);
+
+         break;
+
       case 'about':
 
          $meta_type = "ckip";
