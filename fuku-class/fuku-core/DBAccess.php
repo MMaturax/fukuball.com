@@ -55,11 +55,11 @@ class DBAccess
 
       if (!empty($slave_database_name)) {
 
-         self::connectSlave();
+         $this->connectSlave();
 
       } else {
 
-         self::connectMaster();
+         $this->connectMaster();
 
       }
 
@@ -88,7 +88,7 @@ class DBAccess
     *
     * @return void
     */
-   public static function connectMaster()
+   public function connectMaster()
    {
 
       include SITE_ROOT."/fuku-config/private-param/db-param.php";
@@ -132,7 +132,7 @@ class DBAccess
     *
     * @return void
     */
-   public static function connectSlave()
+   public function connectSlave()
    {
 
       include SITE_ROOT."/fuku-config/private-param/db-param.php";
@@ -175,7 +175,7 @@ class DBAccess
 
       } else {
 
-         self::connectMaster();
+         $this->connectMaster();
 
       }
 
@@ -200,7 +200,7 @@ class DBAccess
     *
     * @return void
     */
-   public static function changeMode($options=array())
+   public function changeMode($options=array())
    {
 
       include SITE_ROOT."/fuku-config/private-param/db-param.php";
@@ -213,12 +213,12 @@ class DBAccess
 
       case 'master':
 
-         if (  !self::$this->db_connection_poll['master']
-            || !isset(self::$this->db_connection_poll['master'])
-            || empty(self::$this->db_connection_poll['master'])
+         if (  !$this->db_connection_poll['master']
+            || !isset($this->db_connection_poll['master'])
+            || empty($this->db_connection_poll['master'])
          ) {
 
-            self::connectMaster();
+            $this->connectMaster();
 
          } else {
 
@@ -234,12 +234,12 @@ class DBAccess
       default:
       case 'slave':
 
-         if (  !self::$this->db_connection_poll['slave']
-            || !isset(self::$this->db_connection_poll['slave'])
-            || empty(self::$this->db_connection_poll['slave'])
+         if (  !$this->db_connection_poll['slave']
+            || !isset($this->db_connection_poll['slave'])
+            || empty($this->db_connection_poll['slave'])
          ) {
 
-            self::connectMaster();
+            $this->connectSlave();
 
          } else {
 
@@ -366,7 +366,7 @@ class DBAccess
    {
 
       $options = array('mode'=>'master');
-      $self::changeMode($options);
+      $this->changeMode($options);
 
       $query_result = $this->db_connection->query($insert_sql);
 
@@ -380,7 +380,7 @@ class DBAccess
       $insert_id = $this->db_connection->lastInsertId();
 
       $options = array('mode'=>'slave');
-      $self::changeMode($options);
+      $this->changeMode($options);
 
       return $insert_id;
 
@@ -398,7 +398,7 @@ class DBAccess
    {
 
       $options = array('mode'=>'master');
-      $self::changeMode($options);
+      $this->changeMode($options);
 
       if (SYSTEM_MODE=='test') {
          $this->db_connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
@@ -418,7 +418,7 @@ class DBAccess
       $insert_id = $this->db_connection->lastInsertId();
 
       $options = array('mode'=>'slave');
-      $self::changeMode($options);
+      $this->changeMode($options);
 
       return $insert_id;
 
@@ -437,10 +437,10 @@ class DBAccess
 
       //if ($mode=='master') {
       //   $options = array('mode'=>'master');
-      //   $self::changeMode($options);
+      //   $this->changeMode($options);
       //} else {
       //   $options = array('mode'=>'slave');
-      //   $self::changeMode($options);
+      //   $this->changeMode($options);
       //}
 
       $query_result = $this->db_connection->query($select_sql);
@@ -453,7 +453,7 @@ class DBAccess
       }
 
       $options = array('mode'=>'slave');
-      $self::changeMode($options);
+      $this->changeMode($options);
 
       return $query_result;
 
@@ -473,10 +473,10 @@ class DBAccess
 
       //if ($mode=='master') {
       //   $options = array('mode'=>'master');
-      //   $self::changeMode($options);
+      //   $this->changeMode($options);
       //} else {
       //   $options = array('mode'=>'slave');
-      //   $self::changeMode($options);
+      //   $this->changeMode($options);
       //}
 
       if (SYSTEM_MODE=='test') {
@@ -496,7 +496,7 @@ class DBAccess
       $fetch_query_result = $statement->fetchAll();
 
       $options = array('mode'=>'slave');
-      $self::changeMode($options);
+      $this->changeMode($options);
 
       return $fetch_query_result;
 
@@ -513,7 +513,7 @@ class DBAccess
    {
 
       $options = array('mode'=>'master');
-      $self::changeMode($options);
+      $this->changeMode($options);
 
       $query_result = $this->db_connection->query($update_sql);
 
@@ -525,7 +525,7 @@ class DBAccess
       }
 
       $options = array('mode'=>'slave');
-      $self::changeMode($options);
+      $this->changeMode($options);
 
       return $query_result->rowCount();
 
@@ -543,7 +543,7 @@ class DBAccess
    {
 
       $options = array('mode'=>'master');
-      $self::changeMode($options);
+      $this->changeMode($options);
 
       if (SYSTEM_MODE=='test') {
          $this->db_connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
@@ -560,7 +560,7 @@ class DBAccess
       }
 
       $options = array('mode'=>'slave');
-      $self::changeMode($options);
+      $this->changeMode($options);
 
       return $statement->rowCount();
 
@@ -577,7 +577,7 @@ class DBAccess
    {
 
       $options = array('mode'=>'master');
-      $self::changeMode($options);
+      $this->changeMode($options);
 
       $query_result = $this->db_connection->query($delete_sql);
 
@@ -589,7 +589,7 @@ class DBAccess
       }
 
       $options = array('mode'=>'slave');
-      $self::changeMode($options);
+      $this->changeMode($options);
 
       return $query_result->rowCount();
 
@@ -607,7 +607,7 @@ class DBAccess
    {
 
       $options = array('mode'=>'master');
-      $self::changeMode($options);
+      $this->changeMode($options);
 
       if (SYSTEM_MODE=='test') {
          $this->db_connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
@@ -624,7 +624,7 @@ class DBAccess
       }
 
       $options = array('mode'=>'slave');
-      $self::changeMode($options);
+      $this->changeMode($options);
 
       return $statement->rowCount();
 
