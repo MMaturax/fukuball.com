@@ -37,18 +37,8 @@ class DBAccess
    protected $db_name;
    protected $db_connection;
 
-   protected $s_db_host;
-   protected $s_db_name;
-   protected $s_db_user;
-   protected $s_db_password;
-   protected $s_db_connection;
-
-   protected $m_db_host;
-   protected $m_db_name;
-   protected $m_db_user;
-   protected $m_db_password;
-   protected $m_db_connection;
-
+   protected $db_name_poll;
+   protected $db_connection_poll;
 
    /**
     * Method __construct initialize instance
@@ -60,76 +50,18 @@ class DBAccess
 
       include SITE_ROOT."/fuku-config/private-param/db-param.php";
 
-      // connect master
-      $this->m_db_host       = $database_server['master']['db_host'];
-      $this->m_db_name       = $database_server['master']['db_name'];
-      $this->m_db_user       = $database_server['master']['db_user'];
-      $this->m_db_password   = $database_server['master']['db_password'];
+      $this->db_name_poll = array();
+      $this->db_connection_poll = array();
 
-      try {
-
-         $this->m_db_connection
-             = new PDO(
-                 'mysql:host=' . $this->m_db_host . ';dbname=' . $this->m_db_name,
-                 $this->m_db_user,
-                 $this->m_db_password
-             );
-
-         $this->m_db_connection->query("SET time_zone='+8:00'");
-         $this->m_db_connection->query("SET NAMES UTF8");
-
-      } catch (PDOException $e) {
-
-         echo "<h2>".get_class($this)."</h2>";
-         var_dump($e->getMessage());
-         exit;
-
-      } // end try
-
-
-      // connect slave
       if (!empty($slave_database_name)) {
 
-         $slave_db_choose = $slave_database_name[array_rand($slave_database_name)];
-
-         $this->s_db_host       = $database_server[$slave_db_choose]['db_host'];
-         $this->s_db_name       = $database_server[$slave_db_choose]['db_name'];
-         $this->s_db_user       = $database_server[$slave_db_choose]['db_user'];
-         $this->s_db_password   = $database_server[$slave_db_choose]['db_password'];
+         self::connectSlave();
 
       } else {
 
-         $this->s_db_host       = $this->m_db_host;
-         $this->s_db_name       = $this->m_db_name;
-         $this->s_db_user       = $this->m_db_user;
-         $this->s_db_password   = $this->m_db_password;
+         self::connectMaster();
 
       }
-
-      try {
-
-         $this->s_db_connection
-             = new PDO(
-                 'mysql:host=' . $this->s_db_host . ';dbname=' . $this->s_db_name,
-                 $this->s_db_user,
-                 $this->s_db_password
-             );
-
-         $this->s_db_connection->query("SET time_zone='+8:00'");
-         $this->s_db_connection->query("SET NAMES UTF8");
-
-      } catch (PDOException $e) {
-
-         echo "<h2>".get_class($this)."</h2>";
-         var_dump($e->getMessage());
-         exit;
-
-      } // end try
-
-      // default use slave
-      $this->current_mode  = 'slave';
-      $this->db_name       = $this->s_db_name;
-      $this->db_connection = $this->s_db_connection;
 
       self::$instance_count++;
 
@@ -150,6 +82,104 @@ class DBAccess
       }
 
    }// end function init
+
+   /**
+    * Method connectMaster
+    *
+    * @return void
+    */
+   public static function connectMaster()
+   {
+
+      include SITE_ROOT."/fuku-config/private-param/db-param.php";
+
+      // connect master
+      $m_db_host       = $database_server['master']['db_host'];
+      $m_db_name       = $database_server['master']['db_name'];
+      $m_db_user       = $database_server['master']['db_user'];
+      $m_db_password   = $database_server['master']['db_password'];
+
+      try {
+
+         $this->db_connection_poll['master']
+             = new PDO(
+                 'mysql:host=' . $m_db_host . ';dbname=' . $m_db_name,
+                 $m_db_user,
+                 $m_db_password
+             );
+
+         $this->db_name_poll['master'] = $m_db_name;
+         $this->db_connection_poll['master']->query("SET time_zone='+8:00'");
+         $this->db_connection_poll['master']->query("SET NAMES UTF8");
+
+         // switch to master
+         $this->current_mode  = 'master';
+         $this->db_name       = $this->db_name_poll['master'];
+         $this->db_connection = $this->db_connection_poll['master'];
+
+      } catch (PDOException $e) {
+
+         echo "<h2>".get_class($this)."</h2>";
+         var_dump($e->getMessage());
+         exit;
+
+      } // end try
+
+   }// end function connectMaster
+
+   /**
+    * Method connectSlave
+    *
+    * @return void
+    */
+   public static function connectSlave()
+   {
+
+      include SITE_ROOT."/fuku-config/private-param/db-param.php";
+
+      if (!empty($slave_database_name)) {
+
+         // connect slave
+         $slave_db_choose = $slave_database_name[array_rand($slave_database_name)];
+
+         $s_db_host       = $database_server[$slave_db_choose]['db_host'];
+         $s_db_name       = $database_server[$slave_db_choose]['db_name'];
+         $s_db_user       = $database_server[$slave_db_choose]['db_user'];
+         $s_db_password   = $database_server[$slave_db_choose]['db_password'];
+
+         try {
+
+            $this->db_connection_poll['slave']
+                = new PDO(
+                    'mysql:host=' . $s_db_host . ';dbname=' . $s_db_name,
+                    $s_db_user,
+                    $s_db_password
+                );
+
+            $this->db_name_poll['slave'] = $s_db_name;
+            $this->db_connection_poll['slave']->query("SET time_zone='+8:00'");
+            $this->db_connection_poll['slave']->query("SET NAMES UTF8");
+
+            // switch to slave
+            $this->current_mode  = 'slave';
+            $this->db_name       = $this->db_name_poll['slave']
+            $this->db_connection = $this->db_connection_poll['slave'];
+
+         } catch (PDOException $e) {
+
+            echo "<h2>".get_class($this)."</h2>";
+            var_dump($e->getMessage());
+            exit;
+
+         } // end try
+
+      } else {
+
+         self::connectMaster();
+
+      }
+
+   }// end function connectSlave
 
    /**
     * Method getInstance to get db_obj
@@ -173,22 +203,55 @@ class DBAccess
    public static function changeMode($options=array())
    {
 
+      include SITE_ROOT."/fuku-config/private-param/db-param.php";
+
       $defaults = array('mode'=>'slave');
 
       $options = array_merge($defaults, $options);
 
       switch ($options['mode']) {
+
       case 'master':
-         $this->current_mode  = 'master';
-         $this->db_name       = $this->m_db_name;
-         $this->db_connection = $this->m_db_connection;
+
+         if (  !self::$this->db_connection_poll['master']
+            || !isset(self::$this->db_connection_poll['master'])
+            || empty(self::$this->db_connection_poll['master'])
+         ) {
+
+            self::connectMaster();
+
+         } else {
+
+            // switch to master
+            $this->current_mode  = 'master';
+            $this->db_name       = $this->db_name_poll['master'];
+            $this->db_connection = $this->db_connection_poll['master'];
+
+         }
+
          break;
+
       default:
       case 'slave':
-         $this->current_mode  = 'slave';
-         $this->db_name       = $this->s_db_name;
-         $this->db_connection = $this->s_db_connection;
+
+         if (  !self::$this->db_connection_poll['slave']
+            || !isset(self::$this->db_connection_poll['slave'])
+            || empty(self::$this->db_connection_poll['slave'])
+         ) {
+
+            self::connectMaster();
+
+         } else {
+
+            // switch to master
+            $this->current_mode  = 'slave';
+            $this->db_name       = $this->db_name_poll['slave'];
+            $this->db_connection = $this->db_connection_poll['slave'];
+
+         }
+
          break;
+
       }
 
    }// end function changeMode
@@ -303,7 +366,7 @@ class DBAccess
    {
 
       $options = array('mode'=>'master');
-      $this::changeMode($options);
+      $self::changeMode($options);
 
       $query_result = $this->db_connection->query($insert_sql);
 
@@ -317,7 +380,7 @@ class DBAccess
       $insert_id = $this->db_connection->lastInsertId();
 
       $options = array('mode'=>'slave');
-      $this::changeMode($options);
+      $self::changeMode($options);
 
       return $insert_id;
 
@@ -335,7 +398,7 @@ class DBAccess
    {
 
       $options = array('mode'=>'master');
-      $this::changeMode($options);
+      $self::changeMode($options);
 
       if (SYSTEM_MODE=='test') {
          $this->db_connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
@@ -355,7 +418,7 @@ class DBAccess
       $insert_id = $this->db_connection->lastInsertId();
 
       $options = array('mode'=>'slave');
-      $this::changeMode($options);
+      $self::changeMode($options);
 
       return $insert_id;
 
@@ -372,13 +435,13 @@ class DBAccess
    public function selectCommand($select_sql, $mode='slave')
    {
 
-      if ($mode=='master') {
-         $options = array('mode'=>'master');
-         $this::changeMode($options);
-      } else {
-         $options = array('mode'=>'slave');
-         $this::changeMode($options);
-      }
+      //if ($mode=='master') {
+      //   $options = array('mode'=>'master');
+      //   $self::changeMode($options);
+      //} else {
+      //   $options = array('mode'=>'slave');
+      //   $self::changeMode($options);
+      //}
 
       $query_result = $this->db_connection->query($select_sql);
 
@@ -390,7 +453,7 @@ class DBAccess
       }
 
       $options = array('mode'=>'slave');
-      $this::changeMode($options);
+      $self::changeMode($options);
 
       return $query_result;
 
@@ -410,10 +473,10 @@ class DBAccess
 
       //if ($mode=='master') {
       //   $options = array('mode'=>'master');
-      //   $this::changeMode($options);
+      //   $self::changeMode($options);
       //} else {
       //   $options = array('mode'=>'slave');
-      //   $this::changeMode($options);
+      //   $self::changeMode($options);
       //}
 
       if (SYSTEM_MODE=='test') {
@@ -433,7 +496,7 @@ class DBAccess
       $fetch_query_result = $statement->fetchAll();
 
       $options = array('mode'=>'slave');
-      $this::changeMode($options);
+      $self::changeMode($options);
 
       return $fetch_query_result;
 
@@ -450,7 +513,7 @@ class DBAccess
    {
 
       $options = array('mode'=>'master');
-      $this::changeMode($options);
+      $self::changeMode($options);
 
       $query_result = $this->db_connection->query($update_sql);
 
@@ -462,7 +525,7 @@ class DBAccess
       }
 
       $options = array('mode'=>'slave');
-      $this::changeMode($options);
+      $self::changeMode($options);
 
       return $query_result->rowCount();
 
@@ -480,7 +543,7 @@ class DBAccess
    {
 
       $options = array('mode'=>'master');
-      $this::changeMode($options);
+      $self::changeMode($options);
 
       if (SYSTEM_MODE=='test') {
          $this->db_connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
@@ -497,7 +560,7 @@ class DBAccess
       }
 
       $options = array('mode'=>'slave');
-      $this::changeMode($options);
+      $self::changeMode($options);
 
       return $statement->rowCount();
 
@@ -514,7 +577,7 @@ class DBAccess
    {
 
       $options = array('mode'=>'master');
-      $this::changeMode($options);
+      $self::changeMode($options);
 
       $query_result = $this->db_connection->query($delete_sql);
 
@@ -526,7 +589,7 @@ class DBAccess
       }
 
       $options = array('mode'=>'slave');
-      $this::changeMode($options);
+      $self::changeMode($options);
 
       return $query_result->rowCount();
 
@@ -544,7 +607,7 @@ class DBAccess
    {
 
       $options = array('mode'=>'master');
-      $this::changeMode($options);
+      $self::changeMode($options);
 
       if (SYSTEM_MODE=='test') {
          $this->db_connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
@@ -561,7 +624,7 @@ class DBAccess
       }
 
       $options = array('mode'=>'slave');
-      $this::changeMode($options);
+      $self::changeMode($options);
 
       return $statement->rowCount();
 
