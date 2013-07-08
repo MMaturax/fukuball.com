@@ -24,4 +24,5 @@ require 'fuku-class/fuku-core/ActiveRecord.php';
 
 // model
 require 'fuku-class/fuku-model/CkipProcessRecord.php';
+require 'fuku-class/fuku-model/CkipProcessRecordGod.php';
 ?>
