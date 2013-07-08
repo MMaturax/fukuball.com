@@ -79,7 +79,7 @@ class CkipClientViewController
 
          include_once SITE_ROOT.'/fuku-view-page/ckip-client-partial-view/ckip-process-result.php';
 
-         unset($ckip_process_result_obj);
+         unset($ckip_process_record_obj);
 
          break;
 

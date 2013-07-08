@@ -46,5 +46,17 @@ class CkipProcessRecord extends ActiveRecord
    public $paragraph;
    public $paragraph_result;
 
+   /**
+    * Method getUrl get page url
+    *
+    * @return string $url
+    */
+   public function getUrl()
+   {
+
+      return '/ckip-client/record/'.$this->id;
+
+   }// end function getUrl
+
 }
 ?>
