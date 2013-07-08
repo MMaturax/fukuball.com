@@ -18,5 +18,6 @@ require 'fuku-class/fuku-core/ErrorMessenger.php';
 require 'fuku-class/fuku-core/GlobalHelper.php';
 require 'fuku-class/fuku-core/MemcacheAccess.php';
 require 'fuku-class/fuku-core/DBAccess.php';
+require 'fuku-class/fuku-core/ActiveRecordGod.php';
 require 'fuku-class/fuku-core/ActiveRecord.php';
 ?>

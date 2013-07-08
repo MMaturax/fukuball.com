@@ -428,20 +428,11 @@ class DBAccess
     * Method selectCommand to execute select sql command
     *
     * @param string $select_sql # the sql statement
-    * @param string $mode       # the connection mode
     *
     * @return pdostat $query_result
     */
-   public function selectCommand($select_sql, $mode='slave')
+   public function selectCommand($select_sql)
    {
-
-      //if ($mode=='master') {
-      //   $options = array('mode'=>'master');
-      //   $this->changeMode($options);
-      //} else {
-      //   $options = array('mode'=>'slave');
-      //   $this->changeMode($options);
-      //}
 
       $query_result = $this->db_connection->query($select_sql);
 
@@ -464,20 +455,11 @@ class DBAccess
     *
     * @param string $select_sql # the sql statement
     * @param array  $param      # the param
-    * @param string $mode       # the connection mode
     *
     * @return pdostat $query_result
     */
-   public function selectCommandPrepare($select_sql, $param, $mode='slave')
+   public function selectCommandPrepare($select_sql, $param)
    {
-
-      //if ($mode=='master') {
-      //   $options = array('mode'=>'master');
-      //   $this->changeMode($options);
-      //} else {
-      //   $options = array('mode'=>'slave');
-      //   $this->changeMode($options);
-      //}
 
       if (SYSTEM_MODE=='test') {
          $this->db_connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
