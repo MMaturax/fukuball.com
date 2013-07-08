@@ -119,19 +119,25 @@ class CkipClientViewController
 
          $ckip_process_record_obj = new CkipProcessRecord($ckip_process_record_id);
 
+         $paragraph_result = json_decode($ckip_process_record_obj->paragraph_result, true);
+
+         $return_result = array();
+         $return_result['paragraph'] = $ckip_process_record_obj->paragraph;
+         $return_result['paragraph_result'] = $paragraph_result;
+
          switch ($ckip_process_record_doc_type) {
 
          case 'json':
 
             header('Content-type: application/json');
-            echo $ckip_process_record_obj->paragraph_result;
+            echo json_encode($return_result);
 
             break;
 
          default:
 
             header('Content-type: application/json');
-            echo $ckip_process_record_obj->paragraph_result;
+            echo json_encode($return_result);
 
             break;
 
