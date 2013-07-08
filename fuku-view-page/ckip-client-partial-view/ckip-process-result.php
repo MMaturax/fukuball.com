@@ -24,7 +24,10 @@ print_r($ckip_process_result_term);
       </pre>
    </div>
    <div>
-      <input id="ckip-process-share-link" type="text" style="width:100%;" value="<?php echo $->getUrl(); ?>" readonly="readonly">
+      <label>
+         轉貼連結
+      </label>
+      <input id="ckip-process-share-link" type="text" style="width:100%;" value="<?php echo $ckip_process_record_obj->getUrl(); ?>" readonly="readonly" />
    </div>
 </section>
 <section>
@@ -34,6 +37,13 @@ print_r($ckip_process_result_term);
 </section>
 <script>
 $('#ckip-process-result-block').ready(function() {
+
    $.scrollTo( $('#ckip-process-result-block'), 400, {offset:350} );
+
+   $(document.body).off('click.ckip_process_share_link', '#ckip-process-share-link');
+   $(document.body).on('click.ckip_process_share_link', '#ckip-process-share-link', function() {
+      $(this).select();
+   });
+
 });
 </script>
