@@ -33,7 +33,7 @@ class DBAccess
 
    protected static $db_obj;
    protected static $instance_count = 0;
-   protected $current_mode;
+   public    $current_mode;
    protected $db_name;
    protected $db_connection;
 
