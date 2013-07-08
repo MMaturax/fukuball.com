@@ -27,7 +27,7 @@ print_r($ckip_process_result_term);
       <label>
          轉貼連結
       </label>
-      <input id="ckip-process-share-link" type="text" style="width:100%;" value="<?php echo $ckip_process_record_obj->getUrl(); ?>" readonly="readonly" />
+      <input id="ckip-process-share-link" type="text" style="width:100%;" value="<?php echo SITE_HOST.$ckip_process_record_obj->getUrl(); ?>" readonly="readonly" />
    </div>
 </section>
 <section>
