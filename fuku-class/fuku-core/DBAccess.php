@@ -162,7 +162,7 @@ class DBAccess
 
             // switch to slave
             $this->current_mode  = 'slave';
-            $this->db_name       = $this->db_name_poll['slave']
+            $this->db_name       = $this->db_name_poll['slave'];
             $this->db_connection = $this->db_connection_poll['slave'];
 
          } catch (PDOException $e) {
