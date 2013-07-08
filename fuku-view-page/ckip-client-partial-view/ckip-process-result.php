@@ -23,6 +23,9 @@ print_r($ckip_process_result_term);
          ?>
       </pre>
    </div>
+   <div>
+      <input id="ckip-process-share-link" type="text" style="width:100%;" value="<?php echo $->getUrl(); ?>" readonly="readonly">
+   </div>
 </section>
 <section>
    <?php

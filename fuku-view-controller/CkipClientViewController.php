@@ -70,7 +70,18 @@ class CkipClientViewController
          $ckip_process_record_id = $ckip_process_record_god_obj->create($parameter_array);
          unset($ckip_process_record_god_obj);
 
+         $db_obj = DBAccess::getInstance();
+         echo $db_obj->current_mode.'<br/>';
+         $options = array('mode'=>'master');
+         $db_obj->changeMode($options);
+         echo $db_obj->current_mode.'<br/>';
+         $db_obj2 = DBAccess::getInstance();
+         echo $db_obj2->current_mode.'<br/>';
+         $ckip_process_record_obj = new CkipProcessRecord($ckip_process_record_id);
+
          include_once SITE_ROOT.'/fuku-view-page/ckip-client-partial-view/ckip-process-result.php';
+
+         unset($ckip_process_result_obj);
 
          break;
 

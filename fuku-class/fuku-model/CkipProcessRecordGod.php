@@ -34,5 +34,18 @@ class CkipProcessRecordGod extends ActiveRecordGod
    //
    // protected $db_obj;
    // protected $table_name;
+
+   /**
+    * Method getUrl get page url
+    *
+    * @return string $url
+    */
+   public function getUrl()
+   {
+
+      return '/ckip-client/record/'.$this->id;
+
+   }// end function getUrl
+
 }
 ?>
