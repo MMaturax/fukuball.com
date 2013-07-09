@@ -136,8 +136,12 @@ class CkipClientViewController
 
          default:
 
-            header('Content-type: application/json');
-            echo json_encode($return_result);
+            $meta_type = "ckip";
+            $page_title = 'CKIP Client 線上中文斷詞 | 歷史紀錄';
+            $ckip_client_record_list_active = 'active';
+            $yield_path = '/fuku-view-page/ckip-client-record.php';
+
+            require_once SITE_ROOT.'/fuku-view-layout/ckip-client-page-layout.php';
 
             break;
 
