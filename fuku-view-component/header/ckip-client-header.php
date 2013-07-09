@@ -24,6 +24,7 @@
          <div class="nav-collapse collapse">
             <ul class="nav">
                <li class="<?php echo $ckip_client_active; ?>"><a href="/ckip-client/">線上中文斷詞首頁</a></li>
+               <li class="<?php echo $ckip_client_record_list_active; ?>"><a href="/ckip-client/record-list">歷史紀錄</a></li>
                <li class="<?php echo $ckip_client_about_active; ?>"><a href="/ckip-client/about">關於我們</a></li>
             </ul>
          </div><!--/.nav-collapse -->
