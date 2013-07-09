@@ -22,7 +22,7 @@
          </div>
          <div>
             <div class="thumbnail clearfix">
-                <div class="pull-left clearfix ckip-process-num">
+                <div class="pull-left clearfix ckip-process-num m-b-10">
                    1
                 </div>
                 <div class="caption">
@@ -36,7 +36,7 @@
                 </div>
               </div>
               <div class="thumbnail clearfix">
-                  <div class="pull-left clearfix ckip-process-num">
+                  <div class="pull-left clearfix ckip-process-num m-b-10">
                       2
                    </div>
                   <div class="caption">
