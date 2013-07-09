@@ -22,7 +22,9 @@
          </div>
          <div>
             <div class="thumbnail clearfix">
-                <img src="http://placehold.it/320x200" alt="ALT NAME" class="pull-left span2 clearfix" style="margin-right:10px">
+                <div class="pull-left span2 clearfix" style="margin-right:10px">
+                   ddd
+                </div>
                 <div class="caption">
                   <a href="http://bootsnipp.com/" class="btn btn-primary icon  pull-right">Select</a>
                   <h4>
@@ -34,7 +36,9 @@
                 </div>
               </div>
               <div class="thumbnail clearfix">
-                  <img src="http://placehold.it/320x200" alt="ALT NAME" class="pull-left span2 clearfix" style="margin-right:10px">
+                  <div class="pull-left span2 clearfix" style="margin-right:10px">
+                      ddd
+                   </div>
                   <div class="caption">
                     <a href="http://bootsnipp.com/" class="btn btn-primary icon  pull-right">Select</a>
                     <h4>
