@@ -21,9 +21,33 @@
             ?>
          </div>
          <div>
+            <div class="thumbnail clearfix">
+                <img src="http://placehold.it/320x200" alt="ALT NAME" class="pull-left span2 clearfix" style="margin-right:10px">
+                <div class="caption">
+                  <a href="http://bootsnipp.com/" class="btn btn-primary icon  pull-right">Select</a>
+                  <h4>
+                  <a href="#">Luis Felipe Kaufmann</a>
+                  </h4>
+                  <small><b>RG: </b>99384877</small>
+
+
+                </div>
+              </div>
+              <div class="thumbnail clearfix">
+                  <img src="http://placehold.it/320x200" alt="ALT NAME" class="pull-left span2 clearfix" style="margin-right:10px">
+                  <div class="caption">
+                    <a href="http://bootsnipp.com/" class="btn btn-primary icon  pull-right">Select</a>
+                    <h4>
+                    <a href="#">Luis Felipe Kaufmann</a>
+                    </h4>
+                    <small><b>RG: </b>99384877</small>
+
+
+                  </div>
+                </div>
          </div>
       </div>
-      <div class="span2 pull-right p-a-15">
+      <div class="span2 pull-left p-a-15">
          <?php
          include_once SITE_ROOT.'/fuku-view-component/commercial/160-commercial.php';
          ?>
