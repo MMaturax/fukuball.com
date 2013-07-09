@@ -147,6 +147,16 @@ class CkipClientViewController
 
          break;
 
+      case 'record-list':
+
+         $meta_type = "ckip";
+         $page_title = 'CKIP Client 線上中文斷詞 | 歷史紀錄';
+         $ckip_client_about_active = 'active';
+         $yield_path = '/fuku-view-page/ckip-client-record-list.php';
+         require_once SITE_ROOT.'/fuku-view-layout/ckip-client-page-layout.php';
+
+         break;
+
       case 'about':
 
          $meta_type = "ckip";
