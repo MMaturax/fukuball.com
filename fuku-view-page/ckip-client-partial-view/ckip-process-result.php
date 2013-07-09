@@ -33,7 +33,7 @@ print_r($ckip_process_result_term);
       <label>
          JSON格式連結
       </label>
-      <input id="ckip-process-share-link" type="text" style="width:100%;" value="<?php echo SITE_HOST.$ckip_process_record_obj->getUrl().'.json'; ?>" readonly="readonly" />
+      <input id="ckip-process-share-json-link" type="text" style="width:100%;" value="<?php echo SITE_HOST.$ckip_process_record_obj->getUrl().'.json'; ?>" readonly="readonly" />
    </div>
 </section>
 <section>
@@ -46,8 +46,8 @@ $('#ckip-process-result-block').ready(function() {
 
    $.scrollTo( $('#ckip-process-result-block'), 400, {offset:350} );
 
-   $(document.body).off('click.ckip_process_share_link', '#ckip-process-share-link');
-   $(document.body).on('click.ckip_process_share_link', '#ckip-process-share-link', function() {
+   $(document.body).off('click.ckip_process_share_link', '#ckip-process-share-link,#ckip-process-share-json-link');
+   $(document.body).on('click.ckip_process_share_link', '#ckip-process-share-link,#ckip-process-share-json-link', function() {
       $(this).select();
    });
 

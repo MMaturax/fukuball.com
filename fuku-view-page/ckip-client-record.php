@@ -12,7 +12,7 @@
  * @link     http://www.fukuball.com
  */
 ?>
-<div>
+<div id="ckip-record-block">
    <div class="row">
       <div class="span9 pull-left p-a-15">
          <div>
@@ -41,7 +41,7 @@
                <label>
                   JSON格式連結
                </label>
-               <input id="ckip-process-share-link" type="text" style="width:100%;" value="<?php echo SITE_HOST.$ckip_process_record_obj->getUrl().'.json'; ?>" readonly="readonly" />
+               <input id="ckip-process-share-json-link" type="text" style="width:100%;" value="<?php echo SITE_HOST.$ckip_process_record_obj->getUrl().'.json'; ?>" readonly="readonly" />
             </div>
          </div>
       </div>
@@ -52,3 +52,13 @@
       </div>
    </div>
 </div>
+<script>
+$('#ckip-record-block').ready(function() {
+
+   $(document.body).off('click.ckip_process_share_link', '#ckip-process-share-link,#ckip-process-share-json-link');
+   $(document.body).on('click.ckip_process_share_link', '#ckip-process-share-link,#ckip-process-share-json-link', function() {
+      $(this).select();
+   });
+
+});
+</script>
