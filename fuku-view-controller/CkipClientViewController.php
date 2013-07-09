@@ -153,7 +153,13 @@ class CkipClientViewController
          $page_title = 'CKIP Client 線上中文斷詞 | 歷史紀錄';
          $ckip_client_record_list_active = 'active';
          $yield_path = '/fuku-view-page/ckip-client-record-list.php';
+
+         $ckip_process_record_god_obj = new CkipProcessRecordGod();
+         $ckip_process_record_list = $ckip_process_record_god_obj->getList();
+
          require_once SITE_ROOT.'/fuku-view-layout/ckip-client-page-layout.php';
+
+         unset($ckip_process_record_god);
 
          break;
 

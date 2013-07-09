@@ -30,10 +30,30 @@
  */
 class CkipProcessRecordGod extends ActiveRecordGod
 {
-   // extends from ActiveRecordGod
-   //
-   // protected $db_obj;
-   // protected $table_name;
+
+   /**
+    * Method getList
+    *
+    * @return pdo_list $query_result
+    */
+   public function getList($options=array()) {
+
+      $defaults = array();
+
+      $options = array_merge($defaults, $options);
+
+      $sql = "SELECT id ".
+               "FROM ckip_process_record ".
+               "ORDER BY id DESC ".
+               "LIMIT 100";
+
+      $param = array();
+
+      $query_list = $this->db_obj->selectCommandPrepare($sql, $param);
+
+      return $query_list;
+
+   }// end function getList
 
 }
 ?>

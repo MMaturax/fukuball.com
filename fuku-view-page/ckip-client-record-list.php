@@ -21,34 +21,28 @@
             ?>
          </div>
          <div>
-            <div class="thumbnail clearfix">
-                <div class="pull-left clearfix ckip-process-num m-b-10">
-                   1
-                </div>
-                <div class="caption">
-                  <a href="http://bootsnipp.com/" class="btn btn-primary icon  pull-right">Select</a>
-                  <h4>
-                  <a href="#">Luis Felipe Kaufmann</a>
-                  </h4>
-                  <small><b>RG: </b>99384877</small>
-
-
-                </div>
-              </div>
-              <div class="thumbnail clearfix">
+            <?php
+            foreach ($ckip_process_record_list as $ckip_process_record_list_data) {
+               $ckip_process_record_id = $ckip_process_record_list_data['id'];
+               $ckip_process_record_obj = new CkipProcessRecord($ckip_process_record_id);
+               ?>
+               <div class="thumbnail clearfix">
                   <div class="pull-left clearfix ckip-process-num m-b-10">
-                      2
-                   </div>
-                  <div class="caption">
-                    <a href="http://bootsnipp.com/" class="btn btn-primary icon  pull-right">Select</a>
-                    <h4>
-                    <a href="#">Luis Felipe Kaufmann</a>
-                    </h4>
-                    <small><b>RG: </b>99384877</small>
-
-
+                     <?php echo $ckip_process_record_obj->getId(); ?>
                   </div>
-                </div>
+                  <div class="caption">
+                     <a href="<?php echo SITE_HOST.$ckip_process_record_obj->getUrl(); ?>" class="btn btn-primary icon  pull-right">
+                        查看斷詞結果
+                     </a>
+                     <h4>
+                        短文：<?php echo nl2br($ckip_process_record_obj->paragraph); ?>
+                     </h4>
+                  </div>
+               </div>
+               <?php
+               unset($ckip_process_record_obj);
+            }
+            ?>
          </div>
       </div>
       <div class="span2 pull-left p-a-15">
