@@ -20,10 +20,16 @@
 <section>
    <div class="row">
       <div class="span2 pull-left p-a-15">
+         <?php
+         include_once SITE_ROOT.'/fuku-view-component/commercial/160-commercial.php';
+         ?>
       </div>
       <div class="span7 pull-left p-a-15">
       </div>
       <div class="span2 pull-right p-a-15">
+         <?php
+         include_once SITE_ROOT.'/fuku-view-component/commercial/160-commercial.php';
+         ?>
       </div>
    </div>
 </section>
