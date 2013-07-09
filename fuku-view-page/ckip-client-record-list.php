@@ -22,8 +22,8 @@
          </div>
          <div>
             <div class="thumbnail clearfix">
-                <div class="pull-left span2 clearfix" style="margin-right:10px">
-                   ddd
+                <div class="pull-left clearfix ckip-process-num">
+                   1
                 </div>
                 <div class="caption">
                   <a href="http://bootsnipp.com/" class="btn btn-primary icon  pull-right">Select</a>
@@ -36,8 +36,8 @@
                 </div>
               </div>
               <div class="thumbnail clearfix">
-                  <div class="pull-left span2 clearfix" style="margin-right:10px">
-                      ddd
+                  <div class="pull-left clearfix ckip-process-num">
+                      2
                    </div>
                   <div class="caption">
                     <a href="http://bootsnipp.com/" class="btn btn-primary icon  pull-right">Select</a>
