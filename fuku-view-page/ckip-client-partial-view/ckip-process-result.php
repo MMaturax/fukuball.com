@@ -19,7 +19,7 @@
    <div>
       <pre class="prettyprint">
          <?php
-print_r($ckip_process_result_term);
+print_r($return_result);
          ?>
       </pre>
    </div>
