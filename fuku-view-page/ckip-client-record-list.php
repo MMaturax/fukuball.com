@@ -26,8 +26,8 @@
                $ckip_process_record_id = $ckip_process_record_list_data['id'];
                $ckip_process_record_obj = new CkipProcessRecord($ckip_process_record_id);
                ?>
-               <div class="thumbnail clearfix">
-                  <div class="pull-left clearfix ckip-process-num m-b-10">
+               <div class="thumbnail clearfix m-b-10">
+                  <div class="pull-left clearfix ckip-process-num">
                      <?php echo $ckip_process_record_obj->getId(); ?>
                   </div>
                   <div class="caption">
