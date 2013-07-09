@@ -35,7 +35,8 @@
                         查看斷詞結果
                      </a>
                      <h4>
-                        短文：<?php echo nl2br($ckip_process_record_obj->paragraph); ?>
+                        短文：<br/>
+                        <?php echo nl2br($ckip_process_record_obj->paragraph); ?>
                      </h4>
                   </div>
                </div>
