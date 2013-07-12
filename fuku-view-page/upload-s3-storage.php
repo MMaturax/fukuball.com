@@ -12,12 +12,12 @@
  * @link     http://www.fukuball.com
  */
 ?>
-<h2>
-   Upload S3 Storage
-</h2>
 <div id="upload-s3-storage-block">
    <div class="row">
       <div class="span9 pull-left p-a-15">
+         <h2>
+            Upload S3 Storage
+         </h2>
          <div>
             <?php
             include_once SITE_ROOT.'/fuku-view-component/commercial/full-width-commercial.php';
