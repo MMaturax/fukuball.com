@@ -21,9 +21,9 @@
             ?>
          </div>
          <div>
-            <div id="upload-block" class="row well">
-               <div class="row" style="width: 300px; margin: 0px auto;">
-                  <div class="pull-left" style="width: 170px;">
+            <div id="upload-block" class="well">
+               <div class="row" style="width: 230px; margin: 0px auto;">
+                  <div class="pull-left" style="width: 100px;">
                      <a id="pick-file">
                         <button type="submit" class="btn btn-primary start">
                            <span>
@@ -38,10 +38,8 @@
                   </div>
                </div>
             </div>
-            <div style="width:920px;margin: 10px auto;">
-               <div class="progress progress-success progress-striped margin-all hide" style="width: 900px;">
-                  <div class="bar" style="width: 0%"></div>
-               </div>
+            <div class="progress progress-success progress-striped m-a-15 hide">
+               <div class="bar" style="width: 0%"></div>
             </div>
          </div>
       </div>
