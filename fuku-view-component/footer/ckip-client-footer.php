@@ -17,9 +17,6 @@
       <div class="row">
          <div class="span5 pull-left">
             <h3>CKIP Client 線上中文斷詞</h3>
-            <p>
-               若您有使用本系統，請幫忙點擊廣告，讓本服務有微薄的收入可以維持運作，謝謝！
-            </p>
             <ul class="footer-links">
                <li><a href="/ckip-client/">線上中文斷詞首頁</a></li>
                <li><a href="/ckip-client/about">關於我們</li>

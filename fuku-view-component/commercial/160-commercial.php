@@ -12,7 +12,7 @@
  * @link     http://www.fukuball.com
  */
 ?>
-<div class="commercial-box text-center" style="width:160px;">
+<!--<div class="commercial-box text-center" style="width:160px;">
    <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
    <ins class="adsbygoogle"
         style="display:inline-block;width:160px;height:600px"
@@ -21,4 +21,4 @@
    <script>
    (adsbygoogle = window.adsbygoogle || []).push({});
    </script>
-</div>
+</div>-->
