@@ -12,3 +12,25 @@
  * @link     http://www.fukuball.com
  */
 ?>
+<div id="upload-s3-storage-block">
+   <div class="row">
+      <div class="span9 pull-left p-a-15">
+         <div>
+            <?php
+            include_once SITE_ROOT.'/fuku-view-component/commercial/full-width-commercial.php';
+            ?>
+         </div>
+      </div>
+      <div class="span2 pull-left p-a-15">
+         <?php
+         include_once SITE_ROOT.'/fuku-view-component/commercial/160-commercial.php';
+         ?>
+      </div>
+   </div>
+</div>
+<script>
+$('#upload-s3-storage-block').ready(function() {
+
+
+});
+</script>
