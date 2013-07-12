@@ -65,33 +65,30 @@ $('#upload-s3-storage-block').ready(function() {
       }
    });
 
-   /*var audio_uploader = new plupload.Uploader({
+   var s3_uploader = new plupload.Uploader({
       runtimes : 'html5,flash,gears,silverlight,browserplus',
-      browse_button : 'pick-audio-file',
-      container: 'midi-upload-block',
-      max_file_size : '100mb',
+      browse_button : 'pick-file',
+      container: 'upload-block',
+      max_file_size : '10mb',
       chunk_size : '200kb',
-      url : '<?=SITE_HOST?>/ajax-action/song-action/upload-recommendation',
-      flash_swf_url : '<?=SITE_HOST?>/p-library/plupload/js/plupload.flash.swf',
-      silverlight_xap_url : '<?=SITE_HOST?>/p-library/plupload/js/plupload.silverlight.xap',
+      url : '<?php echo SITE_HOST; ?>/show-case/s3-upload/upload-file',
+      flash_swf_url : '/public/javascript/library/plupload/js/plupload.flash.swf',
+      silverlight_xap_url : '/public/javascript/library/plupload/js/plupload.silverlight.xap',
       multiple_queues : false,
       multi_selection : false,
       max_file_count : 1,
       multipart : true,
       filters : [
-         {title : "Audio files", extensions : "mp3"}
+         {title : "Pic files", extensions : "jpg,png,jpeg,gif"}
       ],
       multipart_params : {},
       init : {
          FilesAdded: function(up, files) {
             $('.progress').removeClass('hide');
             up.start();
-            $('#system-message').html('Processing...');
-            $('#system-message').show();
          },
          BeforeUpload: function (up, file) {
-            $('#rec-block').html('');
-            audio_uploader.settings.multipart_params = {cache_on: $("#on_off_on_hidden").val()};
+            s3_uploader.settings.multipart_params = {s3fs_on: $("#on_off_on_hidden").val()};
          },
          UploadProgress: function(up, file) {
             $('.progress .bar').css('width' , file.percent+'%');
@@ -106,32 +103,22 @@ $('#upload-s3-storage-block').ready(function() {
 
             //console.log(resp);
             $('.progress .bar').css('width' , '0%');
-            $('#system-message').html('完成');
-            $('#system-message').fadeOut();
-
-            if (resp.response=='alert-no-licence') {
-
-               $.ajax({
-                     url: '<?=SITE_HOST?>/ajax-action/box-action/alert-no-licence',
-                     type: "GET",
-                     data: {},
-                     dataType: "html",
-                     beforeSend: function( xhr ) {
-                     },
-                     success: function( html_block ) {
-                        $('#p-modal-block').html(html_block);
-                     }
-               });
-            } else {
-               $('#rec-block').html(resp.response);
-            }
 
          }
+
       }
 
    });
 
-   audio_uploader.init();*/
+   s3_uploader.init();
 
 });
 </script>
+<script type="text/javascript" src="http://bp.yahooapis.com/2.4.21/browserplus-min.js"></script>
+<script type="text/javascript" src="/public/javascript/library/plupload/js/plupload.js"></script>
+<script type="text/javascript" src="/public/javascript/library/plupload/js/plupload.gears.js"></script>
+<script type="text/javascript" src="/public/javascript/library/plupload/js/plupload.silverlight.js"></script>
+<script type="text/javascript" src="/public/javascript/library/plupload/js/plupload.flash.js"></script>
+<script type="text/javascript" src="/public/javascript/library/plupload/js/plupload.browserplus.js"></script>
+<script type="text/javascript" src="/public/javascript/library/plupload/js/plupload.html4.js"></script>
+<script type="text/javascript" src="/public/javascript/library/plupload/js/plupload.html5.js"></script>
