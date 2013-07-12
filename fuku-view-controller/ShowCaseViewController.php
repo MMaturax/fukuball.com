@@ -74,7 +74,7 @@ class ShowCaseViewController
       case 's3-upload':
 
          $page_title = 'Upload S3 Storage | Show Case';
-         $itunes11_active = 'active';
+         $s3_storage_active = 'active';
          $yield_path = '/fuku-view-page/upload-s3-storage.php';
          require_once SITE_ROOT.'/fuku-view-layout/show-case-page-layout.php';
 

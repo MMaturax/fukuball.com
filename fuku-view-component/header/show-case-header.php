@@ -26,6 +26,11 @@
                <li class="<?php echo $itunes11_active; ?>"><a href="/show-case/itunes11">HTML5 iTunes 11</a></li>
             </ul>
          </div><!--/.nav-collapse -->
+         <div class="nav-collapse collapse">
+            <ul class="nav">
+               <li class="<?php echo $s3_storage_active; ?>"><a href="/show-case/s3-upload">Upload S3 Storage</a></li>
+            </ul>
+         </div><!--/.nav-collapse -->
       </div>
    </div>
 </div>
