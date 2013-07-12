@@ -41,7 +41,7 @@
                   </div>
                </div>
             </div>
-            <div class="progress progress-success progress-striped m-a-15 hide">
+            <div class="progress progress-success progress-striped active m-a-15 hide">
                <div class="bar" style="width: 0%"></div>
             </div>
          </div>
