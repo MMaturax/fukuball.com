@@ -80,25 +80,37 @@ class ShowCaseViewController
 
             if ($s3fs_on=='on') {
 
+               $file_url_path = str_replace ('/mnt/fukuball-bucket/', 'http://www.fukuball.com/public/', $retunr_value);
+
+               $type = 'success';
+               $parameter = array("file_name"=> $name,"file_url_path"=>$file_url_path);
+               $error_messanger = new ErrorMessenger($type, $parameter);
+               $error_messanger->printErrorJSON();
+               unset($error_messanger);
+
             } else {
 
                // api upload to s3
+               include SITE_ROOT."/fuku-config/private-param/s3-param.php";
                include SITE_ROOT."/fuku-class/library/AWS/S3.php";
 
-               $s3 = new S3();
-               $s3_path = str_replace ('/mnt/fukuball-bucket/s3fs_demo/', '', $retunr_value);
-               $s3->putFile($retunr_value, '1.png');
-               unset($s3);
+               $s3 = new S3(S3_ACCESSKEY, S3_SECRETKEY);
+
+               if ($s3->putObjectFile($retunr_value, S3_BUCKET, baseName('1.png'), S3::ACL_PUBLIC_READ)) {
+
+                  $file_url_path = str_replace ('/mnt/fukuball-bucket/', 'http://www.fukuball.com/public/', $retunr_value);
+
+                  $type = 'success';
+                  $parameter = array("file_name"=> $name,"file_url_path"=>$file_url_path);
+                  $error_messanger = new ErrorMessenger($type, $parameter);
+                  $error_messanger->printErrorJSON();
+                  unset($error_messanger);
+
+               }
 
             }
 
-            $file_url_path = str_replace ('/mnt/fukuball-bucket/', 'http://www.fukuball.com/public/', $retunr_value);
 
-            $type = 'success';
-            $parameter = array("file_name"=> $name,"file_url_path"=>$file_url_path);
-            $error_messanger = new ErrorMessenger($type, $parameter);
-            $error_messanger->printErrorJSON();
-            unset($error_messanger);
 
             break;
 
