@@ -116,8 +116,10 @@ $('#upload-s3-storage-block').ready(function() {
          },
          FileUploaded: function(up, file, resp) {
 
-            console.log(resp);
+            var response = $.parseJSON(resp.response);
+            console.log(response);
             $('.progress .bar').css('width' , '0%');
+            //<li><a href="#">Profile</a></li>
 
          }
 
