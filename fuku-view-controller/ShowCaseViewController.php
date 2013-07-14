@@ -57,6 +57,8 @@ class ShowCaseViewController
             $name = $_REQUEST['name'];
             $new_file_name = time();
 
+            print_r($_SERVER);
+
             $target_file_name
                 = '/mnt/fukuball-bucket/s3fs_demo/'.$new_file_name;
 
@@ -90,7 +92,6 @@ class ShowCaseViewController
 
             $file_url_path = str_replace ('/mnt/fukuball-bucket/', 'http://www.fukuball.com/public/', $retunr_value);
 
-            print_r($_SERVER);
             $type = 'success';
             $parameter = array("file_name"=> $name,"file_url_path"=>$file_url_path);
             $error_messanger = new ErrorMessenger($type, $parameter);
