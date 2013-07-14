@@ -96,7 +96,7 @@ class ShowCaseViewController
 
                $s3 = new S3(S3_ACCESSKEY, S3_SECRETKEY);
 
-               if ($s3->putObjectFile($retunr_value, S3_BUCKET, baseName('1.png'), S3::ACL_PUBLIC_READ)) {
+               if ($s3->putObjectFile($retunr_value, S3_BUCKET, 's3fs_demo/'.baseName('1.png'), S3::ACL_PUBLIC_READ)) {
 
                   $file_url_path = str_replace ('/mnt/fukuball-bucket/', 'http://www.fukuball.com/public/', $retunr_value);
 
