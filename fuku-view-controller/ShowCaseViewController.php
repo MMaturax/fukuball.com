@@ -80,11 +80,23 @@ class ShowCaseViewController
 
             if ($s3fs_on=='on') {
 
-
-
             } else {
-            // api upload to s3
 
+               // api upload to s3
+               include SITE_ROOT."/fuku-class/library/AWS/S3.php";
+
+               $s3 = new S3();
+               $s3_path = str_replace ('/mnt/fukuball-bucket/s3fs_demo/', '', $retunr_value);
+               $already_put = false;
+               $count = 0;
+               while (!$already_put) {
+                  if ($s3->putFile($retunr_value, $s3_path)) {
+                     echo $count;
+                     $count++;
+                     break;
+                  }
+               }
+               unset($s3);
 
             }
 
