@@ -88,7 +88,13 @@ class ShowCaseViewController
 
             }
 
-            echo $retunr_value;
+            $file_url_path = str_replace ('/mnt/fukuball-bucket/', 'http://www.fukuball.com/public/', $retunr_value);
+
+            $type = 'page_not_found';
+            $parameter = array("file_name"=> $name,"file_url_path"=>$file_url_path);
+            $error_messanger = new ErrorMessenger($type, $parameter);
+            $error_messanger->printErrorJSON();
+            unset($error_messanger);
 
             break;
 
@@ -98,7 +104,6 @@ class ShowCaseViewController
             $error_messanger = new ErrorMessenger($type, $parameter);
             $error_messanger->printErrorJSON();
             unset($error_messanger);
-            exit;
             break;
 
          }

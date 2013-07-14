@@ -52,6 +52,8 @@
                <div class="bar" style="width: 0%"></div>
             </div>
          </div>
+         <ul id="uploaded-file-list" class="nav nav-pills nav-stacked">
+         </ul>
       </div>
       <div class="span4 pull-right p-a-15">
          <?php
@@ -114,7 +116,7 @@ $('#upload-s3-storage-block').ready(function() {
          },
          FileUploaded: function(up, file, resp) {
 
-            //console.log(resp);
+            console.log(resp);
             $('.progress .bar').css('width' , '0%');
 
          }
