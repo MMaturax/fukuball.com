@@ -60,7 +60,7 @@ class ShowCaseViewController
             print_r($_SERVER);
 
             $target_file_name
-                = '/mnt/fukuball-bucket/s3fs_demo/'.$new_file_name;
+                = '/tmp/'.$new_file_name;
 
             $retunr_value = UploadHelper::pluploadProcess(
                 $_REQUEST,
