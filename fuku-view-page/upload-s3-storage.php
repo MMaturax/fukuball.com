@@ -43,6 +43,9 @@
                      <input type="checkbox" checked="checked" id="on_off_on"/>
                      <input type="hidden" id="on_off_on_hidden" value="on" />
                   </div>
+                  <div class="help-block">
+                     under 10mb image file
+                  </div>
                </div>
             </div>
             <div class="progress progress-success progress-striped active m-a-15 hide">
