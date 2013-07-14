@@ -120,7 +120,7 @@ $('#upload-s3-storage-block').ready(function() {
             var file_name = response.response.status.parameter.file_name;
             var file_url_path = response.response.status.parameter.file_url_path;
             $('.progress .bar').css('width' , '0%');
-            $('#uploaded-file-list').prepend('<li><a href="'+file_url_path+'">'+file_name+'</a></li>');
+            $('#uploaded-file-list').prepend('<li><a href="'+file_url_path+'" target="_blank">'+file_name+'</a></li>');
 
          }
 
