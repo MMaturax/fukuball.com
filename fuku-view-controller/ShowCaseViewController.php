@@ -57,8 +57,6 @@ class ShowCaseViewController
             $name = $_REQUEST['name'];
             $new_file_name = time();
 
-            print_r($_SERVER);
-
             $tmp_file_name
                 = '/tmp/'.$new_file_name;
 
