@@ -71,7 +71,7 @@ class ShowCaseViewController
 
                $type = 'unknow_error';
                $parameter = array("none"=>"none");
-               $error_messanger = new IndievoxErrorMessenger($type, $parameter);
+               $error_messanger = new ErrorMessenger($type, $parameter);
                $error_messanger->printErrorJSON();
                unset($error_messanger);
                exit;
