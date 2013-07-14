@@ -45,6 +45,31 @@ class ShowCaseViewController
 
       switch ($action_level_one_id) {
 
+      case 's3-upload':
+
+         $action_level_two_id = $segments[1];
+
+         switch ($action_level_two_id) {
+
+         case 'upload-file':
+
+            print_r($_POST);
+
+            break;
+
+         default:
+            $type = 'page_not_found';
+            $parameter = array("none"=>"none");
+            $error_messanger = new ErrorMessenger($type, $parameter);
+            $error_messanger->printErrorJSON();
+            unset($error_messanger);
+            exit;
+            break;
+
+         }
+
+         break;
+
       default:
          $type = 'page_not_found';
          $parameter = array("none"=>"none");
