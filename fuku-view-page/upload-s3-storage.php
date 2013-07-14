@@ -15,9 +15,13 @@
 <div id="upload-s3-storage-block">
    <div class="row">
       <div class="span9 pull-left p-a-15">
-         <h2>
-            Upload S3 Storage
-         </h2>
+         <section>
+            <div class="hero-unit m-a-15">
+               <h1>Upload S3 Storage </h1>
+               <p class="m-t-10">Implement a simple upload application to feel the performance. One use s3 api to upload file, and one use the s3fs.</p>
+               <p><a href="https://coderwall.com/p/kdpssg" target="_blank" class="btn btn-primary btn-large">如何掛載 AWS S3 到 AWS EC2 Instance »</a></p>
+            </div>
+         </section>
          <div>
             <?php
             include_once SITE_ROOT.'/fuku-view-component/commercial/full-width-commercial.php';
