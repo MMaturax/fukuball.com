@@ -90,7 +90,8 @@ class ShowCaseViewController
 
             $file_url_path = str_replace ('/mnt/fukuball-bucket/', 'http://www.fukuball.com/public/', $retunr_value);
 
-            $type = 'page_not_found';
+            print_r($_SERVER);
+            $type = 'success';
             $parameter = array("file_name"=> $name,"file_url_path"=>$file_url_path);
             $error_messanger = new ErrorMessenger($type, $parameter);
             $error_messanger->printErrorJSON();
