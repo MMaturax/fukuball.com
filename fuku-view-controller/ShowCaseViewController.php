@@ -81,7 +81,9 @@ class ShowCaseViewController
             if ($s3fs_on=='on') {
 
                $target_file_name = str_replace ('/tmp/', '/mnt/fukuball-bucket/s3fs_demo/', $retunr_value);
-               rename($retunr_value, $target_file_name);
+               echo $target_file_name;
+               copy($retunr_value, $target_file_name);
+               unlink($retunr_value);
                $file_url_path = str_replace ('/mnt/fukuball-bucket/', 'http://www.fukuball.com/public/', $target_file_name);
 
             } else {
