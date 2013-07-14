@@ -106,6 +106,14 @@ class ShowCaseViewController
                   $error_messanger->printErrorJSON();
                   unset($error_messanger);
 
+               } else {
+
+                  $type = 'unknow_error';
+                  $parameter = array("none"=>"none");
+                  $error_messanger = new ErrorMessenger($type, $parameter);
+                  $error_messanger->printErrorJSON();
+                  unset($error_messanger);
+
                }
 
             }
