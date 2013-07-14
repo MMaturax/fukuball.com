@@ -14,7 +14,7 @@
 ?>
 <div id="upload-s3-storage-block">
    <div class="row">
-      <div class="span9 pull-left p-a-15">
+      <div class="span7 pull-left p-a-15">
          <section>
             <div class="hero-unit m-a-15">
                <h1>Upload S3 Storage </h1>
@@ -50,9 +50,12 @@
             </div>
          </div>
       </div>
-      <div class="span2 pull-left p-a-15">
+      <div class="span4 pull-right p-a-15">
          <?php
-         include_once SITE_ROOT.'/fuku-view-component/commercial/160-commercial.php';
+         include_once SITE_ROOT.'/fuku-view-component/sidebar/profile-card.php';
+         ?>
+         <?php
+         include_once SITE_ROOT.'/fuku-view-component/commercial/350-commercial.php';
          ?>
       </div>
    </div>
