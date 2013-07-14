@@ -60,7 +60,7 @@ class ShowCaseViewController
             $target_file_name
                 = '/mnt/fukuball-bucket/s3fs_demo/'.$new_file_name;
 
-            $retunr_value = IndievoxUploadHelper::pluploadProcess(
+            $retunr_value = UploadHelper::pluploadProcess(
                 $_REQUEST,
                 $_SERVER,
                 $_FILES,
