@@ -80,14 +80,14 @@ $('#upload-s3-storage-block').ready(function() {
       browse_button : 'pick-file',
       container: 'upload-block',
       max_file_size : '10mb',
-      chunk_size : '200kb',
+      //chunk_size : '200kb',
       url : '<?php echo SITE_HOST; ?>/show-case/s3-upload/upload-file',
       flash_swf_url : '/public/javascript/library/plupload/js/plupload.flash.swf',
       silverlight_xap_url : '/public/javascript/library/plupload/js/plupload.silverlight.xap',
       multiple_queues : false,
       multi_selection : false,
       max_file_count : 1,
-      multipart : true,
+      multipart : false,
       filters : [
          {title : "Pic files", extensions : "jpg,png,jpeg,gif"}
       ],
