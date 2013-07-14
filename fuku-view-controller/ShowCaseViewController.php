@@ -87,7 +87,7 @@ class ShowCaseViewController
 
                $s3 = new S3();
                $s3_path = str_replace ('/mnt/fukuball-bucket/s3fs_demo/', '', $retunr_value);
-               $s3->putFile($retunr_value, '1.png')
+               $s3->putFile($retunr_value, '1.png');
                unset($s3);
 
             }
