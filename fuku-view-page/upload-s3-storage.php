@@ -43,8 +43,8 @@
                      <input type="checkbox" checked="checked" id="on_off_on"/>
                      <input type="hidden" id="on_off_on_hidden" value="on" />
                   </div>
-                  <div class="help-block">
-                     under 10mb image file
+                  <div class="help-block pull-left">
+                     Allow under 10mb image file
                   </div>
                </div>
             </div>

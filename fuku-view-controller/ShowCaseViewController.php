@@ -53,7 +53,42 @@ class ShowCaseViewController
 
          case 'upload-file':
 
-            print_r($_REQUEST);
+            $s3fs_on = $_REQUEST['s3fs_on'];
+            $name = $_REQUEST['name'];
+            $new_file_name = time();
+
+            $target_file_name
+                = '/mnt/fukuball-bucket/s3fs_demo/'.$new_file_name;
+
+            $retunr_value = IndievoxUploadHelper::pluploadProcess(
+                $_REQUEST,
+                $_SERVER,
+                $_FILES,
+                $target_file_name
+            );
+
+            if ($retunr_value=='fail') {
+
+               $type = 'unknow_error';
+               $parameter = array("none"=>"none");
+               $error_messanger = new IndievoxErrorMessenger($type, $parameter);
+               $error_messanger->printErrorJSON();
+               unset($error_messanger);
+               exit;
+
+            }
+
+            if ($s3fs_on=='on') {
+
+
+
+            } else {
+            // api upload to s3
+
+
+            }
+
+            echo $retunr_value;
 
             break;
 
