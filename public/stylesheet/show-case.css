@@ -1,4 +1,4 @@
-.links {
+/*.links {
   margin-top: 20px;
   text-align: center;
 }
@@ -9,7 +9,6 @@
 }
 
 .jaf-row {
-  /*zoom: 1;*/
   min-width: 320px;
 }
 
@@ -81,9 +80,6 @@
    text-overflow: ellipsis;
    margin: 0px 0px 2px 0px;
    color: #333;
-/*  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;*/
 }
 
 .artist-name {
@@ -182,7 +178,6 @@
   float: right;
   text-align: right;
   line-height: 0em;
-  /*width: 30%;*/
 }
 
 .art-wrap img {
@@ -195,4 +190,4 @@
 
 .clear {
   clear: both;
-}
+}*/

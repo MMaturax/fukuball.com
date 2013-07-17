@@ -12,7 +12,7 @@
  * @link     http://www.fukuball.com
  */
 ?>
-<script type="text/javascript">
+<!--<script type="text/javascript">
    $(document).ready(function(){
 
       $.ajax({
@@ -100,4 +100,4 @@
 <script src="/public/javascript/library/expandingalbums/js/mustache.js"></script>
 <script src="/public/javascript/library/expandingalbums/js/jquery.app-folders.js?v=0.0.13"></script>
 <script src="/public/javascript/library/expandingalbums/js/quantize.js"></script>
-<script src="/public/javascript/library/expandingalbums/js/color-thief.js"></script>
+<script src="/public/javascript/library/expandingalbums/js/color-thief.js"></script>-->
