@@ -25,6 +25,8 @@
    <br/>
    <h4>HappyDesigner Mini 分享會 #3</h4>
 </section>
+<section data-background="/public/image/slide-show/itunes-11-album-details.png">
+</section>
 <section>
    <h1>THE END</h1>
 </section>
