@@ -331,7 +331,7 @@ class ShowCaseViewController
          default:
             $page_title = '5Tunes11 | Show Case';
             $itunes11_active = 'active';
-            $yield_path = '/fuku-view-page/show-case-5tunes-11.php';
+            $yield_path = '/fuku-view-page/show-case-5tunes11.php';
             require_once SITE_ROOT.'/fuku-view-layout/show-case-page-layout.php';
             break;
 
