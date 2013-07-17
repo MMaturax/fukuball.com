@@ -34,9 +34,6 @@
          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
          text-transform: none;
       }
-      .reveal .state-background {
-         background: rgba(0,0,0,0.6);
-      }
       .global-header {
          position: relative;
          width: 100%;
