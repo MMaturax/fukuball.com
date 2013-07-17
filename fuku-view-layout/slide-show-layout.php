@@ -27,12 +27,14 @@
          <script src="/public/javascript/library/reveal/lib/js/html5shiv.js"></script>
       <![endif]-->
       <style>
-      .reveal .state-background {
-         background: rgba(0,0,0,0.5);
+      body {
+         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
       .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
          text-transform: none;
-         font-family: "Merriweather Sans",sans-serif;
+      }
+      .reveal .state-background {
+         background: rgba(0,0,0,0.5);
       }
       </style>
    </head>
