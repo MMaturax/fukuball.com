@@ -15,8 +15,6 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <meta charset="utf-8">
-      <title>Q2 Review &amp; Q3 Preview  - iNDIEVOX Engineering</title>
       <?php
       include_once SITE_ROOT."/fuku-view-component/meta-include.php";
       include_once SITE_ROOT."/fuku-view-component/icon-include.php";
@@ -28,6 +26,14 @@
       <!--[if lt IE 9]>
          <script src="/public/javascript/library/reveal/lib/js/html5shiv.js"></script>
       <![endif]-->
+      <style>
+      .reveal .state-background {
+         background: rgba(0,0,0,0.5);
+      }
+      .reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled, .reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled, .reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled, .reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
+         border-left-color: #D40000;
+      }
+      </style>
    </head>
    <body>
       <div class="reveal">
