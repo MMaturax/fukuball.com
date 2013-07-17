@@ -37,9 +37,64 @@
       .reveal .state-background {
          background: rgba(0,0,0,0.5);
       }
+      .global-header {
+         position: relative;
+         width: 100%;
+         height: 70px;
+         line-height: 70px;
+         margin: 0 auto;
+         z-index: 2;
+         font-size: 16px;
+         background: #222;
+         background: -moz-linear-gradient(top, #333 0%, #222 100%);
+         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333), color-stop(100%, #222));
+         background: -webkit-linear-gradient(top, #333 0%, #222 100%);
+         background: -o-linear-gradient(top, #333 0%, #222 100%);
+         background: -ms-linear-gradient(top, #333 0%, #222 100%);
+         background: linear-gradient(to bottom, #333 0%, #222 100%);
+         border-bottom: 1px solid #333;
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+      }
+      .global-header .wrapper {
+         width: 100%;
+         height: 100%;
+         max-width: 1140px;
+         margin: 0 auto;
+         padding: 0 20px;
+      }
+      .global-header h1 {
+         display: inline-block;
+         top: 9px;
+         margin: 0;
+         float: left;
+         vertical-align: middle;
+      }
+      .logo-animation {
+         position: relative;
+         height: 50px;
+      }
+      .logo-animation .word {
+         display: inline-block;
+         width: 80px;
+         height: 30px;
+         margin: 9px 0 0 8px;
+         vertical-align: top;
+         background-color: transparent;
+         background-image: url(http://www.indievox.com/iv-asset/image/indievox-logo.png);
+         background-size: 100%;
+      }
       </style>
    </head>
    <body>
+      <header class="global-header">
+         <div class="wrapper">
+            <h1 class="logo-animation">
+               <a class="word" href="/"></a>
+            </h1>
+        </div>
+      </header>
       <div class="reveal">
          <!-- Any section element inside of this container is displayed as a slide -->
          <div class="slides">
