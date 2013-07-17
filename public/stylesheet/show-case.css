@@ -191,3 +191,14 @@
 .clear {
   clear: both;
 }*/
+
+.disc-cover-folder {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  height: 310px;
+  padding: 3% 3% 10px 3%;
+  cursor: pointer;
+}

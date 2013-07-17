@@ -103,7 +103,7 @@
 <script src="/public/javascript/library/expandingalbums/js/color-thief.js"></script>-->
 <div class="app-folders-container">
    <div class="jaf-row jaf-container row">
-      <div class='folder' id='uno'>
+      <div class='folder disc-cover-folder' id='uno'>
          <a href='#'>
             <img class='disc-cover' src='/public/image/itunes-cover/KuwosEX1gI480X480.jpg'>
             <p class='disc-title'>disc-title</p>
