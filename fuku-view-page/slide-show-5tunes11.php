@@ -25,7 +25,10 @@
    <br/>
    <h4>HappyDesigner Mini 分享會 #3</h4>
 </section>
-<section data-background="/public/image/slide-show/itunes-11-album-details.png">
+<section data-background="#000000">
+   <h1 class="absolute-element" style="position: absolute; z-index: 1; width: 100%; left: 0px; top: 7%; font-weight: bold; -webkit-text-stroke-width: 15px; -webkit-text-stroke-color: black; -webkit-transform: scaleX(0.9);">THIS IS SO</h1>
+   <h1 class="absolute-element" style="position: absolute; z-index: 2; width: 100%; left: 0px; top: 7%; font-weight: bold; -webkit-transform: scaleX(0.9);">THIS IS SO</h1>
+   <img src="/public/image/slide-show/itunes-11-album-details.png" style="">
 </section>
 <section data-background="#000000">
    <h1>THE END</h1>
