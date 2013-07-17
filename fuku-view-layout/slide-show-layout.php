@@ -30,9 +30,6 @@
       .reveal .state-background {
          background: rgba(0,0,0,0.5);
       }
-      .reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled, .reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled, .reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled, .reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
-         border-left-color: #D40000;
-      }
       </style>
    </head>
    <body>
