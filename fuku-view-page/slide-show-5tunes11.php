@@ -15,9 +15,7 @@
 <section>
    <h1>5Tunes11</h1>
    <h3>利用開源套件組出 iTunes11 專輯設計</h3>
-   <p>
-      <small>Fukuball Lin</small>
-   </p>
+   <h3>Fukuball Lin</h3>
 </section>
 <section>
    <h1>THE END</h1>

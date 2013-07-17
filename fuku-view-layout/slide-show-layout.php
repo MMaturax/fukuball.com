@@ -30,6 +30,9 @@
       .reveal .state-background {
          background: rgba(0,0,0,0.5);
       }
+      .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+         text-transform: none;
+      }
       </style>
    </head>
    <body>
