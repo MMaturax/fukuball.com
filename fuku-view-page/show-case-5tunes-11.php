@@ -103,6 +103,7 @@
 <script src="/public/javascript/library/expandingalbums/js/color-thief.js"></script>-->
 <div class="app-folders-container">
    <script>
+   $('.app-folders-container').ready(function() {
       $('.app-folders-container').appFolders({
          // Opacity of non-selected items
          opacity: 1,
@@ -123,6 +124,7 @@
          // Set to true to enable one-click folder switching rather than iOS-like two clicks
          instaSwitch: false
       });
+   });
    </script>
 </div>
 <script src="/public/javascript/library/app-folders/jquery.app-folders.js"></script>
