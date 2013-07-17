@@ -36,8 +36,8 @@
    <h2>Can we build itunes design in web page?</h2>
    <p class="fragment">
       <img src="/public/image/slide-show/itunes-11-album-details.png">
-      <h2 class="absolute-element" style="position: absolute; z-index: 1; width: 100%; left: 0px; bottom: 5%; font-weight: bold; -webkit-text-stroke-width: 15px; -webkit-text-stroke-color: black; -webkit-transform: scaleX(0.9);">demo</h2>
-      <h2 class="absolute-element" style="position: absolute; z-index: 2; width: 100%; left: 0px; bottom: 5%; font-weight: bold; -webkit-transform: scaleX(0.9);">demo</h2>
+      <h2 class="absolute-element" style="position: absolute; z-index: 1; width: 100%; left: 0px; bottom: 30%; font-weight: bold; -webkit-text-stroke-width: 15px; -webkit-text-stroke-color: black; -webkit-transform: scaleX(0.9);">demo</h2>
+      <h2 class="absolute-element" style="position: absolute; z-index: 2; width: 100%; left: 0px; bottom: 30%; font-weight: bold; -webkit-transform: scaleX(0.9);"><a href="/show-case/itunes11" target="_blank">demo</a></h2>
    </p>
 </section>
 <section data-background="#000000">
