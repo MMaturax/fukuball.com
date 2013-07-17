@@ -1,6 +1,6 @@
 <?php
 /**
- * show-case-itunes-11.php
+ * show-case-5tunes-11.php
  *
  * PHP version 5
  *
@@ -16,7 +16,7 @@
    $(document).ready(function(){
 
       $.ajax({
-        url: "/show-case/itunes11/album-data.json",
+        url: "/show-case/5tunes11/album-data.json",
         dataType: 'json',
         success: function(data) {
 

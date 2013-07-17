@@ -169,7 +169,7 @@ class ShowCaseViewController
 
          break;
 
-      case 'itunes11':
+      case '5tunes11':
 
          $action_level_two_id = $segments[1];
 
@@ -329,9 +329,9 @@ class ShowCaseViewController
             break;
 
          default:
-            $page_title = 'HTML5 iTunes 11 | Show Case';
+            $page_title = '5Tunes11 | Show Case';
             $itunes11_active = 'active';
-            $yield_path = '/fuku-view-page/show-case-itunes-11.php';
+            $yield_path = '/fuku-view-page/show-case-5tunes-11.php';
             require_once SITE_ROOT.'/fuku-view-layout/show-case-page-layout.php';
             break;
 
@@ -340,12 +340,11 @@ class ShowCaseViewController
          break;
 
       default:
-
-         $page_title = 'HTML5 iTunes 11 | Show Case';
-         $itunes11_active = 'active';
-         $yield_path = '/fuku-view-page/show-case-itunes-11.php';
-         require_once SITE_ROOT.'/fuku-view-layout/show-case-page-layout.php';
-
+         $type = 'page_not_found';
+         $parameter = array("none"=>"none");
+         $error_messanger = new ErrorMessenger($type, $parameter);
+         $error_messanger->printErrorJSON();
+         unset($error_messanger);
          break;
 
       }// end switch ($action_level_one_id)
