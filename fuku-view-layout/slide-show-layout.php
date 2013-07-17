@@ -40,8 +40,8 @@
       .global-header {
          position: relative;
          width: 100%;
-         height: 70px;
-         line-height: 70px;
+         height: 60px;
+         line-height: 60px;
          margin: 0 auto;
          z-index: 2;
          font-size: 16px;
@@ -77,8 +77,8 @@
       }
       .logo-animation .word {
          display: inline-block;
-         width: 80px;
-         height: 30px;
+         width: 134px;
+         height: 24px;
          margin: 9px 0 0 8px;
          vertical-align: top;
          background-color: transparent;
