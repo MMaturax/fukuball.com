@@ -113,8 +113,8 @@
    </div>
    <div class="folderContent uno">
       <div class="jaf-container">
-         <div>
-            <div class='disc-detail-wrap'>
+         <div class="row">
+            <div class='disc-cover-detail'>
                <img src='/public/image/itunes-cover/KuwosEX1gI480X480.jpg'>
             </div>
             <h2 class="m-b-0">
