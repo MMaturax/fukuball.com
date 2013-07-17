@@ -18,7 +18,7 @@
          <div class="span5 pull-left">
             <h3>Show Case Fukuball</h3>
             <ul class="footer-links">
-               <li><a href="/show-case/itunes11">HTML5 iTunes 11</a></li>
+               <li><a href="/show-case/5tunes11">5Tunes11</a></li>
                <li><a href="/show-case/s3-upload">Upload S3 Storage</a></li>
             </ul>
             <div>

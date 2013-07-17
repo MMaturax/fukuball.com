@@ -23,7 +23,7 @@
          <a class="brand" href="/">Show Case Fukuball</a>
          <div class="nav-collapse collapse">
             <ul class="nav">
-               <li class="<?php echo $itunes11_active; ?>"><a href="/show-case/itunes11">HTML5 iTunes 11</a></li>
+               <li class="<?php echo $itunes11_active; ?>"><a href="/show-case/5tunes11">5Tunes11</a></li>
             </ul>
          </div><!--/.nav-collapse -->
          <div class="nav-collapse collapse">
