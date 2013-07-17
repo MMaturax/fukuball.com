@@ -102,6 +102,41 @@
 <script src="/public/javascript/library/expandingalbums/js/quantize.js"></script>
 <script src="/public/javascript/library/expandingalbums/js/color-thief.js"></script>-->
 <div class="app-folders-container">
+   <div class="jaf-row jaf-container row">
+      <div class='folder' id='uno'>
+         <a href='#'>
+            <img class='disc-cover' src='/public/image/itunes-cover/KuwosEX1gI480X480.jpg'>
+            <p class='disc-title'>disc-title</p>
+            <p class='artist-name'>artist-name</p>
+         </a>
+      </div>
+   </div>
+   <div class="folderContent uno">
+      <div class="jaf-container">
+         <div>
+            <div class='disc-detail-wrap'>
+               <img src='/public/image/itunes-cover/KuwosEX1gI480X480.jpg'>
+            </div>
+            <h2 class="m-b-0">
+               <a href="/" target="_blank" class="primary-color">
+                  disc-title
+               </a>
+            </h2>
+            <h3 class="secondary-color m-t-0">
+               artist-name (year)
+            </h3>
+            <div class='track-list-block'>
+               <ol class="secondary-color">
+                  <li>
+                     <a href="/" target="_blank" class="primary-color">
+                        track title
+                     </a>
+                  </li>
+               </ol>
+            </div>
+         </div>
+      </div>
+   </div>
    <script>
    $('.app-folders-container').ready(function() {
       $('.app-folders-container').appFolders({
