@@ -33,5 +33,8 @@
    <h2 class="absolute-element" style="position: absolute; z-index: 2; width: 100%; left: 0px; bottom: 5%; font-weight: bold; -webkit-transform: scaleX(0.9);">something like this</h2>
 </section>
 <section data-background="#000000">
+   <h2>Can we build itunes design in web page?</h2>
+</section>
+<section data-background="#000000">
    <h1>THE END</h1>
 </section>
