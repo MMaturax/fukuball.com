@@ -31,6 +31,7 @@
          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
       .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
          text-transform: none;
       }
       .reveal .state-background {
