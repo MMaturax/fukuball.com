@@ -102,5 +102,27 @@
 <script src="/public/javascript/library/expandingalbums/js/quantize.js"></script>
 <script src="/public/javascript/library/expandingalbums/js/color-thief.js"></script>-->
 <div class="app-folders-container">
+   <script>
+      $('.app-folders-container').appFolders({
+         // Opacity of non-selected items
+         opacity: 1,
+         // Adjust the margin-top for the folder area based on row selected?
+         marginTopAdjust: true,
+         // If margin-top-adjust is "true", the natural margin-top for the area
+         marginTopBase: 0,
+         // If margin-top-adjust is "true", the absolute value of the increment of margin-top per row
+         marginTopIncrement: 0,
+         // Time (in ms) for transitions
+         animationSpeed: 200,
+         // Use URL rewriting?
+         URLrewrite: false,
+         // If URL rewrite is enabled, the URL base of the page where used.
+         URLbase: "./",
+         // a jQuery selector containing links to content within a jQuery App Folder
+         internalLinkSelector: ".jaf-internal a",
+         // Set to true to enable one-click folder switching rather than iOS-like two clicks
+         instaSwitch: false
+      });
+   </script>
 </div>
 <script src="/public/javascript/library/app-folders/jquery.app-folders.js"></script>
