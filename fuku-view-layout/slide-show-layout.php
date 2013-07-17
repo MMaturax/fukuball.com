@@ -35,7 +35,7 @@
          text-transform: none;
       }
       .reveal .state-background {
-         background: rgba(0,0,0,0.5);
+         background: rgba(0,0,0,0.6);
       }
       .global-header {
          position: relative;
