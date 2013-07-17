@@ -75,7 +75,7 @@ class SlideShowViewController
 
          $page_title = '5tunes11 | Slide Show';
          $yield_path = '/fuku-view-page/slide-show-5tunes11.php';
-         require_once SITE_ROOT.'/fuku-view-layout/show-case-page-layout.php';
+         require_once SITE_ROOT.'/fuku-view-layout/slide-show-layout.php';
 
          break;
 
