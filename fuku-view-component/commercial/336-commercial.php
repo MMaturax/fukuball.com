@@ -12,13 +12,8 @@
  * @link     http://www.fukuball.com
  */
 ?>
-<!--<div style="width:336px;height:280px;margin:15px;" class="commercial-box">
-   <script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-   <ins class="adsbygoogle"
-        style="display:inline-block;width:336px;height:280px"
-        data-ad-client="ca-pub-9402461567510680"
-        data-ad-slot="8623730263"></ins>
-   <script>
-   (adsbygoogle = window.adsbygoogle || []).push({});
-   </script>
-</div>-->
+<div style="width:336px;height:280px;margin:15px;" class="commercial-box">
+   <!-- AdPlace ShowCode Begin / 335X280 -->
+   <iframe width="335" height="280" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" src="http://adplace.adsame.com/s?z=adplace&c=1582&op=1"></iframe>
+   <!-- AdPlace ShowCode End / 335X280 -->
+</div>
