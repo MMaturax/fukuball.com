@@ -13,5 +13,7 @@
  */
 ?>
 <div id="full-width-commercial" class="commercial-box text-center">
-   <script  type="text/javascript" charset="gbk" src="http://adplace.adsame.com/s?z=adplace&c=1576"></script>
+   <!-- AdPlace ShowCode Begin / 960X100廣告 -->
+   <iframe width="960" height="100" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" src="http://adplace.adsame.com/s?z=adplace&c=1576&op=1"></iframe>
+   <!-- AdPlace ShowCode End / 960X100廣告 -->
 </div>
