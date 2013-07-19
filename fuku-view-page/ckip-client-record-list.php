@@ -30,7 +30,7 @@
                   <div class="pull-left clearfix ckip-process-num">
                      <?php echo $ckip_process_record_obj->getId(); ?>
                   </div>
-                  <div class="caption">
+                  <div class="caption" style="padding-left: 160px;">
                      <a href="<?php echo SITE_HOST.$ckip_process_record_obj->getUrl(); ?>" class="btn btn-primary icon  pull-right">
                         查看斷詞結果
                      </a>
