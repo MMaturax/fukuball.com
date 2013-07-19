@@ -17,7 +17,7 @@
       <div class="span9 pull-left p-a-15">
          <div>
             <?php
-            include_once SITE_ROOT.'/fuku-view-component/commercial/full-width-commercial.php';
+            include_once SITE_ROOT.'/fuku-view-component/commercial/728-full-width-commercial.php';
             ?>
          </div>
          <div>

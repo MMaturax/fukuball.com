@@ -13,6 +13,11 @@
  */
 ?>
 <div id="upload-s3-storage-block">
+   <div>
+      <?php
+      include_once SITE_ROOT.'/fuku-view-component/commercial/full-width-commercial.php';
+      ?>
+   </div>
    <div class="row">
       <div class="span7 pull-left p-a-15">
          <section>
@@ -22,11 +27,6 @@
                <p><a href="https://coderwall.com/p/kdpssg" target="_blank" class="btn btn-primary btn-large">如何掛載 AWS S3 到 AWS EC2 Instance »</a></p>
             </div>
          </section>
-         <div>
-            <?php
-            include_once SITE_ROOT.'/fuku-view-component/commercial/full-width-commercial.php';
-            ?>
-         </div>
          <div>
             <div id="upload-block" class="well">
                <div class="row" style="width: 230px; margin: 0px auto;">

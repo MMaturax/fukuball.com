@@ -61,6 +61,6 @@
 </section>
 <section>
    <?php
-   include_once SITE_ROOT.'/fuku-view-component/commercial/full-width-commercial.php';
+   include_once SITE_ROOT.'/fuku-view-component/commercial/728-full-width-commercial.php';
    ?>
 </section>
