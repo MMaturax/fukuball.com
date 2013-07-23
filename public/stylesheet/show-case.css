@@ -207,7 +207,7 @@
    box-sizing: border-box;
    min-width: 320px;
    padding: 20px 0 0 60px;
-   background-color: #aaa;
+   background-color: rgb(0, 0, 0);
    border: 1px solid rgba(0,0,0,0.3);
    border-width: 1px 0;
 }
@@ -215,9 +215,6 @@
   text-decoration: underline;
 }
 .disc-cover-detail img {
-   position: relative;
-   z-index: -2;
-   display: block;
-   width: 100%;
+   box-shadow: rgb(0, 0, 0) 12px 15px 20px inset, rgb(0, 0, 0) -1px -1px 150px inset;
    max-width: 300px;
 }
