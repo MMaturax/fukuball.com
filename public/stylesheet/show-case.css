@@ -202,3 +202,22 @@
   padding: 3% 3% 10px 3%;
   cursor: pointer;
 }
+.disc-cover-folder a {
+   color: #333;
+   text-decoration: none;
+}
+.disc-cover-folder a:hover {
+   color: #333;
+   text-decoration: none;
+}
+.disc-cover {
+   margin-top: 0;
+   margin-left: 0;
+   max-width: 100%;
+   background-color: #888;
+   border: 1px solid #888;
+   box-shadow: 2px 2px 5px #aaa;
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;
+}
