@@ -33,6 +33,43 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
    }
    $count++;
 }
+
+foreach ($disc_data['data'] as $key=>$disc_item) {
+   ?>
+   <div class="folderContent <?php echo $disc_item['id']; ?>">
+      <div class="jaf-container">
+         <div class="row">
+            <div class='disc-cover-detail'>
+               <img src='<?php echo $disc_item['image']; ?>'>
+            </div>
+            <h2 class="m-b-0">
+               <a href="<?php echo $disc_item['url']; ?>" target="_blank" class="primary-color">
+                  <?php echo $disc_item['disc_title']; ?>
+               </a>
+            </h2>
+            <h3 class="secondary-color m-t-0">
+               <?php echo $disc_item['artist_name']; ?> (<?php echo $disc_item['year']; ?>)
+            </h3>
+            <div class='track-list-block'>
+               <ol class="secondary-color">
+                  <?php
+                  foreach ($disc_item['tracklist'] as $track_key=>$track_item) {
+                     ?>
+                     <li>
+                        <a href="<?php echo $disc_item['url']; ?>" target="_blank" class="primary-color">
+                           <?php echo $track_item; ?>
+                        </a>
+                     </li>
+                     <?php
+                  }
+                  ?>
+               </ol>
+            </div>
+         </div>
+      </div>
+   </div>
+   <?php
+}
 ?>
 <div class="jaf-row jaf-container row">
    <div class='folder disc-cover-folder' id='uno'>
