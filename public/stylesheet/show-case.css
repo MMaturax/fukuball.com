@@ -86,33 +86,17 @@
   column-count: 2;
 }
 
-.art-wrap {
-  float: right;
-  text-align: right;
-  line-height: 0em;
-}
-
-.art-wrap img {
-  position: relative;
-  z-index: -2;
-  display: block;
-  width: 100%;
-  max-width: 300px;
-}
-
-.clear {
-  clear: both;
-}*/
+*/
 
 .disc-cover-folder {
-  float: left;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  height: 310px;
-  padding: 3% 3% 10px 3%;
-  cursor: pointer;
+   float: left;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   width: 25%;
+   height: 310px;
+   padding: 3% 3% 10px 3%;
+   cursor: pointer;
 }
 .disc-cover-folder a {
    color: #333;
@@ -156,48 +140,48 @@
    transition: all 0.2s ease-in;
 }
 .active-tool {
-  z-index: 10;
+   z-index: 10;
 }
 .active-tool::before {
-  bottom: -1px;
-  margin-left: -7px;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-bottom: 12px solid rgba(0,0,0,0.3);
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+   bottom: -1px;
+   margin-left: -7px;
+   border-left: 12px solid transparent;
+   border-right: 12px solid transparent;
+   border-bottom: 12px solid rgba(0,0,0,0.3);
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;
 }
 .active-tool::after {
-  bottom: -1px;
-  margin-left: -6px;
-  border-left: 11px solid transparent;
-  border-right: 11px solid transparent;
-  border-bottom: 11px solid transparent;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+   bottom: -1px;
+   margin-left: -6px;
+   border-left: 11px solid transparent;
+   border-right: 11px solid transparent;
+   border-bottom: 11px solid transparent;
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;
 }
 .active-tool img {
-  max-width: 110%;
-  margin-top: -5%;
-  margin-left: -5%;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+   max-width: 110%;
+   margin-top: -5%;
+   margin-left: -5%;
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;
 }
 .active-tool .disc-title {
-  padding-bottom: 6px;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+   padding-bottom: 6px;
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;
 }
 .active-tool .artist-name {
-  opacity: 0;
-  height: 2px;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+   opacity: 0;
+   height: 2px;
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;
 }
 .disc-folder-content {
    margin-top: 25px;
@@ -212,9 +196,11 @@
    border-width: 1px 0;
 }
 .disc-folder-content a:hover {
-  text-decoration: underline;
+   text-decoration: underline;
+}
+.disc-cover-detail {
+   box-shadow: rgb(0, 0, 0) 12px 15px 20px inset, rgb(0, 0, 0) -1px -1px 150px inset;
 }
 .disc-cover-detail img {
-   box-shadow: rgb(0, 0, 0) 12px 15px 20px inset, rgb(0, 0, 0) -1px -1px 150px inset;
    max-width: 300px;
 }
