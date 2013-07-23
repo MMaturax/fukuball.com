@@ -28,7 +28,7 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
             <p class='artist-name'><?php echo $disc_item['artist_name']; ?></p>
          </a>
       </div>
-      <div id="current-indicator-<?php echo $disc_item['id']; ?>" class="current-indicator">
+      <div class="current-indicator">
       </div>
    </div>
    <?php
@@ -44,7 +44,7 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
       <div class="jaf-container">
          <div class="row">
             <div class='disc-cover-detail pull-right'>
-               <img id="disc-cover-detail-<?php echo $disc_item['id']; ?>" src='<?php echo $disc_item['image']; ?>'>
+               <img src='<?php echo $disc_item['image']; ?>'>
             </div>
             <h2 class="m-b-0">
                <a href="<?php echo $disc_item['url']; ?>" target="_blank" class="primary-color">
@@ -102,38 +102,15 @@ $('.app-folders-container').ready(function() {
 
 
    var colorThief = new ColorThief();
-   var this_cover_image;
-   <?php
-   foreach ($disc_data['data'] as $key=>$disc_item) {
-      ?>
-      this_cover_image = $('#disc-cover-detail-<?php echo $disc_item["id"]; ?>');
-      console.log(this_cover_image);
-      if (!this_cover_image.complete) {
-         this_cover_image.on("load", function() {
-            var dominant_color = colorThief.getColor(this_cover_image[0]);
-            var this_color_string = 'rgb('+dominant_color[0]+', '+dominant_color[1]+', '+dominant_color[2]+')';
-            this_cover_image.parent().css('box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
-            this_cover_image.parent().css('-moz-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
-            this_cover_image.parent().css('-webkit-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
-            this_cover_image.parent().parent().parent().parent().css('background-color', this_color_string);
-            $('#current-indicator-<?php echo $disc_item["id"]; ?>').css('border-color', 'transparent transparent '+this_color_string+' transparent');
-            console.log(dominant_color);
-         });
-      } else {
-          // handle image already loaded case
-          var dominant_color = colorThief.getColor(this_cover_image[0]);
-          var this_color_string = 'rgb('+dominant_color[0]+', '+dominant_color[1]+', '+dominant_color[2]+')';
-          this_cover_image.parent().css('box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
-          this_cover_image.parent().css('-moz-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
-          this_cover_image.parent().css('-webkit-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
-          this_cover_image.parent().parent().parent().parent().css('background-color', this_color_string);
-          $('#current-indicator-<?php echo $disc_item["id"]; ?>').css('border-color', 'transparent transparent '+this_color_string+' transparent');
-          console.log(dominant_color);
-      }
+   $('.disc-cover').bind('load', function (event) {
+        var image = event.target;
+        var $image = $(image);
+        var dominant_color = getColors(image);
+        console.log(dominant_color);
+        //styleBackground(colors[1], $image.parent().parent().attr('id'));
+        //styleText(colors[1], colors[0],$image.parent().parent().attr('id'));
 
-      <?php
-   }
-   ?>
+   });
 
 });
 </script>
