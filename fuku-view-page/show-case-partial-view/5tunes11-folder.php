@@ -23,7 +23,7 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
    <div class="folder disc-cover-folder" id="<?php echo $disc_item['id']; ?>">
       <div>
          <a href='#'>
-            <img class="disc-cover" src="<?php echo $disc_item['image']; ?>">
+            <img id="disc-cover-<?php echo $disc_item['id']; ?>" class="disc-cover" src="<?php echo $disc_item['image']; ?>">
             <p class='disc-title'><?php echo $disc_item['disc_title']; ?></p>
             <p class='artist-name'><?php echo $disc_item['artist_name']; ?></p>
          </a>
@@ -72,6 +72,14 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
          </div>
       </div>
    </div>
+   <script>
+      $('#disc-cover-<?php echo $disc_item["id"]; ?>').load(function() {
+         // Handler for .load() called.
+         var colorThief = new ColorThief();
+         var dominant_color = colorThief.getColor($('#disc-cover-<?php echo $disc_item["id"]; ?>'));
+         console.log(dominant_color);
+      });
+   </script>
    <?php
 }
 ?>
