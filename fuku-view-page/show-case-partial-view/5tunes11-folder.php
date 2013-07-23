@@ -17,7 +17,7 @@ $disc_data = json_decode(file_get_contents(SITE_HOST.'/show-case/5tunes11/disc-d
 $count = 1;
 foreach ($disc_data['data'] as $key=>$disc_item) {
    if (($count%4)==1) {
-      echo '<div class="jaf-row jaf-container row">';
+      echo '<div class="jaf-row jaf-container row m-l-0">';
    }
    ?>
    <div class="folder disc-cover-folder" id="<?php echo $disc_item['id']; ?>">
