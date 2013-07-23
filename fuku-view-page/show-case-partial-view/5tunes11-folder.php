@@ -72,19 +72,12 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
          </div>
       </div>
    </div>
-   <script>
-      $('#disc-cover-<?php echo $disc_item["id"]; ?>').load(function() {
-         // Handler for .load() called.
-         var colorThief = new ColorThief();
-         var dominant_color = colorThief.getColor($('#disc-cover-<?php echo $disc_item["id"]; ?>'));
-         console.log(dominant_color);
-      });
-   </script>
    <?php
 }
 ?>
 <script>
 $('.app-folders-container').ready(function() {
+
    $('.app-folders-container').appFolders({
       // Opacity of non-selected items
       opacity: 1,
@@ -105,5 +98,19 @@ $('.app-folders-container').ready(function() {
       // Set to true to enable one-click folder switching rather than iOS-like two clicks
       instaSwitch: true
    });
+
+   <?php
+   foreach ($disc_data['data'] as $key=>$disc_item) {
+   ?>
+   $('#disc-cover-<?php echo $disc_item["id"]; ?>').load(function() {
+      // Handler for .load() called.
+      var colorThief = new ColorThief();
+      var dominant_color = colorThief.getColor($('#disc-cover-<?php echo $disc_item["id"]; ?>'));
+      console.log(dominant_color);
+   });
+   <?php
+   }
+   ?>
+
 });
 </script>
