@@ -28,7 +28,7 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
             <p class='artist-name'><?php echo $disc_item['artist_name']; ?></p>
          </a>
       </div>
-      <div class="current-indicator">
+      <div id="current-indicator-<?php echo $disc_item['id']; ?>" class="current-indicator">
       </div>
    </div>
    <?php
@@ -114,6 +114,7 @@ $('.app-folders-container').ready(function() {
            $image.parent().css('-moz-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
            $image.parent().css('-webkit-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
            $image.parent().parent().parent().parent().css('background-color', this_color_string);
+           $('#current-indicator-<?php echo $disc_item["id"]; ?>').css('border-color', 'transparent transparent '+this_color_string+' transparent');
            console.log(dominant_color);
       });
       <?php
