@@ -184,6 +184,7 @@
    transition: all 0.2s ease-in;
 }
 .disc-folder-content {
+   position: relative;
    margin-top: 25px;
    z-index: 0;
    -webkit-box-sizing: border-box;
@@ -199,6 +200,8 @@
    text-decoration: underline;
 }
 .disc-cover-detail {
+   -moz-box-shadow: rgb(0, 0, 0) 12px 15px 20px inset, rgb(0, 0, 0) -1px -1px 150px inset;
+   -webkit-box-shadow: rgb(0, 0, 0) 12px 15px 20px inset, rgb(0, 0, 0) -1px -1px 150px inset;
    box-shadow: rgb(0, 0, 0) 12px 15px 20px inset, rgb(0, 0, 0) -1px -1px 150px inset;
 }
 .disc-cover-detail img {
