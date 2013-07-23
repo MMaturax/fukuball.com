@@ -188,12 +188,13 @@ a.primary-color, a.primary-color:hover {
    border-width: 0 30px 30px 30px;
    border-color: transparent transparent rgb(9, 8, 9) transparent;
    position: relative;
-   top: 20px;
-   z-index: 10;
+   top: 60px;
+   z-index: 0;
    left: 45%;
    opacity: 0;
 }
 .active-tool .current-indicator {
    top: 2px;
+   z-index: 10;
    opacity: 1;
 }
