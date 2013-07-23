@@ -92,9 +92,9 @@ $('.disc-cover').bind('load', function (event) {
        .css('background-color', this_color_string)
        .find('.disc-cover-detail').css('box-shadow', 'inset 12px 15px 20px ' + this_color_string + ', inset -1px -1px 150px ' + this_color_string);
 
-     var palette_color = colorThief.getPalette(image, 2);
-     $('.' + this_cover_id + ' .primary-color').css('color', 'rgb(' + palette_color[0].join(',') + ')');
-     $('.' + this_cover_id + ' .secondary-color').css('color', 'rgb(' + palette_color[1].join(',') + ')');
+     var palette_color = colorThief.getPalette(image, 5);
+     $('.' + this_cover_id + ' .primary-color').css('color', 'rgb(' + palette_color[1].join(',') + ')');
+     $('.' + this_cover_id + ' .secondary-color').css('color', 'rgb(' + palette_color[2].join(',') + ')');
 
 });
 
