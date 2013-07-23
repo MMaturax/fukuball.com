@@ -80,11 +80,7 @@
 
 
 
-.multi {
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-}
+
 
 */
 
@@ -199,12 +195,15 @@
 .disc-folder-content h2 {
    display: block;
    font-size: 1.5em;
-   -webkit-margin-before: 0.83em;
-   -webkit-margin-after: 0.83em;
-   -webkit-margin-start: 0px;
-   -webkit-margin-end: 0px;
    font-weight: bold;
    margin-bottom: 0;
+}
+.disc-folder-content h3 {
+   margin: 0 0 20px;
+   font-weight: normal;
+   display: block;
+   font-size: 1.17em;
+   font-weight: bold;
 }
 .disc-folder-content a:hover {
    text-decoration: underline;
@@ -221,4 +220,12 @@
 }
 a.primary-color, a.primary-color:hover {
    color: rgb(198, 202, 198);
+}
+.secondary-color {
+   color: rgb(106, 120, 134);
+}
+.track-list-block {
+   -webkit-column-count: 2;
+   -moz-column-count: 2;
+   column-count: 2;
 }
