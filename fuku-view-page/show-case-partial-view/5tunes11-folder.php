@@ -19,9 +19,15 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
    if (($count%4)==1) {
       echo '<div class="jaf-row jaf-container row">';
    }
-   echo '<br/>';
-   print_r($disc_item);
-   echo '<br/>';
+   ?>
+   <div class="folder disc-cover-folder" id="<?php echo $disc_item['id']; ?>">
+      <a href='#'>
+         <img class="disc-cover" src="<?php echo $disc_item['image']; ?>">
+         <p class='disc-title'><?php echo $disc_item['disc_title']; ?></p>
+         <p class='artist-name'><?php echo $disc_item['artist_name']; ?></p>
+      </a>
+   </div>
+   <?php
    if (($count%4)==0) {
       echo '</div>';
    }

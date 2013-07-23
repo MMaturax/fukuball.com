@@ -184,10 +184,10 @@ class ShowCaseViewController
                array(
                   array(
                      "id"=>"5311",
-                     "album"=>"今夜的秘密集會 Acoustic Live EP",
-                     "artist"=>"回聲樂團",
+                     "disc_title"=>"今夜的秘密集會 Acoustic Live EP",
+                     "artist_name"=>"回聲樂團",
                      "year"=>"2012",
-                     "image"=>"php3fXH12480X480.jpg",
+                     "image"=>"/public/image/itunes-cover/php3fXH12480X480.jpg",
                      "tracklist"=>
                         array(
                            "處女空氣",
@@ -200,10 +200,10 @@ class ShowCaseViewController
                   ),
                   array(
                      "id"=>"4975",
-                     "album"=>"今夜的祕密集會",
-                     "artist"=>"回聲樂團",
+                     "disc_title"=>"今夜的祕密集會",
+                     "artist_name"=>"回聲樂團",
                      "year"=>"2012",
-                     "image"=>"phptkWMy4480X480.jpg",
+                     "image"=>"/public/image/itunes-cover/phptkWMy4480X480.jpg",
                      "tracklist"=>
                         array(
                            "今夜的祕密集會",
@@ -213,10 +213,10 @@ class ShowCaseViewController
                   ),
                   array(
                      "id"=>"2959",
-                     "album"=>"處女空氣",
-                     "artist"=>"回聲樂團",
+                     "disc_title"=>"處女空氣",
+                     "artist_name"=>"回聲樂團",
                      "year"=>"2010",
-                     "image"=>"phpkOs1BD480X480.jpg",
+                     "image"=>"/public/image/itunes-cover/phpkOs1BD480X480.jpg",
                      "tracklist"=>
                         array(
                           "Dear John",
@@ -234,10 +234,10 @@ class ShowCaseViewController
                   ),
                   array(
                      "id"=>"1080",
-                     "album"=>"解放",
-                     "artist"=>"回聲樂團",
+                     "disc_title"=>"解放",
+                     "artist_name"=>"回聲樂團",
                      "year"=>"2008",
-                     "image"=>"phpxmPhRD480X480.jpg",
+                     "image"=>"/public/image/itunes-cover/phpxmPhRD480X480.jpg",
                      "tracklist"=>
                         array(
                            "解放"
