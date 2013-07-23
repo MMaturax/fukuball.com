@@ -185,7 +185,7 @@ a.primary-color, a.primary-color:hover {
    width: 0px;
    height: 0px;
    border-style: solid;
-   border-width: 0 50px 50px 50px;
+   border-width: 0 30px 30px 30px;
    border-color: transparent transparent rgb(9, 8, 9) transparent;
    position: relative;
    top: 20px;
@@ -197,6 +197,7 @@ a.primary-color, a.primary-color:hover {
    transition: all 0.2s ease-in;
 }
 .active-tool .crrent-indicator {
+   border-width: 0 15px 15px 15px;
    top: 2px;
    opacity: 1;
    -webkit-transition: all 0.2s ease-in;
