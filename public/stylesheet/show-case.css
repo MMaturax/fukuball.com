@@ -197,7 +197,6 @@ a.primary-color, a.primary-color:hover {
    transition: all 0.2s ease-in;
 }
 .active-tool .crrent-indicator {
-   border-width: 0 15px 15px 15px;
    top: 2px;
    opacity: 1;
    -webkit-transition: all 0.2s ease-in;
