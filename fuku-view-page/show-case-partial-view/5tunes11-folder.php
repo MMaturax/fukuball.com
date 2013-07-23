@@ -109,7 +109,10 @@ $('.app-folders-container').ready(function() {
            var image = event.target;
            var $image = $(image);
            var dominant_color = colorThief.getColor(image);
-           console.log($image);
+           var this_color_string = 'rgb('+dominant_color[0]+', '+dominant_color[1]+', '+dominant_color[2]+')';
+           $image.parent().css('box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
+           $image.parent().css('-moz-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
+           $image.parent().css('-webkit-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
            console.log(dominant_color);
            //-moz-box-shadow: rgb(9, 8, 9) 12px 15px 20px inset, rgb(9, 8, 9) -1px -1px 150px inset;
            //-webkit-box-shadow: rgb(9, 8, 9) 12px 15px 20px inset, rgb(9, 8, 9) -1px -1px 150px inset;
