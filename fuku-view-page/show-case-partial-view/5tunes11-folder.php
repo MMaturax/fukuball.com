@@ -102,14 +102,18 @@ $('.app-folders-container').ready(function() {
    <?php
    foreach ($disc_data['data'] as $key=>$disc_item) {
    ?>
-   $('#disc-cover-<?php echo $disc_item["id"]; ?>').load(function() {
+   imagesLoaded( $('#disc-cover-<?php echo $disc_item["id"]; ?>'), function( instance ) {
+     console.log('this images are loaded');
+     console.log(instance);
+   });
+   /*$('#disc-cover-<?php echo $disc_item["id"]; ?>').load(function() {
       // Handler for .load() called.
       console.log("loaded");
       var colorThief = new ColorThief();
       var dominant_color = colorThief.getColor($('#disc-cover-<?php echo $disc_item["id"]; ?>')[0]);
       console.log(dominant_color);
       console.log($('#disc-cover-<?php echo $disc_item["id"]; ?>')[0]);
-   });
+   });*/
    <?php
    }
    ?>
