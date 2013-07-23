@@ -99,23 +99,18 @@ $('.app-folders-container').ready(function() {
       instaSwitch: true
    });
 
-   <?php
-   foreach ($disc_data['data'] as $key=>$disc_item) {
-   ?>
-   $('#disc-cover-<?php echo $disc_item["id"]; ?>').imagesLoaded( function() {
-      console.log("loaded");
+   $('.disc-cover').load(function() {
+      //var colorThief = new ColorThief();
+      //var dominant_color = colorThief.getColor($('#disc-cover-<?php echo $disc_item["id"]; ?>')[0]);
+      //console.log(dominant_color);
+      console.log('test1');
+      console.log($(this));
+   }).each(function() {
+      if(this.complete) {
+         console.log('test');
+         console.log($(this));
+      }
    });
-   /*$('#disc-cover-<?php echo $disc_item["id"]; ?>').load(function() {
-      // Handler for .load() called.
-      console.log("loaded");
-      var colorThief = new ColorThief();
-      var dominant_color = colorThief.getColor($('#disc-cover-<?php echo $disc_item["id"]; ?>')[0]);
-      console.log(dominant_color);
-      console.log($('#disc-cover-<?php echo $disc_item["id"]; ?>')[0]);
-   });*/
-   <?php
-   }
-   ?>
 
 });
 </script>

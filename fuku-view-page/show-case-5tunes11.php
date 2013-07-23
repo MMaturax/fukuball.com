@@ -17,6 +17,5 @@
    include_once SITE_ROOT.'/fuku-view-page/show-case-partial-view/5tunes11-folder.php';
    ?>
 </div>
-<script src="/public/javascript/library/imagesloaded/imagesloaded.js"></script>
 <script src="/public/javascript/library/app-folders/jquery.app-folders.js"></script>
 <script src="/public/javascript/library/color-thief/js/color-thief.js"></script>
