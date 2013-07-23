@@ -188,11 +188,14 @@ a.primary-color, a.primary-color:hover {
    position: relative;
    top: 60px;
    z-index: 0;
-   left: 45%;
+   left: 40%;
    opacity: 0;
 }
 .active-tool .current-indicator {
    top: 2px;
    z-index: 10;
    opacity: 1;
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;
 }
