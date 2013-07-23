@@ -99,7 +99,19 @@ $('.app-folders-container').ready(function() {
       instaSwitch: true
    });
 
-   $('.disc-cover').load(function() {
+   var colorThief = new ColorThief();
+   $('.disc-cover').bind('load', function (event) {
+        var image = event.target;
+        var $image = $(image);
+
+        var colors = colorThief.getColor(image);
+        console.log(colors);
+        //styleBackground(colors[1], $image.parent().parent().attr('id'));
+        //styleText(colors[1], colors[0],$image.parent().parent().attr('id'));
+
+    });
+
+   /*$('.disc-cover').load(function() {
       //var colorThief = new ColorThief();
       //var dominant_color = colorThief.getColor($('#disc-cover-<?php echo $disc_item["id"]; ?>')[0]);
       //console.log(dominant_color);
@@ -110,7 +122,7 @@ $('.app-folders-container').ready(function() {
          console.log('test');
          console.log($(this));
       }
-   });
+   });*/
 
 });
 </script>
