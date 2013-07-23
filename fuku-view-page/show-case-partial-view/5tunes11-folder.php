@@ -76,16 +76,6 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
 }
 ?>
 <script>
-var colorThief = new ColorThief();
-$('.disc-cover').bind('load', function (event) {
-     var image = event.target;
-     var $image = $(image);
-
-     var colors = colorThief.getColor(image);
-     console.log(colors);
-     //styleBackground(colors[1], $image.parent().parent().attr('id'));
-     //styleText(colors[1], colors[0],$image.parent().parent().attr('id'));
-});
 
 $('.app-folders-container').ready(function() {
 
@@ -111,19 +101,19 @@ $('.app-folders-container').ready(function() {
    });
 
 
-
-   /*$('.disc-cover').load(function() {
-      //var colorThief = new ColorThief();
-      //var dominant_color = colorThief.getColor($('#disc-cover-<?php echo $disc_item["id"]; ?>')[0]);
-      //console.log(dominant_color);
-      console.log('test1');
-      console.log($(this));
-   }).each(function() {
-      if(this.complete) {
-         console.log('test');
-         console.log($(this));
-      }
-   });*/
+   var colorThief = new ColorThief();
+   <?php
+   foreach ($disc_data['data'] as $key=>$disc_item) {
+      ?>
+      $('#disc-cover-<?php echo $disc_item["id"]; ?>').bind('load', function (event) {
+           var image = event.target;
+           var $image = $(image);
+           var colors = colorThief.getColor(image);
+           console.log(colors);
+      });
+      <?php
+   }
+   ?>
 
 });
 </script>
