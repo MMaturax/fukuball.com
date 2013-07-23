@@ -101,72 +101,7 @@
   margin: 0 auto;
 }
 
-.active-tool {
-  z-index: 10;
-}
 
-.active-tool::before {
-  bottom: -1px;
-  margin-left: -7px;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-bottom: 12px solid rgba(0,0,0,0.3);
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.active-tool::after {
-  bottom: -1px;
-  margin-left: -6px;
-  border-left: 11px solid transparent;
-  border-right: 11px solid transparent;
-  border-bottom: 11px solid transparent;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.active-tool img {
-  max-width: 110%;
-  margin-top: -5%;
-  margin-left: -5%;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.active-tool .album-name {
-  padding-bottom: 6px;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.active-tool .artist-name {
-  opacity: 0;
-  height: 2px;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.folderContent {
-  position: relative;
-  z-index: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  min-width: 320px;
-  padding: 20px 0 0 60px;
-  background-color: #aaa;
-  border: 1px solid rgba(0,0,0,0.3);
-  border-width: 1px 0;
-}
-
-.folderContent a:hover {
-  text-decoration: underline;
-}
 
 .multi {
   -webkit-column-count: 2;
@@ -242,7 +177,6 @@
    -moz-transition: all 0.2s ease-in;
    transition: all 0.2s ease-in;
 }
-
 .active-tool {
   z-index: 10;
 }
@@ -286,4 +220,18 @@
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+}
+.disc-folder-content {
+   z-index: 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   min-width: 320px;
+   padding: 20px 0 0 60px;
+   background-color: #aaa;
+   border: 1px solid rgba(0,0,0,0.3);
+   border-width: 1px 0;
+}
+.disc-folder-content a:hover {
+  text-decoration: underline;
 }

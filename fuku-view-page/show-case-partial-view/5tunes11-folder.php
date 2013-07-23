@@ -36,7 +36,7 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
 
 foreach ($disc_data['data'] as $key=>$disc_item) {
    ?>
-   <div class="folderContent <?php echo $disc_item['id']; ?>">
+   <div class="folderContent disc-folder-content <?php echo $disc_item['id']; ?>">
       <div class="jaf-container">
          <div class="row">
             <div class='disc-cover-detail'>
