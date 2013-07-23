@@ -105,10 +105,10 @@ $('.app-folders-container').ready(function() {
    $('#disc-cover-<?php echo $disc_item["id"]; ?>').load(function() {
       // Handler for .load() called.
       console.log("loaded");
-      //var colorThief = new ColorThief();
-      //var dominant_color = colorThief.getColor($('#disc-cover-<?php echo $disc_item["id"]; ?>'));
-      //console.log(dominant_color);
-      console.log($('#disc-cover-<?php echo $disc_item["id"]; ?>'));
+      var colorThief = new ColorThief();
+      var dominant_color = colorThief.getColor($('#disc-cover-<?php echo $disc_item["id"]; ?>')[0]);
+      console.log(dominant_color);
+      console.log($('#disc-cover-<?php echo $disc_item["id"]; ?>')[0]);
    });
    <?php
    }
