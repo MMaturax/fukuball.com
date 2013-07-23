@@ -120,7 +120,7 @@ $('.app-folders-container').ready(function() {
             $image.parent().parent().parent().parent().css('background-color', this_color_string);
             $('#current-indicator-<?php echo $disc_item["id"]; ?>').css('border-color', 'transparent transparent '+this_color_string+' transparent');
             console.log(dominant_color);
-         }
+         });
       } else {
           // handle image already loaded case
       }
