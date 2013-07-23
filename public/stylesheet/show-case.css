@@ -223,16 +223,16 @@
 }
 .disc-title {
    font-size: 1em;
-   line-height: 1em;
-   margin: 10px 0px 2px 0px;
+   line-height: 1.5em;
+   margin: 10px 0px 5px 0px;
    white-space: nowrap;
    overflow: hidden;
    text-overflow: ellipsis;
 }
 .artist-name {
    font-size: 1em;
-   line-height: 1em;
-   margin-bottom: 2px;
+   line-height: 1.5em;
+   margin: 5px 0px 5px 0px;
    opacity: 1;
    color: #888;
    white-space: nowrap;
