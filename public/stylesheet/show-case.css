@@ -221,11 +221,20 @@
    -moz-transition: all 0.2s ease-in;
    transition: all 0.2s ease-in;
 }
+.disc-title {
+   font-size: 1em;
+   line-height: 1em;
+   margin: 10px 0px 2px 0px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
 .artist-name {
-   opacity: 1;
+   font-size: 1em;
+   line-height: 1em;
    margin-bottom: 2px;
+   opacity: 1;
    color: #888;
-   font-size: 12px;
    white-space: nowrap;
    overflow: hidden;
    text-overflow: ellipsis;
