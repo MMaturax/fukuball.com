@@ -28,7 +28,7 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
             <p class='artist-name'><?php echo $disc_item['artist_name']; ?></p>
          </a>
       </div>
-      <div class="crrent-indicator">
+      <div class="current-indicator">
       </div>
    </div>
    <?php

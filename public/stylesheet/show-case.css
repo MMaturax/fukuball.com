@@ -181,7 +181,7 @@ a.primary-color, a.primary-color:hover {
    -moz-column-count: 2;
    column-count: 2;
 }
-.crrent-indicator {
+.current-indicator {
    width: 0px;
    height: 0px;
    border-style: solid;
@@ -196,7 +196,7 @@ a.primary-color, a.primary-color:hover {
    -moz-transition: all 0.2s ease-in;
    transition: all 0.2s ease-in;
 }
-.active-tool .crrent-indicator {
+.active-tool .current-indicator {
    top: 2px;
    opacity: 1;
    -webkit-transition: all 0.2s ease-in;
