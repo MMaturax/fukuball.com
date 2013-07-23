@@ -110,7 +110,7 @@ $('.app-folders-container').ready(function() {
       console.log(this_cover_image);
       if (!this_cover_image.complete) {
          this_cover_image.on("load", function() {
-            var dominant_color = colorThief.getColor(this_cover_image);
+            var dominant_color = colorThief.getColor(this_cover_image[0]);
             var this_color_string = 'rgb('+dominant_color[0]+', '+dominant_color[1]+', '+dominant_color[2]+')';
             this_cover_image.parent().css('box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
             this_cover_image.parent().css('-moz-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
@@ -121,7 +121,7 @@ $('.app-folders-container').ready(function() {
          });
       } else {
           // handle image already loaded case
-          var dominant_color = colorThief.getColor(this_cover_image);
+          var dominant_color = colorThief.getColor(this_cover_image[0]);
           var this_color_string = 'rgb('+dominant_color[0]+', '+dominant_color[1]+', '+dominant_color[2]+')';
           this_cover_image.parent().css('box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
           this_cover_image.parent().css('-moz-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
@@ -130,8 +130,6 @@ $('.app-folders-container').ready(function() {
           $('#current-indicator-<?php echo $disc_item["id"]; ?>').css('border-color', 'transparent transparent '+this_color_string+' transparent');
           console.log(dominant_color);
       }
-
-
 
       <?php
    }
