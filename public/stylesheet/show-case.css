@@ -181,3 +181,10 @@ a.primary-color, a.primary-color:hover {
    -moz-column-count: 2;
    column-count: 2;
 }
+.crrent-indicator {
+   width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-width: 0 12.5px 15px 12.5px;
+   border-color: transparent transparent rgb(9, 8, 9) transparent;
+}
