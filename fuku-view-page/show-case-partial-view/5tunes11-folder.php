@@ -83,7 +83,11 @@ $('.disc-cover').bind('load', function (event) {
      var $image = $(image);
      var dominant_color = colorThief.getColor(image);
      var this_color_string = 'rgb('+dominant_color[0]+', '+dominant_color[1]+', '+dominant_color[2]+')';
+     var this_cover_id = $image.parent().parent().parent().attr('id');
      $image.parent().parent().parent().find('.current-indicator').css('border-color', 'transparent transparent '+this_color_string+' transparent');
+     $('.' + this_cover_id)
+       .css('background-color', this_color_string)
+       .find('.disc-cover-detail').css('box-shadow', 'inset 12px 15px 20px ' + this_color_string + ', inset -1px -1px 150px ' + this_color_string);
      console.log(dominant_color);
 });
 
