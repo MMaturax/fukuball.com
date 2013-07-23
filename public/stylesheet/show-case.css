@@ -192,14 +192,8 @@ a.primary-color, a.primary-color:hover {
    z-index: 10;
    left: 45%;
    opacity: 0;
-   -webkit-transition: all 0.2s ease-in;
-   -moz-transition: all 0.2s ease-in;
-   transition: all 0.2s ease-in;
 }
 .active-tool .current-indicator {
    top: 2px;
    opacity: 1;
-   -webkit-transition: all 0.2s ease-in;
-   -moz-transition: all 0.2s ease-in;
-   transition: all 0.2s ease-in;
 }
