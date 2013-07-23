@@ -91,7 +91,7 @@ $('.app-folders-container').ready(function() {
       // a jQuery selector containing links to content within a jQuery App Folder
       internalLinkSelector: ".jaf-internal a",
       // Set to true to enable one-click folder switching rather than iOS-like two clicks
-      instaSwitch: false
+      instaSwitch: true
    });
 });
 </script>
