@@ -12,10 +12,10 @@
  * @link     http://www.fukuball.com
  */
 ?>
+<script src="/public/javascript/library/color-thief/js/color-thief.js"></script>
+<script src="/public/javascript/library/app-folders/jquery.app-folders.js"></script>
 <div class="app-folders-container">
    <?php
    include_once SITE_ROOT.'/fuku-view-page/show-case-partial-view/5tunes11-folder.php';
    ?>
 </div>
-<script src="/public/javascript/library/app-folders/jquery.app-folders.js"></script>
-<script src="/public/javascript/library/color-thief/js/color-thief.js"></script>
