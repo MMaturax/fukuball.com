@@ -108,7 +108,7 @@ $('.app-folders-container').ready(function() {
       //var colorThief = new ColorThief();
       //var dominant_color = colorThief.getColor($('#disc-cover-<?php echo $disc_item["id"]; ?>'));
       //console.log(dominant_color);
-      console.log($(this).width);
+      console.log($('#disc-cover-<?php echo $disc_item["id"]; ?>'));
    });
    <?php
    }
