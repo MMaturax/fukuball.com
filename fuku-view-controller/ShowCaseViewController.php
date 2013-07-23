@@ -249,7 +249,7 @@ class ShowCaseViewController
                      "album"=>"Born To Live, Live To Give",
                      "artist"=>"回聲樂團",
                      "year"=>"2008",
-                     "image"=>"phpGDapUA480X480.jpg",
+                     "image"=>"/public/image/itunes-cover/phpGDapUA480X480.jpg",
                      "tracklist"=>
                         array(
                            "傾慕",
@@ -270,7 +270,7 @@ class ShowCaseViewController
                      "album"=>"煙硝",
                      "artist"=>"回聲樂團",
                      "year"=>"2007",
-                     "image"=>"KuwosEX1gI480X480.jpg",
+                     "image"=>"/public/image/itunes-cover/KuwosEX1gI480X480.jpg",
                      "tracklist"=>
                         array(
                            "煙硝",
@@ -284,7 +284,7 @@ class ShowCaseViewController
                      "album"=>"少年的最後旅行",
                      "artist"=>"回聲樂團",
                      "year"=>"2004",
-                     "image"=>"RIbd7L0tbb480X480.jpg",
+                     "image"=>"/public/image/itunes-cover/RIbd7L0tbb480X480.jpg",
                      "tracklist"=>
                         array(
                           "夏日晚歌",
@@ -301,7 +301,7 @@ class ShowCaseViewController
                      "album"=>"感官駕馭",
                      "artist"=>"回聲樂團",
                      "year"=>"2002",
-                     "image"=>"phpjTj9Ue480X480.jpg",
+                     "image"=>"/public/image/itunes-cover/phpjTj9Ue480X480.jpg",
                      "tracklist"=>
                         array(
                            "It's Time To Sing, It's Time To Get Out",
