@@ -39,7 +39,7 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
    <div class="folderContent disc-folder-content <?php echo $disc_item['id']; ?>">
       <div class="jaf-container">
          <div class="row">
-            <div class='disc-cover-detail'>
+            <div class='disc-cover-detail pull-right'>
                <img src='<?php echo $disc_item['image']; ?>'>
             </div>
             <h2 class="m-b-0">

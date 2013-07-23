@@ -222,6 +222,7 @@
   transition: all 0.2s ease-in;
 }
 .disc-folder-content {
+   margin-top: 25px;
    z-index: 0;
    -webkit-box-sizing: border-box;
    -moz-box-sizing: border-box;
