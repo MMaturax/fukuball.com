@@ -19,7 +19,9 @@ foreach ($disc_data as $key=>$disc_item) {
    if (($count%4)==1) {
       echo '<div class="jaf-row jaf-container row">';
    }
+   echo '<br/>';
    print_r($disc_item);
+   echo '<br/>';
    if (($count%4)==0) {
       echo '</div>';
    }
