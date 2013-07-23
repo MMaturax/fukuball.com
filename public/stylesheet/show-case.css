@@ -105,59 +105,8 @@
    -moz-transition: all 0.2s ease-in;
    transition: all 0.2s ease-in;
 }
-.disc-cover-folder::before {
-  position: absolute;
-  bottom: -1px;
-  left: 50%;
-  content: '';
-  width: 0;
-  height: 0;
-  margin-left: 7px;
-  border-left: 0 solid transparent;
-  border-right: 0 solid transparent;
-  border-bottom: 0 solid transparent;
-  -webkit-transition: bottom 0.2s ease-in;
-  -moz-transition: bottom 0.2s ease-in;
-  transition: bottom 0.2s ease-in;
-}
-
-.disc-cover-folder::after {
-  position: absolute;
-  bottom: -1px;
-  left: 50%;
-  content: '';
-  width: 0;
-  height: 0;
-  margin-left: 6px;
-  border-left: 0 solid transparent;
-  border-right: 0 solid transparent;
-  border-bottom: 0 solid transparent;
-  -webkit-transition: bottom 0.2s ease-in;
-  -moz-transition: bottom 0.2s ease-in;
-  transition: bottom 0.2s ease-in;
-}
 .active-tool {
    z-index: 10;
-}
-.active-tool::before {
-   bottom: -1px;
-   margin-left: -7px;
-   border-left: 12px solid transparent;
-   border-right: 12px solid transparent;
-   border-bottom: 12px solid rgba(0,0,0,0.3);
-   -webkit-transition: all 0.2s ease-in;
-   -moz-transition: all 0.2s ease-in;
-   transition: all 0.2s ease-in;
-}
-.active-tool::after {
-   bottom: -1px;
-   margin-left: -6px;
-   border-left: 11px solid transparent;
-   border-right: 11px solid transparent;
-   border-bottom: 11px solid transparent;
-   -webkit-transition: all 0.2s ease-in;
-   -moz-transition: all 0.2s ease-in;
-   transition: all 0.2s ease-in;
 }
 .active-tool img {
    max-width: 110%;
