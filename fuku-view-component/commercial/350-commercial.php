@@ -12,8 +12,8 @@
  * @link     http://www.fukuball.com
  */
 ?>
-<div class="commercial-box text-center" style="width:350px;">
-   <!-- AdPlace ShowCode Begin / 335X280 -->
+<div class="commercial-box text-center" style="width:350px;height:280px;">
+   <!--
    <iframe width="335" height="280" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" src="http://adplace.adsame.com/s?z=adplace&c=1582&op=1"></iframe>
-   <!-- AdPlace ShowCode End / 335X280 -->
+   -->
 </div>
