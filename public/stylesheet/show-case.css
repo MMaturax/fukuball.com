@@ -219,6 +219,6 @@
    position: relative;
    max-width: 300px;
 }
-.primary-color {
+a.primary-color, a.primary-color:hover {
    color: rgb(198, 202, 198);
 }
