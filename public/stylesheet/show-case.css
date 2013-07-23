@@ -188,18 +188,11 @@ a.primary-color, a.primary-color:hover {
    border-width: 0 15px 15px 15px;
    border-color: transparent transparent rgb(9, 8, 9) transparent;
    position: relative;
-   top: 30px;
+   top: 2px;
    z-index: 10;
    left: 45%;
    opacity: 0;
-   -webkit-transition: all 0.2s ease-in;
-   -moz-transition: all 0.2s ease-in;
-   transition: all 0.2s ease-in;
 }
 .active-tool .crrent-indicator {
-   top: 2px;
    opacity: 1;
-   -webkit-transition: all 0.2s ease-in;
-   -moz-transition: all 0.2s ease-in;
-   transition: all 0.2s ease-in;
 }
