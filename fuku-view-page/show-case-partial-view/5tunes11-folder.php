@@ -76,15 +76,17 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
 }
 ?>
 <script>
+
 var colorThief = new ColorThief();
 $('.disc-cover').bind('load', function (event) {
      var image = event.target;
      var $image = $(image);
      var dominant_color = colorThief.getColor(image);
+     var this_color_string = 'rgb('+dominant_color[0]+', '+dominant_color[1]+', '+dominant_color[2]+')';
+     $image.parent().parent().parent().find('.current-indicator').css('border-color', 'transparent transparent '+this_color_string+' transparent');
      console.log(dominant_color);
-     //styleBackground(colors[1], $image.parent().parent().attr('id'));
-     //styleText(colors[1], colors[0],$image.parent().parent().attr('id'));
 });
+
 $('.app-folders-container').ready(function() {
 
    $('.app-folders-container').appFolders({
