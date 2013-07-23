@@ -175,6 +175,82 @@ class ShowCaseViewController
 
          switch ($action_level_two_id) {
 
+         case 'disc-data.json':
+
+            header('Content-type: application/json');
+
+            $json_data = array (
+               "data"=>
+               array(
+                  array(
+                     "id"=>"5311",
+                     "album"=>"今夜的秘密集會 Acoustic Live EP",
+                     "artist"=>"回聲樂團",
+                     "year"=>"2012",
+                     "image"=>"php3fXH12480X480.jpg",
+                     "tracklist"=>
+                        array(
+                           "處女空氣",
+                           "Here We Are",
+                           "等待著愛的人",
+                           "耍堅強",
+                           "Dear John"
+                        ),
+                     "url"=>"http://www.indievox.com/disc/5311"
+                  ),
+                  array(
+                     "id"=>"4975",
+                     "album"=>"今夜的祕密集會",
+                     "artist"=>"回聲樂團",
+                     "year"=>"2012",
+                     "image"=>"phptkWMy4480X480.jpg",
+                     "tracklist"=>
+                        array(
+                           "今夜的祕密集會",
+                           "今夜的祕密集會(DJ Afro&Will Remix)"
+                        ),
+                     "url"=>"http://www.indievox.com/disc/4975"
+                  ),
+                  array(
+                     "id"=>"2959",
+                     "album"=>"處女空氣",
+                     "artist"=>"回聲樂團",
+                     "year"=>"2010",
+                     "image"=>"phpkOs1BD480X480.jpg",
+                     "tracklist"=>
+                        array(
+                          "Dear John",
+                          "戀人絮語",
+                          "自導自演",
+                          "處女空氣",
+                          "親愛的我",
+                          "狩獵霓虹",
+                          "Here We Are",
+                          "一萬種迷惑",
+                          "默契帶我們向前走",
+                          "自由之處"
+                        ),
+                     "url"=>"http://www.indievox.com/disc/2959"
+                  ),
+                  array(
+                     "id"=>"1080",
+                     "album"=>"解放",
+                     "artist"=>"回聲樂團",
+                     "year"=>"2008",
+                     "image"=>"phpxmPhRD480X480.jpg",
+                     "tracklist"=>
+                        array(
+                           "解放"
+                        ),
+                     "url"=>"http://www.indievox.com/disc/1080"
+                  )
+               )
+            );
+
+            echo json_encode($json_data);
+
+            break;
+
          case 'album-data.json':
 
             header('Content-type: application/json');
