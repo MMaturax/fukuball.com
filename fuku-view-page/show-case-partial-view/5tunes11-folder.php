@@ -109,15 +109,13 @@ $('.app-folders-container').ready(function() {
       this_cover_image = $('#disc-cover-detail-<?php echo $disc_item["id"]; ?>');
       console.log(this_cover_image);
       if (!this_cover_image.complete) {
-         this_cover_image.bind('load', function (event) {
-            var image = event.target;
-            var $image = $(image);
-            var dominant_color = colorThief.getColor(image);
+         this_cover_image.on("load", function(event){
+            var dominant_color = colorThief.getColor(this_cover_image[0]);
             var this_color_string = 'rgb('+dominant_color[0]+', '+dominant_color[1]+', '+dominant_color[2]+')';
-            $image.parent().css('box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
-            $image.parent().css('-moz-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
-            $image.parent().css('-webkit-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
-            $image.parent().parent().parent().parent().css('background-color', this_color_string);
+            this_cover_image.parent().css('box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
+            this_cover_image.parent().css('-moz-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
+            this_cover_image.parent().css('-webkit-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
+            this_cover_image.parent().parent().parent().parent().css('background-color', this_color_string);
             $('#current-indicator-<?php echo $disc_item["id"]; ?>').css('border-color', 'transparent transparent '+this_color_string+' transparent');
             console.log(dominant_color);
          });
