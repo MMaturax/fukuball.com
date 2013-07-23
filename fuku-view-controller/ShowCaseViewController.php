@@ -246,8 +246,8 @@ class ShowCaseViewController
                   ),
                   array(
                      "id"=>"282",
-                     "album"=>"Born To Live, Live To Give",
-                     "artist"=>"回聲樂團",
+                     "disc_title"=>"Born To Live, Live To Give",
+                     "artist_name"=>"回聲樂團",
                      "year"=>"2008",
                      "image"=>"/public/image/itunes-cover/phpGDapUA480X480.jpg",
                      "tracklist"=>
@@ -267,8 +267,8 @@ class ShowCaseViewController
                   ),
                   array(
                      "id"=>"4",
-                     "album"=>"煙硝",
-                     "artist"=>"回聲樂團",
+                     "disc_title"=>"煙硝",
+                     "artist_name"=>"回聲樂團",
                      "year"=>"2007",
                      "image"=>"/public/image/itunes-cover/KuwosEX1gI480X480.jpg",
                      "tracklist"=>
@@ -281,8 +281,8 @@ class ShowCaseViewController
                   ),
                   array(
                      "id"=>"9",
-                     "album"=>"少年的最後旅行",
-                     "artist"=>"回聲樂團",
+                     "disc_title"=>"少年的最後旅行",
+                     "artist_name"=>"回聲樂團",
                      "year"=>"2004",
                      "image"=>"/public/image/itunes-cover/RIbd7L0tbb480X480.jpg",
                      "tracklist"=>
@@ -298,8 +298,8 @@ class ShowCaseViewController
                   ),
                   array(
                      "id"=>"1",
-                     "album"=>"感官駕馭",
-                     "artist"=>"回聲樂團",
+                     "disc_title"=>"感官駕馭",
+                     "artist_name"=>"回聲樂團",
                      "year"=>"2002",
                      "image"=>"/public/image/itunes-cover/phpjTj9Ue480X480.jpg",
                      "tracklist"=>

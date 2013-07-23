@@ -221,6 +221,18 @@
    -moz-transition: all 0.2s ease-in;
    transition: all 0.2s ease-in;
 }
+.artist-name {
+   opacity: 1;
+   margin-bottom: 2px;
+   color: #888;
+   font-size: 12px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;
+}
 
 .active-tool {
   z-index: 10;
