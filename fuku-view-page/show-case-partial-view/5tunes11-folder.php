@@ -113,10 +113,8 @@ $('.app-folders-container').ready(function() {
            $image.parent().css('box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
            $image.parent().css('-moz-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
            $image.parent().css('-webkit-box-shadow', this_color_string+' 12px 15px 20px inset, '+this_color_string+' -1px -1px 150px inset');
+           $image.parent().parent().parent().parent().css('background-color', this_color_string);
            console.log(dominant_color);
-           //-moz-box-shadow: rgb(9, 8, 9) 12px 15px 20px inset, rgb(9, 8, 9) -1px -1px 150px inset;
-           //-webkit-box-shadow: rgb(9, 8, 9) 12px 15px 20px inset, rgb(9, 8, 9) -1px -1px 150px inset;
-           //box-shadow: rgb(9, 8, 9) 12px 15px 20px inset, rgb(9, 8, 9) -1px -1px 150px inset;
       });
       <?php
    }
