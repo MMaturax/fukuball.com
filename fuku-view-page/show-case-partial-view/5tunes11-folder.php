@@ -23,7 +23,7 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
    <div class="folder disc-cover-folder" id="<?php echo $disc_item['id']; ?>">
       <div>
          <a href='#'>
-            <img id="disc-cover-<?php echo $disc_item['id']; ?>" class="disc-cover" src="<?php echo $disc_item['image']; ?>">
+            <img class="disc-cover" src="<?php echo $disc_item['image']; ?>">
             <p class='disc-title'><?php echo $disc_item['disc_title']; ?></p>
             <p class='artist-name'><?php echo $disc_item['artist_name']; ?></p>
          </a>
@@ -44,7 +44,7 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
       <div class="jaf-container">
          <div class="row">
             <div class='disc-cover-detail pull-right'>
-               <img src='<?php echo $disc_item['image']; ?>'>
+               <img id="disc-cover-detail-<?php echo $disc_item['id']; ?>" src='<?php echo $disc_item['image']; ?>'>
             </div>
             <h2 class="m-b-0">
                <a href="<?php echo $disc_item['url']; ?>" target="_blank" class="primary-color">
@@ -105,11 +105,15 @@ $('.app-folders-container').ready(function() {
    <?php
    foreach ($disc_data['data'] as $key=>$disc_item) {
       ?>
-      $('#disc-cover-<?php echo $disc_item["id"]; ?>').bind('load', function (event) {
+      $('#disc-cover-detail-<?php echo $disc_item["id"]; ?>').bind('load', function (event) {
            var image = event.target;
            var $image = $(image);
-           var colors = colorThief.getColor(image);
-           console.log(colors);
+           var dominant_color = colorThief.getColor(image);
+           console.log($image);
+           console.log(dominant_color);
+           //-moz-box-shadow: rgb(9, 8, 9) 12px 15px 20px inset, rgb(9, 8, 9) -1px -1px 150px inset;
+           //-webkit-box-shadow: rgb(9, 8, 9) 12px 15px 20px inset, rgb(9, 8, 9) -1px -1px 150px inset;
+           //box-shadow: rgb(9, 8, 9) 12px 15px 20px inset, rgb(9, 8, 9) -1px -1px 150px inset;
       });
       <?php
    }
