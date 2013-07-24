@@ -77,7 +77,7 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
    <?php
 }
 ?>
-<div>
+<div id="load-more" class="row span4" style="margin: 30px auto 20px auto;">
    <button class="btn span4 m-a-15">
       載入更多
    </button>
