@@ -161,7 +161,7 @@
    text-decoration: underline;
 }
 .disc-cover-detail {
-   box-shadow: rgb(9, 8, 9) 12px 15px 20px inset, rgb(9, 8, 9) -1px -1px 150px inset;
+   box-shadow: rgb(9, 8, 9) 14px 17px 25px inset, rgb(9, 8, 9) -1px -1px 170px inset;
 }
 .disc-cover-detail img {
    z-index: -2;

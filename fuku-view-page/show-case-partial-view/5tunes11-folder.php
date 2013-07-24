@@ -90,7 +90,7 @@ $('.disc-cover').bind('load', function (event) {
      $image.parent().parent().parent().find('.current-indicator').css('border-color', 'transparent transparent '+this_color_string+' transparent');
      $('.' + this_cover_id)
        .css('background-color', this_color_string)
-       .find('.disc-cover-detail').css('box-shadow', 'inset 12px 15px 20px ' + this_color_string + ', inset -1px -1px 150px ' + this_color_string);
+       .find('.disc-cover-detail').css('box-shadow', 'inset 14px 17px 25px ' + this_color_string + ', inset -1px -1px 170px ' + this_color_string);
 
      var palette_color = colorThief.getPalette(image, 5);
      $('.' + this_cover_id + ' .primary-color').css('color', 'rgb(' + palette_color[1].join(',') + ')');
