@@ -96,6 +96,7 @@ $('.disc-cover').bind('load', function (event) {
      $('.' + this_cover_id + ' .primary-color').css('color', 'rgb(' + palette_color[1].join(',') + ')');
      $('.' + this_cover_id + ' .secondary-color').css('color', 'rgb(' + palette_color[2].join(',') + ')');
 
+     console.log(getDominantColors(image));
 });
 
 $('.app-folders-container').ready(function() {

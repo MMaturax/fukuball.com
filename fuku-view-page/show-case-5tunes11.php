@@ -14,6 +14,46 @@
 ?>
 <script src="/public/javascript/library/color-thief/js/color-thief.js"></script>
 <script src="/public/javascript/library/app-folders/jquery.app-folders.js"></script>
+<script>
+function getDominantColors(sourceImage) {
+
+    var image = new CanvasImage(sourceImage),
+        image_data = image.getImageData(),
+        pixels = imageData.data,
+        pixel_count = image.getPixelCount();
+
+    var pixel_array = [];
+    var bg_pixel_array = [];
+    for (var i = 0, offset, r, g, b, a; i < pixel_count; i=i+4) {
+       r = pixels[i + 0];
+       g = pixels[i + 1];
+       b = pixels[i + 2];
+       a = pixels[i + 3];
+       // If pixel is mostly opaque and not white
+       if (a >= 125) {
+
+          pixel_array.push([r, g, b]);
+
+          if ( (i<(pixel_count*0.30) ) || ( i%(image.width*4) < (image.width*0.30)) {
+             bg_pixel_array.push([r, g, b]);
+          }
+
+       }
+
+    }
+
+    var cmap = MMCQ.quantize(pixel_array, 5);
+    var palette = cmap.palette();
+
+    var bg_cmap = MMCQ.quantize(bg_pixel_array, 5);
+    var bg_palette = bg_cmap.palette();
+
+    // Clean up
+    image.removeCanvas();
+
+    return [palette, bg_palette];
+}
+</script>
 <div class="app-folders-container">
    <?php
    include_once SITE_ROOT.'/fuku-view-page/show-case-partial-view/5tunes11-folder.php';
