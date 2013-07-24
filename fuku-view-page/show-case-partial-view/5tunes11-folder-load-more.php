@@ -12,7 +12,7 @@
  * @link     http://www.fukuball.com
  */
 
-$disc_data = json_decode(file_get_contents(SITE_HOST.'/show-case/5tunes11/disc-data-less.json'), true);
+$disc_data = json_decode(file_get_contents(SITE_HOST.'/show-case/5tunes11/disc-data-more.json'), true);
 
 $count = 1;
 foreach ($disc_data['data'] as $key=>$disc_item) {
