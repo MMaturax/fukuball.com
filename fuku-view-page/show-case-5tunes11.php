@@ -19,7 +19,7 @@ function getDominantColors(sourceImage) {
 
     var image = new CanvasImage(sourceImage),
         image_data = image.getImageData(),
-        pixels = imageData.data,
+        pixels = image_data.data,
         pixel_count = image.getPixelCount();
 
     var pixel_array = [];
