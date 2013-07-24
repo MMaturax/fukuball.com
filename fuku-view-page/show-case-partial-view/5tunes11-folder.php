@@ -109,7 +109,7 @@ $('.disc-cover').bind('load', function (event) {
 
 });
 
-$('#disc-shelf-'+current_time).ready(function() {
+$('#disc-shelf-<?php echo $current_time;?>').ready(function() {
 
    $(document.body).off('click.load_more_btn', ".load-more-btn");
    $(document.body).on('click.load_more_btn', ".load-more-btn", function() {
@@ -129,7 +129,7 @@ $('#disc-shelf-'+current_time).ready(function() {
 
    });
 
-   $('#disc-shelf-'+current_time).appFolders({
+   $('#disc-shelf-<?php echo $current_time;?>').appFolders({
       // Opacity of non-selected items
       opacity: 1,
       // Adjust the margin-top for the folder area based on row selected?
