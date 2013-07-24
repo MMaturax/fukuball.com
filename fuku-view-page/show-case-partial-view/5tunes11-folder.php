@@ -12,10 +12,7 @@
  * @link     http://www.fukuball.com
  */
 
-$disc_data = json_decode(file_get_contents(SITE_HOST.'/show-case/5tunes11/disc-data-less.json'), true);
-
-$current_time = time();
-echo '<div id="disc-shelf-'.$current_time.'">';
+$disc_data = json_decode(file_get_contents(SITE_HOST.'/show-case/5tunes11/disc-data.json'), true);
 
 $count = 1;
 foreach ($disc_data['data'] as $key=>$disc_item) {
@@ -79,15 +76,7 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
    </div>
    <?php
 }
-
-echo '</div>';
-
 ?>
-<div id="load-more-block" class="row" style="width:100%;margin-top:50px;margin-bottom:50px;">
-   <button class="btn load-more-btn" style="float: none;margin-left: auto;margin-right: auto;width: 300px;display: block;">
-      載入更多
-   </button>
-</div>
 <script>
 
 $('.disc-cover').bind('load', function (event) {
@@ -109,27 +98,9 @@ $('.disc-cover').bind('load', function (event) {
 
 });
 
-$('#disc-shelf-<?php echo $current_time;?>').ready(function() {
+$('.app-folders-container').ready(function() {
 
-   $(document.body).off('click.load_more_btn', ".load-more-btn");
-   $(document.body).on('click.load_more_btn', ".load-more-btn", function() {
-
-      $.ajax({
-         url: '/show-case/5tunes11/load-more',
-         type: "GET",
-         data: {},
-         dataType: "html",
-         beforeSend: function( xhr ) {
-         },
-         success: function( html_block ) {
-            $('#load-more-block').remove();
-            $('.app-folders-container').append(html_block);
-         }
-      });
-
-   });
-
-   $('#disc-shelf-<?php echo $current_time;?>').appFolders({
+   $('.app-folders-container').appFolders({
       // Opacity of non-selected items
       opacity: 1,
       // Adjust the margin-top for the folder area based on row selected?
@@ -145,7 +116,7 @@ $('#disc-shelf-<?php echo $current_time;?>').ready(function() {
       // If URL rewrite is enabled, the URL base of the page where used.
       URLbase: "./",
       // a jQuery selector containing links to content within a jQuery App Folder
-      internalLinkSelector: "#disc-shelf-<?php echo $current_time;?> .jaf-internal a",
+      internalLinkSelector: ".jaf-internal a",
       // Set to true to enable one-click folder switching rather than iOS-like two clicks
       instaSwitch: true
    });
