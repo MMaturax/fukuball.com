@@ -169,6 +169,24 @@ class ShowCaseViewController
 
          break;
 
+      case '5tunes11-v1':
+
+         $page_title = '5Tunes11 | Show Case';
+         $itunes11_active = 'active';
+         $yield_path = '/fuku-view-page/show-case-5tunes11-v1.php';
+         require_once SITE_ROOT.'/fuku-view-layout/show-case-page-layout.php';
+
+         break;
+
+      case '5tunes11-v2':
+
+         $page_title = '5Tunes11 | Show Case';
+         $itunes11_active = 'active';
+         $yield_path = '/fuku-view-page/show-case-5tunes11-v2.php';
+         require_once SITE_ROOT.'/fuku-view-layout/show-case-page-layout.php';
+
+         break;
+
       case '5tunes11':
 
          $action_level_two_id = $segments[1];
