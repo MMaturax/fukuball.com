@@ -132,7 +132,7 @@
 .disc-folder-content {
    position: relative;
    margin-top: 25px;
-   z-index: 8;
+   z-index: 0;
    -webkit-box-sizing: border-box;
    -moz-box-sizing: border-box;
    box-sizing: border-box;
@@ -164,7 +164,7 @@
    box-shadow: rgb(9, 8, 9) 12px 15px 20px inset, rgb(9, 8, 9) -1px -1px 150px inset;
 }
 .disc-cover-detail img {
-   z-index: 4;
+   z-index: -2;
    position: relative;
    max-width: 300px;
 }
@@ -193,7 +193,7 @@ a.primary-color, a.primary-color:hover {
 }
 .active-tool .current-indicator {
    top: 2px;
-   z-index: 2;
+   z-index: 10;
    opacity: 1;
    -webkit-transition: all 0.2s ease-in;
    -moz-transition: all 0.2s ease-in;
