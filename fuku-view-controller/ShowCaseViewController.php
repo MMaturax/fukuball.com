@@ -193,6 +193,10 @@ class ShowCaseViewController
 
          switch ($action_level_two_id) {
 
+         case 'load-more':
+            echo 'load-more';
+            break;
+
          case 'disc-data.json':
 
             header('Content-type: application/json');

@@ -77,7 +77,7 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
    <?php
 }
 ?>
-<div id="load-more-block" class="row" style="width:100%;margin-top:30px;margin-bottom:30px;">
+<div id="load-more-block" class="row" style="width:100%;margin-top:50px;margin-bottom:50px;">
    <button class="btn load-more-btn" style="float: none;margin-left: auto;margin-right: auto;width: 300px;display: block;">
       載入更多
    </button>
@@ -105,6 +105,24 @@ $('.disc-cover').bind('load', function (event) {
 });
 
 $('.app-folders-container').ready(function() {
+
+   $(document.body).off('click.load_more_btn', ".load-more-btn");
+   $(document.body).on('click.load_more_btn', ".load-more-btn", function() {
+
+      $.ajax({
+         url: '/show-case/5tunes11/load-more',
+         type: "GET",
+         data: {},
+         dataType: "html",
+         beforeSend: function( xhr ) {
+         },
+         success: function( html_block ) {
+            $('#load-more-block').remove();
+            $('.app-folders-container').append(html_block);
+         }
+      });
+
+   });
 
    $('.app-folders-container').appFolders({
       // Opacity of non-selected items
