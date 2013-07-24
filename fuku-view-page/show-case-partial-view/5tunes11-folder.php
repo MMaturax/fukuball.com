@@ -84,8 +84,9 @@ $('.disc-cover').bind('load', function (event) {
      var image = event.target;
      var $image = $(image);
 
-     var dominant_color = colorThief.getColor(image);
-     var this_color_string = 'rgb('+dominant_color[0]+', '+dominant_color[1]+', '+dominant_color[2]+')';
+     var modify_palette_color = getDominantColors(image);
+
+     var this_color_string = 'rgb('+modify_palette_color[1][0][0]+', '+modify_palette_color[1][0][0]+', '+modify_palette_color[1][0][0]+')';
      var this_cover_id = $image.parent().parent().parent().attr('id');
      $image.parent().parent().parent().find('.current-indicator').css('border-color', 'transparent transparent '+this_color_string+' transparent');
      $('.' + this_cover_id)
