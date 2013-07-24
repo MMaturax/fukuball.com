@@ -14,6 +14,9 @@
 
 $disc_data = json_decode(file_get_contents(SITE_HOST.'/show-case/5tunes11/disc-data-less.json'), true);
 
+$current_time = time();
+echo '<div id="disc-shelf-'.$current_time.'">';
+
 $count = 1;
 foreach ($disc_data['data'] as $key=>$disc_item) {
    if (($count%4)==1) {
@@ -76,6 +79,9 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
    </div>
    <?php
 }
+
+echo '</div>';
+
 ?>
 <div id="load-more-block" class="row" style="width:100%;margin-top:50px;margin-bottom:50px;">
    <button class="btn load-more-btn" style="float: none;margin-left: auto;margin-right: auto;width: 300px;display: block;">
@@ -103,7 +109,7 @@ $('.disc-cover').bind('load', function (event) {
 
 });
 
-$('.app-folders-container').ready(function() {
+$('#disc-shelf-'+current_time).ready(function() {
 
    $(document.body).off('click.load_more_btn', ".load-more-btn");
    $(document.body).on('click.load_more_btn', ".load-more-btn", function() {
@@ -123,7 +129,7 @@ $('.app-folders-container').ready(function() {
 
    });
 
-   $('.app-folders-container').appFolders({
+   $('#disc-shelf-'+current_time).appFolders({
       // Opacity of non-selected items
       opacity: 1,
       // Adjust the margin-top for the folder area based on row selected?
