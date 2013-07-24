@@ -34,7 +34,7 @@ function getDominantColors(sourceImage) {
 
           pixel_array.push([r, g, b]);
 
-          if ( (i<(pixel_count*0.30) ) || ( i%(image.width*4) < (image.width*0.30)) {
+          if ( (i<(pixel_count*0.30)) || ((i%(image.width*4))<(image.width*0.30)) ) {
              bg_pixel_array.push([r, g, b]);
           }
 
@@ -52,6 +52,7 @@ function getDominantColors(sourceImage) {
     image.removeCanvas();
 
     return [palette, bg_palette];
+
 }
 </script>
 <div class="app-folders-container">
