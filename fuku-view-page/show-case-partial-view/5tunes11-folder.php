@@ -145,7 +145,7 @@ $('#disc-shelf-<?php echo $current_time;?>').ready(function() {
       // If URL rewrite is enabled, the URL base of the page where used.
       URLbase: "./",
       // a jQuery selector containing links to content within a jQuery App Folder
-      internalLinkSelector: ".jaf-internal a",
+      internalLinkSelector: "#disc-shelf-<?php echo $current_time;?> .jaf-internal a",
       // Set to true to enable one-click folder switching rather than iOS-like two clicks
       instaSwitch: true
    });
