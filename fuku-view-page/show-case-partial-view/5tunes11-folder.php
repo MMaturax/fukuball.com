@@ -77,6 +77,11 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
    <?php
 }
 ?>
+<div>
+   <button class="btn span4 m-a-15">
+      載入更多
+   </button>
+</div>
 <script>
 
 $('.disc-cover').bind('load', function (event) {
