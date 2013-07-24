@@ -196,7 +196,7 @@ a.primary-color, a.primary-color:hover {
    height: 0px;
    border-style: solid;
    border-width: 0 30px 30px 30px;
-   border-color: transparent transparent rgb(66, 66, 66) transparent;
+   border-color: transparent transparent rgb(75, 75, 75) transparent;
    position: relative;
    top: 60px;
    z-index: 0;
