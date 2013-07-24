@@ -42,7 +42,7 @@ function inverseColors(color, palette) {
 
     for (var i = 0; i < palette.length; i++) {
 
-        if (Math.abs(getContrastYIQ(palette[i]) - yiq) > 80) {
+        if (Math.abs(getContrastYIQ(palette[i]) - yiq) > 50) {
             colors.push(palette[i]);
         }
     }
