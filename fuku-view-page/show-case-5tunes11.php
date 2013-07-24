@@ -30,14 +30,10 @@ function getDominantColors(sourceImage) {
        b = pixels[i + 2];
        a = pixels[i + 3];
        // If pixel is mostly opaque and not white
-       if (a >= 125) {
+       pixel_array.push([r, g, b]);
 
-          pixel_array.push([r, g, b]);
-
-          if ( (i<(pixel_count*0.30)) || ((i%(image.width*4))<(image.width*0.30)) ) {
-             bg_pixel_array.push([r, g, b]);
-          }
-
+       if ( (i<(pixel_count*0.30)) || ((i%(image.width*4))<(image.width*0.30)) ) {
+          bg_pixel_array.push([r, g, b]);
        }
 
     }
