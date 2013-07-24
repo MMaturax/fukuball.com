@@ -30,6 +30,8 @@ foreach ($disc_data['data'] as $key=>$disc_item) {
       </div>
       <div class="current-indicator">
       </div>
+      <div class="current-indicator-back">
+      </div>
    </div>
    <?php
    if (($count%4)==0) {

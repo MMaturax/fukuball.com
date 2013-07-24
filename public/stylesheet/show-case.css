@@ -191,9 +191,29 @@ a.primary-color, a.primary-color:hover {
    left: 40%;
    opacity: 0;
 }
+.current-indicator-back {
+   width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-width: 0 31px 31px 31px;
+   border-color: transparent transparent rgb(0, 0, 0) transparent;
+   position: relative;
+   top: 60px;
+   z-index: 0;
+   left: 40%;
+   opacity: 0;
+}
 .active-tool .current-indicator {
    top: 2px;
    z-index: 10;
+   opacity: 1;
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;
+}
+.active-tool .current-indicator-back {
+   top: 2px;
+   z-index: -2;
    opacity: 1;
    -webkit-transition: all 0.2s ease-in;
    -moz-transition: all 0.2s ease-in;
