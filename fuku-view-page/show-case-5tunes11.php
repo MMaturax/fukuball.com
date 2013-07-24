@@ -15,6 +15,44 @@
 <script src="/public/javascript/library/color-thief/js/color-thief.js"></script>
 <script src="/public/javascript/library/app-folders/jquery.app-folders.js"></script>
 <script>
+
+function getContrastYIQ(color) {
+
+    var r = color[0],
+        g = color[1],
+        b = color[2];
+
+    var yiq = ((r*299)+(g*587)+(b*114))/1000;
+
+    // return (yiq >= 128) ? 'light' : 'dark';
+    return yiq;
+
+}
+
+function getDefaultColor(yiq) {
+    return (yiq >= 128) ? [0, 0, 0] : [255, 255, 255];
+}
+
+function inverseColors(color, palette) {
+
+    var yiq = getContrastYIQ(color);
+    var colors = [],
+        primary_color,
+        secondary_color;
+
+    for (var i = 0; i < palette.length; i++) {
+
+        if (Math.abs(getContrastYIQ(palette[i]) - yiq) > 80) {
+            colors.push(palette[i]);
+        }
+    }
+
+    primary_color = colors[0] ? colors[0] : getDefaultColor(yiq);
+    secondary_color = colors[1] ? colors[1] : getDefaultColor(yiq);
+
+    return [primary_color, secondary_color];
+}
+
 function getDominantColors(sourceImage) {
 
     var image = new CanvasImage(sourceImage),
@@ -46,10 +84,12 @@ function getDominantColors(sourceImage) {
     var bg_cmap = MMCQ.quantize(bg_pixel_array, 5);
     var bg_palette = bg_cmap.palette();
 
+    var inverse_palette = inverseColors(bg_palette[0], palette);
+
     // Clean up
     image.removeCanvas();
 
-    return [palette, bg_palette];
+    return [inverse_palette, bg_palette];
 
 }
 </script>
