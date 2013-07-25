@@ -159,7 +159,11 @@ class CkipClientViewController
          $yield_path = '/fuku-view-page/ckip-client-record-list.php';
 
          $ckip_process_record_god_obj = new CkipProcessRecordGod();
-         $ckip_process_record_list = $ckip_process_record_god_obj->getList();
+         $options = array(
+            "offset"=>0,
+            "length"=>20
+         );
+         $ckip_process_record_list = $ckip_process_record_god_obj->getList($options);
 
          require_once SITE_ROOT.'/fuku-view-layout/ckip-client-page-layout.php';
 

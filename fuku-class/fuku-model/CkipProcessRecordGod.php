@@ -42,12 +42,18 @@ class CkipProcessRecordGod extends ActiveRecordGod
 
       $options = array_merge($defaults, $options);
 
+      $offset = $options['offset'];
+      $length = $options['length'];
+
       $sql = "SELECT id ".
                "FROM ckip_process_record ".
                "ORDER BY id DESC ".
-               "LIMIT 100";
+               "LIMIT :offset, :length";
 
-      $param = array();
+      $param = array(
+         ":offset"=>$offset,
+         ":length"=>$length,
+      );
 
       $query_list = $this->db_obj->selectCommandPrepare($sql, $param);
 
