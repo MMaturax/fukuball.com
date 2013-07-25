@@ -157,6 +157,27 @@ class CkipClientViewController
 
       case 'record-list-partial':
 
+         $offset = $_GET['offset'];
+         $length = $_GET['length'];
+
+         if (empty($offset)) {
+            $offset = 0;
+         }
+         if (empty($length)) {
+            $length = 20;
+         }
+
+         $ckip_process_record_god_obj = new CkipProcessRecordGod();
+         $options = array(
+            "offset"=>$offset,
+            "length"=>$length
+         );
+         $ckip_process_record_list = $ckip_process_record_god_obj->getList($options);
+
+         require_once SITE_ROOT.'/fuku-view-page/ckip-client-record-list.php';
+
+         unset($ckip_process_record_god);
+
          break;
 
       case 'record-list':
