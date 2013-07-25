@@ -158,6 +158,9 @@ ul.footer-links li a {
    border: 1px solid #DDD;
    background-color: #EEE;
    padding: 5px 10px;
+   margin: 15px;
+   text-align: center;
+   cursor: pointer;
 }
 .f-s-40 {
    font-size: 40px;

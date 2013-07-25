@@ -61,7 +61,7 @@
 if ($ckip_count==$options['length']) {
    ?>
    <div class="show-more" data-action-url="/ckip-client/record-list-partial" data-offset="<?php echo $options['offset']+$options['length']; ?>" data-length="<?php echo $options['length']; ?>">
-      顯示更多
+      <a>顯示更多</a>
    </div>
    <?php
 }
