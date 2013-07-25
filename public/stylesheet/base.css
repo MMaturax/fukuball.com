@@ -154,6 +154,11 @@ ul.footer-links li a {
 .hero-unit h1 {
    font-size: 40px;
 }
+.show-more {
+   border: 1px solid #DDD;
+   background-color: #EEE;
+   padding: 5px 10px;
+}
 .f-s-40 {
    font-size: 40px;
 }

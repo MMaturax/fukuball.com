@@ -22,6 +22,7 @@
          </div>
          <div>
             <?php
+            $ckip_count = 0;
             foreach ($ckip_process_record_list as $ckip_process_record_list_data) {
                $ckip_process_record_id = $ckip_process_record_list_data['id'];
                $ckip_process_record_obj = new CkipProcessRecord($ckip_process_record_id);
@@ -44,6 +45,7 @@
                </div>
                <?php
                unset($ckip_process_record_obj);
+               $ckip_count++;
             }
             ?>
          </div>
@@ -55,3 +57,12 @@
       </div>
    </div>
 </div>
+<?php
+if ($ckip_count==$options['length']) {
+   ?>
+   <div class="show-more" data-action-url="/ckip-client/record-list-partial" data-offset="<?php echo $options['offset']+$options['length']; ?>" data-length="<?php echo $options['length']; ?>">
+      顯示更多
+   </div>
+   <?php
+}
+?>

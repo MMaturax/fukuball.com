@@ -155,6 +155,10 @@ class CkipClientViewController
 
          break;
 
+      case 'record-list-partial':
+
+         break;
+
       case 'record-list':
 
          $meta_type = "ckip";
