@@ -51,6 +51,7 @@
                $(window).on('scroll.show_more', function() {
                   if (($(window).scrollTop()+10) > $(document).height() - $(window).height()) {
                      if ($('.show-more').length) {
+                        var this_element = $('.show-more');
                         morePage(this_element);
                      }
                   }
@@ -67,6 +68,7 @@
    $(window).on('scroll.show_more', function() {
       if (($(window).scrollTop()+10) > $(document).height() - $(window).height()) {
          if ($('.show-more').length) {
+            var this_element = $('.show-more');
             morePage(this_element);
          }
       }
