@@ -35,7 +35,7 @@
             data: {offset : offset, length : length},
             dataType: "html",
             beforeSend: function( xhr ) {
-               element.html('<img src="/iv-asset/image/ui-icon/load-more.gif" />');
+               element.html('<img src="/public/image/ui/load-more.gif" />');
                $(document.body).off('click.show_more', '.show-more');
                $(window).off('scroll.show_more');
             },
