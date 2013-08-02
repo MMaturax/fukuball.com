@@ -48,9 +48,8 @@
          <img style="border:none;" src="/public/image/slide-show/5tunes-11-album-details.png">
       </a>
    </p>
-   <p class="fragment" data-fragment-index="1">
-      <h2 class="absolute-element" style="position: absolute; z-index: 1; width: 100%; left: 0px; bottom: 5%; font-weight: bold; -webkit-text-stroke-width: 15px; -webkit-text-stroke-color: black; -webkit-transform: scaleX(0.9);">demo</h2>
-      <h2 class="absolute-element" style="position: absolute; z-index: 2; width: 100%; left: 0px; bottom: 5%; font-weight: bold; -webkit-transform: scaleX(0.9);">demo</h2>
+   <p style="position: absolute;z-index: 1;top: 50%;left: 25%;" class="fragment" data-fragment-index="1">
+      Demo
    </p>
 </section>
 <section data-background="#000000">
