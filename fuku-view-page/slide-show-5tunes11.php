@@ -28,7 +28,7 @@
 <section data-background="#000000">
    <h2 style="font-weight: bold; position: absolute; top: 1000%;">I am fukuball</h2>
    <div style="font-weight: bold; position: absolute; top: 1200%; left: 0.5%;">
-      CTO at <a href="http://indievox.com" target="_blank" style="height: 50px;" class="roll">iNDIEVOX</a>
+      CTO at iNDIEVOX
    </div>
 </section>
 <section data-background="#000000">
@@ -50,9 +50,5 @@
    <h1>THE END</h1>
    <br/>
    <h3>We are hiring!</h3>
-   <h2>
-      <a href="http://www.indievox.com/h/jobs.html" target="_blank">
-         job@indievox.com
-      </a>
-   </h2>
+   <h3>job@indievox.com</h3>
 </section>
