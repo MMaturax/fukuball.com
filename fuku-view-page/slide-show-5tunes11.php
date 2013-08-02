@@ -57,14 +57,20 @@
 <section data-background="#000000">
    <h2>Create cover mask</h2>
 </section>
-<section data-background="#000000">
-   <h1><a href="/show-case/5tunes11-v1" target="_blank">Demo V1</a></h1>
+<section data-background-color="rgba( 22, 152, 213, 0.6 )" data-background-transition="slide">
+   <a style="font-weight: bold;" hef="/show-case/5tunes11" target="_blank">
+      demo v1 http://www.fukuball.com/show-case/5tunes11-1
+   </a>
 </section>
-<section data-background="#000000">
-   <h1><a href="/show-case/5tunes11-v2" target="_blank">Demo V2</a></h1>
+<section data-background-color="rgba( 22, 152, 213, 0.6 )" data-background-transition="slide">
+   <a style="font-weight: bold;" hef="/show-case/5tunes11" target="_blank">
+      demo v2 http://www.fukuball.com/show-case/5tunes11-2
+   </a>
 </section>
-<section data-background="#000000" data-background-transition="slide">
-   <h1><a href="/show-case/5tunes11" target="_blank">Demo 完成版</a></h1>
+<section data-background-color="rgba( 22, 152, 213, 0.6 )" data-background-transition="slide">
+   <a style="font-weight: bold;" hef="/show-case/5tunes11" target="_blank">
+      demo final http://www.fukuball.com/show-case/5tunes11
+   </a>
 </section>
 <section data-background="#000000">
    <h1>THE END</h1>
