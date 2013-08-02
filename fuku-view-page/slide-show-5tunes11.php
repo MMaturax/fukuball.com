@@ -50,6 +50,10 @@
    </p>
 </section>
 <section data-background="#000000">
+   <h2>Take a close look</h2>
+   <img src="/public/image/slide-show/detail.png">
+</section>
+<section data-background="#000000">
    <h1>THE END</h1>
    <br/>
    <h3>We are hiring!</h3>
