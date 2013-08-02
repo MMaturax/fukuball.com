@@ -43,18 +43,22 @@
 </section>
 <section data-background="#000000">
    <h2>Can we build itunes design in web page?</h2>
-   <p class="fragment">
+   <p class="fragment" data-fragment-index="0">
       <a href="/show-case/5tunes11" target="_blank">
          <img style="border:none;" src="/public/image/slide-show/5tunes-11-album-details.png">
       </a>
+   </p>
+   <p class="fragment" data-fragment-index="1">
+      <h2 class="absolute-element" style="position: absolute; z-index: 1; width: 100%; left: 0px; bottom: 5%; font-weight: bold; -webkit-text-stroke-width: 15px; -webkit-text-stroke-color: black; -webkit-transform: scaleX(0.9);">demo</h2>
+      <h2 class="absolute-element" style="position: absolute; z-index: 2; width: 100%; left: 0px; bottom: 5%; font-weight: bold; -webkit-transform: scaleX(0.9);">demo</h2>
    </p>
 </section>
 <section data-background="#000000">
    <h2>Take a close look</h2>
    <img style="border:none;" src="/public/image/slide-show/detail.png">
    <p style="position: absolute;z-index: 1;top: 73%;left: 25%;" class="fragment" data-fragment-index="0">the same background color as cover</p>
-   <p style="position: absolute;z-index: 1;top: 73%;left: 25%;" class="fragment" data-fragment-index="1">background color mask on cover</p>
-   <p style="position: absolute;z-index: 1;top: 73%;left: 25%;" class="fragment" data-fragment-index="2">use cover color theme to paint text color</p>
+   <p style="position: absolute;z-index: 1;top: 30%;left: 45%;" class="fragment" data-fragment-index="1">background color mask on cover</p>
+   <p style="position: absolute;z-index: 1;top: 60%;left: 5%;" class="fragment" data-fragment-index="2">use cover color theme to paint text color</p>
 </section>
 <section data-background="#000000">
    <h1>THE END</h1>
