@@ -52,6 +52,7 @@
 <section data-background="#000000">
    <h2>Take a close look</h2>
    <img style="border:none;" src="/public/image/slide-show/detail.png">
+   <p style="position: absolute; z-index: 1;top: 500%;" class="fragment" data-fragment-index="0">the same background as cover</p>
 </section>
 <section data-background="#000000">
    <h1>THE END</h1>
