@@ -48,9 +48,6 @@
          <img style="border:none;" src="/public/image/slide-show/5tunes-11-album-details.png">
       </a>
    </p>
-   <p style="position: absolute;z-index: 1;top: 50%;left: 25%;" class="fragment" data-fragment-index="1">
-      Demo
-   </p>
 </section>
 <section data-background="#000000">
    <h2>Take a close look</h2>
