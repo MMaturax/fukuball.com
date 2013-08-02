@@ -25,7 +25,7 @@
    <br/>
    <h4>HappyDesigner Mini 分享會 <span style="color: rgb(170, 136, 238);">#3</span></h4>
 </section>
-<section data-background="/public/image/slide-show/background.png">
+<section data-background="/public/image/slide-show/background.jpg">
    <h2 style="font-weight: bold; position: absolute; top: 1000%;">I am fukuball</h2>
    <div style="font-weight: bold; position: absolute; top: 1200%; left: 0.5%;">
       CTO at <a href="http://indievox.com" target="_blank" style="height: 50px;" class="roll">iNDIEVOX</a>
