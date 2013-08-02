@@ -35,7 +35,7 @@
 <section data-background="#000000">
    <h2>Can we build itunes design in web page?</h2>
    <p class="fragment">
-      <a href="/show-case/itunes11" target="_blank">
+      <a href="/show-case/5tunes11" target="_blank">
          <img src="/public/image/slide-show/5tunes-11-album-details.png">
       </a>
    </p>
