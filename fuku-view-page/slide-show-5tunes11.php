@@ -48,4 +48,11 @@
 </section>
 <section data-background="#000000">
    <h1>THE END</h1>
+   <br/>
+   <h3>We are hiring!</h3>
+   <h2>
+      <a href="http://www.indievox.com/h/jobs.html" target="_blank">
+         job@indievox.com
+      </a>
+   </h2>
 </section>
