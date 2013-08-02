@@ -27,7 +27,7 @@
 </section>
 <section data-background="#000000">
    <div>
-      <img src="/public/image/slide-show/indievox_logo_outline.png">
+      <img src="/public/image/slide-show/indievox_logo_outline.png" style="background: none;border: none;box-shadow: none;">
    </div>
    <h2 style="font-weight: bold; position: absolute; top: 1000%;">I am fukuball</h2>
    <div style="font-weight: bold; position: absolute; top: 1200%; left: 0.5%;">
