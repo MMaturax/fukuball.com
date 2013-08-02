@@ -37,7 +37,7 @@
 <section data-background="#000000">
    <h2 class="absolute-element" style="position: absolute; z-index: 1; width: 100%; left: 0px; top: 7%; font-weight: bold; -webkit-text-stroke-width: 15px; -webkit-text-stroke-color: black; -webkit-transform: scaleX(0.9);">iTunes 11</h2>
    <h2 class="absolute-element" style="position: absolute; z-index: 2; width: 100%; left: 0px; top: 7%; font-weight: bold; -webkit-transform: scaleX(0.9);">iTunes 11</h2>
-   <img src="/public/image/slide-show/itunes-11-album-details.png">
+   <img style="border:none;" src="/public/image/slide-show/itunes-11-album-details.png">
    <h2 class="absolute-element" style="position: absolute; z-index: 1; width: 100%; left: 0px; bottom: 5%; font-weight: bold; -webkit-text-stroke-width: 15px; -webkit-text-stroke-color: black; -webkit-transform: scaleX(0.9);">something like this</h2>
    <h2 class="absolute-element" style="position: absolute; z-index: 2; width: 100%; left: 0px; bottom: 5%; font-weight: bold; -webkit-transform: scaleX(0.9);">something like this</h2>
 </section>
@@ -45,13 +45,13 @@
    <h2>Can we build itunes design in web page?</h2>
    <p class="fragment">
       <a href="/show-case/5tunes11" target="_blank">
-         <img src="/public/image/slide-show/5tunes-11-album-details.png">
+         <img style="border:none;" src="/public/image/slide-show/5tunes-11-album-details.png">
       </a>
    </p>
 </section>
 <section data-background="#000000">
    <h2>Take a close look</h2>
-   <img src="/public/image/slide-show/detail.png">
+   <img style="border:none;" src="/public/image/slide-show/detail.png">
 </section>
 <section data-background="#000000">
    <h1>THE END</h1>
