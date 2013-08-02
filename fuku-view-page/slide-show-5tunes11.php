@@ -58,17 +58,17 @@
    <h2>Create cover mask</h2>
 </section>
 <section data-background-color="rgba( 50, 200, 90, 0.4 )">
-   <a style="font-weight: bold;" hef="/show-case/5tunes11-v1" target="_blank">
+   <a style="font-weight: bold;" href="/show-case/5tunes11-v1" target="_blank">
       demo v1
    </a>
 </section>
 <section data-background-color="rgba( 50, 200, 90, 0.4 )">
-   <a style="font-weight: bold;" hef="/show-case/5tunes11-v2" target="_blank">
+   <a style="font-weight: bold;" href="/show-case/5tunes11-v2" target="_blank">
       demo v2
    </a>
 </section>
 <section data-background-color="rgba( 50, 200, 90, 0.4 )">
-   <a style="font-weight: bold;" hef="/show-case/5tunes11" target="_blank">
+   <a style="font-weight: bold;" href="/show-case/5tunes11" target="_blank">
       demo final
    </a>
 </section>
