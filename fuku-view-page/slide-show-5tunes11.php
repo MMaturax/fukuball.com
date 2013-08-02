@@ -57,7 +57,7 @@
 <section data-background="#000000">
    <h2>Create cover mask</h2>
 </section>
-<section data-background-color="rgba( 50, 200, 90, 0.4 )">
+<section data-background-color="rgba(50, 200, 90, 0.4)">
    <a style="font-weight: bold;" href="/show-case/5tunes11-v1" target="_blank">
       demo v1
    </a>
@@ -68,7 +68,7 @@
 <section data-background="#000000">
    <h2>Use color theif to Extract main color</h2>
 </section>
-<section data-background-color="rgba( 50, 200, 90, 0.4 )">
+<section data-background-color="rgba(50, 200, 90, 0.4)">
    <a style="font-weight: bold;" href="/show-case/5tunes11-v2" target="_blank">
       demo v2
    </a>
@@ -76,10 +76,19 @@
 <section data-background="#000000">
    <h2>Extract background color</h2>
 </section>
-<section data-background-color="rgba( 50, 200, 90, 0.4 )">
+<section data-background-color="rgba(50, 200, 90, 0.4)">
    <a style="font-weight: bold;" href="/show-case/5tunes11" target="_blank">
       demo final
    </a>
+</section>
+<section data-background="#000000">
+   <h2>Look around</h2>
+   <h3>
+      <a href="http://owo.tw/ColorTunes" target="_blank">ColorTunes</a>
+   </h3>
+   <h3>
+      <a href="http://thomaspark.me/project/expandingalbums/" target="_blank">Expanding Albums</a>
+   </h3>
 </section>
 <section data-background="#000000">
    <h1>THE END</h1>
