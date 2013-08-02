@@ -25,10 +25,9 @@
    <br/>
    <h4>HappyDesigner Mini 分享會 <span style="color: rgb(170, 136, 238);">#3</span></h4>
 </section>
-<section data-background="/public/image/slide-show/background.jpg">
-   <img style="position: absolute; top: 300%; right: 100%;" src="/public/image/slide-show/394x150.png">
-   <h2 style="font-weight: bold; position: absolute; top: 1000%;color: rgb(0, 0, 0);">I am fukuball</h2>
-   <div style="font-weight: bold; position: absolute; top: 1200%; left: 0.5%;color: rgb(0, 0, 0);">
+<section data-background="#000000">
+   <h2 style="font-weight: bold; position: absolute; top: 1000%;">I am fukuball</h2>
+   <div style="font-weight: bold; position: absolute; top: 1200%; left: 0.5%;">
       CTO at <a href="http://indievox.com" target="_blank" style="height: 50px;" class="roll">iNDIEVOX</a>
    </div>
 </section>
