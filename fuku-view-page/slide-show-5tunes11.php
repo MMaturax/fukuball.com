@@ -52,7 +52,9 @@
 <section data-background="#000000">
    <h2>Take a close look</h2>
    <img style="border:none;" src="/public/image/slide-show/detail.png">
-   <p style="position: absolute; z-index: 1;top: 500%;" class="fragment" data-fragment-index="0">the same background as cover</p>
+   <p style="position: absolute;z-index: 1;top: 73%;left: 25%;" class="fragment" data-fragment-index="0">the same background color as cover</p>
+   <p style="position: absolute;z-index: 1;top: 73%;left: 25%;" class="fragment" data-fragment-index="1">background color mask on cover</p>
+   <p style="position: absolute;z-index: 1;top: 73%;left: 25%;" class="fragment" data-fragment-index="2">use cover color theme to paint text color</p>
 </section>
 <section data-background="#000000">
    <h1>THE END</h1>
