@@ -44,9 +44,7 @@
 <section data-background="#000000">
    <h2>Can we build itunes design in web page?</h2>
    <p class="fragment" data-fragment-index="0">
-      <a href="/show-case/5tunes11" target="_blank">
-         <img style="border:none;" src="/public/image/slide-show/5tunes-11-album-details.png">
-      </a>
+      <img style="border:none;" src="/public/image/slide-show/5tunes-11-album-details.png">
    </p>
 </section>
 <section data-background="#000000">
@@ -55,6 +53,18 @@
    <p style="position: absolute;z-index: 1;top: 73%;left: 25%;" class="fragment" data-fragment-index="0">the same background color as cover</p>
    <p style="position: absolute;z-index: 1;top: 30%;left: 45%;" class="fragment" data-fragment-index="1">background color mask on cover</p>
    <p style="position: absolute;z-index: 1;top: 60%;left: 5%;" class="fragment" data-fragment-index="2">use cover color theme to paint text color</p>
+</section>
+<section data-background="#000000">
+   <h2>Create cover mask</h2>
+</section>
+<section data-background="#000000">
+   <h1><a href="/show-case/5tunes11-v1" target="_blank">Demo V1</a></h1>
+</section>
+<section data-background="#000000">
+   <h1><a href="/show-case/5tunes11-v2" target="_blank">Demo V2</a></h1>
+</section>
+<section data-background="#000000" data-background-transition="slide">
+   <h1><a href="/show-case/5tunes11" target="_blank">Demo 完成版</a></h1>
 </section>
 <section data-background="#000000">
    <h1>THE END</h1>
