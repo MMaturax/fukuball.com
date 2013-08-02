@@ -36,7 +36,7 @@
    <h2>Can we build itunes design in web page?</h2>
    <p class="fragment">
       <a href="/show-case/itunes11" target="_blank">
-         <img src="/public/image/slide-show/itunes-11-album-details.png">
+         <img src="/public/image/slide-show/5tunes-11-album-details.png">
       </a>
    </p>
 </section>
