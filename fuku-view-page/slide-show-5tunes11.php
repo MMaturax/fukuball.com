@@ -57,7 +57,10 @@
 <section data-background-color="rgba(255, 255, 255, 0.8)">
    <h2 class="absolute-element" style="position: absolute; z-index: 1; width: 100%; left: 0px; top: -50%; font-weight: bold; -webkit-text-stroke-width: 15px; -webkit-text-stroke-color: black; -webkit-transform: scaleX(0.9);">Create cover mask</h2>
    <h2 class="absolute-element" style="position: absolute; z-index: 2; width: 100%; left: 0px; top: -50%; font-weight: bold; -webkit-transform: scaleX(0.9);">Create cover mask</h2>
-   <div style="width:300px;height:300px;box-shadow: rgb(9, 8, 9) 14px 17px 25px inset, rgb(9, 8, 9) -1px -1px 170px inset;">
+   <div style="position: absolute; z-index: 2; left: 0px; top: -50%;width:300px;height:300px;box-shadow: rgb(9, 8, 9) 14px 17px 25px inset, rgb(9, 8, 9) -1px -1px 170px inset;">
+   </div>
+   <div style="position: absolute; z-index: 1; left: 0px; top: -50%;width:300px;height:300px;">
+      <img width="300" height="300" src="/public/image/itunes-cover/phptkWMy4480X480.jpg" />
    </div>
 </section>
 <section data-background-color="rgba(50, 200, 90, 0.4)">
