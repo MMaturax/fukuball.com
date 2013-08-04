@@ -82,6 +82,29 @@
          background-image: url(http://www.indievox.com/iv-asset/image/indievox-logo.png);
          background-size: 100%;
       }
+      .mask-left {
+         position: absolute;
+         z-index: 2;
+         left: 0px;
+         top: 0%;
+         width: 300px;
+         height: 300px;
+         box-shadow: rgb(9, 8, 9) 14px 17px 25px inset, rgb(9, 8, 9) -1px -1px 170px inset;
+      }
+      .mask-right {
+         position: absolute;
+         z-index: 1;
+         left: 700px;
+         top: 0%;
+         width: 300px;
+         height: 300px;
+      }
+      .mask-cover {
+         left: 350px;
+         -webkit-transition: all 0.2s ease-in;
+         -moz-transition: all 0.2s ease-in;
+         transition: all 0.2s ease-in;
+      }
       </style>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
    </head>
