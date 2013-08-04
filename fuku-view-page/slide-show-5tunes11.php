@@ -31,7 +31,7 @@
    height: 300px;
 }
 .mask-cover {
-   left: 400px;
+   left: 350px;
    -webkit-transition: all 0.2s ease-in;
    -moz-transition: all 0.2s ease-in;
    transition: all 0.2s ease-in;
