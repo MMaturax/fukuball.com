@@ -83,6 +83,7 @@
          background-size: 100%;
       }
       </style>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
    </head>
    <body>
       <header class="global-header">
@@ -100,7 +101,6 @@
             ?>
          </div>
       </div>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
       <script src="/public/javascript/library/reveal/lib/js/head.min.js"></script>
       <script src="/public/javascript/library/reveal/js/reveal.min.js"></script>
       <script>
