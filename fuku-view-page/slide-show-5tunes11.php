@@ -56,7 +56,8 @@
 </section>
 <section data-background="#000000">
    <h2>Create cover mask</h2>
-   <div style="width:200%;height:300%;background-color:rgba(255, 255, 255, 1)">
+   <div style="background-color:rgba(255, 255, 255, 1);">
+      dddd
    </div>
 </section>
 <section data-background-color="rgba(50, 200, 90, 0.4)">
