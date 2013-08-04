@@ -67,9 +67,9 @@
    <h2>The mask CSS3 code</h2>
    <pre>
       <code data-trim="" contenteditable="" class="css">
-         .mask {
-
-         }
+.mask {
+   box-shadow: rgb(9, 8, 9) 14px 17px 25px inset, rgb(9, 8, 9) -1px -1px 170px inset;
+}
       </code>
    </pre>
 </section>
