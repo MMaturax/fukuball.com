@@ -63,7 +63,7 @@
       <img width="300px" height="300px" src="/public/image/itunes-cover/phptkWMy4480X480.jpg" style="margin:0px;border:none;max-width:100%;max-height:100%;" />
    </div>
    <script>
-      $(document.body).ready(function() {
+      $(document).ready(function() {
 
          $(document.body).off('click.mask_action', '.mask-action');
          $(document.body).on('click.mask_action', '.mask-action', function() {
