@@ -12,6 +12,31 @@
  * @link     http://www.fukuball.com
  */
 ?>
+<style>
+.mask-left {
+   position: absolute;
+   z-index: 2;
+   left: 0px;
+   top: 0%;
+   width: 300px;
+   height: 300px;
+   box-shadow: rgb(9, 8, 9) 14px 17px 25px inset, rgb(9, 8, 9) -1px -1px 170px inset;
+}
+.mask-right {
+   position: absolute;
+   z-index: 1;
+   left: 700px;
+   top: 0%;
+   width: 300px;
+   height: 300px;
+}
+.mask-cover {
+   left: 400px;
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;
+}
+</style>
 <section data-background="#000000">
    <h1>5Tunes11</h1>
    <br/>
@@ -62,6 +87,17 @@
    <div class="mask-right">
       <img width="300px" height="300px" src="/public/image/itunes-cover/phptkWMy4480X480.jpg" style="margin:0px;border:none;max-width:100%;max-height:100%;" />
    </div>
+   <script>
+      $(document).ready(function() {
+
+         $(document.body).off('click.mask_action', '.mask-action');
+         $(document.body).on('click.mask_action', '.mask-action', function() {
+            $('.mask-left').addClass('mask-cover');
+            $('.mask-right').addClass('mask-cover');
+         });
+
+      });
+   </script>
 </section>
 <section data-background-color="rgba(50, 200, 90, 0.4)">
    <h3>
