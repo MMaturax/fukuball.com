@@ -12,7 +12,28 @@
  * @link     http://www.fukuball.com
  */
 ?>
-
+<style>
+.mask-left {
+   position: absolute;
+   z-index: 2;
+   left: 0px;
+   top: 0%;
+   width: 300px;
+   height: 300px;
+   box-shadow: rgb(9, 8, 9) 14px 17px 25px inset, rgb(9, 8, 9) -1px -1px 170px inset;
+}
+.mask-right {
+   position: absolute;
+   z-index: 1;
+   left: 700px;
+   top: 0%;
+   width: 300px;
+   height: 300px;
+}
+.mask-cover {
+   left: 350px;
+}
+</style>
 <section data-background="#000000">
    <h1>5Tunes11</h1>
    <br/>
@@ -110,9 +131,9 @@
    <h3>job@indievox.com</h3>
 </section>
 <script>
-   //$(document.body).off('click.mask_action', '.mask-action');
-   //$(document.body).on('click.mask_action', '.mask-action', function() {
-   //   $('.mask-left').addClass('mask-cover');
-   //   $('.mask-right').addClass('mask-cover');
-   //});
+   $(document.body).off('click.mask_action', '.mask-action');
+   $(document.body).on('click.mask_action', '.mask-action', function() {
+      $('.mask-left').addClass('mask-cover');
+      $('.mask-right').addClass('mask-cover');
+   });
 </script>
