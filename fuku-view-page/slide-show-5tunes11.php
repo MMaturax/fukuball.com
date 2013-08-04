@@ -63,6 +63,16 @@
       <img width="300px" height="300px" src="/public/image/itunes-cover/phptkWMy4480X480.jpg" style="margin:0px;border:none;max-width:100%;max-height:100%;" />
    </div>
 </section>
+<section data-background="#000000">
+   <h2>The mask CSS3 code</h2>
+   <pre>
+      <code data-trim="" contenteditable="" class="css">
+         .mask {
+
+         }
+      </code>
+   </pre>
+</section>
 <section data-background-color="rgba(50, 200, 90, 0.4)">
    <h3>
       <a style="font-weight: bold;" href="/show-case/5tunes11-v1" target="_blank">
