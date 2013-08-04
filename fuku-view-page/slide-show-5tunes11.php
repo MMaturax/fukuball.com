@@ -59,7 +59,7 @@
    <h2 class="absolute-element" style="position: absolute; z-index: 2; width: 100%; left: 0px; top: -500%; font-weight: bold; -webkit-transform: scaleX(0.9);">Create cover mask</h2>
    <div style="position: absolute; z-index: 2; left: 0px; top: 0%;width:300px;height:300px;box-shadow: rgb(9, 8, 9) 14px 17px 25px inset, rgb(9, 8, 9) -1px -1px 170px inset;">
    </div>
-   <div style="position: absolute; z-index: 1; left: 500px; top: 0%;width:300px;height:300px;">
+   <div style="position: absolute; z-index: 1; left: 700px; top: 0%;width:300px;height:300px;">
       <img width="300px" height="300px" src="/public/image/itunes-cover/phptkWMy4480X480.jpg" style="margin:0px;border:none;max-width:100%;max-height:100%;" />
    </div>
 </section>
