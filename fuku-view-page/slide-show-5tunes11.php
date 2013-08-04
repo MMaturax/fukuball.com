@@ -54,9 +54,9 @@
    <p style="position: absolute;z-index: 1;top: 30%;left: 45%;" class="fragment" data-fragment-index="1">background color mask on cover</p>
    <p style="position: absolute;z-index: 1;top: 60%;left: 5%;" class="fragment" data-fragment-index="2">use cover color theme to paint text color</p>
 </section>
-<section data-background-color="rgba(0, 0, 0, 0.4)">
-   <h2 class="absolute-element" style="position: absolute; z-index: 1; width: 100%; left: 0px; top: 7%; font-weight: bold; -webkit-text-stroke-width: 15px; -webkit-text-stroke-color: black; -webkit-transform: scaleX(0.9);">Create cover mask</h2>
-   <h2 class="absolute-element" style="position: absolute; z-index: 2; width: 100%; left: 0px; top: 7%; font-weight: bold; -webkit-transform: scaleX(0.9);">Create cover mask</h2>
+<section data-background-color="rgba(0, 0, 0, 0.8)">
+   <h2 class="absolute-element" style="position: absolute; z-index: 1; width: 100%; left: 0px; top: 1%; font-weight: bold; -webkit-text-stroke-width: 15px; -webkit-text-stroke-color: black; -webkit-transform: scaleX(0.9);">Create cover mask</h2>
+   <h2 class="absolute-element" style="position: absolute; z-index: 2; width: 100%; left: 0px; top: 1%; font-weight: bold; -webkit-transform: scaleX(0.9);">Create cover mask</h2>
 
 </section>
 <section data-background-color="rgba(50, 200, 90, 0.4)">
