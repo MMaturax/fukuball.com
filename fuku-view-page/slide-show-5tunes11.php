@@ -60,7 +60,7 @@
    <div style="position: absolute; z-index: 2; left: 0px; top: -50%;width:300px;height:300px;box-shadow: rgb(9, 8, 9) 14px 17px 25px inset, rgb(9, 8, 9) -1px -1px 170px inset;">
    </div>
    <div style="position: absolute; z-index: 1; left: 0px; top: -50%;width:300px;height:300px;">
-      <img width="300" height="300" src="/public/image/itunes-cover/phptkWMy4480X480.jpg" />
+      <img width="300px" height="300px" src="/public/image/itunes-cover/phptkWMy4480X480.jpg" style="position: absolute; z-index: 2; left: 0px; top: -50%;width:300px;height:300px;" />
    </div>
 </section>
 <section data-background-color="rgba(50, 200, 90, 0.4)">
