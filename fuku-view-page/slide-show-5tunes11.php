@@ -32,9 +32,6 @@
 }
 .mask-cover {
    left: 350px;
-   -webkit-transition: all 0.2s ease-in;
-   -moz-transition: all 0.2s ease-in;
-   transition: all 0.2s ease-in;
 }
 </style>
 <section data-background="#000000">
