@@ -70,6 +70,7 @@
 .mask {
    box-shadow: rgb(9, 8, 9) 14px 17px 25px inset,
                rgb(9, 8, 9) -1px -1px 170px inset;
+               /* 顏色 橫向陰影 直向陰影 模糊程度 內陰影 */
 }
       </code>
    </pre>
