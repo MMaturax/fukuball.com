@@ -83,7 +83,7 @@
          background-size: 100%;
       }
       </style>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
    </head>
    <body>
       <header class="global-header">
