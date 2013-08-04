@@ -134,9 +134,9 @@
    <h3>job@indievox.com</h3>
 </section>
 <script>
-   $(document.body).off('click.mask_action', '.mask-action');
-   $(document.body).on('click.mask_action', '.mask-action', function() {
-      $('.mask-left').addClass('mask-cover');
-      $('.mask-right').addClass('mask-cover');
-   });
+   //$(document.body).off('click.mask_action', '.mask-action');
+   //$(document.body).on('click.mask_action', '.mask-action', function() {
+   //   $('.mask-left').addClass('mask-cover');
+   //   $('.mask-right').addClass('mask-cover');
+   //});
 </script>
