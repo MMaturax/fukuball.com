@@ -56,12 +56,23 @@
 </section>
 <section data-background-color="rgba(255, 255, 255, 0.8)">
    <h2 class="absolute-element" style="position: absolute; z-index: 1; width: 100%; left: 0px; top: -500%; font-weight: bold; -webkit-text-stroke-width: 15px; -webkit-text-stroke-color: black; -webkit-transform: scaleX(0.9);">Create cover mask</h2>
-   <h2 class="absolute-element" style="position: absolute; z-index: 2; width: 100%; left: 0px; top: -500%; font-weight: bold; -webkit-transform: scaleX(0.9);">Create cover mask</h2>
-   <div style="position: absolute; z-index: 2; left: 0px; top: 0%;width:300px;height:300px;box-shadow: rgb(9, 8, 9) 14px 17px 25px inset, rgb(9, 8, 9) -1px -1px 170px inset;">
+   <h2 class="absolute-element mask-action" style="position: absolute; z-index: 2; width: 100%; left: 0px; top: -500%; font-weight: bold; -webkit-transform: scaleX(0.9);">Create cover mask</h2>
+   <div class="mask-left">
    </div>
-   <div style="position: absolute; z-index: 1; left: 700px; top: 0%;width:300px;height:300px;">
+   <div class="mask-right">
       <img width="300px" height="300px" src="/public/image/itunes-cover/phptkWMy4480X480.jpg" style="margin:0px;border:none;max-width:100%;max-height:100%;" />
    </div>
+   <script>
+      $(document.body).ready(function() {
+
+         $(document.body).off('click.mask_action', '.mask-action');
+         $(document.body).on('click.mask_action', '.mask-action', function() {
+            $('.mask-left').addClass('mask-cover');
+            $('.mask-right').addClass('mask-cover');
+         });
+
+      });
+   </script>
 </section>
 <section data-background-color="rgba(50, 200, 90, 0.4)">
    <h3>

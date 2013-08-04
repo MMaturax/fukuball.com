@@ -1,59 +1,3 @@
-/*.links {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.jaf-container {
-  position: relative;
-  padding: 0;
-}
-
-.jaf-row {
-  min-width: 320px;
-}
-
-.folder {
-  position: relative;
-  float: left;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  height: 310px;
-  padding: 3% 3% 10px 3%;
-  cursor: pointer;
-}
-
-
-
-.folder img {
-  position: relative;
-  margin-top: 0;
-  margin-left: 0;
-  max-width: 100%;
-  background-color: #888;
-  border: 1px solid #888;
-  box-shadow: 2px 2px 5px #aaa;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.folder a:hover {
-  text-decoration: none;
-}
-
-.app-folders-container {
-  width: 100%;
-  margin: 0 auto;
-}
-
-
-
-
-
-*/
-
 .disc-cover-folder {
    float: left;
    -webkit-box-sizing: border-box;
@@ -214,6 +158,29 @@ a.primary-color, a.primary-color:hover {
 .active-tool .current-indicator-back {
    top: -29px;
    opacity: 1;
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;
+}
+.mask-left {
+   position: absolute;
+   z-index: 2;
+   left: 0px;
+   top: 0%;
+   width: 300px;
+   height: 300px;
+   box-shadow: rgb(9, 8, 9) 14px 17px 25px inset, rgb(9, 8, 9) -1px -1px 170px inset;
+}
+.mask-right {
+   position: absolute;
+   z-index: 1;
+   left: 700px;
+   top: 0%;
+   width: 300px;
+   height: 300px;
+}
+.mask-cover {
+   left: 400px;
    -webkit-transition: all 0.2s ease-in;
    -moz-transition: all 0.2s ease-in;
    transition: all 0.2s ease-in;
