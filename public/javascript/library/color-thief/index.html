@@ -115,8 +115,9 @@
 
   $(document.body).off('click.target_image', '.target-image');
   $(document.body).on('click.target_image', '.target-image', function() {
-     $('.mask-left').css('left','350px');
-     $('.mask-right').css('left','350px');
+     var this_image = $(this);
+     var dominant_color = colorThief.getColor(this_image);
+     console.log(dominant_color);
   });
 
   target-image
