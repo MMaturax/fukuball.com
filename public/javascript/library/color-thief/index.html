@@ -119,10 +119,10 @@
      var this_image = $(this);
      var palette_color = colorThief.getPalette(this_image[0], 8);
 
-     var temp_image = new CanvasImage(this_image[0]),
-         temp_image_data = temp_image.getImageData(),
-         temp_pixels = temp_image_data.data,
-         temp_pixel_count = temp_image_data.getPixelCount();
+     var image = new CanvasImage(this_image[0]),
+          image_data = image.getImageData(),
+          pixels = image_data.data,
+          pixel_count = image.getPixelCount();
   });
 </script>
 
