@@ -139,17 +139,9 @@
      console.log(width);
      console.log(height);
 
-     for (var i = 0; i<pixels.length; i=i+4) {
+     for (var i = 0; i<pixels.length; i++) {
 
-         r = pixels[i + 0];
-         g = pixels[i + 1];
-         b = pixels[i + 2];
-         a = pixels[i + 3];
-
-         imageData.data[i+0] = r;
-         imageData.data[i+1] = g;
-         imageData.data[i+2] = b;
-         imageData.data[i+3] = a;
+         imageData.data[i] = pixels[i];
 
      }
 
