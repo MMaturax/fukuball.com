@@ -140,7 +140,7 @@
      console.log(width);
      console.log(height);
 
-     for (var i = 0; i<10; i=i+4) {
+     for (var i = 0; i<pixels.length; i=i+4) {
 
         r = pixels[i + 0];
         g = pixels[i + 1];
@@ -157,14 +157,12 @@
            abs_ary.push(abs);
 
          }
-         console.log(abs_ary);
 
          var min_index = abs_ary.indexOf(Math.min.apply(Math, abs_ary));
-         console.log(min_index);
 
-        imageData.data[i + 0] = r;
-        imageData.data[i + 1] = g;
-        imageData.data[i + 2] = b;
+        imageData.data[i + 0] = palette_color[min_index][0];
+        imageData.data[i + 1] = palette_color[min_index][1];
+        imageData.data[i + 2] = palette_color[min_index][2];
         imageData.data[i + 3] = a;
 
      }
