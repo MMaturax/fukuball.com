@@ -127,8 +127,7 @@
          pixels = image_data.data,
          pixel_count = image.getPixelCount();
 
-     console.log(pixels.length);
-     console.log(pixel_count);
+     console.log(palette_color);
 
      element = document.getElementById("canvas1");
      c = element.getContext("2d");
@@ -141,12 +140,25 @@
      console.log(width);
      console.log(height);
 
-     for (var i = 0; i<pixels.length; i=i+4) {
+     for (var i = 0; i<100; i=i+4) {
 
         r = pixels[i + 0];
         g = pixels[i + 1];
         b = pixels[i + 2];
         a = pixels[i + 3];
+
+        var abs_ary = [];
+        for (var j = 0; j < palette_color.length; ij++) {
+
+           var r_abs = Math.abs(r - palette_color[i][0]);
+           var g_abs = Math.abs(g - palette_color[i][1]);
+           var b_abs = Math.abs(b - palette_color[i][2]);
+           var abs = r_abs+g_abs+b_abs;
+           abs_ary.push(abs);
+
+         }
+
+        console.log(abs_ary.each_with_index.min);
 
         imageData.data[i + 0] = r;
         imageData.data[i + 1] = g;
