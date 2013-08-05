@@ -104,7 +104,7 @@
       <img width="300px" src="/public/image/slide-show/MedianCutAlgorithm2.bmp" style="margin:0px;border:none;max-width:100%;max-height:100%;" />
    </div>
    <p style="position: absolute;z-index: 2;top: 500%;left: 35%;" class="fragment" data-fragment-index="1">256 color choose</p>
-   <p style="position: absolute;z-index: 2;top: 600%;left: 30%;" class="fragment" data-fragment-index="1">how to choose these colors</p>
+   <p style="position: absolute;z-index: 2;top: 600%;left: 28%;" class="fragment" data-fragment-index="1">how to choose these colors?</p>
 </section>
 <section data-background="#000000">
    <h2>Use color theif to Extract main color</h2>
