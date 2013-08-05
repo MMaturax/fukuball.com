@@ -101,6 +101,8 @@
 </script>
 
 
+<canvas id="canvas1">
+</canvas>
 <script src="demo.js"></script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -113,16 +115,53 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+  function setPixel(imageData, x, y, r, g, b, a) {
+     index = (x + y * imageData.width) * 4;
+     imageData.data[index+0] = r;
+     imageData.data[index+1] = g;
+     imageData.data[index+2] = b;
+     imageData.data[index+3] = a;
+  }
+
   $(document.body).off('click.target_image', '.target-image');
   $(document.body).on('click.target_image', '.target-image', function() {
+
      var colorThief = new ColorThief();
      var this_image = $(this);
      var palette_color = colorThief.getPalette(this_image[0], 8);
 
      var image = new CanvasImage(this_image[0]),
-          image_data = image.getImageData(),
-          pixels = image_data.data,
-          pixel_count = image.getPixelCount();
+         image_data = image.getImageData(),
+         pixels = image_data.data,
+         pixel_count = image.getPixelCount();
+
+     element = document.getElementById("canvas1");
+     c = element.getContext("2d");
+     // read the width and height of the canvas
+     width = this_image[0].width;
+     height = this_image[0].height;
+     imageData = c.createImageData(width, height);
+
+     for (var i = 0, offset, r, g, b, a; i < pixel_count; i=i+4) {
+
+         r = pixels[i + 0];
+         g = pixels[i + 1];
+         b = pixels[i + 2];
+         a = pixels[i + 3];
+
+         imageData.data[i+0] = r;
+         imageData.data[i+1] = g;
+         imageData.data[i+2] = b;
+         imageData.data[i+3] = a;
+
+     }
+
+     // copy the image data back onto the canvas
+     c.putImageData(imageData, 0, 0); // at coords 0,0
+
+     // Clean up
+     image.removeCanvas();
+
   });
 </script>
 
