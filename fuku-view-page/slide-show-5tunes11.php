@@ -85,6 +85,8 @@
 <section data-background="#000000">
    <h2>Extract main color - color quantization</h2>
    <img src="/public/image/slide-show/404319562_0ec1784694_o.jpg" />
+   <h3 class="absolute-element" style="position: absolute; z-index: 1; width: 100%; left: 0px; bottom: 5%; font-weight: bold; -webkit-text-stroke-width: 15px; -webkit-text-stroke-color: black; -webkit-transform: scaleX(0.9);">How true redraw true color image by only 256 colors?</h3>
+   <h3 class="absolute-element" style="position: absolute; z-index: 2; width: 100%; left: 0px; bottom: 5%; font-weight: bold; -webkit-transform: scaleX(0.9);">How true redraw true color image by only 256 colors?</h3>
 </section>
 <section data-background="#000000">
    <h2>Use color theif to Extract main color</h2>
