@@ -96,13 +96,13 @@
    <div class="mask-right" style="position: absolute;z-index: 1;left: 660px;top: 0%;width: 300px;height: 300px;-webkit-transition: all 0.2s ease-in;-moz-transition: all 0.2s ease-in;transition: all 0.2s ease-in;">
       <img width="300px" src="/public/image/slide-show/MedianCutAlgorithm1.bmp" style="margin:0px;border:none;max-width:100%;max-height:100%;" />
    </div>
-   <div style="position: absolute;z-index: 1;left: 300px;top: 0%;width: 300px;height: 300px;-webkit-transition: all 0.2s ease-in;-moz-transition: all 0.2s ease-in;transition: all 0.2s ease-in;">
-      <img width="300px" src="/public/image/slide-show/MedianCutAlgorithm2.bmp" style="margin:0px;border:none;max-width:100%;max-height:100%;" />
-   </div>
    <p style="position: absolute;z-index: 2;top: -150%;left: -5%;">True color : 24bit/pixel</p>
    <p style="position: absolute;z-index: 2;top: -150%;left: 65%;">256 color : 8bit/pixel</p>
    <p style="position: absolute;z-index: 2;top: 73%;left: 1%;" class="fragment" data-fragment-index="0">True color 791KB</p>
    <p style="position: absolute;z-index: 2;top: 73%;left: 70%;" class="fragment" data-fragment-index="0">256 color 266KB</p>
+   <div class="fragment" data-fragment-index="1" style="position: absolute;z-index: 1;left: 320px;top: 0%;width: 300px;height: 300px;-webkit-transition: all 0.2s ease-in;-moz-transition: all 0.2s ease-in;transition: all 0.2s ease-in;">
+      <img width="300px" src="/public/image/slide-show/MedianCutAlgorithm2.bmp" style="margin:0px;border:none;max-width:100%;max-height:100%;" />
+   </div>
 </section>
 <section data-background="#000000">
    <h2>Use color theif to Extract main color</h2>
