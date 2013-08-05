@@ -127,6 +127,9 @@
          pixels = image_data.data,
          pixel_count = image.getPixelCount();
 
+     console.log(pixels.length);
+     console.log(pixel_count);
+
      element = document.getElementById("canvas1");
      c = element.getContext("2d");
      // read the width and height of the canvas
@@ -134,7 +137,7 @@
      height = this_image[0].height;
      imageData = c.createImageData(width, height);
 
-     for (var i = 0, offset, r, g, b, a; i < pixel_count; i++) {
+     for (var i = 0, i < pixel_count; i++) {
 
          r = pixels[i + 0];
          g = pixels[i + 1];
