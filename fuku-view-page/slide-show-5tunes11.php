@@ -84,6 +84,7 @@
 </section>
 <section data-background="#000000">
    <h2>Extract main color - color quantization</h2>
+   <img src="/public/image/slide-show/404319562_0ec1784694_o.jpg" />
 </section>
 <section data-background="#000000">
    <h2>Use color theif to Extract main color</h2>
