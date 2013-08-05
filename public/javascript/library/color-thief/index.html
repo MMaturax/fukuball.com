@@ -139,17 +139,16 @@
      console.log(width);
      console.log(height);
 
-     for (var i = 0; i<pixels.length; i++) {
+     var i = 0;
+     for (i = 0; i<pixels.length; i++) {
 
          imageData.data[i] = pixels[i];
 
      }
+     console.log(i);
 
      // copy the image data back onto the canvas
      c.putImageData(imageData, 0, 0); // at coords 0,0
-
-     // Clean up
-     image.removeCanvas();
 
   });
 </script>
