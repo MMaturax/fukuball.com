@@ -1,10 +1,10 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Color Thief</title>
+  <title>Color Thief</title>
 
   <meta name="description" content="Color Thief is a script for grabbing the color palette from an image. It uses Javacript and the canvas tag.">
   <meta name="author" content="Lokesh Dhakar">
@@ -26,13 +26,13 @@
       <h4><a href="http://lokeshdhakar.com">by Lokesh Dhakar</a></small></h4>
       <p class="description">A script for grabbing the color palette from an image. Uses Javascript and the canvas tag to make it happen.</p>
       <p class="read-more-links"><a href="http://www.lokeshdhakar.com/color-thief/">Read more about it on my blog</a> or <a href="https://github.com/lokesh/color-thief">get the code on Github</a></p>
-	</section>
+  </section>
 
-	<section id="examples" class="examples">
+  <section id="examples" class="examples">
     <header>
       <h2 class="section-header">Examples</h2>
     </header>
-	</section>
+  </section>
 
   <section id="drag-drop" class="drag-drop">
     <header>
@@ -112,6 +112,14 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+
+  $(document.body).off('click.target_image', '.target-image');
+  $(document.body).on('click.target_image', '.target-image', function() {
+     $('.mask-left').css('left','350px');
+     $('.mask-right').css('left','350px');
+  });
+
+  target-image
 </script>
 
 </body>

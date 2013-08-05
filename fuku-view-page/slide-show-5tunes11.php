@@ -158,7 +158,8 @@
 <script>
    $(document.body).off('click.mask_action', '.mask-action');
    $(document.body).on('click.mask_action', '.mask-action', function() {
-      $('.mask-left').css('left','350px');
-      $('.mask-right').css('left','350px');
+      var this_image = $(this);
+      var dominant_color = colorThief.getColor(this_image);
+      console.log(dominant_color);
    });
 </script>
