@@ -90,10 +90,10 @@
 </section>
 <section data-background="#000000">
    <h2 class="absolute-element" style="position: absolute; z-index: 1; width: 100%; left: 0px; top: -450%;">True color vs 256 color</h2>
-   <div class="mask-left" style="position: absolute;z-index: 2;left: 0px;top: 0%;width: 300px;height: 300px;box-shadow: rgb(9, 8, 9) 14px 17px 25px inset, rgb(9, 8, 9) -1px -1px 170px inset;-webkit-transition: all 0.2s ease-in;-moz-transition: all 0.2s ease-in;transition: all 0.2s ease-in;">
+   <div style="position: absolute;z-index: 2;left: 0px;top: 0%;width: 300px;height: 300px;box-shadow: rgb(9, 8, 9) 14px 17px 25px inset, rgb(9, 8, 9) -1px -1px 170px inset;-webkit-transition: all 0.2s ease-in;-moz-transition: all 0.2s ease-in;transition: all 0.2s ease-in;">
       <img width="300px" src="/public/image/slide-show/lenna512.bmp" style="margin:0px;border:none;max-width:100%;max-height:100%;" />
    </div>
-   <div class="mask-right" style="position: absolute;z-index: 1;left: 660px;top: 0%;width: 300px;height: 300px;-webkit-transition: all 0.2s ease-in;-moz-transition: all 0.2s ease-in;transition: all 0.2s ease-in;">
+   <div style="position: absolute;z-index: 1;left: 660px;top: 0%;width: 300px;height: 300px;-webkit-transition: all 0.2s ease-in;-moz-transition: all 0.2s ease-in;transition: all 0.2s ease-in;">
       <img width="300px" src="/public/image/slide-show/MedianCutAlgorithm1.bmp" style="margin:0px;border:none;max-width:100%;max-height:100%;" />
    </div>
    <p style="position: absolute;z-index: 2;top: -150%;left: -5%;">True color : 24bit/pixel</p>
