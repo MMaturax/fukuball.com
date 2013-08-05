@@ -107,6 +107,15 @@
    <p style="position: absolute;z-index: 2;top: 600%;left: 28%;" class="fragment" data-fragment-index="1">how to choose these colors?</p>
 </section>
 <section data-background="#000000">
+   <h2>Color Quantization - Median Cut Algorithm</h2>
+   <img src="/public/image/slide-show/MedianCutAlgorithm1.png" />
+   <img src="/public/image/slide-show/MedianCutAlgorithm2.png" />
+   <img src="/public/image/slide-show/MedianCutAlgorithm3.png" />
+   <br/>
+   <img src="/public/image/slide-show/MedianCutAlgorithm4.png" />
+   <img src="/public/image/slide-show/MedianCutAlgorithm5.png" />
+</section>
+<section data-background="#000000">
    <h2>Use color theif to Extract main color</h2>
 </section>
 <section data-background-color="rgba(50, 200, 90, 0.4)">
