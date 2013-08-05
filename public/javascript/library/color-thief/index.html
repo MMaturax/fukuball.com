@@ -101,7 +101,7 @@
 </script>
 
 
-<canvas id="canvas1">
+<canvas id="canvas1" style="display:block;">
 </canvas>
 <script src="demo.js"></script>
 <script type="text/javascript">
@@ -114,14 +114,6 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
-  function setPixel(imageData, x, y, r, g, b, a) {
-     index = (x + y * imageData.width) * 4;
-     imageData.data[index+0] = r;
-     imageData.data[index+1] = g;
-     imageData.data[index+2] = b;
-     imageData.data[index+3] = a;
-  }
 
   $(document.body).off('click.target_image', '.target-image');
   $(document.body).on('click.target_image', '.target-image', function() {
@@ -142,7 +134,7 @@
      height = this_image[0].height;
      imageData = c.createImageData(width, height);
 
-     for (var i = 0, offset, r, g, b, a; i < pixel_count; i=i+4) {
+     for (var i = 0, offset, r, g, b, a; i < pixel_count; i++) {
 
          r = pixels[i + 0];
          g = pixels[i + 1];
