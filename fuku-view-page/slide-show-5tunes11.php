@@ -111,6 +111,7 @@
       <h3>Color Quantization - Median Cut Algorithm</h3>
       <img style="background-color:#fff" src="/public/image/slide-show/MedianCutAlgorithm2.png" />
       <img style="background-color:#fff" src="/public/image/slide-show/MedianCutAlgorithm3.png" />
+      <a href="http://www.csie.ntnu.edu.tw/~u91029/Image.html" target="_blank">資料來源: http://www.csie.ntnu.edu.tw/~u91029/Image.html</a>
    </section>
    <section data-background-transition="fade">
       <h3>Color Quantization - Median Cut Algorithm</h3>
