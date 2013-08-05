@@ -106,20 +106,17 @@
    <p style="position: absolute;z-index: 2;top: 500%;left: 35%;" class="fragment" data-fragment-index="1">256 color choose</p>
    <p style="position: absolute;z-index: 2;top: 600%;left: 28%;" class="fragment" data-fragment-index="1">how to choose these colors?</p>
 </section>
-<section data-background="#000000">
+<section data-background="#000000" data-background-transition="fade">
    <section data-background-transition="fade">
       <h3>Color Quantization - Median Cut Algorithm</h3>
-      <img style="background-color:#fff" src="/public/image/slide-show/MedianCutAlgorithm1.png" />
       <img style="background-color:#fff" src="/public/image/slide-show/MedianCutAlgorithm2.png" />
-   </section>
-   <section data-background-transition="fade">
-      <h3>Color Quantization - Median Cut Algorithm</h3>
       <img style="background-color:#fff" src="/public/image/slide-show/MedianCutAlgorithm3.png" />
-      <img style="background-color:#fff" src="/public/image/slide-show/MedianCutAlgorithm4.png" />
    </section>
    <section data-background-transition="fade">
       <h3>Color Quantization - Median Cut Algorithm</h3>
+      <img style="background-color:#fff" src="/public/image/slide-show/MedianCutAlgorithm4.png" />
       <img style="background-color:#fff" src="/public/image/slide-show/MedianCutAlgorithm5.png" />
+      <a href="http://www.csie.ntnu.edu.tw/~u91029/Image.html" target="_blank">資料來源: http://www.csie.ntnu.edu.tw/~u91029/Image.html</a>
    </section>
 </section>
 <section data-background="#000000">
