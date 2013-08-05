@@ -150,16 +150,17 @@
         var abs_ary = [];
         for (var j = 0; j < palette_color.length; j++) {
 
-           var r_abs = Math.abs(r - palette_color[i][0]);
-           var g_abs = Math.abs(g - palette_color[i][1]);
-           var b_abs = Math.abs(b - palette_color[i][2]);
+           var r_abs = Math.abs(r - palette_color[j][0]);
+           var g_abs = Math.abs(g - palette_color[j][1]);
+           var b_abs = Math.abs(b - palette_color[j][2]);
            var abs = r_abs+g_abs+b_abs;
            abs_ary.push(abs);
 
          }
          console.log(abs_ary);
 
-        console.log(abs_ary.each_with_index.min);
+         var min_index = abs_ary.indexOf(Math.max.apply(Math, abs_ary));
+         console.log(min_index);
 
         imageData.data[i + 0] = r;
         imageData.data[i + 1] = g;
