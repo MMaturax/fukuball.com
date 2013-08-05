@@ -101,8 +101,6 @@
 </script>
 
 
-<canvas id="canvas1" style="display:block;">
-</canvas>
 <script src="demo.js"></script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -130,14 +128,22 @@
      console.log(pixels.length);
      console.log(pixel_count);
 
-     element = document.getElementById("canvas1");
-     c = element.getContext("2d");
-     // read the width and height of the canvas
-     width = this_image[0].width;
-     height = this_image[0].height;
-     imageData = c.createImageData(width, height);
-     console.log(width);
-     console.log(height);
+
+     test_canvas  = document.createElement('canvas');
+     test_context = test_canvas.getContext('2d');
+
+     document.body.appendChild(test_canvas);
+     test_canvas.width  = this_image[0].width;
+     test_canvas.height = this_image[0].height;
+     imageData = test_context.createImageData(test_canvas.width, test_canvas.height);
+     //element = document.getElementById("canvas1");
+     //c = element.getContext("2d");
+     //// read the width and height of the canvas
+     //width = this_image[0].width;
+     //height = this_image[0].height;
+     //imageData = c.createImageData(width, height);
+     //console.log(width);
+     //console.log(height);
 
      var i = 0;
      for (i = 0; i<pixels.length; i++) {
@@ -149,7 +155,7 @@
      console.log(imageData);
      // copy the image data back onto the canvas
      //c.putImageData(imageData, 0, 0); // at coords 0,0
-     c.putImageData(imageData, 0, 0, 0, 0, imageData.width, imageData.height);
+     test_context.putImageData(imageData, 0, 0, 0, 0, imageData.width, imageData.height);
 
   });
 </script>
