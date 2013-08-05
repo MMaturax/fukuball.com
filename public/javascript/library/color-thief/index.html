@@ -117,9 +117,8 @@
   $(document.body).on('click.target_image', '.target-image', function() {
      var colorThief = new ColorThief();
      var this_image = $(this);
-     console.log(this_image);
-     //var dominant_color = colorThief.getColor(this_image);
-     //console.log(dominant_color);
+     var dominant_color = colorThief.getColor(this_image[0]);
+     console.log(dominant_color);
   });
 </script>
 
