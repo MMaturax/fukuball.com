@@ -65,11 +65,11 @@
       </li>
       <li>
          <h4 class="m-t-0">Work</h4>
-         <a title="5Tunes11" class="team-link track" href="http://www.fukuball.com/show-case/5tunes11" target="_blank">
+         <a title="5Tunes11" class="team-link track m-b-10" href="http://www.fukuball.com/show-case/5tunes11" target="_blank">
             <span class="team-avatar">
                <img src="/public/image/avatar3.jpg" height="22" width="22">
             </span>
-            <div>CKIP-Client 中文斷詞</div>
+            <div>5Tunes11</div>
          </a>
          <a title="CKIP-Client" class="team-link track" href="http://www.fukuball.com/ckip-client/" target="_blank">
             <span class="team-avatar">
