@@ -122,7 +122,7 @@
           var start                    = Date.now();
           var color                    = colorThief.getColor(image);
           var elapsedTimeForGetColor   = Date.now() - start;
-          var palette                  = colorThief.getPalette(image);
+          var palette                  = colorThief.getPalette(image, 256);
           var elapsedTimeForGetPalette = Date.now() - start + elapsedTimeForGetColor;
 
           var colorThiefOutput = {
@@ -269,71 +269,6 @@
            // Clean up
            temp_canvas_image.removeCanvas();
         }
-
-        function redrawImage(image_element) {
-
-           var colorThief = new ColorThief();
-           var this_image = image_element;
-           var palette_color = colorThief.getPalette(this_image[0], 8);
-
-            var image = new CanvasImage(this_image[0]),
-                image_data = image.getImageData(),
-                pixels = image_data.data,
-                pixel_count = image.getPixelCount();
-
-            console.log(palette_color);
-
-            element = document.getElementById("output-canvas");
-            c = element.getContext("2d");
-            // read the width and height of the canvas
-            width = this_image[0].width;
-            height = this_image[0].height;
-            element.width  = image.width;
-            element.height = image.height;
-            imageData = c.createImageData(width, height);
-            console.log(width);
-            console.log(height);
-
-            for (var i = 0; i<pixels.length; i=i+4) {
-
-               r = pixels[i + 0];
-               g = pixels[i + 1];
-               b = pixels[i + 2];
-               a = pixels[i + 3];
-
-               var abs_ary = [];
-               for (var j = 0; j < palette_color.length; j++) {
-
-                  var r_abs = Math.abs(r - palette_color[j][0]);
-                  var g_abs = Math.abs(g - palette_color[j][1]);
-                  var b_abs = Math.abs(b - palette_color[j][2]);
-                  var abs = r_abs+g_abs+b_abs;
-                  abs_ary.push(abs);
-
-                }
-
-                var min_index = abs_ary.indexOf(Math.min.apply(Math, abs_ary));
-
-               imageData.data[i + 0] = palette_color[min_index][0];
-               imageData.data[i + 1] = palette_color[min_index][1];
-               imageData.data[i + 2] = palette_color[min_index][2];
-               imageData.data[i + 3] = a;
-
-            }
-
-            // copy the image data back onto the canvas
-            c.putImageData(imageData, 0, 0); // at coords 0,0
-
-            // Clean up
-            image.removeCanvas();
-        }
-
-        $(document.body).off('click.target_image', '.target-image');
-        $(document.body).on('click.target_image', '.target-image', function() {
-
-           redrawImage($(this));
-
-        });
 
       });
 
