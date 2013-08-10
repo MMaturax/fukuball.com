@@ -236,6 +236,33 @@
            canvas_element.height = image.height;
            canvas_image_data = canvas_context.createImageData(image.width, image.height);
 
+           for (var i = 0; i<pixels.length; i=i+4) {
+
+              r = pixels[i + 0];
+              g = pixels[i + 1];
+              b = pixels[i + 2];
+              a = pixels[i + 3];
+
+              var abs_ary = [];
+              for (var j = 0; j < palette.length; j++) {
+
+                 var r_abs = Math.abs(r - palette[j][0]);
+                 var g_abs = Math.abs(g - palette[j][1]);
+                 var b_abs = Math.abs(b - palette[j][2]);
+                 var abs = r_abs+g_abs+b_abs;
+                 abs_ary.push(abs);
+
+              }
+
+              var min_index = abs_ary.indexOf(Math.min.apply(Math, abs_ary));
+
+              canvas_image_data.data[i + 0] = palette[min_index][0];
+              canvas_image_data.data[i + 1] = palette[min_index][1];
+              canvas_image_data.data[i + 2] = palette[min_index][2];
+              canvas_image_data.data[i + 3] = a;
+
+           }
+
            // copy the image data back onto the canvas
            canvas_context.putImageData(canvas_image_data, 0, 0); // at coords 0,0
 
