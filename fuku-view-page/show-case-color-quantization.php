@@ -27,6 +27,17 @@
         .get-color{
            display: none;
         }
+        .color-thief-output {
+           -moz-border-radius-bottomleft: none;
+           -webkit-border-bottom-left-radius: none;
+           border-bottom-left-radius: none;
+           -moz-border-radius-bottomright: none;
+           -webkit-border-bottom-right-radius: none;
+           border-bottom-right-radius: none;
+           -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+           box-shadow: none;
+        }
      </style>
    </head>
    <body>
