@@ -76,15 +76,6 @@
       </script>
 
       <script id="color-thief-output-template" type="text/x-mustache">
-        <div class="function get-color">
-          <h3 class="function-title">Dominant Color</h3>
-          <div class="swatches">
-            <div class="swatch" style="background-color: rgb({{color.0}}, {{color.1}}, {{color.2}})"></div>
-          </div>
-          <div class="function-code">
-            <code>colorThief.getColor(image):{{elapsedTimeForGetColor}}ms</code>
-          </div>
-        </div>
         <div class="function get-palette">
           <h3 class="function-title">Palette</h3>
           <div class="function-output">
@@ -115,15 +106,11 @@
         var showColorsForImage = function($image, $imageSection ) {
           var image                    = $image[0];
           var start                    = Date.now();
-          var color                    = colorThief.getColor(image);
-          var elapsedTimeForGetColor   = Date.now() - start;
           var palette                  = colorThief.getPalette(image);
           var elapsedTimeForGetPalette = Date.now() - start + elapsedTimeForGetColor;
 
           var colorThiefOutput = {
-            color: color,
             palette: palette,
-            elapsedTimeForGetColor: elapsedTimeForGetColor,
             elapsedTimeForGetPalette: elapsedTimeForGetPalette
           };
           var colorThiefOuputHTML = Mustache.to_html($('#color-thief-output-template').html(), colorThiefOutput);
