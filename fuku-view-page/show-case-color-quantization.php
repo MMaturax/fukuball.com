@@ -182,6 +182,7 @@
 
         function handleFiles(files) {
           var $draggedImages = $('#dragged-images');
+          $draggedImages.empty();
           var imageType      = /image.*/;
           var fileCount      = files.length;
 
