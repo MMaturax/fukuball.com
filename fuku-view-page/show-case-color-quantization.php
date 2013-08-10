@@ -298,6 +298,7 @@
              canvas_image_data = canvas_context.createImageData(image.width, image.height);
 
              var pixels_index = 0;
+
              for (var y = 0; y < image.height; y += block_size) {
 
                   for (var x = 0; x < image.width; x += block_size) {
@@ -311,6 +312,7 @@
                      var rgb_g_sum = 0;
                      var rgb_b_sum = 0;
                      var pixel_sum = 0;
+
                      for (yi = pixels_y_range_from; yi<pixels_y_range_to; yi++) {
                         for (xi = pixels_x_range_from; xi<pixels_x_range_to; xi++) {
                            pixels_index = (yi*image.width*4)+xi*4;
@@ -335,16 +337,17 @@
                      }
 
                      var min_index = abs_ary.indexOf(Math.min.apply(Math, abs_ary));
+                     console.log(abs_ary);
 
-                     for (yi = pixels_y_range_from; yi<pixels_y_range_to; yi++) {
-                         for (xi = pixels_x_range_from; xi<pixels_x_range_to; xi++) {
-                            pixels_index = (yi*image.width*4)+xi*4;
-                            canvas_image_data.data[pixels_index + 0] = palette[min_index][0];
-                            canvas_image_data.data[pixels_index + 1] = palette[min_index][1];
-                            canvas_image_data.data[pixels_index + 2] = palette[min_index][2];
-                            canvas_image_data.data[pixels_index + 3] = 1;
-                         }
-                     }
+                     //for (yi = pixels_y_range_from; yi<pixels_y_range_to; yi++) {
+                     //    for (xi = pixels_x_range_from; xi<pixels_x_range_to; xi++) {
+                     //       pixels_index = (yi*image.width*4)+xi*4;
+                     //       canvas_image_data.data[pixels_index + 0] = palette[min_index][0];
+                     //       canvas_image_data.data[pixels_index + 1] = palette[min_index][1];
+                     //       canvas_image_data.data[pixels_index + 2] = palette[min_index][2];
+                     //       canvas_image_data.data[pixels_index + 3] = 1;
+                     //    }
+                     //}
 
                   }
 
