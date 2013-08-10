@@ -156,7 +156,8 @@
              $('body').animate({scrollTop: outputOffsetTop - windowHeight + 200 + "px"});
           }
 
-          redrawImageWithColor(image, palette);
+          //redrawImageWithColor(image, palette);
+          redrawImageWithColorWithBlock(image, palette, 4)
 
         };
 
@@ -272,6 +273,80 @@
               canvas_image_data.data[i + 1] = palette[min_index][1];
               canvas_image_data.data[i + 2] = palette[min_index][2];
               canvas_image_data.data[i + 3] = a;
+
+           }
+
+           // copy the image data back onto the canvas
+           canvas_context.putImageData(canvas_image_data, 0, 0); // at coords 0,0
+
+           // Clean up
+           temp_canvas_image.removeCanvas();
+        }
+
+      });
+
+      function redrawImageWithColorWithBlock(image, palette, block_size) {
+
+           var temp_canvas_image = new CanvasImage(image),
+               temp_canvas_image_data = temp_canvas_image.getImageData(),
+               pixels = temp_canvas_image_data.data,
+               pixel_count = temp_canvas_image.getPixelCount();
+
+           canvas_element = document.getElementById("output-canvas");
+           canvas_context = canvas_element.getContext("2d");
+           // read the width and height of the canvas
+           canvas_element.width  = image.width;
+           canvas_element.height = image.height;
+           canvas_image_data = canvas_context.createImageData(image.width, image.height);
+
+           var pixels_index = 0;
+           for (var y = 0; y < image.height; y += block_size) {
+
+                for (var x = 0; x < image.width; x += block_size) {
+
+                   var pixels_y_range_from = y*4;
+                   var pixels_y_range_to = y*4+block_size*4;
+                   var pixels_x_range_from = x*4;
+                   var pixels_x_range_to = x*4+block_size*4;
+
+                   var rgb_r_sum = 0;
+                   var rgb_g_sum = 0;
+                   var rgb_b_sum = 0;
+                   var pixel_sum = 0;
+                   for (yi = pixels_y_range_from; yi<pixels_y_range_to; yi++) {
+                      for (xi = pixels_x_range_from; xi<pixels_x_range_to; xi++) {
+                         pixels_index = (yi*image.width*4)+xi*4;
+                         rgb_r_sum = rgb_r_sum+pixels[pixels_index + 0];
+                         rgb_g_sum = rgb_g_sum+pixels[pixels_index + 1];
+                         rgb_b_sum = rgb_b_sum+pixels[pixels_index + 2];
+                         pixel_sum++;
+                      }
+                   }
+
+                   var abs_ary = [];
+                   for (var j = 0; j < palette.length; j++) {
+                        var r_abs = Math.abs((rgb_r_sum/pixel_sum) - palette[j][0]);
+                        var g_abs = Math.abs((rgb_g_sum/pixel_sum) - palette[j][1]);
+                        var b_abs = Math.abs((rgb_b_sum/pixel_sum) - palette[j][2]);
+                        var abs = r_abs+g_abs+b_abs;
+                        abs_ary.push(abs);
+                   }
+
+                   var min_index = abs_ary.indexOf(Math.min.apply(Math, abs_ary));
+
+                   for (yi = pixels_y_range_from; yi<pixels_y_range_to; yi++) {
+                       for (xi = pixels_x_range_from; xi<pixels_x_range_to; xi++) {
+                          pixels_index = (yi*image.width*4)+xi*4;
+
+                          canvas_image_data.data[pixels_index + 0] = palette[min_index][0];
+                          canvas_image_data.data[pixels_index + 1] = palette[min_index][1];
+                          canvas_image_data.data[pixels_index + 2] = palette[min_index][2];
+                          canvas_image_data.data[pixels_index + 3] = 1;
+
+                       }
+                   }
+
+                }
 
            }
 
