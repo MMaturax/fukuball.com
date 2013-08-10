@@ -156,8 +156,8 @@
              $('body').animate({scrollTop: outputOffsetTop - windowHeight + 200 + "px"});
           }
 
-          //redrawImageWithColor(image, palette);
-          redrawImageWithColorWithBlock(image, palette, 4);
+          redrawImageWithColor(image, palette);
+          //redrawImageWithColorWithBlock(image, palette, 4);
 
         };
 
@@ -301,55 +301,11 @@
 
              for (var y = 0; y < image.height; y += block_size) {
 
-                  for (var x = 0; x < image.width; x += block_size) {
+                for (var x = 0; x < image.width; x += block_size) {
 
-                     var pixels_y_range_from = y*4;
-                     var pixels_y_range_to = y*4+block_size*4;
-                     var pixels_x_range_from = x*4;
-                     var pixels_x_range_to = x*4+block_size*4;
 
-                     var rgb_r_sum = 0;
-                     var rgb_g_sum = 0;
-                     var rgb_b_sum = 0;
-                     var pixel_sum = 0;
 
-                     for (yi = pixels_y_range_from; yi<pixels_y_range_to; yi++) {
-                        for (xi = pixels_x_range_from; xi<pixels_x_range_to; xi++) {
-                           pixels_index = (yi*image.width*4)+xi*4;
-                           rgb_r_sum = rgb_r_sum+pixels[pixels_index + 0];
-                           rgb_g_sum = rgb_g_sum+pixels[pixels_index + 1];
-                           rgb_b_sum = rgb_b_sum+pixels[pixels_index + 2];
-                           pixel_sum++;
-                        }
-                     }
-
-                     var rgb_r_avg = parseInt(rgb_r_sum/pixel_sum);
-                     var rgb_g_avg = parseInt(rgb_g_sum/pixel_sum);
-                     var rgb_b_avg = parseInt(rgb_b_sum/pixel_sum);
-
-                     var abs_ary = [];
-                     for (var j = 0; j < palette.length; j++) {
-                          var r_abs = Math.abs(rgb_r_avg - palette[j][0]);
-                          var g_abs = Math.abs(rgb_g_avg - palette[j][1]);
-                          var b_abs = Math.abs(rgb_b_avg - palette[j][2]);
-                          var abs = r_abs+g_abs+b_abs;
-                          abs_ary.push(abs);
-                     }
-
-                     var min_index = abs_ary.indexOf(Math.min.apply(Math, abs_ary));
-                     console.log(abs_ary);
-
-                     //for (yi = pixels_y_range_from; yi<pixels_y_range_to; yi++) {
-                     //    for (xi = pixels_x_range_from; xi<pixels_x_range_to; xi++) {
-                     //       pixels_index = (yi*image.width*4)+xi*4;
-                     //       canvas_image_data.data[pixels_index + 0] = palette[min_index][0];
-                     //       canvas_image_data.data[pixels_index + 1] = palette[min_index][1];
-                     //       canvas_image_data.data[pixels_index + 2] = palette[min_index][2];
-                     //       canvas_image_data.data[pixels_index + 3] = 1;
-                     //    }
-                     //}
-
-                  }
+                }
 
              }
 
