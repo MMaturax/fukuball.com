@@ -229,6 +229,13 @@
                pixels = temp_canvas_image_data.data,
                pixel_count = temp_canvas_image.getPixelCount();
 
+           canvas_element = document.getElementById("output-canvas");
+           canvas_context = canvas_element.getContext("2d");
+           // read the width and height of the canvas
+           canvas_element.width  = image.width;
+           canvas_element.height = image.height;
+           canvas_image_data = canvas_context.createImageData(image.width, image.height);
+
         }
 
         function redrawImage(image_element) {
