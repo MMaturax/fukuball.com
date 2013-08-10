@@ -73,12 +73,12 @@
             <img class="target-image" src="{{file}}" />
           </div>
           <div class="color-thief-output"></div>
+          <div>
+            <canvas id="output-canvas" style="display:block; margin-bottom: 30px;">
+            </canvas>
+          </div>
         </div>
         {{/images}}
-        <div>
-          <canvas id="output-canvas" style="display:block; margin-bottom: 30px;">
-          </canvas>
-        </div>
       </script>
 
       <script id="color-thief-output-template" type="text/x-mustache">
