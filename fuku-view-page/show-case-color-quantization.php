@@ -75,7 +75,7 @@
         </div>
         {{/images}}
         <div>
-          <canvas id="canvas1" style="display:block;">
+          <canvas id="output-canvas" style="display:block;">
           </canvas>
         </div>
       </script>
@@ -122,7 +122,7 @@
           var start                    = Date.now();
           var color                    = colorThief.getColor(image);
           var elapsedTimeForGetColor   = Date.now() - start;
-          var palette                  = colorThief.getPalette(image, 256);
+          var palette                  = colorThief.getPalette(image);
           var elapsedTimeForGetPalette = Date.now() - start + elapsedTimeForGetColor;
 
           var colorThiefOutput = {
@@ -143,6 +143,9 @@
           if ((currentScrollPosition < outputOffsetTop) && (currentScrollPosition + windowHeight - 250 < outputOffsetTop)) {
              $('body').animate({scrollTop: outputOffsetTop - windowHeight + 200 + "px"});
           }
+
+          redrawImage(image, palette);
+
         };
 
         // Drag'n'drop demo
@@ -219,62 +222,53 @@
           return isMobile;
         }
 
-        function redrawImage(image_element) {
+        function redrawImage(image, palette) {
 
-           var colorThief = new ColorThief();
-           var this_image = image_element;
-           var palette_color = colorThief.getPalette(this_image[0], 8);
+           var temp_canvas_image = new CanvasImage(image),
+               temp_canvas_image_data = temp_canvas_image.getImageData(),
+               pixels = temp_canvas_image_data.data,
+               pixel_count = temp_canvas_image_data.getPixelCount();
 
-            var image = new CanvasImage(this_image[0]),
-                image_data = image.getImageData(),
-                pixels = image_data.data,
-                pixel_count = image.getPixelCount();
+           canvas_element = document.getElementById("output-canvas");
+           canvas_context = canvas_element.getContext("2d");
 
-            console.log(palette_color);
+           // read the width and height of the canvas
+           canvas_element.width  = image.width;
+           canvas_element.height = image.height;
+           canvas_image_data = canvas_context.createImageData(image.width, image.height);
 
-            element = document.getElementById("canvas1");
-            c = element.getContext("2d");
-            // read the width and height of the canvas
-            width = this_image[0].width;
-            height = this_image[0].height;
-            element.width  = image.width;
-            element.height = image.height;
-            imageData = c.createImageData(width, height);
-            console.log(width);
-            console.log(height);
+           for (var i = 0; i<pixels.length; i=i+4) {
 
-            for (var i = 0; i<pixels.length; i=i+4) {
+              r = pixels[i + 0];
+              g = pixels[i + 1];
+              b = pixels[i + 2];
+              a = pixels[i + 3];
 
-               r = pixels[i + 0];
-               g = pixels[i + 1];
-               b = pixels[i + 2];
-               a = pixels[i + 3];
+              var abs_ary = [];
+              for (var j = 0; j < palette.length; j++) {
 
-               var abs_ary = [];
-               for (var j = 0; j < palette_color.length; j++) {
+                 var r_abs = Math.abs(r - palette[j][0]);
+                 var g_abs = Math.abs(g - palette[j][1]);
+                 var b_abs = Math.abs(b - palette[j][2]);
+                 var abs = r_abs+g_abs+b_abs;
+                 abs_ary.push(abs);
 
-                  var r_abs = Math.abs(r - palette_color[j][0]);
-                  var g_abs = Math.abs(g - palette_color[j][1]);
-                  var b_abs = Math.abs(b - palette_color[j][2]);
-                  var abs = r_abs+g_abs+b_abs;
-                  abs_ary.push(abs);
+              }
 
-                }
+              var min_index = abs_ary.indexOf(Math.min.apply(Math, abs_ary));
 
-                var min_index = abs_ary.indexOf(Math.min.apply(Math, abs_ary));
-
-               imageData.data[i + 0] = palette_color[min_index][0];
-               imageData.data[i + 1] = palette_color[min_index][1];
-               imageData.data[i + 2] = palette_color[min_index][2];
-               imageData.data[i + 3] = a;
+              canvas_image_data.data[i + 0] = palette[min_index][0];
+              canvas_image_data.data[i + 1] = palette[min_index][1];
+              canvas_image_data.data[i + 2] = palette[min_index][2];
+              canvas_image_data.data[i + 3] = a;
 
             }
 
             // copy the image data back onto the canvas
-            c.putImageData(imageData, 0, 0); // at coords 0,0
+            canvas_context.putImageData(canvas_image_data, 0, 0); // at coords 0,0
 
             // Clean up
-            image.removeCanvas();
+            temp_canvas_image.removeCanvas();
         }
 
         $(document.body).off('click.target_image', '.target-image');
