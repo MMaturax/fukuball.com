@@ -164,8 +164,9 @@ class ShowCaseViewController
 
          $page_title = 'Color Quantization | Show Case';
          $color_quantization_active = 'active';
-         $yield_path = '/fuku-view-page/show-case-color-quantization.php';
-         require_once SITE_ROOT.'/fuku-view-layout/show-case-page-layout.php';
+         //$yield_path = '/fuku-view-page/show-case-color-quantization.php';
+         //require_once SITE_ROOT.'/fuku-view-layout/show-case-page-layout.php';
+         require_once SITE_ROOT.'/fuku-view-layout/show-case-color-quantization.php';
 
          break;
 
