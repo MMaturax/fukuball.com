@@ -64,6 +64,7 @@
       <!-- Mustache templates -->
       <script id='image-section-template' type='text/x-mustache'>
         {{#images}}
+        <h2>Use Color</h2>
         <div class="image-section {{class}}">
           <div class="image-wrap">
             <button class="run-functions-button">
@@ -83,7 +84,7 @@
 
       <script id="color-thief-output-template" type="text/x-mustache">
         <div class="function get-color">
-          <h3 class="function-title">Dominant Color</h3>
+          <h3 class="function-title">Dominant {{palette.length}} Color</h3>
           <div class="swatches">
             <div class="swatch" style="background-color: rgb({{color.0}}, {{color.1}}, {{color.2}})"></div>
           </div>
@@ -182,7 +183,6 @@
 
         function handleFiles(files) {
           var $draggedImages = $('#dragged-images');
-          $draggedImages.empty();
           var imageType      = /image.*/;
           var fileCount      = files.length;
 
