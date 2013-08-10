@@ -29,12 +29,12 @@
 
         <section class="intro">
             <header>
-              <h1 class="logo">Color Q Show Case</h1>
+              <h1 class="logo">Color Q</h1>
             </header>
             <h4>Modify from color thief created by <a href="http://lokeshdhakar.com">Lokesh Dhakar</a></small></h4>
             <h2>About Color Thief</h2>
             <p class="description">A script for grabbing the color palette from an image. Uses Javascript and the canvas tag to make it happen.</p>
-            <p class="read-more-links"><a href="http://www.lokeshdhakar.com/color-thief/">Read more about it on my blog</a> or <a href="https://github.com/lokesh/color-thief">get the code on Github</a></p>
+            <p class="read-more-links"><a href="http://www.lokeshdhakar.com/color-thief/">Read more about it on Lokesh Dhakar's blog</a> or <a href="https://github.com/lokesh/color-thief">get the code on Github</a></p>
         </section>
 
         <section id="drag-drop" class="drag-drop">
@@ -58,8 +58,21 @@
       <script src="/public/javascript/library/color-thief/js/libs/mustache.js"></script>
       <script src="/public/javascript/library/color-thief/js/color-thief.js"></script>
 
-
       <!-- Mustache templates -->
+      <script id='image-section-template' type='text/x-mustache'>
+        {{#images}}
+        <div class="image-section {{class}}">
+          <div class="image-wrap">
+            <button class="run-functions-button">
+              <span class="no-touch-label">Click</span>
+              <span class="touch-label">Tap</span>
+            </button>
+            <img class="target-image" src="{{file}}" />
+          </div>
+          <div class="color-thief-output"></div>
+        </div>
+        {{/images}}
+      </script>
 
       <script id="color-thief-output-template" type="text/x-mustache">
         <div class="function get-color">
