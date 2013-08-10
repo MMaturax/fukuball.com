@@ -28,15 +28,15 @@
            display: none;
         }
         .color-thief-output {
-           -moz-border-radius-bottomleft: none;
-           -webkit-border-bottom-left-radius: none;
-           border-bottom-left-radius: none;
-           -moz-border-radius-bottomright: none;
-           -webkit-border-bottom-right-radius: none;
-           border-bottom-right-radius: none;
-           -webkit-box-shadow: none;
-           -moz-box-shadow: none;
-           box-shadow: none;
+           -moz-border-radius-bottomleft: 0px;
+           -webkit-border-bottom-left-radius: 0px;
+           border-bottom-left-radius: 0px;
+           -moz-border-radius-bottomright: 0px;
+           -webkit-border-bottom-right-radius: 0px;
+           border-bottom-right-radius: 0px;
+           -webkit-box-shadow: 0 0px 0 #333333;
+           -moz-box-shadow: 0 0px 0 #333333;
+           box-shadow: 0 0px 0 #333333;
         }
      </style>
    </head>
