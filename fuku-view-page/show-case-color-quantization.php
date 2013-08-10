@@ -236,6 +236,11 @@
            canvas_element.height = image.height;
            canvas_image_data = canvas_context.createImageData(image.width, image.height);
 
+           // copy the image data back onto the canvas
+           canvas_context.putImageData(canvas_image_data, 0, 0); // at coords 0,0
+
+           // Clean up
+           temp_canvas_image.removeCanvas();
         }
 
         function redrawImage(image_element) {
