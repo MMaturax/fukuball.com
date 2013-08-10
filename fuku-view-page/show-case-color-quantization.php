@@ -39,33 +39,6 @@
            box-shadow: 0 0px 0 #333333;
         }
      </style>
-     <script>
-     ColorThief.prototype.getPaletteQ = function(sourceImage, colorCount, quality) {
-
-         if (typeof colorCount === 'undefined') {
-             colorCount = 10;
-         };
-         if (typeof quality === 'undefined') {
-             quality = 10;
-         };
-
-         // Create custom CanvasImage object
-         var image      = new CanvasImage(sourceImage);
-         var imageData  = image.getImageData();
-         var pixels     = imageData.data;
-         var pixelCount = image.getPixelCount();
-
-         // Send array to quantize function which clusters values
-         // using median cut algorithm
-         var cmap    = MMCQ.quantize(pixels, colorCount);
-         var palette = cmap.palette();
-
-         // Clean up
-         image.removeCanvas();
-
-         return palette;
-     };
-     </script>
    </head>
    <body>
       <div class="wrapper">
@@ -98,6 +71,33 @@
       <script src="/public/javascript/library/color-thief/js/libs/jquery.lettering.js"></script>
       <script src="/public/javascript/library/color-thief/js/libs/mustache.js"></script>
       <script src="/public/javascript/library/color-thief/js/color-thief.js"></script>
+      <script>
+        ColorThief.prototype.getPaletteQ = function(sourceImage, colorCount, quality) {
+
+            if (typeof colorCount === 'undefined') {
+                colorCount = 10;
+            };
+            if (typeof quality === 'undefined') {
+                quality = 10;
+            };
+
+            // Create custom CanvasImage object
+            var image      = new CanvasImage(sourceImage);
+            var imageData  = image.getImageData();
+            var pixels     = imageData.data;
+            var pixelCount = image.getPixelCount();
+
+            // Send array to quantize function which clusters values
+            // using median cut algorithm
+            var cmap    = MMCQ.quantize(pixels, colorCount);
+            var palette = cmap.palette();
+
+            // Clean up
+            image.removeCanvas();
+
+            return palette;
+        };
+      </script>
 
       <!-- Mustache templates -->
       <script id='image-section-template' type='text/x-mustache'>
