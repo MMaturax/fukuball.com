@@ -125,7 +125,7 @@
           var elapsedTimeForGetColor   = Date.now() - start;
           var palette                  = colorThief.getPalette(image, $('#use-color').val());
           var elapsedTimeForGetPalette = Date.now() - start + elapsedTimeForGetColor;
-
+          console.log(palette);
           var colorThiefOutput = {
             color: color,
             palette: palette,
