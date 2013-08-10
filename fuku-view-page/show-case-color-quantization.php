@@ -45,7 +45,7 @@
         <section id="drag-drop" class="drag-drop">
           <header>
             <h2 class="section-header">Upload Image</h2>
-            <h3>Use <input id="use-color" name="use_color" value="8" /> Color</h3>
+            <h3 class="section-header">Use <input id="use-color" name="use_color" value="8" style="margin: 0px 0px 10px 0px;width: 30px;border: 0px;text-align: right;" /> Color</h3>
           </header>
           <div id="drop-zone" class="drop-zone">
             <div class="drop-zone-label default-label">Drag an image here</div>
