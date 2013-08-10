@@ -49,9 +49,6 @@
         </section>
 
       </div>
-      <canvas id="canvas1" style="display:block;">
-      </canvas>
-
 
       <script src="/public/javascript/library/color-thief/js/libs/jquery-2.0.2.min.js"></script>
       <script src="/public/javascript/library/color-thief/js/libs/jquery.lettering.js"></script>
@@ -72,6 +69,10 @@
           <div class="color-thief-output"></div>
         </div>
         {{/images}}
+        <div>
+          <canvas id="canvas1" style="display:block;">
+          </canvas>
+        </div>
       </script>
 
       <script id="color-thief-output-template" type="text/x-mustache">
