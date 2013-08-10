@@ -72,7 +72,7 @@ function getDominantColors(sourceImage) {
 
        pixel_array.push([r, g, b]);
 
-       if ( (i<(pixels.length*0.20)) || ((i%(image.width*4))<(image.width*0.20)) || (i>(pixels.length*0.80)) ) {
+       if ( (i<(pixels.length*0.25)) || ((i%(image.width*4))<(image.width*0.25)) || (i>(pixels.length*0.75)) ) {
           bg_pixel_array.push([r, g, b]);
        }
 
