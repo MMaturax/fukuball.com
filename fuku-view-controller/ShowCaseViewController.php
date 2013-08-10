@@ -160,6 +160,15 @@ class ShowCaseViewController
 
       switch ($action_level_one_id) {
 
+      case 'color-quantization':
+
+         $page_title = 'Color Quantization | Show Case';
+         $color_quantization_active = 'active';
+         $yield_path = '/fuku-view-page/show-case-color-quantization.php';
+         require_once SITE_ROOT.'/fuku-view-layout/show-case-page-layout.php';
+
+         break;
+
       case 's3-upload':
 
          $page_title = 'Upload S3 Storage | Show Case';
