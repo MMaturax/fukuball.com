@@ -70,9 +70,6 @@
             <img class="target-image" src="{{file}}" />
           </div>
           <div class="color-thief-output"></div>
-          <div class="image-under-wrap">
-             <img class="target-image" src="{{file}}" />
-           </div>
         </div>
         {{/images}}
       </script>
