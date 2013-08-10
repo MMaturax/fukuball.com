@@ -45,6 +45,7 @@
         <section id="drag-drop" class="drag-drop">
           <header>
             <h2 class="section-header">Upload Image</h2>
+            <h3>Use <input id="use-color" name="use_color" value="8" /> Color</h3>
           </header>
           <div id="drop-zone" class="drop-zone">
             <div class="drop-zone-label default-label">Drag an image here</div>
@@ -122,7 +123,7 @@
           var start                    = Date.now();
           var color                    = colorThief.getColor(image);
           var elapsedTimeForGetColor   = Date.now() - start;
-          var palette                  = colorThief.getPalette(image, 256);
+          var palette                  = colorThief.getPalette(image, $('#use-color').val());
           var elapsedTimeForGetPalette = Date.now() - start + elapsedTimeForGetColor;
 
           var colorThiefOutput = {
