@@ -144,7 +144,7 @@
              $('body').animate({scrollTop: outputOffsetTop - windowHeight + 200 + "px"});
           }
 
-          //redrawImage(image, palette);
+          redrawImageWithColor(image, palette);
 
         };
 
@@ -220,6 +220,15 @@
           var isMobile = (/iphone|ipod|ipad|android|ie|blackberry|fennec/).test
                (navigator.userAgent.toLowerCase());
           return isMobile;
+        }
+
+        function redrawImageWithColor(image, palette) {
+
+           var temp_canvas_image = new CanvasImage(image),
+               temp_canvas_image_data = temp_canvas_image.getImageData(),
+               pixels = temp_canvas_image_data.data,
+               pixel_count = temp_canvas_image.getPixelCount();
+
         }
 
         function redrawImage(image_element) {
