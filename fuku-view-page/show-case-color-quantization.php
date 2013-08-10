@@ -71,44 +71,6 @@
       <script src="/public/javascript/library/color-thief/js/libs/jquery.lettering.js"></script>
       <script src="/public/javascript/library/color-thief/js/libs/mustache.js"></script>
       <script src="/public/javascript/library/color-thief/js/color-thief.js"></script>
-      <script>
-        ColorThief.prototype.getPaletteQ = function(sourceImage, colorCount, quality) {
-
-            if (typeof colorCount === 'undefined') {
-                colorCount = 10;
-            };
-            if (typeof quality === 'undefined') {
-                quality = 10;
-            };
-
-            // Create custom CanvasImage object
-            var image      = new CanvasImage(sourceImage);
-            var imageData  = image.getImageData();
-            var pixels     = imageData.data;
-            var pixelCount = image.getPixelCount();
-
-            // Store the RGB values in an array format suitable for quantize function
-            var pixelArray = [];
-            for (var i = 0, offset, r, g, b, a; i < pixelCount; i = i + quality) {
-               offset = i * 4;
-               r = pixels[offset + 0];
-               g = pixels[offset + 1];
-               b = pixels[offset + 2];
-               a = pixels[offset + 3];
-               pixelArray.push([r, g, b]);
-            }
-
-            // Send array to quantize function which clusters values
-            // using median cut algorithm
-            var cmap    = MMCQ.quantize(pixelArray, colorCount);
-            var palette = cmap.palette();
-
-            // Clean up
-            image.removeCanvas();
-
-            return palette;
-        };
-      </script>
 
       <!-- Mustache templates -->
       <script id='image-section-template' type='text/x-mustache'>
@@ -168,11 +130,19 @@
         // Run Color Thief functions and display results below image.
         // We also log execution time of functions for display.
         var showColorsForImage = function($image, $imageSection ) {
+
+          var color_num = parseInt($('#use-color').val())+1;
+          if (color_num>256) {
+             color_num = 256;
+          } else if (color_num<=4) {
+             color_num = 4;
+          }
+
           var image                    = $image[0];
           var start                    = Date.now();
           var color                    = colorThief.getColor(image);
           var elapsedTimeForGetColor   = Date.now() - start;
-          var palette                  = colorThief.getPaletteQ(image, parseInt($('#use-color').val()));
+          var palette                  = colorThief.getPalette(image, color_num);
           var elapsedTimeForGetPalette = Date.now() - start + elapsedTimeForGetColor;
 
           var colorThiefOutput = {
