@@ -415,7 +415,7 @@
                          canvas_image_data.data[j + 0] = palette[min_index][0];
                          canvas_image_data.data[j + 1] = palette[min_index][1];
                          canvas_image_data.data[j + 2] = palette[min_index][2];
-                         canvas_image_data.data[j + 3] = a_avg;
+                         canvas_image_data.data[j + 3] = 1;
                       }
                   }
 
