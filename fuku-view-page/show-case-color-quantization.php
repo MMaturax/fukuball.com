@@ -328,15 +328,26 @@
 
                    }
 
-                   var r_avg = (r_sum/block_sum);
-                   var g_avg = (g_sum/block_sum);
-                   var b_avg = (b_sum/block_sum);
-                   var a_avg = (a_sum/block_sum);
+                   var r_avg = parseInt(r_sum/block_sum);
+                   var g_avg = parseInt(g_sum/block_sum);
+                   var b_avg = parseInt(b_sum/block_sum);
+                   var a_avg = parseInt(a_sum/block_sum);
 
-                   console.log(r_avg);
-                   console.log(g_avg);
-                   console.log(b_avg);
-                   console.log(a_avg);
+                   var abs_ary = [];
+                     for (var j = 0; j < palette.length; j++) {
+
+                        var r_abs = Math.abs(r_avg - palette[j][0]);
+                        var g_abs = Math.abs(g_avg - palette[j][1]);
+                        var b_abs = Math.abs(b_avg - palette[j][2]);
+                        var abs = r_abs+g_abs+b_abs;
+                        abs_ary.push(abs);
+
+                   }
+
+                   var min_index = abs_ary.indexOf(Math.min.apply(Math, abs_ary));
+
+                   console.log(min_index);
+
 
                 }
 
