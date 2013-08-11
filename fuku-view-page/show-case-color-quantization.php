@@ -351,7 +351,7 @@
                           canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4] = palette[min_index][0];
                           canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4 + 1] = palette[min_index][1];
                           canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4 + 2] = palette[min_index][2];
-                          canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4 + 3] = a;
+                          canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4 + 3] = 1;
                        }
                    }
 
