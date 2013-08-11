@@ -123,13 +123,17 @@
 <section data-background="#000000">
    <h2>Use color theif to Extract main color</h2>
    <br/>
-   <a style="font-weight: bold;" href="http://lokeshdhakar.com/projects/color-thief/" target="_blank">
+   <h3>
+      <a style="font-weight: bold;" href="http://lokeshdhakar.com/projects/color-thief/" target="_blank">
       Color Thief
-   </a>
+      </a>
+   </h3>
    <br/>
+   <h3>
    <a style="font-weight: bold;" href="/show-case/color-quantization" target="_blank">
       Color Q
    </a>
+   </h3>
 </section>
 <section data-background-color="rgba(50, 200, 90, 0.4)">
    <h3>
