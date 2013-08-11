@@ -311,7 +311,7 @@
 
                 for (var x = 0; x < image.width; x += block_size) {
 
-                   var canvasColor = context.getImageData(x, y, block_size, block_size); // rgba e [0,255]
+                   var canvasColor = temp_canvas_image.getImageData(x, y, block_size, block_size); // rgba e [0,255]
                    console.log(canvasColor);
                    var pixels_data = canvasColor.data;
                    console.log(pixels_data);
