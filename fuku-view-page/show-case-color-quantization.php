@@ -306,9 +306,9 @@
              canvas_image_data = canvas_context.createImageData(image.width, image.height);
 
 
-             for (var y = 0; y < image.height; y += block_size) {
+             for (var y = 0; y < image.height; y += 1) {
 
-                for (var x = 0; x < image.width; x += block_size) {
+                for (var x = 0; x < image.width; x += 1) {
 
                    //var r_sum = 0;
                    //var g_sum = 0;
@@ -346,14 +346,24 @@
                    //
                    //var min_index = abs_ary.indexOf(Math.min.apply(Math, abs_ary));
 
-                   for (var bi=0; bi<block_size; bi++) {
-                       for (var bj=0; bj<block_size; bj++) {
-                          canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4] = 255;
-                          canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4 + 1] = 0;
-                          canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4 + 2] = 0;
-                          canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4 + 3] = 1;
-                       }
-                   }
+                   //for (var bi=0; bi<block_size; bi++) {
+                   //    for (var bj=0; bj<block_size; bj++) {
+                   //       canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4] = 255;
+                   //       canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4 + 1] = 0;
+                   //       canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4 + 2] = 0;
+                   //       canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4 + 3] = 1;
+                   //    }
+                   //}
+
+                   var red = pixels[((image.width * y) + x) * 4];
+                   var green = pixels[((image.width * y) + x) * 4 + 1];
+                   var blue = pixels[((image.width * y) + x) * 4 + 2];
+                   var alpha = pixels[((image.width * y) + x) * 4 + 3];
+
+                   canvas_image_data.data[((image.width * y) + x) * 4] = red;
+                   canvas_image_data.data[((image.width * y) + x) * 4 + 1] = green;
+                   canvas_image_data.data[((image.width * y) + x) * 4 + 1] = blue;
+                   canvas_image_data.data[((image.width * y) + x) * 4 + 1] = alpha;
 
 
                 }
