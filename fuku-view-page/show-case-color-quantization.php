@@ -320,27 +320,33 @@
 
                for (var x = 0; x < image.width; x += block_size) {
 
-                  var r_sum = 0;
-                  var g_sum = 0;
-                  var b_sum = 0;
-                  var a_sum = 0;
-                  var block_sum = 0;
+                  var i = ((image.width*y)+x) * 4;
+                  r_avg = pixels[i + 0];
+                  g_avg = pixels[i + 1];
+                  b_avg = pixels[i + 2];
+                  a_avg = pixels[i + 3];
 
-                  for (var bi=0; bi<block_size; bi++) {
-                      for (var bj=0; bj<block_size; bj++) {
-                         var i = ((image.width*(y+bi))+(x+bj)) * 4;
-                         r_sum = r_sum+pixels[i + 0];
-                         g_sum = g_sum+pixels[i + 1];
-                         b_sum = b_sum+pixels[i + 2];
-                         a_sum = a_sum+pixels[i + 3];
-                         block_sum++;
-                      }
-                  }
-
-                  var r_avg = parseInt(r_sum/block_sum);
-                  var g_avg = parseInt(g_sum/block_sum);
-                  var b_avg = parseInt(b_sum/block_sum);
-                  var a_avg = (a_sum/block_sum);
+                  //var r_sum = 0;
+                  //var g_sum = 0;
+                  //var b_sum = 0;
+                  //var a_sum = 0;
+                  //var block_sum = 0;
+                  //
+                  //for (var bi=0; bi<block_size; bi++) {
+                  //    for (var bj=0; bj<block_size; bj++) {
+                  //       var i = ((image.width*(y+bi))+(x+bj)) * 4;
+                  //       r_sum = r_sum+pixels[i + 0];
+                  //       g_sum = g_sum+pixels[i + 1];
+                  //       b_sum = b_sum+pixels[i + 2];
+                  //       a_sum = a_sum+pixels[i + 3];
+                  //       block_sum++;
+                  //    }
+                  //}
+                  //
+                  //var r_avg = parseInt(r_sum/block_sum);
+                  //var g_avg = parseInt(g_sum/block_sum);
+                  //var b_avg = parseInt(b_sum/block_sum);
+                  //var a_avg = (a_sum/block_sum);
 
                   var abs_ary = [];
                   for (var j = 0; j < palette.length; j++) {
