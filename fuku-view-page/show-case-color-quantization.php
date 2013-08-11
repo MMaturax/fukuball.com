@@ -408,9 +408,9 @@
                   var min_index = abs_ary.indexOf(Math.min.apply(Math, abs_ary));
 
                   var i = ((image.width*y)+x)*4;
-                  canvas_image_data.data[i + 0] = palette[min_index][0];
-                  canvas_image_data.data[i + 1] = palette[min_index][1];
-                  canvas_image_data.data[i + 2] = palette[min_index][2];
+                  canvas_image_data.data[i + 0] = r_avg;
+                  canvas_image_data.data[i + 1] = g_avg;
+                  canvas_image_data.data[i + 2] = b_avg;
                   canvas_image_data.data[i + 3] = 1;
 
                }
