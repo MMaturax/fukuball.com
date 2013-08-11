@@ -311,14 +311,37 @@
 
                 for (var x = 0; x < image.width; x += block_size) {
 
-                   var canvasColor = temp_canvas_image.getImageData(x, y, block_size, block_size); // rgba e [0,255]
-                   console.log(canvasColor);
-                   var pixels_data = canvasColor.data;
-                   console.log(pixels_data);
+                   var r_sum = 0;
+                   var g_sum = 0;
+                   var b_sum = 0;
+                   var a_sum = 0;
+                   var block_sum = 0;
+                   for (var bi=0; bi<block_size; bi++) {
+
+                      for (var bj=0; bj<block_size; bj++) {
+                         r_sum = r_sum+pixels[((image.width * (y+bi)) + (x+bj) ) * 4];
+                         g_sum = g_sum+pixels[((image.width * (y+bi)) + (x+bj) ) * 4 + 1];
+                         b_sum = b_sum+pixels[((image.width * (y+bi)) + (x+bj) ) * 4 + 2];
+                         a_sum = a_sum+pixels[((image.width * (y+bi)) + (x+bj) ) * 4 + 3];
+                         block_sum++;
+                      }
+
+                   }
+
+                   var r_avg = (r_sum/block_sum);
+                   var g_avg = (g_sum/block_sum);
+                   var b_avg = (b_sum/block_sum);
+                   var a_avg = (a_sum/block_sum);
+
+                   console.log(r_avg);
+                   console.log(g_avg);
+                   console.log(b_avg);
+                   console.log(a_avg);
 
                 }
 
              }
+
 
              // copy the image data back onto the canvas
              canvas_context.putImageData(canvas_image_data, 0, 0); // at coords 0,0
