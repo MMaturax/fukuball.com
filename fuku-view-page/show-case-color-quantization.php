@@ -316,6 +316,7 @@
                    var b_sum = 0;
                    var a_sum = 0;
                    var block_sum = 0;
+
                    for (var bi=0; bi<block_size; bi++) {
 
                       for (var bj=0; bj<block_size; bj++) {
@@ -345,6 +346,8 @@
                    }
 
                    var min_index = abs_ary.indexOf(Math.min.apply(Math, abs_ary));
+
+                   console.log(min_index);
 
                    for (var bi=0; bi<block_size; bi++) {
                        for (var bj=0; bj<block_size; bj++) {
