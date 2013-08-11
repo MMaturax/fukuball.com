@@ -394,10 +394,15 @@
 
                   var min_index = abs_ary.indexOf(Math.min.apply(Math, abs_ary));
 
-                  canvas_image_data.data[i + 0] = palette[min_index][0];
-                  canvas_image_data.data[i + 1] = palette[min_index][1];
-                  canvas_image_data.data[i + 2] = palette[min_index][2];
-                  canvas_image_data.data[i + 3] = a;
+                  for (var bi=0; bi<block_size; bi++) {
+                      for (var bj=0; bj<block_size; bj++) {
+                         var j = ((image.width*(y+bi))+(x+bj)) * 4;
+                         canvas_image_data.data[j + 0] = palette[min_index][0];
+                         canvas_image_data.data[j + 1] = palette[min_index][1];
+                         canvas_image_data.data[j + 2] = palette[min_index][2];
+                         canvas_image_data.data[j + 3] = a;
+                      }
+                  }
 
                }
 
