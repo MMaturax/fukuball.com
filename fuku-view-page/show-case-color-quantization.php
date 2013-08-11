@@ -370,9 +370,9 @@
              //
              //}
 
-             for (var y = 0; y < image.height; y += 1) {
+             for (var y = 0; y < image.height; y += block_size) {
 
-               for (var x = 0; x < image.width; x += 1) {
+               for (var x = 0; x < image.width; x += block_size) {
 
                   var i = ((image.width*y)+x) * 4;
                   r = pixels[i + 0];
