@@ -57,6 +57,7 @@
           <header>
             <h2 class="section-header">Upload Image</h2>
             <h3 class="section-header">Use <input id="use-color" name="use_color" value="8" style="margin: 0px 0px 10px 0px;width: 30px;border: 0px;text-align: right;" /> Color</h3>
+            <h3 class="section-header">Use <input id="use-pixel" name="use_pixel" value="1" style="margin: 0px 0px 10px 0px;width: 30px;border: 0px;text-align: right;" /> Pixel</h3>
           </header>
           <div id="drop-zone" class="drop-zone">
             <div class="drop-zone-label default-label">Drag an image here</div>
@@ -164,8 +165,18 @@
              $('body').animate({scrollTop: outputOffsetTop - windowHeight + 200 + "px"});
           }
 
-          //redrawImageWithColor(image, palette);
-          redrawImageWithColorWithBlock(image, palette, 4);
+          var block_size = parseInt($('#use-pixel').val());
+          if (block_size>8) {
+              block_size = 8;
+          } else if (block_size<=1) {
+              block_size = 1;
+          }
+
+          if (block_size==1) {
+             redrawImageWithColor(image, palette);
+          } else {
+             redrawImageWithColorWithBlock(image, palette, block_size);
+          }
 
         };
 
