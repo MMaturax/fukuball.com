@@ -305,7 +305,6 @@
              canvas_element.height = image.height;
              canvas_image_data = canvas_context.createImageData(image.width, image.height);
 
-             var pixels_index = 0;
 
              for (var y = 0; y < image.height; y += block_size) {
 
@@ -347,14 +346,13 @@
 
                    var min_index = abs_ary.indexOf(Math.min.apply(Math, abs_ary));
 
-                   console.log(min_index);
-
                    for (var bi=0; bi<block_size; bi++) {
                        for (var bj=0; bj<block_size; bj++) {
                           canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4] = palette[min_index][0];
                           canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4 + 1] = palette[min_index][1];
                           canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4 + 2] = palette[min_index][2];
-                          //canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4 + 3] = 1;
+                          canvas_image_data.data[((image.width * (y+bi)) + (x+bj) ) * 4 + 3] = 1;
+                          console.log(((image.width * (y+bi)) + (x+bj) ) * 4);
                        }
                    }
 
