@@ -143,6 +143,28 @@
    </h3>
 </section>
 <section data-background="#000000">
+   <h2>Heuristic Algorithm</h2>
+   <pre>
+      <code data-trim="" contenteditable="" class="js">
+for (var i = 0; i&lt;image_data.length; i=i+4) {
+
+   r = image_data[i + 0];
+   g = image_data[i + 1];
+   b = image_data[i + 2];
+   a = image_data[i + 3];
+
+   if ( i&lt;(pixels.length*0.30) || (i%(image.width*4))&lt;(image.width*0.30) ) {
+      bg_image_data_array.push([r, g, b]);
+   }
+
+}
+
+var bg_cmap = MMCQ.quantize(bg_pixel_array, 5);
+var bg_palette = bg_cmap.palette();
+      </code>
+   </pre>
+</section>
+<section data-background="#000000">
    <h2>Extract background color</h2>
    <img style="border:none;" src="/public/image/slide-show/background-part.png">
 </section>
