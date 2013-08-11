@@ -144,6 +144,7 @@
 </section>
 <section data-background="#000000">
    <h2>Extract background color</h2>
+   <img style="border:none;" src="/public/image/slide-show/background-part.png">
 </section>
 <section data-background-color="rgba(50, 200, 90, 0.4)">
    <h3>
@@ -153,9 +154,14 @@
    </h3>
 </section>
 <section data-background="#000000">
-   <h2>Look around</h2>
+   <h2>
+      杯具
+   </h2>
    <h3>
       <a href="http://owo.tw/ColorTunes" target="_blank">ColorTunes</a>
+   </h3>
+   <h3>
+      <a href="http://app-folders.com/" target="_blank">App Folders</a>
    </h3>
    <h3>
       <a href="http://thomaspark.me/project/expandingalbums/" target="_blank">Expanding Albums</a>
