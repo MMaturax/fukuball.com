@@ -370,8 +370,11 @@
              //
              //}
 
-             for (var i = 0; i<pixels.length; i=i+4) {
+             for (var y = 0; y < image.height; y += 1) {
 
+               for (var x = 0; x < image.width; x += 1) {
+
+                  var i = ((image.width*y)+x) * 4;
                   r = pixels[i + 0];
                   g = pixels[i + 1];
                   b = pixels[i + 2];
@@ -396,6 +399,8 @@
                   canvas_image_data.data[i + 3] = a;
 
                }
+
+             }
 
 
              // copy the image data back onto the canvas
