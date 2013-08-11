@@ -143,6 +143,10 @@
    </h3>
 </section>
 <section data-background="#000000">
+   <h2>Extract background color</h2>
+   <img style="border:none;" src="/public/image/slide-show/background-part.png">
+</section>
+<section data-background="#000000">
    <h2>Heuristic Algorithm</h2>
    <pre>
       <code data-trim="" contenteditable="" class="js">
@@ -164,10 +168,6 @@ var bg_palette = bg_cmap.palette();
       </code>
    </pre>
 </section>
-<section data-background="#000000">
-   <h2>Extract background color</h2>
-   <img style="border:none;" src="/public/image/slide-show/background-part.png">
-</section>
 <section data-background-color="rgba(50, 200, 90, 0.4)">
    <h3>
       <a style="font-weight: bold;" href="/show-case/5tunes11" target="_blank">
@@ -177,13 +177,21 @@ var bg_palette = bg_cmap.palette();
 </section>
 <section data-background="#000000">
    <h2>
+      所使用的開源套件
+   </h2>
+   <h3>
+      <a href="http://lokeshdhakar.com/projects/color-thief/" target="_blank">Color Thief</a>
+   </h3>
+   <h3>
+      <a href="http://app-folders.com/" target="_blank">App Folders</a>
+   </h3>
+</section>
+<section data-background="#000000">
+   <h2>
       杯具
    </h2>
    <h3>
       <a href="http://owo.tw/ColorTunes" target="_blank">ColorTunes</a>
-   </h3>
-   <h3>
-      <a href="http://app-folders.com/" target="_blank">App Folders</a>
    </h3>
    <h3>
       <a href="http://thomaspark.me/project/expandingalbums/" target="_blank">Expanding Albums</a>
