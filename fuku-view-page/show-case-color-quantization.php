@@ -374,19 +374,34 @@
 
                for (var x = 0; x < image.width; x += block_size) {
 
-                  var i = ((image.width*y)+x) * 4;
+                  var r_sum = 0;
+                  var g_sum = 0;
+                  var b_sum = 0;
+                  var a_sum = 0;
+                  var block_sum = 0;
 
-                  r = pixels[i + 0];
-                  g = pixels[i + 1];
-                  b = pixels[i + 2];
-                  a = pixels[i + 3];
+                  for (var bi=0; bi<block_size; bi++) {
+                      for (var bj=0; bj<block_size; bj++) {
+                         var i = ((image.width*(y+bi))+(x+bj)) * 4;
+                         r_sum = r_sum+pixels[i + 0];
+                         g_sum = g_sum+pixels[i + 1];
+                         b_sum = b_sum+pixels[i + 2];
+                         a_sum = a_sum+pixels[i + 3];
+                         block_sum++;
+                      }
+                  }
+
+                  var r_avg = parseInt(r_sum/block_sum);
+                  var g_avg = parseInt(g_sum/block_sum);
+                  var b_avg = parseInt(b_sum/block_sum);
+                  var a_avg = (a_sum/block_sum);
 
                   var abs_ary = [];
                   for (var j = 0; j < palette.length; j++) {
 
-                     var r_abs = Math.abs(r - palette[j][0]);
-                     var g_abs = Math.abs(g - palette[j][1]);
-                     var b_abs = Math.abs(b - palette[j][2]);
+                     var r_abs = Math.abs(r_avg - palette[j][0]);
+                     var g_abs = Math.abs(g_avg - palette[j][1]);
+                     var b_abs = Math.abs(b_avg - palette[j][2]);
                      var abs = r_abs+g_abs+b_abs;
                      abs_ary.push(abs);
 
@@ -400,7 +415,7 @@
                          canvas_image_data.data[j + 0] = palette[min_index][0];
                          canvas_image_data.data[j + 1] = palette[min_index][1];
                          canvas_image_data.data[j + 2] = palette[min_index][2];
-                         canvas_image_data.data[j + 3] = a;
+                         canvas_image_data.data[j + 3] = a_avg;
                       }
                   }
 
