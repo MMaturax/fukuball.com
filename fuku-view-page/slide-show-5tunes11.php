@@ -163,7 +163,7 @@ for (var i = 0; i&lt;image_data.length; i=i+4) {
 
 }
 
-var bg_cmap = MMCQ.quantize(bg_pixel_array, 5);
+var bg_cmap = MMCQ.quantize(bg_image_data_array, 5);
 var bg_palette = bg_cmap.palette();
       </code>
    </pre>
