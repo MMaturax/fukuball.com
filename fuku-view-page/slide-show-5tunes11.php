@@ -157,7 +157,7 @@ for (var i = 0; i&lt;image_data.length; i=i+4) {
    b = image_data[i + 2];
    a = image_data[i + 3];
 
-   if ( i&lt;(pixels.length*0.30) || (i%(image.width*4))&lt;(image.width*0.30) ) {
+   if ( i&lt;(image_data.length*0.30) || (i%(image.width*4))&lt;(image.width*0.30) ) {
       bg_image_data_array.push([r, g, b]);
    }
 
