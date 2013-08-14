@@ -188,7 +188,7 @@ var bg_palette = bg_cmap.palette();
 </section>
 <section data-background="#000000">
    <h2>
-      杯具
+      什麼？早就有人做好了！
    </h2>
    <h3>
       <a href="http://owo.tw/ColorTunes" target="_blank">ColorTunes</a>
