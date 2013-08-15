@@ -75,8 +75,6 @@
       <script src="/public/javascript/library/color-thief/js/libs/jquery.lettering.js"></script>
       <script src="/public/javascript/library/color-thief/js/libs/mustache.js"></script>
       <script src="/public/javascript/library/color-thief/js/color-thief.js"></script>
-      <script src="/public/javascript/library/canvas2image.js"></script>
-      <script src="/public/javascript/library/base64.js"></script>
 
       <!-- Mustache templates -->
       <script id='image-section-template' type='text/x-mustache'>
@@ -395,7 +393,8 @@
       $(document.body).on('click.canvas', 'canvas', function() {
 
          var clicked_canvas = $(this);
-         Canvas2Image.saveAsPNG(clicked_canvas);
+         var dataUrl = clicked_canvas.toDataURL();
+         window.open(dataUrl, "toDataURL() image");
 
       });
 
