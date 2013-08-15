@@ -38,6 +38,9 @@
            -moz-box-shadow: 0 0px 0 #333333;
            box-shadow: 0 0px 0 #333333;
         }
+        canvas {
+           cursor:pointer;
+        }
      </style>
    </head>
    <body>
@@ -86,6 +89,7 @@
           </div>
           <div class="color-thief-output"></div>
           <div>
+            <h3>Click on canvas to download image</h3>
             <canvas id="output-canvas" style="display:block; margin-bottom: 30px;">
             </canvas>
           </div>
@@ -382,6 +386,13 @@
              // Clean up
              temp_canvas_image.removeCanvas();
           }
+
+      });
+
+      $(document.body).off('click.canvas', 'canvas');
+      $(document.body).on('click.canvas', 'canvas', function() {
+
+         console.log($(this));
 
       });
 
