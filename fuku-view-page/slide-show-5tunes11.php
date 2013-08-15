@@ -134,7 +134,6 @@ var colorThief = new ColorThief();
 var palette_color = colorThief.getPalette(image, 5);
       </code>
    </pre>
-   <br/>
    <h3>
    <a style="font-weight: bold;" href="/show-case/color-quantization" target="_blank">
       Color Q
