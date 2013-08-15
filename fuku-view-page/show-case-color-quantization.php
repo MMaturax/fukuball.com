@@ -393,8 +393,7 @@
       $(document.body).on('click.canvas', 'canvas', function() {
 
          var clicked_canvas = $(this);
-         console.log(clicked_canvas);
-         var dataUrl = clicked_canvas.toDataURL();
+         var dataUrl = clicked_canvas[0].toDataURL();
          window.open(dataUrl, "toDataURL() image");
 
       });
