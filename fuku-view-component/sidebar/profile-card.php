@@ -64,6 +64,15 @@
          </a>
       </li>
       <li>
+         <h4 class="m-t-0">Blog</h4>
+         <a title="Fukuball Blog" class="team-link track" href="http://blog.fukuball.com" target="_blank">
+            <span class="team-avatar">
+               <img src="/public/image/avatar3.jpg" height="22" width="22">
+            </span>
+            <div>Fukuball Blog</div>
+         </a>
+      </li>
+      <li>
          <h4 class="m-t-0">Work</h4>
          <a title="5Tunes11" class="team-link track m-b-10" href="http://www.fukuball.com/show-case/5tunes11" target="_blank">
             <span class="team-avatar">
