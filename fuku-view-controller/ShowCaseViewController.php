@@ -58,7 +58,7 @@ class ShowCaseViewController
             $new_file_name = time();
 
             $target_file_name
-                = '/mnt/fukuball-bucket/s3fs_demo/'.$new_file_name;
+                = '/mnt/obeobe-bucket/s3fs_demo/'.$new_file_name;
 
             $retunr_value = UploadHelper::pluploadProcess(
                 $_REQUEST,
@@ -80,7 +80,7 @@ class ShowCaseViewController
 
             if ($s3fs_on=='on') {
 
-               $file_url_path = str_replace ('/mnt/fukuball-bucket/', 'http://www.fukuball.com/public/', $retunr_value);
+               $file_url_path = str_replace ('/mnt/obeobe-bucket/', 'http://www.fukuball.com/public/', $retunr_value);
 
                $type = 'success';
                $parameter = array("file_name"=> $name,"file_url_path"=>$file_url_path);
@@ -98,7 +98,7 @@ class ShowCaseViewController
 
                if ($s3->putObjectFile($retunr_value, S3_BUCKET, 's3fs_demo/'.baseName('1.png'), S3::ACL_PUBLIC_READ)) {
 
-                  $file_url_path = str_replace ('/mnt/fukuball-bucket/', 'http://www.fukuball.com/public/', $retunr_value);
+                  $file_url_path = str_replace ('/mnt/obeobe-bucket/', 'http://www.fukuball.com/public/', $retunr_value);
 
                   $type = 'success';
                   $parameter = array("file_name"=> $name,"file_url_path"=>$file_url_path);
