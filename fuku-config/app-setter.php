@@ -16,8 +16,15 @@ ini_set('display_errors', 1);
 ini_set('log_errors', 1);
 ini_set('error_log', dirname(__FILE__) . '/error.log');
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
+date_default_timezone_set('Asia/Taipei');
 
 session_start();
+
+if (!empty($_SERVER['HTTP_X_REAL_IP'])) {
+   $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_X_REAL_IP'];
+} else if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+   $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_X_FORWARDED_FOR'];
+}
 
 // http or https
 $host_protocol = 'http';
