@@ -17,7 +17,7 @@
       <li>
          <div class="row m-l-0">
             <div class="pull-left">
-               <img class="img-rounded" style="width: 50px; height: 50px;" src="/public/image/avatar3.jpg" />
+               <img class="img-rounded" style="width: 50px; height: 50px;" src="/public/image/avatar4.jpg" />
             </div>
             <div class="pull-left m-l-10">
                <h1>fukuball</h1>
@@ -67,7 +67,7 @@
          <h4 class="m-t-0">Blog</h4>
          <a title="Fukuball Blog" class="team-link track" href="http://blog.fukuball.com" target="_blank">
             <span class="team-avatar">
-               <img src="/public/image/avatar3.jpg" height="22" width="22">
+               <img src="/public/image/avatar4.jpg" height="22" width="22">
             </span>
             <div>Fukuball Blog</div>
          </a>
@@ -76,13 +76,13 @@
          <h4 class="m-t-0">Work</h4>
          <a title="5Tunes11" class="team-link track m-b-10" href="http://www.fukuball.com/show-case/5tunes11" target="_blank">
             <span class="team-avatar">
-               <img src="/public/image/avatar3.jpg" height="22" width="22">
+               <img src="/public/image/avatar4.jpg" height="22" width="22">
             </span>
             <div>5Tunes11</div>
          </a>
          <a title="CKIP-Client" class="team-link track" href="http://www.fukuball.com/ckip-client/" target="_blank">
             <span class="team-avatar">
-               <img src="/public/image/avatar3.jpg" height="22" width="22">
+               <img src="/public/image/avatar4.jpg" height="22" width="22">
             </span>
             <div>CKIP-Client 中文斷詞</div>
          </a>
