@@ -50,6 +50,8 @@
       ?>
       <div id="bg-block">
       </div>
-      <img class="drangon-ball-char" src="/public/image/show-case/skrollr-demo/wukon.png" style="top:100px;">
+      <div class="drangon-ball-char" style="top:100px;">
+         <img src="/public/image/show-case/skrollr-demo/wukon.png" style="width:400px;">
+      </div>
    </body>
 </html>
