@@ -23,7 +23,7 @@
       <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
       <style>
          body {
-            min-height: 2000px;
+            min-height: 3000px;
          }
          #bg-block {
             position: fixed;
@@ -65,6 +65,9 @@
       </div>
       <div class="drangon-ball-char" style="top:1500px;" data-1200="opacity: 1;right: -500px;" data-1500="opacity: 1;right: 300px;" data-1800="opacity: 0;right: 400px;">
          <img src="/public/image/show-case/skrollr-demo/buwu.png" style="width:400px;">
+      </div>
+      <div class="drangon-ball-char" style="top:1800px;" data-1500="opacity: 1;left: -500px;" data-1800="opacity: 1;left: 300px;" data-2100="opacity: 0;left: 400px;">
+         <img src="/public/image/show-case/skrollr-demo/dall3.png" style="width:400px;">
       </div>
       <script type="text/javascript">
       var skrollr_obj = skrollr.init();
