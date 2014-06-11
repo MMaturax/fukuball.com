@@ -22,6 +22,9 @@
       <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
       <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
       <style>
+         body {
+            min-height: 2000px;
+         }
          #bg-block {
             position: fixed;
             top: 0;
@@ -38,7 +41,10 @@
       <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
       <script src="/public/javascript/library/skrollr/dist/skrollr.min.js"></script>
    </head>
-   <body style="min-height: 2000px;">
+   <body>
+      <?php
+      include_once SITE_ROOT."/fuku-view-component/header/show-case-header.php";
+      ?>
       <div id="bg-block">
       </div>
    </body>
