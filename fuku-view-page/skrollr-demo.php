@@ -82,7 +82,7 @@
          <img src="/public/image/show-case/skrollr-demo/dbz.png" style="width:500px;" data-2600="opacity: 0;-webkit-filter: blur(5px);" data-2800="opacity: 1;-webkit-filter: blur(0px);">
       </div>
       <div class="drangon-ball-char" style="top:3000px;width:100%;text-align:center">
-         <img src="/public/image/show-case/skrollr-demo/dbzcrew.png" style="width:500px;" data-2700="opacity: 0;-webkit-filter: blur(5px);" data-2900="opacity: 1;-webkit-filter: blur(0px);">
+         <img src="/public/image/show-case/skrollr-demo/dbzcrew.png" style="width:900px;" data-2700="opacity: 0;-webkit-filter: blur(5px);" data-2900="opacity: 1;-webkit-filter: blur(0px);">
       </div>
       <script type="text/javascript">
       var skrollr_obj = skrollr.init();
