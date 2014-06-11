@@ -26,8 +26,9 @@
       <script src="/public/javascript/library/skrollr/dist/skrollr.min.js"></script>
    </head>
    <body>
-      <div id="main-content" class="container">
+      <div id="main-content">
          skrollr-demo
+         <img src="/public/image/show-case/skrollr-demo/b01.jpg" />
       </div>
    </body>
 </html>
