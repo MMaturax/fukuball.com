@@ -54,22 +54,22 @@
       <div class="drangon-ball-char" style="top:150px;width:100%;text-align:center">
          <img src="/public/image/show-case/skrollr-demo/dragonballz.png" style="width:500px;" data-0="opacity: 1;-webkit-filter: blur(0px);" data-100="opacity: 0.5;-webkit-filter: blur(5px);">
       </div>
-      <div class="drangon-ball-char" style="top:300px;" data-0="opacity: 1;right: -500px;" data-300="opacity: 1;right: 300px;" data-600="opacity: 0;right: 400px;">
+      <div class="drangon-ball-char" style="top:300px;" data-0="opacity: 1;right: -500px;-webkit-filter: blur(0px);" data-300="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-600="opacity: 0;right: 400px;-webkit-filter: blur(5px);">
          <img src="/public/image/show-case/skrollr-demo/wukon.png" style="width:400px;">
       </div>
-      <div class="drangon-ball-char" style="top:600px;" data-300="opacity: 1;left: -500px;" data-600="opacity: 1;left: 300px;" data-900="opacity: 0;left: 400px;">
+      <div class="drangon-ball-char" style="top:600px;" data-300="opacity: 1;left: -500px;-webkit-filter: blur(0px);" data-600="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-900="opacity: 0;left: 400px;-webkit-filter: blur(5px);">
          <img src="/public/image/show-case/skrollr-demo/wukon3.png" style="width:400px;">
       </div>
-      <div class="drangon-ball-char" style="top:900px;" data-600="opacity: 1;right: -500px;" data-900="opacity: 1;right: 300px;" data-1200="opacity: 0;right: 400px;">
+      <div class="drangon-ball-char" style="top:900px;" data-600="opacity: 1;right: -500px;-webkit-filter: blur(0px);" data-900="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-1200="opacity: 0;right: 400px;-webkit-filter: blur(5px);">
          <img src="/public/image/show-case/skrollr-demo/fan.png" style="width:400px;">
       </div>
-      <div class="drangon-ball-char" style="top:1200px;" data-900="opacity: 1;left: -500px;" data-1200="opacity: 1;left: 300px;" data-1500="opacity: 0;left: 400px;">
+      <div class="drangon-ball-char" style="top:1200px;" data-900="opacity: 1;left: -500px;-webkit-filter: blur(0px);" data-1200="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-1500="opacity: 0;left: 400px;-webkit-filter: blur(5px);">
          <img src="/public/image/show-case/skrollr-demo/klin.png" style="width:400px;">
       </div>
-      <div class="drangon-ball-char" style="top:1500px;" data-1200="opacity: 1;right: -500px;" data-1500="opacity: 1;right: 300px;" data-1800="opacity: 0;right: 400px;">
+      <div class="drangon-ball-char" style="top:1500px;" data-1200="opacity: 1;right: -500px;-webkit-filter: blur(0px);" data-1500="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-1800="opacity: 0;right: 400px;-webkit-filter: blur(5px);">
          <img src="/public/image/show-case/skrollr-demo/buwu.png" style="width:400px;">
       </div>
-      <div class="drangon-ball-char" style="top:1800px;" data-1500="opacity: 1;left: -500px;" data-1800="opacity: 1;left: 300px;" data-2100="opacity: 0;left: 400px;">
+      <div class="drangon-ball-char" style="top:1800px;" data-1500="opacity: 1;left: -500px;-webkit-filter: blur(0px);" data-1800="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-2100="opacity: 0;left: 400px;-webkit-filter: blur(5px);">
          <img src="/public/image/show-case/skrollr-demo/dall3.png" style="width:400px;">
       </div>
       <script type="text/javascript">
