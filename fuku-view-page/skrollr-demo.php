@@ -72,6 +72,15 @@
       <div class="drangon-ball-char" style="top:1800px;" data-1500="opacity: 1;left: -500px;-webkit-filter: blur(0px);" data-1800="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-2100="opacity: 0;left: 400px;-webkit-filter: blur(5px);">
          <img src="/public/image/show-case/skrollr-demo/dall3.png" style="width:400px;">
       </div>
+      <div class="drangon-ball-char" style="top:2100px;" data-1800="opacity: 1;right: -500px;-webkit-filter: blur(0px);" data-2100="opacity: 1;right: 300px;-webkit-filter: blur(0px);" data-2400="opacity: 0;right: 400px;-webkit-filter: blur(5px);">
+         <img src="/public/image/show-case/skrollr-demo/baba.png" style="width:400px;">
+      </div>
+      <div class="drangon-ball-char" style="top:2400px;" data-2100="opacity: 1;left: -500px;-webkit-filter: blur(0px);" data-2400="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-2500="opacity: 0;left: 400px;-webkit-filter: blur(5px);">
+         <img src="/public/image/show-case/skrollr-demo/cell.png" style="width:400px;">
+      </div>
+      <div class="drangon-ball-char" style="top:2700px;width:100%;text-align:center">
+         <img src="/public/image/show-case/skrollr-demo/dbz.png" style="width:500px;" data-2600="opacity: 0;-webkit-filter: blur(5px);" data-2800="opacity: 1;-webkit-filter: blur(0px);">
+      </div>
       <script type="text/javascript">
       var skrollr_obj = skrollr.init();
       </script>
