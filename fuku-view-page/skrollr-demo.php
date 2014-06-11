@@ -38,7 +38,7 @@
       <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
       <script src="/public/javascript/library/skrollr/dist/skrollr.min.js"></script>
    </head>
-   <body>
+   <body style="min-height: 2000px;">
       <div id="bg-block">
       </div>
    </body>
