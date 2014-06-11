@@ -36,6 +36,9 @@
             -webkit-background-size: cover;
             -webkit-filter: blur(5px);
          }
+         .drangon-ball-char {
+            z-index: 10;
+         }
       </style>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
       <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
@@ -47,5 +50,6 @@
       ?>
       <div id="bg-block">
       </div>
+      <img class="drangon-ball-char" src="/public/image/show-case/skrollr-demo/wukon.png" style="top:100px;">
    </body>
 </html>
