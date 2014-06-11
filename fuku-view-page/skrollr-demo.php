@@ -57,8 +57,8 @@
       <div class="drangon-ball-char" style="top:600px;" data-300="opacity: 1;left: -500px;" data-600="opacity: 1;left: 300px;" data-900="opacity: 0;left: 400px;">
          <img src="/public/image/show-case/skrollr-demo/wukon3.png" style="width:400px;">
       </div>
-      <div class="drangon-ball-char" style="top:300px;" data-600="opacity: 1;right: -500px;" data-900="opacity: 1;right: 300px;" data-1200="opacity: 0;right: 400px;">
-         <img src="/public/image/show-case/skrollr-demo/bicro.png" style="width:400px;">
+      <div class="drangon-ball-char" style="top:900px;" data-600="opacity: 1;right: -500px;" data-900="opacity: 1;right: 300px;" data-1200="opacity: 0;right: 400px;">
+         <img src="/public/image/show-case/skrollr-demo/bicro.gif" style="width:400px;">
       </div>
       <script type="text/javascript">
       var skrollr_obj = skrollr.init();
