@@ -51,6 +51,9 @@
       ?>
       <div id="bg-block">
       </div>
+      <div class="drangon-ball-char" style="top:200px;width:100%;text-align:center">
+         <img src="/public/image/show-case/skrollr-demo/dragonballz.png" style="width:500px;">
+      </div>
       <div class="drangon-ball-char" style="top:300px;" data-0="opacity: 1;right: -500px;" data-300="opacity: 1;right: 300px;" data-600="opacity: 0;right: 400px;">
          <img src="/public/image/show-case/skrollr-demo/wukon.png" style="width:400px;">
       </div>
