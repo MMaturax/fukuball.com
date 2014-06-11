@@ -518,9 +518,9 @@ class ShowCaseViewController
 
       case 'skrollr-demo':
 
-         $page_title = 'Skrollr Demo | Show Case';
-         $itunes11_active = 'active';
-         $yield_path = '/fuku-view-page/skrollr-demo.php';
+         $page_title     = 'Skrollr Demo | Show Case';
+         $skrollr_active = 'active';
+         $yield_path     = '/fuku-view-page/skrollr-demo.php';
          include SITE_ROOT.$yield_path;
 
          break;
