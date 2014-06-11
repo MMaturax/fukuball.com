@@ -38,6 +38,7 @@
          }
          .drangon-ball-char {
             z-index: 10;
+            position: absolute;
          }
       </style>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -50,8 +51,11 @@
       ?>
       <div id="bg-block">
       </div>
-      <div class="drangon-ball-char" style="top:100px;">
+      <div class="drangon-ball-char" style="top:300px;" data-0="right: -500px;" data-300="right: 100px;">
          <img src="/public/image/show-case/skrollr-demo/wukon.png" style="width:400px;">
       </div>
+      <script type="text/javascript">
+      var skrollr_obj = skrollr.init();
+      </script>
    </body>
 </html>
