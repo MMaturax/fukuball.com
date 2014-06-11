@@ -516,6 +516,15 @@ class ShowCaseViewController
 
          break;
 
+      case 'skrollr-demo':
+
+         $page_title = 'Skrollr Demo | Show Case';
+         $itunes11_active = 'active';
+         $yield_path = '/fuku-view-page/skrollr-demo.php';
+         include SITE_ROOT.$yield_path;
+
+         break;
+
       default:
          $type = 'page_not_found';
          $parameter = array("none"=>"none");
