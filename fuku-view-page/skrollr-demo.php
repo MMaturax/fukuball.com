@@ -51,7 +51,7 @@
       ?>
       <div id="bg-block">
       </div>
-      <div class="drangon-ball-char" style="top:300px;" data-0="right: -500px;" data-300="right: 100px;">
+      <div class="drangon-ball-char" style="top:300px;" data-0="right: -500px;" data-300="right: 300px;">
          <img src="/public/image/show-case/skrollr-demo/wukon.png" style="width:400px;">
       </div>
       <script type="text/javascript">
