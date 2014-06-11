@@ -21,14 +21,25 @@
       ?>
       <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
       <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+      <style>
+         #bg-block {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            min-width: 100%;
+            min-height: 100%;
+            background: url(/public/image/show-case/skrollr-demo/b01.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -webkit-filter: blur(5px);
+         }
+      </style>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
       <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
       <script src="/public/javascript/library/skrollr/dist/skrollr.min.js"></script>
    </head>
    <body>
-      <div id="main-content">
-         skrollr-demo
-         <img src="/public/image/show-case/skrollr-demo/b01.jpg" />
+      <div id="bg-block">
       </div>
    </body>
 </html>
