@@ -78,8 +78,11 @@
       <div class="drangon-ball-char" style="top:2400px;" data-2100="opacity: 1;left: -500px;-webkit-filter: blur(0px);" data-2400="opacity: 1;left: 300px;-webkit-filter: blur(0px);" data-2500="opacity: 0;left: 400px;-webkit-filter: blur(5px);">
          <img src="/public/image/show-case/skrollr-demo/cell.png" style="width:400px;">
       </div>
-      <div class="drangon-ball-char" style="top:3000px;width:100%;text-align:center">
+      <div class="drangon-ball-char" style="top:2900px;width:100%;text-align:center">
          <img src="/public/image/show-case/skrollr-demo/dbz.png" style="width:500px;" data-2600="opacity: 0;-webkit-filter: blur(5px);" data-2800="opacity: 1;-webkit-filter: blur(0px);">
+      </div>
+      <div class="drangon-ball-char" style="top:3000px;width:100%;text-align:center">
+         <img src="/public/image/show-case/skrollr-demo/dbzcrew.png" style="width:500px;" data-2700="opacity: 0;-webkit-filter: blur(5px);" data-2900="opacity: 1;-webkit-filter: blur(0px);">
       </div>
       <script type="text/javascript">
       var skrollr_obj = skrollr.init();
