@@ -111,9 +111,11 @@
           $('#sandbox').textHighlighter({
               onRemoveHighlight: function(highlight) {
                   //return confirm('Do you really want to remove this highlight: "' + $(highlight).text() + '"?');
+                  return true;
               },
               onBeforeHighlight: function(range) {
                   //return confirm('Do you really want to highlight this text: "' + range + '"?');
+                  return true;
               },
               onAfterHighlight: function(highlights, range) {
                   //alert('You have selected "' + range + '" and created ' + highlights.length + ' highlight(s)!');
