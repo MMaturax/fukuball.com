@@ -1,5 +1,6 @@
 #encoding=utf-8
 import jieba
+jieba.set_dictionary('dict.txt.small')
 
 sentence = "獨立音樂需要大家一起來推廣，歡迎加入我們的行列！"
 print "Input：", sentence
