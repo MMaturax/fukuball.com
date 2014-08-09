@@ -45,11 +45,11 @@ class JiebaViewController
 
       switch ($action_level_one_id) {
 
-      case 'ckip-process':
+      case 'jieba-process':
 
          $paragraph = $_POST['paragraph'];
 
-         require_once SITE_ROOT.'/fuku-class/library/CKIPClient-PHP/CKIPClient.php';
+         /*require_once SITE_ROOT.'/fuku-class/library/CKIPClient-PHP/CKIPClient.php';
          require_once SITE_ROOT.'/fuku-config/private-param/ckip-param.php';
 
          $ckip_client_obj = new CKIPClient(
@@ -83,7 +83,7 @@ class JiebaViewController
             include_once SITE_ROOT.'/fuku-view-page/ckip-client-partial-view/ckip-process-result.php';
 
             unset($ckip_process_record_obj);
-         }
+         }*/
 
          break;
 
