@@ -1,3 +1,4 @@
+#encoding=utf-8
 import sys
 import jieba
 import jieba.posseg as pseg
