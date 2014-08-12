@@ -29,6 +29,22 @@
         #main-block {
             height: 100vh;
         }
+        .image-wrap {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 33vh;
+        }
+        .image-inner {
+            position: absolute;
+            top: -9999px;
+            bottom: -9999px;
+            left: -9999px;
+            right: -9999px;
+            margin: auto;
+            width: 100%;
+        }
+
         </style>
         <!-- Vendor js -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -115,7 +131,10 @@
             <div class="drawer-overlay">
                 <main id="main-block" class="site-masthead" role="main">
                     <div class="container">
-                        <span class="text-icon text-icon-lg text-icon-outline">D</span>
+                        <!--<span class="text-icon text-icon-lg text-icon-outline">D</span>-->
+                        <div class="image-wrap">
+                            <img class="image-inner" src="https://www.petfinder.com/wp-content/uploads/2012/11/99059361-choose-cat-litter-632x475.jpg" />
+                        </div>
                     </div><!-- /.container -->
                 </main>
             </div>
