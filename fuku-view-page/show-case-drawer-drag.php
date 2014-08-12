@@ -156,6 +156,7 @@
 
                         console.log(ev);
                         console.log('swipedown');
+                        photo_swipedown();
 
                     })
 
