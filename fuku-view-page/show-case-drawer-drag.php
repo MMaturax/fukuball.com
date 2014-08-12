@@ -196,7 +196,7 @@
                         <div class="image-overlay"></div>
                     </div>
                     <div class="image-wrap image-wrap-rank-bottom height-transition" data-card="4">
-                        <img class="image-inner" src="http://3.bp.blogspot.com/-RyZv8WlFKdk/TiZ4JpI4MZI/AAAAAAAAFoY/nlzNrzO-8ds/s1600/DSC03991.JPG" />
+                        <img class="image-inner" src="http://www.maisonminervois.com/wp-content/gallery/local-scenery/160520092492.jpg" />
                         <div class="image-overlay"></div>
                     </div>
                 </main>
