@@ -109,6 +109,9 @@
 
             $(document).ready(function(){
 
+                var current_card = 1;
+                var card_num = 4;
+
                 function menu_close() {
                     $("#drawer").drawer("close");
                 }
@@ -118,17 +121,35 @@
                 }
 
                 function photo_swipeup() {
-                    $(".image-wrap-rank1").removeClass('image-wrap-rank1').addClass('image-wrap-rank-top');
-                    $(".image-wrap-rank2").removeClass('image-wrap-rank2').addClass('image-wrap-rank1');
-                    $(".image-wrap-rank3").removeClass('image-wrap-rank3').addClass('image-wrap-rank2');
-                    $(".image-wrap-rank-bottom").first().removeClass('image-wrap-rank-bottom').addClass('image-wrap-rank3');
+
+                    if ((card_num-current_card)<3) {
+
+                    } else {
+
+                        $(".image-wrap-rank1").removeClass('image-wrap-rank1').addClass('image-wrap-rank-top');
+                        $(".image-wrap-rank2").removeClass('image-wrap-rank2').addClass('image-wrap-rank1');
+                        $(".image-wrap-rank3").removeClass('image-wrap-rank3').addClass('image-wrap-rank2');
+                        $(".image-wrap-rank-bottom").first().removeClass('image-wrap-rank-bottom').addClass('image-wrap-rank3');
+                        current_card = current_card+1;
+
+                    }
+
                 }
 
                 function photo_swipedown() {
-                    $(".image-wrap-rank3").removeClass('image-wrap-rank3').addClass('image-wrap-rank-bottom');
-                    $(".image-wrap-rank2").removeClass('image-wrap-rank2').addClass('image-wrap-rank3');
-                    $(".image-wrap-rank1").removeClass('image-wrap-rank1').addClass('image-wrap-rank2');
-                    $(".image-wrap-rank-top").last().removeClass('image-wrap-rank-top').addClass('image-wrap-rank1');
+
+                    if (current_card==1) {
+
+                    } else {
+
+                        $(".image-wrap-rank3").removeClass('image-wrap-rank3').addClass('image-wrap-rank-bottom');
+                        $(".image-wrap-rank2").removeClass('image-wrap-rank2').addClass('image-wrap-rank3');
+                        $(".image-wrap-rank1").removeClass('image-wrap-rank1').addClass('image-wrap-rank2');
+                        $(".image-wrap-rank-top").last().removeClass('image-wrap-rank-top').addClass('image-wrap-rank1');
+                        current_card = current_card-1;
+
+                    }
+
                 }
 
                 $('#drawer').drawer();
