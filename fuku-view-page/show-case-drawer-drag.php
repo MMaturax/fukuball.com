@@ -28,6 +28,8 @@
         }
         #main-block {
             height: 100vh;
+            margin: 0px;
+            padding: 0px;
         }
         .image-wrap {
             position: relative;
@@ -130,12 +132,10 @@
             </div>
             <div class="drawer-overlay">
                 <main id="main-block" class="site-masthead" role="main">
-                    <div class="container">
-                        <!--<span class="text-icon text-icon-lg text-icon-outline">D</span>-->
-                        <div class="image-wrap">
-                            <img class="image-inner" src="https://www.petfinder.com/wp-content/uploads/2012/11/99059361-choose-cat-litter-632x475.jpg" />
-                        </div>
-                    </div><!-- /.container -->
+                    <!--<span class="text-icon text-icon-lg text-icon-outline">D</span>-->
+                    <div class="image-wrap">
+                        <img class="image-inner" src="https://www.petfinder.com/wp-content/uploads/2012/11/99059361-choose-cat-litter-632x475.jpg" />
+                    </div>
                 </main>
             </div>
         </div><!-- /.site-wrapper -->
