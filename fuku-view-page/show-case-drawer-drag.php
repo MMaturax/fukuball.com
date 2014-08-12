@@ -18,6 +18,9 @@
         <!-- drawer CSS -->
         <link rel="stylesheet" href="/public/drawer/dist/css/drawer.css">
         <style>
+        document.ontouchmove = function(event){
+            event.preventDefault();
+        }
         body {
             background-color: #eee;
             background-image: url('/public/image/background/linen.jpg');
