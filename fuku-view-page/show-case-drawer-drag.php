@@ -77,6 +77,9 @@
             box-shadow: rgb(9, 8, 9) 2px 2px 50px inset, rgb(9, 8, 9) -1px -1px 70px inset;
         }
         .image-overlay h1{
+            display: none;
+        }
+        .image-wrap-rank1 .image-overlay h1, .image-wrap-rank100 .image-overlay h1, .image-wrap-rank70 .image-overlay h1{
             display: table-cell;
             vertical-align: middle;
             text-align:center;
@@ -95,8 +98,8 @@
         <script>
 
             document.ontouchmove = function(event){
-    event.preventDefault();
-}
+                event.preventDefault();
+            }
 
             $(document).ready(function(){
 
