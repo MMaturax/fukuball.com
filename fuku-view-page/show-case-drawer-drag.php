@@ -31,6 +31,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- drawer js -->
         <script src="/public/drawer/dist/js/drawer.js"></script>
+        <script src="/public/javascript/hammer/hammer.min.js"></script>
         <script>
 
           var chengeClass = function(valClass) {
@@ -53,19 +54,36 @@
             }
           };
 
-          $(document).ready(function(){
+            function mainSwipeLeft () {
 
-            $('#drawer').drawer();
+                console.log('mainSwipeLeft');
 
-            $('.js-trigger').click(function(){
-              var selectVal = $('.js-select').val();
-              chengeClass(selectVal);
+            }
+
+            function mainSwipeRight () {
+
+                console.log('mainSwipeRight');
+
+            }
+
+            $(document).ready(function(){
+
+                $('#drawer').drawer();
+
+                $('.js-trigger').click(function(){
+                  var selectVal = $('.js-select').val();
+                  chengeClass(selectVal);
+                });
+                $('.js-select').change(function(){
+                  var valClass = $(this).val();
+                  chengeClass(valClass);
+                });
+
+                var main_block = Hammer($('#main-block'));
+                main_block.on("swipeleft", mainSwipeLeft);
+                main_block.on("swiperight", mainSwipeRight);
+
             });
-            $('.js-select').change(function(){
-              var valClass = $(this).val();
-              chengeClass(valClass);
-            });
-          });
 
         </script>
     </head>
@@ -87,7 +105,7 @@
                 </nav>
             </div>
             <div class="drawer-overlay">
-                <main class="site-masthead" role="main">
+                <main id="main-block" class="site-masthead" role="main">
                     <div class="container">
                         <span class="text-icon text-icon-lg text-icon-outline">D</span>
                         <h1>drawer</h1>
