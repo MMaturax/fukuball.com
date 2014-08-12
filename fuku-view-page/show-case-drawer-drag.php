@@ -76,8 +76,13 @@
             box-shadow: rgb(9, 8, 9) 2px 2px 50px inset, rgb(9, 8, 9) -1px -1px 70px inset;
         }
         .image-overlay h1{
-            margin-top: auto;
-            margin-bottom: auto;
+            position: absolute;
+            top: -9999px;
+            bottom: -9999px;
+            left: -9999px;
+            right: -9999px;
+            margin: auto;
+            width: 100%;
         }
         .height-transition {
             -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
