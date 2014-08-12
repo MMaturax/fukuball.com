@@ -160,6 +160,10 @@ class ShowCaseViewController
 
       switch ($action_level_one_id) {
 
+      case 'drawer-drag':
+         require_once SITE_ROOT.'/fuku-view-page/show-case-drawer-drag.php';
+         break;
+
       case 'color-quantization':
 
          $page_title = 'Color Quantization | Show Case';
