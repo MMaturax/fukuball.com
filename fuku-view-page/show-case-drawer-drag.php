@@ -31,7 +31,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- drawer js -->
         <script src="/public/drawer/dist/js/drawer.js"></script>
-        <script src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+        <script src="/public/javascript/jquery.hammer/jquery.hammer-full.min.js"></script>
         <script>
 
           var chengeClass = function(valClass) {
@@ -79,9 +79,21 @@
                   chengeClass(valClass);
                 });
 
-                var main_block = Hammer($('#main-block'));
-                main_block.on("swipeleft", mainSwipeLeft);
-                main_block.on("swiperight", mainSwipeRight);
+                var hammer_options = {};
+                $("#main-block")
+                    .hammer(hammer_options)
+                    .on("swipeleft", function(ev) {
+
+                        console.log(ev);
+                        console.log('swipeleft');
+
+                    })
+                    .on("swiperight", function(ev) {
+
+                        console.log(ev);
+                        console.log('swiperight');
+
+                    });
 
             });
 
