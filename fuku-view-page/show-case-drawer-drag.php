@@ -68,12 +68,16 @@
                 });
 
                 function menu_close() {
-                    $("#drawer").removeClass("drawer-right drawer-responsive").removeClass("drawer-left").drawer("close");
+                    $("#drawer").drawer("close");
                 }
 
                 function menu_open() {
-                    $("#drawer").removeClass("drawer-right drawer-responsive").addClass("drawer-left").drawer("open");
+                    $("#drawer").drawer("open");
                 }
+
+                $('.close-link').click(function(){
+                    menu_close();
+                });
 
                 var hammer_options = {};
                 $("#main-block")
@@ -105,12 +109,12 @@
             <div class="drawer-masta drawer-default drawer-masta-left">
                 <nav class="drawer-nav " role="navigation">
                     <div class="drawer-brand">
-                        <a href="#" class="drawer-toggle">Drawer</a>
+                        <a href="#" class="close-link">Drawer</a>
                     </div>
                     <ul class="nav drawer-nav-list">
-                        <li><a href="#" class="drawer-toggle">fukubal.com</a></li>
-                        <li><a href="#" class="drawer-toggle">Twitter @fukuball</a></li>
-                        <li><a href="#" class="drawer-toggle">GitHub @fukuball</a></li>
+                        <li><a href="#" class="close-link">fukubal.com</a></li>
+                        <li><a href="#" class="close-link">Twitter @fukuball</a></li>
+                        <li><a href="#" class="close-link">GitHub @fukuball</a></li>
                     </ul>
                 </nav>
             </div>
