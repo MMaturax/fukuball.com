@@ -78,15 +78,19 @@
         }
         .image-overlay h1{
             display: none;
+            text-align:center;
         }
         .image-wrap-rank1 .image-overlay h1, .image-wrap-rank100 .image-overlay h1, .image-wrap-rank70 .image-overlay h1{
             display: table-cell;
             vertical-align: middle;
-            text-align:center;
         }
         .height-transition {
             -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
             transition: height 1s;
+        }
+        .display-transition {
+            -webkit-transition: display 1s; /* For Safari 3.1 to 6.0 */
+            transition: display 1s;
         }
 
         </style>
@@ -247,19 +251,19 @@
                     <div class="image-wrap image-wrap-rank2 height-transition" data-card="2">
                         <img class="image-inner" src="http://1.bp.blogspot.com/-lHlvtP-3BVo/UDnzjd6qmTI/AAAAAAAAB74/xZGFxsUNe1M/s1600/Northern+Irelans+12+011.JPG" />
                         <div class="image-overlay">
-                            <h1 class="text-center">swipe up/down</h1>
+                            <h1 class="text-center display-transition">swipe up/down</h1>
                         </div>
                     </div>
                     <div class="image-wrap image-wrap-rank3 height-transition" data-card="3">
                         <img class="image-inner" src="http://3.bp.blogspot.com/-RyZv8WlFKdk/TiZ4JpI4MZI/AAAAAAAAFoY/nlzNrzO-8ds/s1600/DSC03991.JPG" />
                         <div class="image-overlay">
-                            <h1 class="text-center">swipe up/down</h1>
+                            <h1 class="text-center display-transition">swipe up/down</h1>
                         </div>
                     </div>
                     <div class="image-wrap image-wrap-rank-bottom height-transition" data-card="4">
                         <img class="image-inner" src="http://www.maisonminervois.com/wp-content/gallery/local-scenery/160520092492.jpg" />
                         <div class="image-overlay">
-                            <h1 class="text-center">swipe up/down</h1>
+                            <h1 class="text-center display-transition">swipe up/down</h1>
                         </div>
                     </div>
                 </main>
