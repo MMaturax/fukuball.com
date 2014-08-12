@@ -114,8 +114,15 @@
                 function photo_swipeup() {
                     $(".image-wrap-rank1").removeClass('image-wrap-rank1').addClass('image-wrap-rank-top');
                     $(".image-wrap-rank2").removeClass('image-wrap-rank2').addClass('image-wrap-rank1');
-                    $(".image-wrap-rank3").removeClass('image-wrap-rank3').addClass('image-wrap-rank1');
+                    $(".image-wrap-rank3").removeClass('image-wrap-rank3').addClass('image-wrap-rank2');
                     $(".image-wrap-rank-bottom").first().removeClass('image-wrap-rank-bottom').addClass('image-wrap-rank3');
+                }
+
+                function photo_swipedown() {
+                    $(".image-wrap-rank-top").last().removeClass('image-wrap-rank-top').addClass('image-wrap-rank-1');
+                    $(".image-wrap-rank1").removeClass('image-wrap-rank1').addClass('image-wrap-rank2');
+                    $(".image-wrap-rank2").removeClass('image-wrap-rank2').addClass('image-wrap-rank3');
+                    $(".image-wrap-rank3").removeClass('image-wrap-rank3').addClass('image-wrap-rank-bottom');
                 }
 
                 $('#drawer').drawer();
