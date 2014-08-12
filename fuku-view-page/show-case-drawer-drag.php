@@ -75,10 +75,6 @@
                     $("#drawer").removeClass("drawer-right drawer-responsive").addClass("drawer-left").drawer("open");
                 }
 
-                $('.close-link').click(function(){
-                    menu_close();
-                });
-
                 var hammer_options = {};
                 $("#main-block")
                     .hammer(hammer_options)
@@ -109,12 +105,12 @@
             <div class="drawer-masta drawer-default drawer-masta-left">
                 <nav class="drawer-nav " role="navigation">
                     <div class="drawer-brand">
-                        <a href="#" class="close-link">Drawer</a>
+                        <a href="#" class="drawer-toggle">Drawer</a>
                     </div>
                     <ul class="nav drawer-nav-list">
-                        <li><a href="#" class="close-link">fukubal.com</a></li>
-                        <li><a href="#" class="close-link">Twitter @fukuball</a></li>
-                        <li><a href="#" class="close-link">GitHub @fukuball</a></li>
+                        <li><a href="#" class="drawer-toggle">fukubal.com</a></li>
+                        <li><a href="#" class="drawer-toggle">Twitter @fukuball</a></li>
+                        <li><a href="#" class="drawer-toggle">GitHub @fukuball</a></li>
                     </ul>
                 </nav>
             </div>
