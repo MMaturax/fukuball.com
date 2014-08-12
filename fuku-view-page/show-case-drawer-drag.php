@@ -31,6 +31,9 @@
             margin: 0px;
             padding: 0px;
         }
+        .image-wrap-rank-top {
+            height: 0vh;
+        }
         .image-wrap-rank1 {
             height: 60vh;
         }
@@ -39,6 +42,9 @@
         }
         .image-wrap-rank3 {
             height: 20vh;
+        }
+        .image-wrap-rank-bottom {
+            height: 0vh;
         }
         .image-wrap {
             position: relative;
@@ -123,7 +129,20 @@
                         console.log('swiperight');
                         menu_open();
 
-                    });
+                    })
+                    .on("swipeup", function(ev) {
+
+                        console.log(ev);
+                        console.log('swipeup');
+
+
+                    })
+                    .on("swipedown", function(ev) {
+
+                        console.log(ev);
+                        console.log('swipedown');
+
+                    })
 
             });
 
@@ -149,15 +168,19 @@
             <div class="drawer-overlay">
                 <main id="main-block" class="site-masthead" role="main">
                     <!--<span class="text-icon text-icon-lg text-icon-outline">D</span>-->
-                    <div class="image-wrap image-wrap-rank1">
+                    <div class="image-wrap image-wrap-rank1" data-card="1">
                         <img class="image-inner" src="http://2.bp.blogspot.com/-9BVzWfjZ9ls/ThXn33BxsgI/AAAAAAAAAYY/aJdEf6xHGO0/s1600/IMG_0774.JPG" />
                         <div class="image-overlay"></div>
                     </div>
-                    <div class="image-wrap image-wrap-rank2">
+                    <div class="image-wrap image-wrap-rank2" data-card="2">
                         <img class="image-inner" src="http://1.bp.blogspot.com/-lHlvtP-3BVo/UDnzjd6qmTI/AAAAAAAAB74/xZGFxsUNe1M/s1600/Northern+Irelans+12+011.JPG" />
                         <div class="image-overlay"></div>
                     </div>
-                    <div class="image-wrap image-wrap-rank3">
+                    <div class="image-wrap image-wrap-rank3" data-card="3">
+                        <img class="image-inner" src="http://3.bp.blogspot.com/-RyZv8WlFKdk/TiZ4JpI4MZI/AAAAAAAAFoY/nlzNrzO-8ds/s1600/DSC03991.JPG" />
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="image-wrap image-wrap-rank-bottom" data-card="4">
                         <img class="image-inner" src="http://3.bp.blogspot.com/-RyZv8WlFKdk/TiZ4JpI4MZI/AAAAAAAAFoY/nlzNrzO-8ds/s1600/DSC03991.JPG" />
                         <div class="image-overlay"></div>
                     </div>
