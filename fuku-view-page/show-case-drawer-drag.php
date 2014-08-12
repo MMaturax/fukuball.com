@@ -26,6 +26,9 @@
         background-repeat: repeat-x;
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f56314, endColorstr=#d90034, GradientType=0);
         }
+        #main-block {
+            height: 100vh;
+        }
         </style>
         <!-- Vendor js -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
