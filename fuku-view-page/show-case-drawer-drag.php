@@ -213,9 +213,11 @@
             <div class="drawer-masta drawer-default drawer-masta-left">
                 <nav class="drawer-nav " role="navigation">
                     <div class="drawer-brand">
-                        <a href="#" class="close-link">Drawer Drag</a>
-                        <br>
-                        Please Swipe Up / Down To Change Image Display
+                        <a href="#" class="close-link">
+                            Drawer Drag
+                            <br />
+                            Please Swipe Up / Down To Change Image Display
+                        </a>
                     </div>
                     <ul class="nav drawer-nav-list">
                         <li><a href="/" class="close-link">fukubal.com</a></li>
