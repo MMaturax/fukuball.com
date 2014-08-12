@@ -213,11 +213,7 @@
             <div class="drawer-masta drawer-default drawer-masta-left">
                 <nav class="drawer-nav " role="navigation">
                     <div class="drawer-brand">
-                        <a href="#" class="close-link">
-                            Drawer Drag
-                            <br />
-                            Please Swipe Up / Down To Change Image Display
-                        </a>
+                        <a href="#" class="close-link">Drawer Drag</a>
                     </div>
                     <ul class="nav drawer-nav-list">
                         <li><a href="/" class="close-link">fukubal.com</a></li>
@@ -227,6 +223,7 @@
                         <li><a href="https://www.linkedin.com/in/fukuball" class="close-link">Linkedin @fukuball</a></li>
                         <li><a href="https://github.com/fukuball" class="close-link">Github @fukuball</a></li>
                         <li><a href="https://coderwall.com/fukuball" class="close-link">Coderwall @fukuball</a></li>
+                        <li><a href="#" class="close-link">Please Swipe Up / Down To Change Image Display</a></li>
                     </ul>
                 </nav>
             </div>
