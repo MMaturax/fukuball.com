@@ -54,18 +54,6 @@
             }
           };
 
-            function mainSwipeLeft () {
-
-                console.log('mainSwipeLeft');
-
-            }
-
-            function mainSwipeRight () {
-
-                console.log('mainSwipeRight');
-
-            }
-
             $(document).ready(function(){
 
                 $('#drawer').drawer();
@@ -86,12 +74,14 @@
 
                         console.log(ev);
                         console.log('swipeleft');
+                        $("#drawer").removeClass("drawer-right drawer-responsive").removeClass("drawer-left").drawer("close");
 
                     })
                     .on("swiperight", function(ev) {
 
                         console.log(ev);
                         console.log('swiperight');
+                        $("#drawer").removeClass("drawer-right drawer-responsive").addClass("drawer-left").drawer("open");
 
                     });
 
