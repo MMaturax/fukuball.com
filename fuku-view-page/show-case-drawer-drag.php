@@ -60,7 +60,7 @@
             position: absolute;
             top: 0px;
             left: 0px;
-            box-shadow: rgb(9, 8, 9) 24px 27px 45px inset, rgb(9, 8, 9) -1px -1px 170px inset;
+            box-shadow: rgb(9, 8, 9) 2px 2px 50px inset, rgb(9, 8, 9) -1px -1px 70px inset;
         }
 
         </style>
