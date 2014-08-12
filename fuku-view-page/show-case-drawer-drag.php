@@ -18,16 +18,8 @@
         <!-- drawer CSS -->
         <link rel="stylesheet" href="/public/drawer/dist/css/drawer.css">
         <style>
-        html {
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-        }
-
+        html, body {margin: 0; padding: 0; overflow: hidden}
         body {
-            height: 100%;
-            width: 100%;
-            overflow: auto;
             background-color: #eee;
             background-image: url('/public/image/background/linen.jpg');
             background-repeat: repeat;
@@ -87,25 +79,19 @@
         <script src="/public/javascript/jquery.hammer/jquery.hammer-full.min.js"></script>
         <script>
 
-          var chengeClass = function(valClass) {
-            switch(valClass) {
-              case 'drawer-left':
-                $("#drawer").removeClass("drawer-right drawer-responsive").addClass(valClass).drawer("open");
-                $('.js-trigger').attr('disabled', false);
-              break;
-              case 'drawer-right':
-                $("#drawer").removeClass("drawer-left drawer-responsive").addClass(valClass).drawer("open");
-                $('.js-trigger').attr('disabled', false);
-              break;
-              case 'drawer-left drawer-responsive':
-                $("#drawer").removeClass("drawer-right drawer-open").addClass(valClass).drawer("resize");
-                $('.js-trigger').attr('disabled', true);
-              break;
-              case 'drawer-right drawer-responsive':
-                $("#drawer").removeClass("drawer-left drawer-open").addClass(valClass).drawer("resize");
-                $('.js-trigger').attr('disabled', true);
-            }
-          };
+            document.body.addEventListener('touchmove', function(event) {
+      console.log(event.source);
+      //if (event.source == document.body)
+        event.preventDefault();
+    }, false);
+
+    window.onresize = function() {
+      $(document.body).width(window.innerWidth).height(window.innerHeight);
+    }
+
+    $(function() {
+      window.onresize();
+    });
 
             $(document).ready(function(){
 
