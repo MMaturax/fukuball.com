@@ -18,10 +18,16 @@
         <!-- drawer CSS -->
         <link rel="stylesheet" href="/public/drawer/dist/css/drawer.css">
         <style>
-        document.ontouchmove = function(event){
-            event.preventDefault();
+        html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
         }
+
         body {
+            height: 100%;
+            width: 100%;
+            overflow: auto;
             background-color: #eee;
             background-image: url('/public/image/background/linen.jpg');
             background-repeat: repeat;
