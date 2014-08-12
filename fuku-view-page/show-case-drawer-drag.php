@@ -68,7 +68,6 @@
             width: 100%;
         }
         .image-overlay {
-            display: table;
             width: 100%;
             height: 100%;
             position: absolute;
@@ -76,19 +75,10 @@
             left: 0px;
             box-shadow: rgb(9, 8, 9) 2px 2px 50px inset, rgb(9, 8, 9) -1px -1px 70px inset;
         }
-        .image-overlay h1{
-            display: none;
-        }
-        .image-wrap-rank1 .image-overlay h1, .image-wrap-rank100 .image-overlay h1, .image-wrap-rank70 .image-overlay h1{
-            display: table-cell;
-            vertical-align: middle;
-            text-align:center;
-        }
         .height-transition {
             -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
             transition: height 1s;
         }
-
 
         </style>
         <!-- Vendor js -->
@@ -234,6 +224,9 @@
                         <li><a href="https://github.com/fukuball" class="close-link">Github @fukuball</a></li>
                         <li><a href="https://coderwall.com/fukuball" class="close-link">Coderwall @fukuball</a></li>
                     </ul>
+                    <p>
+                        Please Swipe Up / Down To Change Image Display
+                    </p>
                 </nav>
             </div>
             <div class="drawer-overlay">
@@ -241,27 +234,19 @@
                     <!--<span class="text-icon text-icon-lg text-icon-outline">D</span>-->
                     <div class="image-wrap image-wrap-rank1 height-transition" data-card="1">
                         <img class="image-inner" src="http://2.bp.blogspot.com/-9BVzWfjZ9ls/ThXn33BxsgI/AAAAAAAAAYY/aJdEf6xHGO0/s1600/IMG_0774.JPG" />
-                        <div class="image-overlay">
-                            <h1 class="text-center">swipe up/down</h1>
-                        </div>
+                        <div class="image-overlay"></div>
                     </div>
                     <div class="image-wrap image-wrap-rank2 height-transition" data-card="2">
                         <img class="image-inner" src="http://1.bp.blogspot.com/-lHlvtP-3BVo/UDnzjd6qmTI/AAAAAAAAB74/xZGFxsUNe1M/s1600/Northern+Irelans+12+011.JPG" />
-                        <div class="image-overlay">
-                            <h1 class="text-center">swipe up/down</h1>
-                        </div>
+                        <div class="image-overlay"></div>
                     </div>
                     <div class="image-wrap image-wrap-rank3 height-transition" data-card="3">
                         <img class="image-inner" src="http://3.bp.blogspot.com/-RyZv8WlFKdk/TiZ4JpI4MZI/AAAAAAAAFoY/nlzNrzO-8ds/s1600/DSC03991.JPG" />
-                        <div class="image-overlay">
-                            <h1 class="text-center">swipe up/down</h1>
-                        </div>
+                        <div class="image-overlay"></div>
                     </div>
                     <div class="image-wrap image-wrap-rank-bottom height-transition" data-card="4">
                         <img class="image-inner" src="http://www.maisonminervois.com/wp-content/gallery/local-scenery/160520092492.jpg" />
-                        <div class="image-overlay">
-                            <h1 class="text-center">swipe up/down</h1>
-                        </div>
+                        <div class="image-overlay"></div>
                     </div>
                 </main>
             </div>
