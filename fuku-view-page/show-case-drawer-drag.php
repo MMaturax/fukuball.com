@@ -31,11 +31,19 @@
             margin: 0px;
             padding: 0px;
         }
+        .image-wrap .rank1 {
+            height: 60vh;
+        }
+        .image-wrap .rank2 {
+            height: 20vh;
+        }
+        .image-wrap .rank3 {
+            height: 20vh;
+        }
         .image-wrap {
             position: relative;
             overflow: hidden;
             width: 100%;
-            height: 33vh;
         }
         .image-inner {
             position: absolute;
@@ -133,8 +141,14 @@
             <div class="drawer-overlay">
                 <main id="main-block" class="site-masthead" role="main">
                     <!--<span class="text-icon text-icon-lg text-icon-outline">D</span>-->
-                    <div class="image-wrap">
-                        <img class="image-inner" src="https://www.petfinder.com/wp-content/uploads/2012/11/99059361-choose-cat-litter-632x475.jpg" />
+                    <div class="image-wrap rank1">
+                        <img class="image-inner" src="http://stylonica.com/wp-content/uploads/2014/03/cute-small-cat-wallpaper.jpg" />
+                    </div>
+                    <div class="image-wrap rank2">
+                        <img class="image-inner" src="http://2.bp.blogspot.com/-u-J3O3EJwJ0/UZuJ0ZjGH-I/AAAAAAAAAfw/r_dzaeXduVE/s1600/Cute-Cat.jpg" />
+                    </div>
+                    <div class="image-wrap rank3">
+                        <img class="image-inner" src="http://img2.wikia.nocookie.net/__cb20130812053537/houseofnight/images/8/8b/Cats.jpg" />
                     </div>
                 </main>
             </div>
