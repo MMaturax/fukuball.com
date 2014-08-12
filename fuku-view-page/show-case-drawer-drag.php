@@ -44,6 +44,15 @@
         .image-wrap-rank-bottom {
             height: 0vh;
         }
+        .image-wrap-rank70 {
+            height: 70vh;
+        }
+        .image-wrap-rank30 {
+            height: 30vh;
+        }
+        .image-wrap-rank100 {
+            height: 100vh;
+        }
         .image-wrap {
             position: relative;
             overflow: hidden;
@@ -98,7 +107,20 @@
 
                 function photo_swipeup() {
 
-                    if ((card_num-current_card)<3) {
+                    if ((card_num-current_card)==2) {
+
+                        $(".image-wrap-rank1").removeClass('image-wrap-rank1').addClass('image-wrap-rank-top');
+                        $(".image-wrap-rank2").removeClass('image-wrap-rank2').addClass('image-wrap-rank70');
+                        $(".image-wrap-rank3").removeClass('image-wrap-rank3').addClass('image-wrap-rank30');
+                        current_card = current_card+1;
+
+                    } else if ((card_num-current_card)==1) {
+
+                        $(".image-wrap-rank70").removeClass('image-wrap-rank70').addClass('image-wrap-rank-top');
+                        $(".image-wrap-rank30").removeClass('image-wrap-rank30').addClass('image-wrap-rank100');
+                        current_card = current_card+1;
+
+                    } else if ((card_num-current_card)==0) {
 
                     } else {
 
@@ -115,6 +137,19 @@
                 function photo_swipedown() {
 
                     if (current_card==1) {
+
+                    } else if ((card_num-current_card)==0) {
+
+                        $(".image-wrap-rank100").removeClass('image-wrap-rank100').addClass('image-wrap-rank30');
+                        $(".image-wrap-rank-top").last().removeClass('image-wrap-rank-top').addClass('image-wrap-rank70');
+                        current_card = current_card-1;
+
+                    } else if ((card_num-current_card)==1) {
+
+                        $(".image-wrap-rank30").removeClass('image-wrap-rank30').addClass('image-wrap-rank3');
+                        $(".image-wrap-rank70").removeClass('image-wrap-rank70').addClass('image-wrap-rank2');
+                        $(".image-wrap-rank-top").last().removeClass('image-wrap-rank-top').addClass('image-wrap-rank1');
+                        current_card = current_card-1;
 
                     } else {
 
