@@ -214,6 +214,8 @@
                 <nav class="drawer-nav " role="navigation">
                     <div class="drawer-brand">
                         <a href="#" class="close-link">Drawer Drag</a>
+                        <br>
+                        Please Swipe Up / Down To Change Image Display
                     </div>
                     <ul class="nav drawer-nav-list">
                         <li><a href="/" class="close-link">fukubal.com</a></li>
@@ -224,9 +226,6 @@
                         <li><a href="https://github.com/fukuball" class="close-link">Github @fukuball</a></li>
                         <li><a href="https://coderwall.com/fukuball" class="close-link">Coderwall @fukuball</a></li>
                     </ul>
-                    <p>
-                        Please Swipe Up / Down To Change Image Display
-                    </p>
                 </nav>
             </div>
             <div class="drawer-overlay">
