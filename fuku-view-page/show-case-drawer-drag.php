@@ -68,6 +68,7 @@
             width: 100%;
         }
         .image-overlay {
+            display: table;
             width: 100%;
             height: 100%;
             position: absolute;
@@ -76,13 +77,9 @@
             box-shadow: rgb(9, 8, 9) 2px 2px 50px inset, rgb(9, 8, 9) -1px -1px 70px inset;
         }
         .image-overlay h1{
-            position: absolute;
-            top: -9999px;
-            bottom: -9999px;
-            left: -9999px;
-            right: -9999px;
-            margin: auto;
-            width: 100%;
+            display: table-cell;
+            vertical-align: middle;
+            text-align:center;
         }
         .height-transition {
             -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
