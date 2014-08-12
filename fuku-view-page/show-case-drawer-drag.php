@@ -54,6 +54,9 @@
             margin: auto;
             width: 100%;
         }
+        .image-overlay {
+            box-shadow: rgb(9, 8, 9) 14px 17px 25px inset, rgb(9, 8, 9) -1px -1px 170px inset;
+        }
 
         </style>
         <!-- Vendor js -->
@@ -141,13 +144,13 @@
             <div class="drawer-overlay">
                 <main id="main-block" class="site-masthead" role="main">
                     <!--<span class="text-icon text-icon-lg text-icon-outline">D</span>-->
-                    <div class="image-wrap image-wrap-rank1">
+                    <div class="image-wrap image-wrap-rank1 image-overlay">
                         <img class="image-inner" src="http://2.bp.blogspot.com/-9BVzWfjZ9ls/ThXn33BxsgI/AAAAAAAAAYY/aJdEf6xHGO0/s1600/IMG_0774.JPG" />
                     </div>
-                    <div class="image-wrap image-wrap-rank2">
+                    <div class="image-wrap image-wrap-rank2 image-overlay">
                         <img class="image-inner" src="http://1.bp.blogspot.com/-lHlvtP-3BVo/UDnzjd6qmTI/AAAAAAAAB74/xZGFxsUNe1M/s1600/Northern+Irelans+12+011.JPG" />
                     </div>
-                    <div class="image-wrap image-wrap-rank3">
+                    <div class="image-wrap image-wrap-rank3 image-overlay">
                         <img class="image-inner" src="http://3.bp.blogspot.com/-RyZv8WlFKdk/TiZ4JpI4MZI/AAAAAAAAFoY/nlzNrzO-8ds/s1600/DSC03991.JPG" />
                     </div>
                 </main>
