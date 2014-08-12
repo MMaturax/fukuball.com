@@ -31,13 +31,13 @@
             margin: 0px;
             padding: 0px;
         }
-        .image-wrap .rank1 {
+        .image-wrap-rank1 {
             height: 60vh;
         }
-        .image-wrap .rank2 {
+        .image-wrap-rank2 {
             height: 20vh;
         }
-        .image-wrap .rank3 {
+        .image-wrap-rank3 {
             height: 20vh;
         }
         .image-wrap {
@@ -141,13 +141,13 @@
             <div class="drawer-overlay">
                 <main id="main-block" class="site-masthead" role="main">
                     <!--<span class="text-icon text-icon-lg text-icon-outline">D</span>-->
-                    <div class="image-wrap rank1">
+                    <div class="image-wrap image-wrap-rank1">
                         <img class="image-inner" src="http://stylonica.com/wp-content/uploads/2014/03/cute-small-cat-wallpaper.jpg" />
                     </div>
-                    <div class="image-wrap rank2">
+                    <div class="image-wrap image-wrap-rank2">
                         <img class="image-inner" src="http://2.bp.blogspot.com/-u-J3O3EJwJ0/UZuJ0ZjGH-I/AAAAAAAAAfw/r_dzaeXduVE/s1600/Cute-Cat.jpg" />
                     </div>
-                    <div class="image-wrap rank3">
+                    <div class="image-wrap image-wrap-rank3">
                         <img class="image-inner" src="http://img2.wikia.nocookie.net/__cb20130812053537/houseofnight/images/8/8b/Cats.jpg" />
                     </div>
                 </main>
