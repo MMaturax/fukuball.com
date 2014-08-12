@@ -18,13 +18,10 @@
         <!-- drawer CSS -->
         <link rel="stylesheet" href="/public/drawer/dist/css/drawer.css">
         <style>
-        .site-masthead {
-        background-color: #d90034;
-        background-image: -webkit-linear-gradient(45deg, #f56314 0%, #d90034 100%);
-        background-image: -o-linear-gradient(45deg, #f56314 0%, #d90034 100%);
-        background-image: linear-gradient(45deg, #f56314 0%, #d90034 100%);
-        background-repeat: repeat-x;
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f56314, endColorstr=#d90034, GradientType=0);
+        body {
+            background-color: #eee;
+            background-image: url('/public/image/background/linen.jpg');
+            background-repeat: repeat;
         }
         #main-block {
             height: 100vh;
@@ -119,10 +116,10 @@
                 }
 
                 function photo_swipedown() {
-                    $(".image-wrap-rank-top").last().removeClass('image-wrap-rank-top').addClass('image-wrap-rank-1');
-                    $(".image-wrap-rank1").removeClass('image-wrap-rank1').addClass('image-wrap-rank2');
-                    $(".image-wrap-rank2").removeClass('image-wrap-rank2').addClass('image-wrap-rank3');
                     $(".image-wrap-rank3").removeClass('image-wrap-rank3').addClass('image-wrap-rank-bottom');
+                    $(".image-wrap-rank2").removeClass('image-wrap-rank2').addClass('image-wrap-rank3');
+                    $(".image-wrap-rank1").removeClass('image-wrap-rank1').addClass('image-wrap-rank2');
+                    $(".image-wrap-rank-top").last().removeClass('image-wrap-rank-top').addClass('image-wrap-rank1');
                 }
 
                 $('#drawer').drawer();
