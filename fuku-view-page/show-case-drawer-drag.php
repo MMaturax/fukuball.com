@@ -31,7 +31,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- drawer js -->
         <script src="/public/drawer/dist/js/drawer.js"></script>
-        <script src="/public/javascript/hammer/hammer.min.js"></script>
+        <script src="http://hammerjs.github.io/dist/hammer.min.js"></script>
         <script>
 
           var chengeClass = function(valClass) {
