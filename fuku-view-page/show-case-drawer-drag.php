@@ -142,13 +142,13 @@
                 <main id="main-block" class="site-masthead" role="main">
                     <!--<span class="text-icon text-icon-lg text-icon-outline">D</span>-->
                     <div class="image-wrap image-wrap-rank1">
-                        <img class="image-inner" src="http://stylonica.com/wp-content/uploads/2014/03/cute-small-cat-wallpaper.jpg" />
+                        <img class="image-inner" src="http://2.bp.blogspot.com/-9BVzWfjZ9ls/ThXn33BxsgI/AAAAAAAAAYY/aJdEf6xHGO0/s1600/IMG_0774.JPG" />
                     </div>
                     <div class="image-wrap image-wrap-rank2">
-                        <img class="image-inner" src="http://2.bp.blogspot.com/-u-J3O3EJwJ0/UZuJ0ZjGH-I/AAAAAAAAAfw/r_dzaeXduVE/s1600/Cute-Cat.jpg" />
+                        <img class="image-inner" src="http://1.bp.blogspot.com/-lHlvtP-3BVo/UDnzjd6qmTI/AAAAAAAAB74/xZGFxsUNe1M/s1600/Northern+Irelans+12+011.JPG" />
                     </div>
                     <div class="image-wrap image-wrap-rank3">
-                        <img class="image-inner" src="http://img2.wikia.nocookie.net/__cb20130812053537/houseofnight/images/8/8b/Cats.jpg" />
+                        <img class="image-inner" src="http://3.bp.blogspot.com/-RyZv8WlFKdk/TiZ4JpI4MZI/AAAAAAAAFoY/nlzNrzO-8ds/s1600/DSC03991.JPG" />
                     </div>
                 </main>
             </div>
