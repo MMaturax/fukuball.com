@@ -58,15 +58,6 @@
 
                 $('#drawer').drawer();
 
-                $('.js-trigger').click(function(){
-                  var selectVal = $('.js-select').val();
-                  chengeClass(selectVal);
-                });
-                $('.js-select').change(function(){
-                  var valClass = $(this).val();
-                  chengeClass(valClass);
-                });
-
                 function menu_close() {
                     $("#drawer").drawer("close");
                 }
@@ -122,34 +113,8 @@
                 <main id="main-block" class="site-masthead" role="main">
                     <div class="container">
                         <span class="text-icon text-icon-lg text-icon-outline">D</span>
-                        <h1>drawer</h1>
-                        <p class="lead">jQuery plugin for displaying the drawer menu using CSS animations in the event of a trigger. Setting the position can be selected either the right or left. And also supports Responsive design.</p>
-                        <p class="center-block form-inline" style="max-width:480px">
-                            <select class="form-control input-lg js-select">
-                                <optgroup label="Basic">
-                                    <option value="drawer-left">Left Drawer</option>
-                                    <option value="drawer-right">Right Drawer</option>
-                                </optgroup>
-                                <optgroup label="Responsive">
-                                    <option value="drawer-left drawer-responsive">Left Drawer</option>
-                                    <option value="drawer-right drawer-responsive">Right Drawer</option>
-                                </optgroup>
-                            </select>
-                            <button class="btn btn-lg js-trigger" style="padding:10px 16px; background-color:#fff;color:#666;">Open</button>
-                        </p>
                     </div><!-- /.container -->
                 </main>
-                <div class="site-body">
-                    <div class="site-body-inner container">
-                        <div class="site-section">
-                        </div>
-                    </div><!-- /.container -->
-                </div><!-- /.site-body -->
-                <footer class="site-footer">
-                    <div class="site-footer-inner container">
-                        <h2>Drawer Drag</h2>
-                    </div>
-                </footer>
             </div>
         </div><!-- /.site-wrapper -->
     </body>
