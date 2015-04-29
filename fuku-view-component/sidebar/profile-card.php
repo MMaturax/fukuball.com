@@ -86,6 +86,12 @@
             </span>
             <div>Drawer Drag</div>
          </a>
+         <a title="Jieba PHP" class="team-link track" href="http://jieba-php.fukuball.com" target="_blank">
+            <span class="team-avatar">
+               <img src="/public/image/avatar4.jpg" height="22" width="22">
+            </span>
+            <div>Jieba PHP 中文斷詞</div>
+         </a>
          <a title="CKIP-Client" class="team-link track" href="http://www.fukuball.com/ckip-client/" target="_blank">
             <span class="team-avatar">
                <img src="/public/image/avatar4.jpg" height="22" width="22">
