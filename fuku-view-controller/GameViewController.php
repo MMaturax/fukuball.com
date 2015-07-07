@@ -112,7 +112,15 @@ class GameViewController
          global $current_page_full_url;
 
          $rock_paper_scissors = array('rock', 'paper', 'scissors');
-         $random_get = $rock_paper_scissors[array_rand($rock_paper_scissors)];
+         //$random_get = $rock_paper_scissors[array_rand($rock_paper_scissors)];
+
+         $q = $_GET['q'];
+         if (is_int($q)) {
+            $mode_num = $q%3;
+            $random_get = $rock_paper_scissors[$mode_num];
+         } else {
+            $random_get = $rock_paper_scissors[0];
+         }
 
          ?>
          <!DOCTYPE html>
