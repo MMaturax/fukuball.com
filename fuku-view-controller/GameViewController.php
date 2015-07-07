@@ -106,6 +106,9 @@ class GameViewController
 
       case 'rock-paper-scissors':
 
+         $return_data
+            = exec('curl -X POST -F "id=http://www.fukuball.com/game/rock-paper-scissors" -F "scrape=true" "https://graph.facebook.com"');
+
          global $current_page_full_url;
 
          $rock_paper_scissors = array('rock', 'paper', 'scissors');
@@ -140,6 +143,7 @@ class GameViewController
             <body class="row-fluid p-a-0">
                <?php
                //include_once SITE_ROOT."/fuku-view-component/header/header.php";
+               var_dump($return_data);
                ?>
                <div class="text-center m-t-10">
                   <img src="/public/image/game/<?php echo $random_get; ?>.png" />
