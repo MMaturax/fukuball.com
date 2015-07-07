@@ -83,12 +83,12 @@ class GameViewController
                ?>
                <link href="/public/stylesheet/home.css?v=0.0.11" rel="stylesheet">
                <?php
-               include_once SITE_ROOT."/fuku-view-component/javascript-include.php";
+               //include_once SITE_ROOT."/fuku-view-component/javascript-include.php";
                ?>
             </head>
             <body class="row-fluid p-a-0">
                <?php
-               include_once SITE_ROOT."/fuku-view-component/header/header.php";
+               //include_once SITE_ROOT."/fuku-view-component/header/header.php";
                ?>
                <div>
                   <?php
@@ -96,8 +96,8 @@ class GameViewController
                   ?>
                </div>
                <?php
-               include_once SITE_ROOT."/fuku-view-component/footer/footer.php";
-               include_once SITE_ROOT."/fuku-view-component/javascript-include-bottom.php";
+               //include_once SITE_ROOT."/fuku-view-component/footer/footer.php";
+               //include_once SITE_ROOT."/fuku-view-component/javascript-include-bottom.php";
                ?>
             </body>
          </html>
@@ -105,6 +105,10 @@ class GameViewController
          break;
 
       case 'rock-paper-scissors':
+
+         $rock_paper_scissors = array('rock', 'paper', 'scissors');
+         $random_get = $rock_paper_scissors[array_rand($rock_paper_scissors)];
+
          ?>
          <!DOCTYPE html>
          <html lang='en' xmlns:fb='https://www.facebook.com/2008/fbml' xmlns:og='http://ogp.me/ns#'>
@@ -116,21 +120,19 @@ class GameViewController
                ?>
                <link href="/public/stylesheet/home.css?v=0.0.11" rel="stylesheet">
                <?php
-               include_once SITE_ROOT."/fuku-view-component/javascript-include.php";
+               //include_once SITE_ROOT."/fuku-view-component/javascript-include.php";
                ?>
             </head>
             <body class="row-fluid p-a-0">
                <?php
-               include_once SITE_ROOT."/fuku-view-component/header/header.php";
+               //include_once SITE_ROOT."/fuku-view-component/header/header.php";
                ?>
                <div>
-                  <?php
-                  //include_once SITE_ROOT.$yield_path;
-                  ?>
+                  <img src="/public/image/game/<?php echo $random_get; ?>.png" />
                </div>
                <?php
-               include_once SITE_ROOT."/fuku-view-component/footer/footer.php";
-               include_once SITE_ROOT."/fuku-view-component/javascript-include-bottom.php";
+               //include_once SITE_ROOT."/fuku-view-component/footer/footer.php";
+               //include_once SITE_ROOT."/fuku-view-component/javascript-include-bottom.php";
                ?>
             </body>
          </html>
