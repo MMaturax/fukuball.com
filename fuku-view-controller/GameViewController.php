@@ -106,10 +106,6 @@ class GameViewController
 
       case 'rock-paper-scissors':
 
-         function isInteger($input){
-            return(ctype_digit(strval($input)));
-         }
-
          //$return_data
          //= exec('curl -X POST -F "id=http://www.fukuball.com/game/rock-paper-scissors" -F "scrape=true" "https://graph.facebook.com"');
 
@@ -119,12 +115,8 @@ class GameViewController
          //$random_get = $rock_paper_scissors[array_rand($rock_paper_scissors)];
 
          $q = $_GET['q'];
-         if (isInteger($q)) {
-            $mode_num = $q%3;
-            $random_get = $rock_paper_scissors[$mode_num];
-         } else {
-            $random_get = $rock_paper_scissors[0];
-         }
+         $mode_num = hexdec($q)%3;
+         $random_get = $rock_paper_scissors[$mode_num];
 
          ?>
          <!DOCTYPE html>
