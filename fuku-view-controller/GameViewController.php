@@ -72,12 +72,34 @@ class GameViewController
       switch ($action_level_one_id) {
 
       case 'roll-a-dice':
+
+         global $current_page_full_url;
+
+         $dice = array('dice1', 'dice2', 'dice3', 'dice4', 'dice5', 'dice6');
+
+         $q = $_GET['q'];
+         $hash_value = substr(base_convert(md5($q), 16, 10) , -5);
+         $mode_num = intval($hash_value)%6;
+         $random_get = $rock_paper_scissors[$mode_num];
+
          ?>
          <!DOCTYPE html>
          <html lang='en' xmlns:fb='https://www.facebook.com/2008/fbml' xmlns:og='http://ogp.me/ns#'>
             <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+               <meta charset="utf-8" />
+               <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+               <title>Roll a Dice</title>
+               <meta name="description" content="Random Roll a Dice" />
+               <meta name="author" content="Fukuball" />
+               <meta name="keywords" content="fukuball, Fukuball Lin, 林志傑" />
+               <meta name="twitter:card" content="summary" />
+               <meta name="twitter:site" content="@fukuball" />
+               <meta property="og:title" content="Roll a Dice" />
+               <meta property="og:type" content="website" />
+               <meta property="og:url" content="<?php echo $current_page_full_url; ?>" />
+               <meta property="og:image" content="<?php echo SITE_HOST; ?>/public/image/game/<?php echo $random_get; ?>.png" />
+               <meta property="og:description" content="Random Roll a Dice" />
                <?php
-               include_once SITE_ROOT."/fuku-view-component/meta-include.php";
                include_once SITE_ROOT."/fuku-view-component/icon-include.php";
                include_once SITE_ROOT."/fuku-view-component/style-include.php";
                ?>
@@ -90,10 +112,8 @@ class GameViewController
                <?php
                //include_once SITE_ROOT."/fuku-view-component/header/header.php";
                ?>
-               <div>
-                  <?php
-                  //include_once SITE_ROOT.$yield_path;
-                  ?>
+               <div class="text-center m-t-10">
+                  <img src="/public/image/game/<?php echo $random_get; ?>.png" />
                </div>
                <?php
                //include_once SITE_ROOT."/fuku-view-component/footer/footer.php";
@@ -106,13 +126,9 @@ class GameViewController
 
       case 'rock-paper-scissors':
 
-         //$return_data
-         //= exec('curl -X POST -F "id=http://www.fukuball.com/game/rock-paper-scissors" -F "scrape=true" "https://graph.facebook.com"');
-
          global $current_page_full_url;
 
          $rock_paper_scissors = array('rock', 'paper', 'scissors');
-         //$random_get = $rock_paper_scissors[array_rand($rock_paper_scissors)];
 
          $q = $_GET['q'];
          $hash_value = substr(base_convert(md5($q), 16, 10) , -5);
