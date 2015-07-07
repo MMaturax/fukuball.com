@@ -115,7 +115,7 @@ class GameViewController
          //$random_get = $rock_paper_scissors[array_rand($rock_paper_scissors)];
 
          $q = $_GET['q'];
-         $mode_num = hexdec($q)%3;
+         $mode_num = hexdec(md5($q))%3;
          $random_get = $rock_paper_scissors[$mode_num];
 
          ?>
