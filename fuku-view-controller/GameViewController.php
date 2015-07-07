@@ -72,11 +72,69 @@ class GameViewController
       switch ($action_level_one_id) {
 
       case 'roll-a-dice':
-         echo 'roll-a-dice';
+         ?>
+         <!DOCTYPE html>
+         <html lang='en' xmlns:fb='https://www.facebook.com/2008/fbml' xmlns:og='http://ogp.me/ns#'>
+            <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+               <?php
+               include_once SITE_ROOT."/fuku-view-component/meta-include.php";
+               include_once SITE_ROOT."/fuku-view-component/icon-include.php";
+               include_once SITE_ROOT."/fuku-view-component/style-include.php";
+               ?>
+               <link href="/public/stylesheet/home.css?v=0.0.11" rel="stylesheet">
+               <?php
+               include_once SITE_ROOT."/fuku-view-component/javascript-include.php";
+               ?>
+            </head>
+            <body class="row-fluid p-a-0">
+               <?php
+               include_once SITE_ROOT."/fuku-view-component/header/header.php";
+               ?>
+               <div>
+                  <?php
+                  //include_once SITE_ROOT.$yield_path;
+                  ?>
+               </div>
+               <?php
+               include_once SITE_ROOT."/fuku-view-component/footer/footer.php";
+               include_once SITE_ROOT."/fuku-view-component/javascript-include-bottom.php";
+               ?>
+            </body>
+         </html>
+         <?php
          break;
 
       case 'rock-paper-scissors':
-         echo 'rock-paper-scissors';
+         ?>
+         <!DOCTYPE html>
+         <html lang='en' xmlns:fb='https://www.facebook.com/2008/fbml' xmlns:og='http://ogp.me/ns#'>
+            <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+               <?php
+               include_once SITE_ROOT."/fuku-view-component/meta-include.php";
+               include_once SITE_ROOT."/fuku-view-component/icon-include.php";
+               include_once SITE_ROOT."/fuku-view-component/style-include.php";
+               ?>
+               <link href="/public/stylesheet/home.css?v=0.0.11" rel="stylesheet">
+               <?php
+               include_once SITE_ROOT."/fuku-view-component/javascript-include.php";
+               ?>
+            </head>
+            <body class="row-fluid p-a-0">
+               <?php
+               include_once SITE_ROOT."/fuku-view-component/header/header.php";
+               ?>
+               <div>
+                  <?php
+                  //include_once SITE_ROOT.$yield_path;
+                  ?>
+               </div>
+               <?php
+               include_once SITE_ROOT."/fuku-view-component/footer/footer.php";
+               include_once SITE_ROOT."/fuku-view-component/javascript-include-bottom.php";
+               ?>
+            </body>
+         </html>
+         <?php
          break;
 
       default:
