@@ -140,7 +140,6 @@ class GameViewController
             <body class="row-fluid p-a-0">
                <?php
                //include_once SITE_ROOT."/fuku-view-component/header/header.php";
-               var_dump($return_data);
                ?>
                <div class="text-center m-t-10">
                   <img src="/public/image/game/<?php echo $random_get; ?>.png" />
