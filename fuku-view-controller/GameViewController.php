@@ -106,8 +106,8 @@ class GameViewController
 
       case 'rock-paper-scissors':
 
-         $return_data
-            = exec('curl -X POST -F "id=http://www.fukuball.com/game/rock-paper-scissors" -F "scrape=true" "https://graph.facebook.com"');
+         //$return_data
+         //= exec('curl -X POST -F "id=http://www.fukuball.com/game/rock-paper-scissors" -F "scrape=true" "https://graph.facebook.com"');
 
          global $current_page_full_url;
 
