@@ -105,13 +105,13 @@ class GameViewController
                //include_once SITE_ROOT."/fuku-view-component/header/header.php";
                ?>
                <div class="text-center m-t-10">
-                  <button class="btn btn-large" type="button" style="margin-top: 100px;">
+                  <button id="find-ru-ru-btn" class="btn btn-large" type="button" style="margin-top: 100px;">
                      我找嚕嚕
                   </button>
                </div>
-               <div id="ruru-block" class="hide bounceInUp animated" style="position: fixed; top: 48px; z-index: 1;">
+               <div id="ru-ru-block" class="hide bounceInUp animated" style="position: fixed; top: 50px; z-index: 1;">
                   <div class="text-center">
-                     <img src="/public/game/ruru.png" />
+                     <img src="/public/image/game/ruru.png" />
                   </div>
                </div>
                <?php
@@ -119,6 +119,14 @@ class GameViewController
                //include_once SITE_ROOT."/fuku-view-component/javascript-include-bottom.php";
                ?>
             </body>
+            <script>
+            $("#find-ru-ru-btn").on("click", function(){
+               $('#ru-ru-block').removeClass('hide');
+               /*if ($('#login-page').hasClass('bounceOutDown')) {
+                  $('#login-page').removeClass('bounceOutDown').addClass('bounceInUp');
+               }*/
+            });
+            </script>
          </html>
          <?php
         break;
