@@ -88,7 +88,7 @@ class GameViewController
                <meta property="og:title" content="我找嚕嚕" />
                <meta property="og:type" content="website" />
                <meta property="og:url" content="<?php echo $current_page_full_url; ?>" />
-               <meta property="og:image" content="<?php echo SITE_HOST; ?>/public/image/avatar4.jpg" />
+               <meta property="og:image" content="<?php echo SITE_HOST; ?>/public/image/avatar5.jpg" />
                <meta property="og:description" content="我找嚕嚕" />
                <?php
                include_once SITE_ROOT."/fuku-view-component/icon-include.php";
