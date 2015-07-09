@@ -105,11 +105,11 @@ class GameViewController
                //include_once SITE_ROOT."/fuku-view-component/header/header.php";
                ?>
                <div class="text-center m-t-10">
-                  <button id="find-ru-ru-btn" class="btn btn-large" type="button" style="margin-top: 100px;">
+                  <button id="find-ru-ru-btn" class="btn btn-large" type="button" style="margin-top: 200px;">
                      我找嚕嚕
                   </button>
                </div>
-               <div id="ru-ru-block" class="hide bounceInUp animated" style="position: fixed; top: 50px; z-index: 1;">
+               <div id="ru-ru-block" class="hide bounceInUp animated" style="position: fixed; top: 50px; z-index: 1; width: 100%;">
                   <div class="text-center">
                      <img src="/public/image/game/ruru.png" />
                   </div>
