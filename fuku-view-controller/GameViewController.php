@@ -96,7 +96,7 @@ class GameViewController
                ?>
                <link href="/public/stylesheet/home.css?v=0.0.11" rel="stylesheet">
                <?php
-               //include_once SITE_ROOT."/fuku-view-component/javascript-include.php";
+               include_once SITE_ROOT."/fuku-view-component/javascript-include.php";
                ?>
             </head>
             <body class="row-fluid p-a-0">
@@ -104,7 +104,9 @@ class GameViewController
                //include_once SITE_ROOT."/fuku-view-component/header/header.php";
                ?>
                <div class="text-center m-t-10">
-                test
+                  <button class="btn btn-large" type="button">
+                     我找嚕嚕
+                  </button>
                </div>
                <?php
                //include_once SITE_ROOT."/fuku-view-component/footer/footer.php";
