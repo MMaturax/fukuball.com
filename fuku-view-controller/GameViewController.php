@@ -72,7 +72,9 @@ class GameViewController
       switch ($action_level_one_id) {
 
       case 'find-ru-ru':
-        ?>
+
+         global $current_page_full_url;
+         ?>
          <!DOCTYPE html>
          <html lang='en' xmlns:fb='https://www.facebook.com/2008/fbml' xmlns:og='http://ogp.me/ns#'>
             <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
