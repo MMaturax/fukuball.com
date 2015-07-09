@@ -109,7 +109,7 @@ class GameViewController
                      我找嚕嚕
                   </button>
                </div>
-               <div id="ru-ru-block" class="hide bounceInUp animated" style="position: fixed; top: 50px; z-index: 1; width: 100%;">
+               <div id="ru-ru-block" class="hide bounceInUp animated" style="position: fixed; top: 0px; z-index: 1; width: 100%;">
                   <div class="text-center">
                      <img src="/public/image/game/ruru.png" />
                   </div>
