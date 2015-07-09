@@ -120,15 +120,36 @@ class GameViewController
                ?>
             </body>
             <script>
+
+            var ruru_action = ["hide", "hide", "hide", "stay", "hide", "hide", "hide", "stay"];
+
             $("#find-ru-ru-btn").on("click", function(){
-               $('#ru-ru-block').removeClass('hide');
-               if ($('#ru-ru-block').hasClass('bounceOutDown')) {
-                  $('#ru-ru-block').removeClass('bounceOutDown').addClass('bounceInUp');
+
+               var rand_action = ruru_action[Math.floor(Math.random() * ruru_action.length)];
+
+               if (rand_action=='hide') {
+                  $('#ru-ru-block').removeClass('hide');
+                  if ($('#ru-ru-block').hasClass('bounceOutDown')) {
+                     $('#ru-ru-block').removeClass('bounceOutDown').addClass('bounceInUp');
+                  }
+                  setTimeout(function(){
+                     $('#ru-ru-block').removeClass('bounceInUp').addClass('bounceOutDown');
+                  }, 500);
+
+               } else {
+                  $('#ru-ru-block').removeClass('hide');
+                  if ($('#ru-ru-block').hasClass('bounceOutDown')) {
+                     $('#ru-ru-block').removeClass('bounceOutDown').addClass('bounceInUp');
+                  }
                }
+
+
             });
+
             $("#ru-ru-image").on("click", function(){
                $('#ru-ru-block').removeClass('bounceInUp').addClass('bounceOutDown');
             });
+
             </script>
          </html>
          <?php
