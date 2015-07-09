@@ -111,7 +111,7 @@ class GameViewController
                </div>
                <div id="ru-ru-block" class="hide bounceInUp animated" style="position: fixed; top: 0px; z-index: 1; width: 100%;">
                   <div class="text-center">
-                     <img src="/public/image/game/ruru.png" />
+                     <img id="ru-ru-image" src="/public/image/game/ruru.png" />
                   </div>
                </div>
                <?php
@@ -122,9 +122,12 @@ class GameViewController
             <script>
             $("#find-ru-ru-btn").on("click", function(){
                $('#ru-ru-block').removeClass('hide');
-               /*if ($('#login-page').hasClass('bounceOutDown')) {
-                  $('#login-page').removeClass('bounceOutDown').addClass('bounceInUp');
-               }*/
+               if ($('#ru-ru-block').hasClass('bounceOutDown')) {
+                  $('#ru-ru-block').removeClass('bounceOutDown').addClass('bounceInUp');
+               }
+            });
+            $("#ru-ru-imag").on("click", function(){
+               $('#ru-ru-block').removeClass('bounceInUp').addClass('bounceOutDown');
             });
             </script>
          </html>
