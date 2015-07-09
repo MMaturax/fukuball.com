@@ -109,7 +109,7 @@ class GameViewController
                      我找嚕嚕
                   </button>
                </div>
-               <div id="ru-ru-block" class="hide bounceInUp animated" style="position: fixed; top: 0px; z-index: 1; width: 100%;">
+               <div id="ru-ru-block" class="hide animated" style="position: fixed; top: 0px; z-index: 1; width: 100%;">
                   <div class="text-center">
                      <img id="ru-ru-image" src="/public/image/game/ruru.png" style="cursor:pointer;" />
                   </div>
@@ -121,14 +121,18 @@ class GameViewController
             </body>
             <script>
 
-            var ruru_action = ["hide", "hide", "hide", "stay", "hide", "hide", "hide", "stay"];
+            var ruru_action = ["hide", "hide", "hide", "stay", "hide", "hide", "hide", "stay", "hide", "hide", "hide"];
+            var in_action = ["bounceIn", "bounceInDown", "bounceInLeft", "bounceInRight", "bounceInUp", "fadeIn", "fadeInDown", "fadeInDownBig", "fadeInLeft", "fadeInLeftBig", "fadeInRight", "fadeInRightBig", "fadeInUp", "fadeInUpBig", "flipInX", "flipInY", "lightSpeedIn", "rotateIn", "rotateInDownLeft", "rotateInDownRight", "rotateInUpLeft", "rotateInUpRight", "rollIn", "zoomIn", "zoomInDown", "zoomInLeft", "zoomInRight", "zoomInUp", "slideInDown", "slideInLeft", "slideInRight", "slideInUp"];
+            var out_action = ["bounceOut", "bounceOutDown", "bounceOutLeft", "bounceOutRight", "bounceOutUp", "fadeOut", "fadeOutDown", "fadeOutDownBig", "fadeOutLeft", "fadeOutLeftBig", "fadeOutRight", "fadeOutRightBig", "fadeOutUp", "fadeOutUpBig", "flipOutX", "flipOutY", "lightSpeedOut", "rotateOut", "rotateOutDownLeft", "rotateOutDownRight", "rotateOutUpLeft", "rotateOutUpRight", "rollOut", "zoomOut", "zoomOutDown", "zoomOutLeft", "zoomOutRight", "zoomOutUp", "slideOutDown", "slideOutLeft", "slideOutRight", "slideOutUp"];
 
             $("#find-ru-ru-btn").on("click", function(){
 
                var rand_action = ruru_action[Math.floor(Math.random() * ruru_action.length)];
+               var rand_in_action = in_action[Math.floor(Math.random() * in_action.length)];
+               var rand_out_action = out_action[Math.floor(Math.random() * out_action.length)];
 
                if (rand_action=='hide') {
-                  $('#ru-ru-block').removeClass('hide');
+                  $('#ru-ru-block').removeClass('hide').addClass('bounceInUp');
                   if ($('#ru-ru-block').hasClass('bounceOutDown')) {
                      $('#ru-ru-block').removeClass('bounceOutDown').addClass('bounceInUp');
                   }
@@ -137,7 +141,7 @@ class GameViewController
                   }, 500);
 
                } else {
-                  $('#ru-ru-block').removeClass('hide');
+                  $('#ru-ru-block').removeClass('hide').addClass('bounceInUp');
                   if ($('#ru-ru-block').hasClass('bounceOutDown')) {
                      $('#ru-ru-block').removeClass('bounceOutDown').addClass('bounceInUp');
                   }
