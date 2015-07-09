@@ -71,6 +71,50 @@ class GameViewController
 
       switch ($action_level_one_id) {
 
+      case 'find-ru-ru':
+        ?>
+         <!DOCTYPE html>
+         <html lang='en' xmlns:fb='https://www.facebook.com/2008/fbml' xmlns:og='http://ogp.me/ns#'>
+            <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+               <meta charset="utf-8" />
+               <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>尋找嚕嚕</title>
+               <meta name="description" content="尋找嚕嚕" />
+               <meta name="author" content="Fukuball" />
+               <meta name="keywords" content="fukuball, Fukuball Lin, 林志傑" />
+               <meta name="twitter:card" content="summary" />
+               <meta name="twitter:site" content="@fukuball" />
+               <meta property="og:title" content="Roll a Dice" />
+               <meta property="og:type" content="website" />
+               <meta property="og:url" content="<?php echo $current_page_full_url; ?>" />
+               <meta property="og:image" content="<?php echo SITE_HOST; ?>/public/image/avatar4.jpg" />
+               <meta property="og:description" content="尋找嚕嚕" />
+               <?php
+               include_once SITE_ROOT."/fuku-view-component/icon-include.php";
+               include_once SITE_ROOT."/fuku-view-component/style-include.php";
+               ?>
+               <link href="/public/stylesheet/home.css?v=0.0.11" rel="stylesheet">
+               <?php
+               //include_once SITE_ROOT."/fuku-view-component/javascript-include.php";
+               ?>
+            </head>
+            <body class="row-fluid p-a-0">
+               <?php
+               //include_once SITE_ROOT."/fuku-view-component/header/header.php";
+               ?>
+               <div class="text-center m-t-10">
+                test
+               </div>
+               <?php
+               //include_once SITE_ROOT."/fuku-view-component/footer/footer.php";
+               //include_once SITE_ROOT."/fuku-view-component/javascript-include-bottom.php";
+               ?>
+            </body>
+         </html>
+         <?php
+        break;
+
       case 'roll-a-dice':
 
          global $current_page_full_url;
