@@ -109,8 +109,10 @@ class GameViewController
                      我找嚕嚕
                   </button>
                </div>
-               <div class="text-center hide bounceInUp animated" style="position: fixed; top: 48px; z-index: 1;">
-                  <img src="/public/game/ruru.png" />
+               <div id="ruru-block" class="hide bounceInUp animated" style="position: fixed; top: 48px; z-index: 1;">
+                  <div class="text-center">
+                     <img src="/public/game/ruru.png" />
+                  </div>
                </div>
                <?php
                //include_once SITE_ROOT."/fuku-view-component/footer/footer.php";
