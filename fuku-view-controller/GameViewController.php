@@ -94,6 +94,7 @@ class GameViewController
                include_once SITE_ROOT."/fuku-view-component/icon-include.php";
                include_once SITE_ROOT."/fuku-view-component/style-include.php";
                ?>
+               <link href="/public/stylesheet/animate.css" rel="stylesheet">
                <link href="/public/stylesheet/home.css?v=0.0.11" rel="stylesheet">
                <?php
                include_once SITE_ROOT."/fuku-view-component/javascript-include.php";
@@ -104,9 +105,12 @@ class GameViewController
                //include_once SITE_ROOT."/fuku-view-component/header/header.php";
                ?>
                <div class="text-center m-t-10">
-                  <button class="btn btn-large" type="button">
+                  <button class="btn btn-large" type="button" style="margin-top: 100px;">
                      我找嚕嚕
                   </button>
+               </div>
+               <div class="text-center hide bounceInUp animated" style="position: fixed; top: 48px; z-index: 1;">
+                  <img src="/public/game/ruru.png" />
                </div>
                <?php
                //include_once SITE_ROOT."/fuku-view-component/footer/footer.php";
