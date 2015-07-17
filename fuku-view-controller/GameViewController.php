@@ -208,7 +208,6 @@ class GameViewController
             <body class="row-fluid p-a-0">
                <?php
                //include_once SITE_ROOT."/fuku-view-component/header/header.php";
-               echo crc32($q);
                ?>
                <div class="text-center m-t-10">
                   <img src="/public/image/game/<?php echo $random_get; ?>.png" />
@@ -229,8 +228,8 @@ class GameViewController
          $rock_paper_scissors = array('rock', 'paper', 'scissors');
 
          $q = $_GET['q'];
-         $hash_value = substr(base_convert(md5($q), 16, 10) , -5);
-         $mode_num = intval($hash_value)%3;
+         $hash_value = crc32($q);
+         $mode_num = $hash_value%3;
          $random_get = $rock_paper_scissors[$mode_num];
 
          ?>
