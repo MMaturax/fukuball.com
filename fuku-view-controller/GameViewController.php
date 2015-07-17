@@ -175,8 +175,8 @@ class GameViewController
          $dice = array('dice1', 'dice2', 'dice3', 'dice4', 'dice5', 'dice6');
 
          $q = $_GET['q'];
-         $hash_value = substr(base_convert(md5($q), 16, 10) , -5);
-         $mode_num = intval($hash_value)%6;
+         $hash_value = crc32($q);
+         $mode_num = $hash_value%6;
          $random_get = $dice[$mode_num];
 
          ?>
