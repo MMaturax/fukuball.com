@@ -5,7 +5,7 @@ require_once dirname(dirname(__FILE__))."/fuku-config/app-setter.php";
 $ckip_process_record_god_obj = new CkipProcessRecordGod();
 $options = array(
     "offset" => 0,
-    "length" => 10
+    "length" => 10000
 );
 $ckip_process_record_list = $ckip_process_record_god_obj->getList($options);
 
