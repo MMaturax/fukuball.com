@@ -1,7 +1,7 @@
 # Fuku RewriteRule
 
 allow from all
-deny from 188.143.232.41
+deny from 180.176.117.15
 
 <FilesMatch "\.(ico|pdf|flv|jpg|JPG|jpeg|png|PNG|gif|js|css|swf)(\.gz)?$">
   <ifModule mod_headers.c>
