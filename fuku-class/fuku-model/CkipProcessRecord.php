@@ -33,6 +33,7 @@ class CkipProcessRecord extends ActiveRecord
 
    public $paragraph;
    public $paragraph_result;
+   public $user_ip;
 
    /**
     * Method getUrl get page url

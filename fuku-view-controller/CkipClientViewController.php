@@ -70,6 +70,7 @@ class CkipClientViewController
             $parameter_array = array();
             $parameter_array['paragraph'] = $paragraph;
             $parameter_array['paragraph_result'] = $ckip_process_result_json;
+            $parameter_array['user_ip'] = GlobalHelper::getUserIP();
             $ckip_process_record_id = $ckip_process_record_god_obj->create($parameter_array);
             unset($ckip_process_record_god_obj);
 
