@@ -2,6 +2,9 @@
 
 allow from all
 
+Require all granted
+Require not ip 188.143.232.41
+
 <FilesMatch "\.(ico|pdf|flv|jpg|JPG|jpeg|png|PNG|gif|js|css|swf)(\.gz)?$">
   <ifModule mod_headers.c>
     Header set Expires "Thu, 1 Apr 2014 20:00:00 GMT"
