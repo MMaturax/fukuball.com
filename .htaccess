@@ -4,6 +4,7 @@ allow from all
 
 <RequireAll>
     Require all granted
+    Requier not ip 188.143.232.16
     Require not ip 188.143.232.34
     Require not ip 188.143.232.37
     Require not ip 188.143.232.41
