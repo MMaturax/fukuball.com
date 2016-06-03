@@ -1,7 +1,11 @@
 # Fuku RewriteRule
 
 allow from all
-deny from 180.176.117.15
+
+<RequireAll>
+    Require all granted
+    Require not ip 180.176.117.15
+</RequireAll>
 
 <FilesMatch "\.(ico|pdf|flv|jpg|JPG|jpeg|png|PNG|gif|js|css|swf)(\.gz)?$">
   <ifModule mod_headers.c>
