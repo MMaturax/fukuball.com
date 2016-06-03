@@ -4,16 +4,17 @@ allow from all
 
 <RequireAll>
     Require all granted
-    Require not ip 188.143.232.16
-    Require not ip 188.143.232.21
-    Require not ip 188.143.232.26
-    Require not ip 188.143.232.34
-    Require not ip 188.143.232.35
-    Require not ip 188.143.232.37
-    Require not ip 188.143.232.40
-    Require not ip 188.143.232.41
-    Require not ip 188.143.232.62
-    Require not ip 188.143.232.72
+    Require not ip 188.143.232.0/24
+    #Require not ip 188.143.232.16
+    #Require not ip 188.143.232.21
+    #Require not ip 188.143.232.26
+    #Require not ip 188.143.232.34
+    #Require not ip 188.143.232.35
+    #Require not ip 188.143.232.37
+    #Require not ip 188.143.232.40
+    #Require not ip 188.143.232.41
+    #Require not ip 188.143.232.62
+    #Require not ip 188.143.232.72
 </RequireAll>
 
 <FilesMatch "\.(ico|pdf|flv|jpg|JPG|jpeg|png|PNG|gif|js|css|swf)(\.gz)?$">
