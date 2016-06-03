@@ -4,7 +4,7 @@ allow from all
 
 <RequireAll>
     Require all granted
-    Require not ip 180.176.117.15
+    Require not ip 188.143.232.41
 </RequireAll>
 
 <FilesMatch "\.(ico|pdf|flv|jpg|JPG|jpeg|png|PNG|gif|js|css|swf)(\.gz)?$">
